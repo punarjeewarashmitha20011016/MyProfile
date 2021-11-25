@@ -1,27 +1,29 @@
 .home {
     z-index: 0;
     position: relative;
-    background: url("../assets/images/home.jpg") no-repeat center;
+    background: url("../assets/images/background.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
 }
-.home > .img{
+
+.home > .img {
     position: relative;
     width: 38.5%;
     height: 49%;
     left: 12.9%;
-    top: 30.5%;
+    top: 31%;
 }
-.home > .childImage{
+
+.home > .childImage {
     position: absolute;
-    height: 42%;
-    width: 21%;
-    top: 36%;
-    left: 60.5%;
+    height: 37%;
+    width: 17.1%;
+    top: 41%;
+    left: 57.8%;
     /*bottom: 50%;*/
 }
 
-.home > .txtOfHomePage{
+.home > .txtOfHomePage {
     position: absolute;
     color: white;
     font-size: 50px;
@@ -30,10 +32,11 @@
     /*left: 195px;*/
 }
 
-.navigationHeader{
+.navigationHeader {
     color: #6D6D6D;
 }
-.home > .hrOfHomePage{
+
+.home > .hrOfHomePage {
     border-radius: 50px;
     width: 700px;
     height: 10px;
@@ -47,7 +50,7 @@
 .about {
     position: relative;
     padding-bottom: 20px;
-    height: 600px;
+    height: 100vh;
     background-color: #EBE5E5;
 }
 
@@ -56,7 +59,7 @@
     font-family: 'Ubuntu', sans-serif;
     padding-top: 20px;
     left: 100px;
-    top: 60px;
+    top: 12px;
     padding-bottom: 10px;
 }
 
@@ -69,4 +72,247 @@
     height: 8px;
     background: #FFA500;
     border-radius: 30px;
+}
+
+.about > .aboutProPicImg {
+    position: relative;
+    width: 55%;
+    top: 21%;
+    left: 2.2%
+}
+
+.about > .content {
+    position: absolute;
+    top: 55px;
+    left: 59%;
+}
+
+.about > .content > .header1 {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.about > .content > .header2 {
+    position: relative;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: #D49B00;
+    margin-top: 2px;
+}
+
+.about > .content > .aboutDetails {
+    position: relative;
+    font-family: "Segoe UI";;
+    font-size: 18px;
+    font-weight: 600;
+    left: 5.3%;
+}
+
+.about > .content > .button {
+    position: relative;
+    border: 0;
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    left: 110px;
+    transform: translateX(0%);
+}
+
+.about > .content > .button > .downloadCv {
+    position: absolute;
+    top: 21px;
+    color: black;
+    background-color: #FFBB00;
+    font-weight: 600;
+    border: 0;
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.about > .content > .button > .downloadCv:hover {
+    transition: all 0.6s ease;
+    background: #444965;
+    color: #E4E5E8;
+    font-weight: 700;
+}
+
+.about > .content > .button > .hireMe {
+    position: absolute;
+    top: 70px;
+    color: white;
+    background-color: #464237;
+    font-weight: 600;
+    border: 0;
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.about > .content > .button > .hireMe:hover {
+    transition: all 0.6s ease;
+    background: #444965;
+    color: #FFBB00;
+    font-weight: 700;
+}
+
+.education {
+    position: relative;
+    background-color: #EBE5E5;
+    height: 100vh;
+}
+
+.education > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    left: 100px;
+    top: -28px;
+    padding-bottom: 10px;
+}
+
+.education > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.education > .content {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.education > .content > div {
+    position: relative;
+    width: 750px;
+    height: 110px;
+    background: #D7D7D7;
+    box-shadow: 14px 14px 10px 1px #928c8c;
+}
+
+.education > .content > .ijse::after {
+    position: absolute;
+    content: " ";
+    width: 110%;
+    height: 5px;
+    background: #AB9999;
+    bottom: 0;
+    transform: translateY(28px);
+    left: -5%;
+}
+
+.education > .content > .ijse > .logo {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: url("../assets/images/ijse_logo.png") no-repeat center;
+    background-size: contain;
+    top: 5%;
+    left: -4%;
+    transform: rotate(-360deg);
+}
+.education > .content > div > .sub-title, .education-type, .year {
+    position: absolute;
+    left: 160px;
+}
+
+.education > .content > div > .sub-title {
+    font-size: 16px;
+    top: 5px;
+}
+
+.education > .content > div > .education-type {
+    font-size: 20px;
+    top: 27px;
+}
+.education > .content > div > .year{
+    font-size: 14px;
+    top: 65px;
+}
+.education > .content > div > a{
+    position: absolute;
+    left: 660px;
+    top: 85px;
+}
+.education > .content > div > a > .Morebutton{
+    font-size: 12px;
+    background-color: #726b6b;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 130%;
+}
+.education > .content > div > a > .Morebutton:hover{
+    transition: 0.6s;
+    background-color: #1C2520;;
+}
+.education > .content > div > a > .Morebutton:focus {
+    outline: none !important;
+}
+
+
+.education > .content > #div2Edu{
+    position: relative;
+    width: 750px;
+    height: 110px;
+    background: #c7c676;
+    box-shadow: 14px 14px 10px 1px #928c8c;
+}
+.education > .content > .mahanama::after{
+    position: absolute;
+    content: " ";
+    width: 110%;
+    height: 5px;
+    background: #AB9999;
+    bottom: 0;
+    transform: translateY(28px);
+    left: -5%;
+}
+
+.education > .content > .mahanama > .logo{
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    background: url("../assets/images/mahanama logo.png") no-repeat center;
+    background-size: contain;
+    top: 0%;
+    left: -7.1%;
+    transform: rotate(-360deg);
+}
+
+.education > .content > #div3Edu{
+    position: relative;
+    width: 750px;
+    height: 110px;
+    background: #a2adbd;
+    box-shadow: 14px 14px 10px 1px #928c8c;
+}
+.education > .content > #div3Edu > .AshokaLogo{
+    position: absolute;
+    width: 90px;
+    height: 110px;
+    background: url("../assets/images/Ashoka Logo.png") no-repeat center;
+    background-size: contain;
+    top: 0%;
+    left: 1.5%;
+    transform: rotate(-360deg);   
 }
