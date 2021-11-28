@@ -4,6 +4,7 @@
     background: url("../assets/images/background.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 .home > .img {
@@ -15,7 +16,7 @@
 }
 
 .home > .childImage {
-    position: absolute;
+    position: relative;
     height: 37%;
     width: 17.1%;
     top: 41%;
@@ -120,7 +121,7 @@
 
 .about > .content > .button > .downloadCv {
     position: absolute;
-    top: 21px;
+    top: 50px;
     color: black;
     background-color: #FFBB00;
     font-weight: 600;
@@ -142,7 +143,7 @@
 
 .about > .content > .button > .hireMe {
     position: absolute;
-    top: 70px;
+    top: 95px;
     color: white;
     background-color: #464237;
     font-weight: 600;
@@ -173,7 +174,7 @@
     font-family: 'Ubuntu', sans-serif;
     padding-top: 20px;
     left: 100px;
-    top: -28px;
+    top: -22px;
     padding-bottom: 10px;
 }
 
@@ -315,4 +316,286 @@
     top: 0%;
     left: 1.5%;
     transform: rotate(-360deg);   
+}
+
+.skills{
+    position: relative;
+    background-color: #EBE5E5;
+    height: 100vh;  
+}
+.skills > .title{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    left: 100px;
+    top: -22px;
+    padding-bottom: 10px;
+}
+.skills > .title::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+.skills >.javaImg{
+    position: absolute;
+    left: 18%;
+    width: 220px;
+    height: 220px;
+    top: 10%;
+}
+.skills > .mySqlImg{
+    position: absolute;
+    left: 40%;
+    width: 220px;
+    height: 220px;
+    top: 10%;
+}
+.skills > .hibernateImg{
+    position: absolute;
+    left: 62%;
+    width: 220px;
+    height: 220px;
+    top: 10%;
+}
+
+.skills > .htmlImg{
+    position: absolute;
+    left: 18%;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+}
+.skills > .cssImg{
+    position: absolute;
+    left: 40%;
+    width: 222px;
+    height: 180px;
+    top: 50%;
+}
+.skills > .javascriptImg{
+    position: absolute;
+    left: 64%;
+    width: 170px;
+    height: 180px;
+    top: 50%;
+}
+
+.projects{
+    position: relative;
+    background-color: #565151;
+    height: 100vh;  
+}
+.projects > .title{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    left: 100px;
+    top: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+.projects > .title::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+/*-----------------------------------*/
+.projects > .slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 115px auto 0;
+
+}
+.projects > .slide > .prev-slide,.next-slide{
+ position:absolute;
+ top: 50%;
+ width: 40px;
+ height: 40px;
+ margin-top: -20px;
+ border-radius: 50px;
+ line-height: 40px;
+ text-align: center;
+ cursor:pointer;
+ background-color: white;
+ color: black;
+ transition: all 0.7s;
+ font-size: 20px;
+ font-weight: bold;
+
+}
+
+.projects > .slide > .prev-slide:hover,.next-slide:hover{
+    opacity: 1;
+    background-color: white;
+}
+.projects > .slide > .prev-slide{
+    left: -70px;
+}
+.projects > .slide > .prev-slide::before{
+    content: '<';
+}
+.projects > .slide > .next-slide{
+    right: -70px;
+}
+.projects > .slide > .next-slide::before{
+    content: '>';
+}
+.projects > .slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+.projects > .slide > ul >li{
+    overflow:hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    background-color: #333;
+    cursor: pointer;
+}
+.projects > .slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+/*---------------------------------*/
+
+.services{
+    position: relative;
+    background-color: #565151;
+    height: 130vh; 
+}
+.services > .title{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    left: 100px;
+    top: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+.services > .title::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+.services > .content{
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    left: 54.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+.services > .content > .App-Development::after,.Web-Development::after,.Innovative_Ideas::after,.Ecommerce::after{
+    position: absolute;
+    content: " ";
+    width: 250px;
+    height: 4px;
+    background: white;
+    border-radius: 30px;
+    transform: rotate(270deg);
+    margin-left: -50px;
+}
+.services > .content > .App-Development::after,.Web-Development::after{
+    top: 120px;
+    left: 205px;
+}
+.services > .content > .Web-Development::after {
+    left: 575px;
+}
+.services > .content > .Innovative_Ideas::after,.Ecommerce::after{
+    top: 440px;
+}
+.services > .content > .Innovative_Ideas::after{
+    left: 205px;
+}
+.services > .content > .Ecommerce::after{
+    left: 575px;
+}
+
+.services > .content > article > .sub-title {
+    font-size: 24px;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.services > .content > article > .sub-content {
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 90px;
+}
+
+.services > .content > .App-Development > .icon{
+    background-image: url("../assets/images/App-Development.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
+}
+.services > .content > .Web-Development > .icon{
+    background-image: url("../assets/images/Web-Development.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
+}
+.services > .content > .Web-Design > .icon{
+    background-image: url("../assets/images/Web-Design.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
+}
+.services > .content > .Innovative_Ideas > .icon{
+    background-image: url("../assets/images/Innovative-Ideas.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
+}
+.services > .content > .Ecommerce > .icon{
+    background-image: url("../assets/images/E-commerce.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
+}
+.services > .content > .Graphic-Design > .icon{
+    background-image: url("../assets/images/Graphic Design.png");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: contain;
 }

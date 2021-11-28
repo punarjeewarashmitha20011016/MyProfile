@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Profile</title>
     <!-- -------------------------------------------STYLESHEET-------------------------------------------------  -->
-
     <link rel="stylesheet" href="css/css.css">
+    <!--<script type="text/javascript" src="JS/javascript.js"></script>-->
 </head>
 <body>
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
@@ -49,9 +49,13 @@
                 <wbr>
                 <br>and career opportunities.
             </p>
-            <nav>
-
-            </nav>
+            <!-- <nav class="socialmedia">
+                    <div id="media">
+                        <img src="assets/images/logo-facebookpng-32214.png" alt="">
+                        <a href="https://facebook.com" target="_blank">
+                        </a>
+                    </div>
+            </nav> -->
             <div class="button">
                 <button class="downloadCv" type="submit">DOWNLOAD CV</button>
                 <button class="hireMe" type="submit">HIRE ME</button>
@@ -69,51 +73,68 @@
                 <h3 class="sub-title">INSTITUTE OF JAVA AND SOFTWARE ENGINEERING</h3>
                 <h3 class="education-type">GRADUATE DIPLOMA OF SOFTWARE ENGINEERING</h3>
                 <h3 class="year">2020 - 2022</h3>
-                    <a href="https://www.ijse.lk" target="_blank">
+                <a href="https://www.ijse.lk" target="_blank">
                     <button class="Morebutton" type="submit">MORE</button>
-                    </a>
+                </a>
             </div>
 
-            <div class="mahanama"id="div2Edu">
-                    <div class="logo" ></div>
-                    <h3 class="sub-title">MAHANAMA COLLEGE COLOMBO - 03</h3>
-                    <h3 class="education-type">ADVANCED LEVEL EDUCATION</h3>
-                    <h3 class="year">2018 - 2020</h3>
-                        <a href="https://www.mahanamacollege.lk/" target="_blank">
-                        <button class="Morebutton" type="submit">MORE</button>
-                        </a>
+            <div class="mahanama" id="div2Edu">
+                <div class="logo"></div>
+                <h3 class="sub-title">MAHANAMA COLLEGE COLOMBO - 03</h3>
+                <h3 class="education-type">ADVANCED LEVEL EDUCATION</h3>
+                <h3 class="year">2018 - 2020</h3>
+                <a href="https://www.mahanamacollege.lk/" target="_blank">
+                    <button class="Morebutton" type="submit">MORE</button>
+                </a>
             </div>
 
             <div id="div3Edu">
-                <div class="AshokaLogo" ></div>
+                <div class="AshokaLogo"></div>
                 <h3 class="sub-title">ASHOKA COLLEGE HORANA</h3>
                 <h3 class="education-type">PRIMARY AND SECONDARY EDUCATION</h3>
                 <h3 class="year">2006 - 2017</h3>
-                    <a href="https://www.ashokacollege.edu.lk/" target="_blank">
+                <a href="https://www.ashokacollege.edu.lk/" target="_blank">
                     <button class="Morebutton" type="submit">MORE</button>
-                    </a>
+                </a>
             </div>
         </article>
     </section>
 
-    <hr>
-
-    <section>
-
-    </section>
-
-    <hr>
-
-    <section>
-
-    </section>
-
     <!-- -------------------------------------------SKILLS-------------------------------------------------  -->
-
+    <section class="skills">
+        <h3 class="title">SKILLS</h3>
+        <img class="javaImg" src="assets/images/java%20logo.png" alt="">
+        <img class="mySqlImg" src="assets/images/MYSQL%20logo.png" alt="">
+        <img class="hibernateImg" src="assets/images/hibernate_logo-removebg-preview.png" alt="">
+        <img class="htmlImg" src="assets/images/html logo.png" alt="">
+        <img class="cssImg" src="assets/images/css%20logo.png" alt="">
+        <img class="javascriptImg" src="assets/images/Javascript logo.png" alt="">
+    </section>
     <!-- -------------------------------------------PROJECTS-------------------------------------------------  -->
 
-    <section>
-
+    <section class="projects">
+        <h3 class="title">PROJECTS</h3>
+        <!-- <div class="slide">
+            <div class="prev-slide"></div>
+            <div class="next-slide"></div>
+            <ul>
+                <li>
+                    <img src="assets/images/vehicle Parking System.jpg" alt="">
+                </li>
+                <li>
+                    <img src="assets/images/pos system.jpg" alt="">
+                
+                </li>
+                <li>
+                    <img src="assets/images/Green Computers Logo.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/jquery.slide.js"></script>
+        <script>
+            $('.slide').slide();
+        </script> -->
     </section>
 
     <section>
@@ -130,8 +151,46 @@
 
     <!-- -------------------------------------------SERVICES-------------------------------------------------  -->
 
-    <section>
-        <article></article>
+    <section class="services">
+        <h3 class="title">SERVICES</h3>
+        <section class="content">
+            <article class="App-Development">
+                <div class="icon"></div>
+                <h3 class="sub-title">App Development</h3>
+                <p class="sub-content">I can develop Mobile<br>Application and Standalone<br>Applications</p>
+            </article>
+
+            <article class="Web-Development">
+                <div class="icon"></div>
+                <h3 class="sub-title">Web Development</h3>
+                <p class="sub-content">I can develop outstanding<br>sites with newest features<br>adopting to the prevailing<br>environment</p>
+            </article>
+
+            <article class="Web-Design">
+                <div class="icon"></div>
+                <h3 class="sub-title">Web Design</h3>
+                <p class="sub-content">I can make your site<br>more futuristic and user<br>friendly</p>
+            </article>
+
+            <article class="Innovative_Ideas">
+                <div class="icon"></div>
+                <h3 class="sub-title">Innovative Ideas</h3>
+                <p class="sub-content">I can give outstanding ideas<br>to your applications which<br>you are hopping to build</p>
+            </article>
+
+            <article class="Ecommerce">
+                <div class="icon"></div>
+                <h3 class="sub-title">E - Commerce</h3>
+                <p class="sub-content">I can give you the most<br>eligible and updated<br>solutions to your business</p>
+            </article>
+
+            <article class="Graphic-Design">
+                <div class="icon"></div>
+                <h3 class="sub-title">Graphic Design</h3>
+                <p class="sub-content">I can develop outstanding<br>sites with newest features<br>adopting to the prevailing<br>environment</p>
+            </article>
+
+        </section>
     </section>
 
     <section>
