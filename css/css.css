@@ -109,6 +109,80 @@
     left: 5.3%;
 }
 
+.about > .content > .socialMedia{
+    position: absolute;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin-left: 126px;
+    margin-top: 20px;
+    grid-gap:55px;
+
+}
+.about > .content > .socialMedia > a >.facebook{
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-image: url("/assets/icons/fb.png");
+    background-size: cover;
+}
+.about > .content > .socialMedia > a:nth-child(2) >.linkedIn{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: 3.3px;
+    background-image: url("/assets/icons/linkedIn\ logo.png");
+    background-size: cover;
+}
+.about > .content > .socialMedia > a:nth-child(3) > .twitter{
+    position: absolute;
+    width: 47px;
+    height: 37px;
+    background-image: url("/assets/icons/twitter\ logo.png");
+    background-size: cover;
+}
+
+.about > .content > .socialMedia > a:nth-child(4) > .gitHub{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    margin-top: -5.7px;
+    background-image: url("/assets/icons/github\ logo.png");
+    background-size: cover;
+}
+.about > .content > .socialMedia > a > .facebook:hover{
+    width: 27px;
+    height: 34px;
+    background-image: url("/assets/icons/fb\ grey.png");
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+    background-size: cover;
+}
+.about > .content > .socialMedia > a:nth-child(2) > .linkedIn:hover{
+    width: 35px;
+    height: 32px;
+    background-image: url("/assets/icons/linkedIn\ grey\ logo.png");
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+    background-size: cover;
+}
+.about > .content > .socialMedia > a:nth-child(3) > .twitter:hover{
+    width: 47px;
+    height: 47px;
+    background-image: url("/assets/icons/twitter\ grey\ logo.png");
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+    background-size: cover;
+}
+.about > .content > .socialMedia > a:nth-child(4) > .gitHub:hover{
+    width: 52px;
+    height: 52px;
+    background-image: url("/assets/icons/github\ grey\ logo.png");
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+    background-size: cover;
+}
+
 .about > .content > .button {
     position: relative;
     border: 0;
@@ -121,7 +195,7 @@
 
 .about > .content > .button > .downloadCv {
     position: absolute;
-    top: 50px;
+    top: 95px;
     color: black;
     background-color: #FFBB00;
     font-weight: 600;
@@ -143,7 +217,7 @@
 
 .about > .content > .button > .hireMe {
     position: absolute;
-    top: 95px;
+    top: 140px;
     color: white;
     background-color: #464237;
     font-weight: 600;
@@ -365,7 +439,7 @@
 
 .skills > .htmlImg{
     position: absolute;
-    left: 18%;
+    left: 19.7%;
     width: 180px;
     height: 180px;
     top: 50%;
@@ -558,42 +632,42 @@
 }
 
 .services > .content > .App-Development > .icon{
-    background-image: url("../assets/images/App-Development.png");
+    background-image: url("../assets/icons/App-Development.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Web-Development > .icon{
-    background-image: url("../assets/images/Web-Development.png");
+    background-image: url("../assets/icons/Web-Development.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Web-Design > .icon{
-    background-image: url("../assets/images/Web-Design.png");
+    background-image: url("../assets/icons/Web-Design.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Innovative_Ideas > .icon{
-    background-image: url("../assets/images/Innovative-Ideas.png");
+    background-image: url("../assets/icons/Innovative-Ideas.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Ecommerce > .icon{
-    background-image: url("../assets/images/E-commerce.png");
+    background-image: url("../assets/icons/E-commerce.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Graphic-Design > .icon{
-    background-image: url("../assets/images/Graphic Design.png");
+    background-image: url("../assets/icons/Graphic Design.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
