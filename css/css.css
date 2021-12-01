@@ -123,7 +123,7 @@
     position: absolute;
     width: 27px;
     height: 34px;
-    background-image: url("/assets/icons/fb.png");
+    background-image: url("../assets/icons/fb.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a:nth-child(2) >.linkedIn{
@@ -131,14 +131,14 @@
     width: 35px;
     height: 35px;
     margin-top: 3.3px;
-    background-image: url("/assets/icons/linkedIn\ logo.png");
+    background-image: url("../assets/icons/linkedIn logo.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a:nth-child(3) > .twitter{
     position: absolute;
     width: 47px;
     height: 37px;
-    background-image: url("/assets/icons/twitter\ logo.png");
+    background-image: url("../assets/icons/twitter logo.png");
     background-size: cover;
 }
 
@@ -147,13 +147,13 @@
     width: 52px;
     height: 52px;
     margin-top: -5.7px;
-    background-image: url("/assets/icons/github\ logo.png");
+    background-image: url("../assets/icons/github logo.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a > .facebook:hover{
     width: 27px;
     height: 34px;
-    background-image: url("/assets/icons/fb\ grey.png");
+    background-image: url("../assets/icons/fb grey.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -161,7 +161,7 @@
 .about > .content > .socialMedia > a:nth-child(2) > .linkedIn:hover{
     width: 35px;
     height: 32px;
-    background-image: url("/assets/icons/linkedIn\ grey\ logo.png");
+    background-image: url("../assets/icons/linkedIn grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -169,7 +169,7 @@
 .about > .content > .socialMedia > a:nth-child(3) > .twitter:hover{
     width: 47px;
     height: 47px;
-    background-image: url("/assets/icons/twitter\ grey\ logo.png");
+    background-image: url("../assets/icons/twitter grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -177,7 +177,7 @@
 .about > .content > .socialMedia > a:nth-child(4) > .gitHub:hover{
     width: 52px;
     height: 52px;
-    background-image: url("/assets/icons/github\ grey\ logo.png");
+    background-image: url("../assets/icons/github grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
