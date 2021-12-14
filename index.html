@@ -2,31 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>My Profile | PUNARJEEWA</title>
     <!-- -------------------------------------------STYLESHEET-------------------------------------------------  -->
     <link rel="stylesheet" href="css/css.css">
-    <!--<script type="text/javascript" src="JS/javascript.js"></script>-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="JS/autoTyping.js"></script>
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet" rel="stylesheet" />
+
+    <script src="JS/paper-plane.js"></script>
 </head>
 <body>
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
-<head class="navigationHeader">
-    <nav>
-
-    </nav>
+<head>
+    <section class="headerBar">
+        <div class="container">
+            <div class="loader">
+                <div class="ball">
+                    
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#EDUCATION">EDUCATION</a></li>
+                <li><a href="#SKILLS">SKILLS</a></li>
+                <li><a href="#PROJECTS">PROJECTS</a></li>
+                <li><a href="#SERVICES">SERVICES</a></li>
+                <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+                <li><a href="#CONTACT ME">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </section>
 </head>
 <main>
-    <!-- -------------------------------------------HOME-------------------------------------------------  -->
-    <section class="home">
-        <!--<img class="img" src="assets/images/Inception%20code%20Wallpaper%202610.png" alt="">-->
-        <img class="childImage" src="assets/images/myProfilePic.png" alt="">
-        <p CLASS="txtOfHomePage">WELCOME TO MY PROFILE</p>
-        <hr class="hrOfHomePage">
+                
+    <section class="home" id="HOME">
+        <img class="backgroundImg" src="assets\images\wallpaperflare.com_wallpaper (1).jpg" alt="">
+        <div class="childImageContainer">
+            <img class="child" src="assets/images/CHP_8311.jpg" alt="">
+        </div>
+        <p>I'M</p>
+        <div class="text-box">
+            <h1>PUNARJEEWA</h1>
+        </div>
+        <h3>a <span class="txt-rotate" data-period="2000"
+                    data-rotate='[ "Programmer.", "Developer.", "Designer.", "Freelancer."]'></span></h3>
     </section>
     <!-- -------------------------------------------ABOUT-------------------------------------------------  -->
-    <section class="about">
+    <section class="about" id="ABOUT">
         <h2 class="title">ABOUT ME</h2>
         <img class="aboutProPicImg" src="assets/images/about%20pro%20pic.jpg" alt="">
         <article class="content">
@@ -50,7 +82,7 @@
                 <br>and career opportunities.
             </p>
             <nav class="socialMedia">
-                <a href="https://google.com" target="_blank">
+                <a href="https://facebook.com" target="_blank">
                     <div class="facebook"></div>
                 </a>
 
@@ -74,7 +106,7 @@
         <nav></nav>
     </section>
     <!-- -------------------------------------------Education-------------------------------------------------  -->
-    <section class="education">
+    <section class="education" id="EDUCATION">
         <h2 class="title">EDUCATION</h2>
         <article class="content">
             <div class="ijse">
@@ -84,7 +116,7 @@
                 <h3 class="education-type">GRADUATE DIPLOMA OF SOFTWARE ENGINEERING</h3>
                 <h3 class="year">2020 - 2022</h3>
                 <a href="https://www.ijse.lk" target="_blank">
-                    <button class="Morebutton" type="submit">MORE</button>
+                    <button class="Morebutton" type="submit"><span>MORE</span></button>
                 </a>
             </div>
 
@@ -94,7 +126,7 @@
                 <h3 class="education-type">ADVANCED LEVEL EDUCATION</h3>
                 <h3 class="year">2018 - 2020</h3>
                 <a href="https://www.mahanamacollege.lk/" target="_blank">
-                    <button class="Morebutton" type="submit">MORE</button>
+                    <button class="Morebutton" type="submit"><span>MORE</span></button>
                 </a>
             </div>
 
@@ -104,65 +136,164 @@
                 <h3 class="education-type">PRIMARY AND SECONDARY EDUCATION</h3>
                 <h3 class="year">2006 - 2017</h3>
                 <a href="https://www.ashokacollege.edu.lk/" target="_blank">
-                    <button class="Morebutton" type="submit">MORE</button>
+                    <button class="Morebutton" type="submit"><span>MORE</span></button>
                 </a>
             </div>
         </article>
     </section>
 
     <!-- -------------------------------------------SKILLS-------------------------------------------------  -->
-    <section class="skills">
-        <h3 class="title">SKILLS</h3>
-        <img class="javaImg" src="assets/images/java logo.png" alt="">
-        <img class="mySqlImg" src="assets/images/MYSQL logo.png" alt="">
-        <img class="hibernateImg" src="assets/images/hibernate_logo-removebg-preview.png" alt="">
-        <img class="htmlImg" src="assets/images/html logo.png" alt="">
-        <img class="cssImg" src="assets/images/css logo.png" alt="">
-        <img class="javascriptImg" src="assets/images/Javascript logo.png" alt="">
+    <section class="skills" id="SKILLS">
+        <h2 class="title">SKILLS</h2>
+        <div class="page-content">
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">To The Beach</h2>
+                <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Desert Destinations</h2>
+                <p class="copy">It's the desert you've always dreamed of</p>
+                <button class="btn">Book Now</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Explore The Galaxy</h2>
+                <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                <button class="btn">Book Now</button>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                  <h2 class="title">Explore The Galaxy</h2>
+                  <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Explore The Galaxy</h2>
+                  <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+        </div>
+
     </section>
     <!-- -------------------------------------------PROJECTS-------------------------------------------------  -->
 
-    <section class="projects">
-        <h3 class="title">PROJECTS</h3>
-        <!-- <div class="slide">
-            <div class="prev-slide"></div>
-            <div class="next-slide"></div>
-            <ul>
-                <li>
-                    <img src="assets/images/vehicle Parking System.jpg" alt="">
-                </li>
-                <li>
-                    <img src="assets/images/pos system.jpg" alt="">
-                
-                </li>
-                <li>
-                    <img src="assets/images/Green Computers Logo.png" alt="">
-                </li>
-            </ul>
+    <section class="projects" id="PROJECTS">
+        <h2 class="title">PROJECTS</h2>
+        <div class="app">
+            <div class="cardList">
+                <button class="cardList__btn btn btn--left">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="cards__wrapper">
+                        <div class="card current--card">
+                            <div class="card__image">
+                                    <img src="assets/projects/parking logo.jpg" alt=""/>
+                            </div>    
+                        </div>
+                    
+                    
+                        <div class="card next--card">
+                            <div class="card__image">
+                                    <img src="assets/projects/POS.jpg" alt=""/>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="card previous--card">
+                            <div class="card__image">
+                                    <img src="/assets/projects/—Pngtree—green computer logo template nature_5292863.png" alt=""/>
+                            </div>
+                        </div>
+                </div>
+                <button class="cardList__btn btn btn--right">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="infoList">
+                <div class="info__wrapper">
+                        <div class="info current--info">
+                            <h1 class="text name">Vehicle Parking System</h1>
+                            <p class="text description">JAVA, JAVAFX</p>
+                        </div>
+                    
+                        <div class="info next--info">
+                            <h1 class="text name">POS System</h1>
+                            <p class="text description">JAVA, JAVAFX, MYSQL, JASPER-REPORTS</p>
+                        </div>
+
+                        <div class="info previous--info">
+                            <h1 style="font-size: 19px;" class="text name">Computer Shop Management System</h1>
+                            <p style="font-size: 14px;" class="text description">JAVA, JAVAFX, MYSQL, JASPER-REPORTS</p>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    <img src="assets/projects/parking background.jpg" alt=""/>
+                </div>
+                <div class="app__bg__image next--image">
+                    <img src="assets/projects/POS.jpg" alt=""/>
+                </div>
+                <div class="app__bg__image previous--image">
+                    <img src="/assets/projects/green computers background.jpg" alt=""/>
+                </div>
+            </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/jquery.slide.js"></script>
-        <script>
-            $('.slide').slide();
-        </script> -->
-    </section>
 
-    <section>
+        <div class="loading__wrapper">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span></span>
+            </div>
+        </div>
 
-    </section>
 
-    <section>
-
-    </section>
-
-    <section>
-        <nav></nav>
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='328 112 184 256 328 400'
+                          style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px'/>
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='184 112 328 256 184 400'
+                          style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px'/>
+            </symbol>
+        </svg>
     </section>
 
     <!-- -------------------------------------------SERVICES-------------------------------------------------  -->
 
-    <section class="services">
-        <h3 class="title">SERVICES</h3>
+    <section class="services" id="SERVICES">
+        <h2 class="title">SERVICES</h2>
         <section class="content">
             <article class="App-Development">
                 <div class="icon"></div>
@@ -206,42 +337,90 @@
         </section>
     </section>
 
-    <section>
-        <article></article>
-    </section>
-
-    <section>
-        <article></article>
-    </section>
-
-    <section>
-        <article></article>
-    </section>
-
-    <section>
-        <article></article>
-    </section>
-
-    <section>
-        <article></article>
-    </section>
-
     <!-- -------------------------------------------PORTFOLIO-------------------------------------------------  -->
-    <section>
-        <section>
-            <address></address>
-        </section>
+    <section class="portfolio" id="PORTFOLIO">
+        <h2 class="title">PORTFOLIO</h2>
+        <div class="image1Container">
+            <img class="image1" src="/assets/portfolio/image1.jpg" alt="">
+        </div>
+        <div class="image2Container">
+            <img class="image2" src="/assets/portfolio/image2.jpg" alt="">
+        </div>
+        <div class="image3Container">
+            <img class="image3" src="/assets/portfolio/image3.jpg" alt="">
+        </div>
+        <div class="image4Container">
+            <img class="image4" src="/assets/portfolio/image4.jpg" alt="">
+        </div>
+        <div class="image5Container">
+            <img class="image5" src="/assets/portfolio/image5.jpg" alt="">
+        </div>
+    </section>
 
-        <section>
-            <nav></nav>
-        </section>
-
+    <!-- -------------------------------------------Contact Me-------------------------------------------------  -->
+    <section class="contact" id="CONTACT ME">
+        <h2 class="title">CONTACT ME</h2>
         <hr>
+        <form class="content">
+            <input class="name" type="text" placeholder="NAME">
+            <input class="email" type="text" placeholder="E-MAIL">
+            <input class="subject" type="text" placeholder="SUBJECT">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+            <button class="sendBtn" type="submit">SEND</button>
+        </form>
+        <address>
+            <div class="topContainerContact">
+                <div class="container flex horizontal">  
 
-        <section>
-            <address></address>
-        </section>
+                    <div class="banner flex vertical grayscale shadow tobo">
+                  
+                      <p class="text">Looking for someone to work with ?</p>
+                      <a id="contact-link" href="#contact" class="text nodecoration flex horizontal"><p>Contact me</p><i class="material-icons"><span></span></i></a>  
+                    </div>
+                  </div>
+
+
+                <nav class="socialMedia">
+                    <a href="https:://facebook.com" target="_blank">
+                        <div class="facebook"></div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/">
+                        <div class="linkedIn"></div>
+                    </a>
+
+                    <a href="https://twitter.com/home" target="_blank">
+                        <div class="twitter"></div>
+                    </a>
+
+                    <a href="https://github.com/punarjeewarashmitha20011016">
+                        <div class="gitHub"></div>
+                    </a>
+                </nav>
+                <p>You can keep in touch with my social networks<br>for latest information and works carried out by me.
+                </p>
+                <hr>
+            </div>
+            <div class="bottomContainerContact">
+                <div class="phone">
+                    <img class="logo" src="/assets/icons/smartphone.png" alt="">
+                    <h2>PHONE</h2>
+                    <p>+94768777908</p>
+                </div>
+                <div class="email">
+                    <img class="logo" src="/assets/icons/email.png" alt="">
+                    <h2>E-MAIL</h2>
+                    <p>punarjeewarashmitha1@gmail.com</p>
+                </div>
+                <div class="map">
+                    <img class="logo" src="/assets/icons/map.png" alt="">
+                    <h2>LOCATION</h2>
+                    <p>Bandaragama, Sri Lanka</p>
+                </div>
+            </div>
+        </address>
     </section>
 </main>
 </body>
+<script src="JS/slider.js"></script>
 </html>
