@@ -277,7 +277,7 @@ main{
     width: 27px;
     height: 32px;
     margin-top: 3px;
-    background-image: url("../assets/icons/fb.png");
+    background-image: url("/assets/icons/fb.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a:nth-child(2) >.linkedIn{
@@ -285,14 +285,14 @@ main{
     width: 35px;
     height: 35px;
     margin-top: 3.3px;
-    background-image: url("../assets/icons/linkedIn logo.png");
+    background-image: url("/assets/icons/linkedIn logo.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a:nth-child(3) > .twitter{
     position: absolute;
     width: 47px;
     height: 37px;
-    background-image: url("../assets/icons/twitter logo.png");
+    background-image: url("/assets/icons/twitter logo.png");
     background-size: cover;
 }
 
@@ -301,14 +301,14 @@ main{
     width: 52px;
     height: 52px;
     margin-top: -5.7px;
-    background-image: url("../assets/icons/github logo.png");
+    background-image: url("/assets/icons/github logo.png");
     background-size: cover;
 }
 .about > .content > .socialMedia > a > .facebook:hover{
     width: 27px;
     height: 32px;
     margin-top: 3px;
-    background-image: url("../assets/icons/fb grey.png");
+    background-image: url("/assets/icons/fb grey.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -316,7 +316,7 @@ main{
 .about > .content > .socialMedia > a:nth-child(2) > .linkedIn:hover{
     width: 35px;
     height: 32px;
-    background-image: url("../assets/icons/linkedIn grey logo.png");
+    background-image: url("/assets/icons/linkedIn grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -324,7 +324,7 @@ main{
 .about > .content > .socialMedia > a:nth-child(3) > .twitter:hover{
     width: 47px;
     height: 47px;
-    background-image: url("../assets/icons/twitter grey logo.png");
+    background-image: url("/assets/icons/twitter grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -332,7 +332,7 @@ main{
 .about > .content > .socialMedia > a:nth-child(4) > .gitHub:hover{
     width: 52px;
     height: 52px;
-    background-image: url("../assets/icons/github grey logo.png");
+    background-image: url("/assets/icons/github grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -454,7 +454,7 @@ main{
     position: absolute;
     width: 200px;
     height: 100px;
-    background: url("../assets/images/ijse_logo.png") no-repeat center;
+    background: url("/assets/images/ijse_logo.png") no-repeat center;
     background-size: contain;
     top: 5%;
     left: -4%;
@@ -533,7 +533,7 @@ main{
     position: absolute;
     width: 200px;
     height: 110px;
-    background: url("../assets/images/mahanama logo.png") no-repeat center;
+    background: url("/assets/images/mahanama logo.png") no-repeat center;
     background-size: contain;
     top: 0%;
     left: -7.1%;
@@ -551,7 +551,7 @@ main{
     position: absolute;
     width: 90px;
     height: 110px;
-    background: url("../assets/images/Ashoka Logo.png") no-repeat center;
+    background: url("/assets/images/Ashoka Logo.png") no-repeat center;
     background-size: contain;
     top: 0%;
     left: 1.5%;
@@ -657,7 +657,7 @@ main{
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .skills > .page-content > .card:nth-child(1):before {
-  background-image: url(../assets/skills/java.png);
+  background-image: url(/assets/skills/java.png);
 }
 .skills > .page-content > .card:nth-child(1) > .content > .copy{
     color: white;
@@ -684,7 +684,7 @@ main{
 }
 
 .skills > .page-content > .card:nth-child(2):before {
-  background-image: url(../assets/skills/mysql.jpg);
+  background-image: url(/assets/skills/mysql.jpg);
 }
 .skills > .page-content > .card:nth-child(2) > .content > .title,.copy{
     font-weight: 800;
@@ -693,7 +693,7 @@ main{
 
 
 .skills > .page-content > .card:nth-child(3):before {
-  background-image: url(../assets/skills/hibernate-framework.png);
+  background-image: url(/assets/skills/hibernate-framework.png);
 }
 .skills > .page-content > .card:nth-child(3) > .content > .title,.copy {
     color: black;
@@ -702,13 +702,13 @@ main{
 
 
 .skills > .page-content > .card:nth-child(4):before {
-  background-image: url(../assets/skills/html.jpg);
+  background-image: url(/assets/skills/html.jpg);
 }
 .skills > .page-content > .card:nth-child(5):before {
-    background-image: url(../assets/skills/css.png);
+    background-image: url(/assets/skills/css.png);
 }
 .skills > .page-content > .card:nth-child(6):before {
-    background-image: url(../assets/skills/javascript.jpg);
+    background-image: url(/assets/skills/javascript.jpg);
 }
 
 .skills > .page-content > .card > .content {
@@ -1175,42 +1175,42 @@ button:focus {
 }
 
 .services > .content > .App-Development > .icon{
-    background-image: url("../assets/icons/App-Development.png");
+    background-image: url("/assets/icons/App-Development.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Web-Development > .icon{
-    background-image: url("../assets/icons/Web-Development.png");
+    background-image: url("/assets/icons/Web-Development.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Web-Design > .icon{
-    background-image: url("../assets/icons/Web-Design.png");
+    background-image: url("/assets/icons/Web-Design.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Innovative_Ideas > .icon{
-    background-image: url("../assets/icons/Innovative-Ideas.png");
+    background-image: url("/assets/icons/Innovative-Ideas.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Ecommerce > .icon{
-    background-image: url("../assets/icons/E-commerce.png");
+    background-image: url("/assets/icons/E-commerce.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-size: contain;
 }
 .services > .content > .Graphic-Design > .icon{
-    background-image: url("../assets/icons/Graphic Design.png");
+    background-image: url("/assets/icons/Graphic Design.png");
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -1534,7 +1534,7 @@ button:focus {
     transition: 400ms left ease-in-out;
     -webkit-transition: 400ms left ease-in-out;
     content: "";
-    background-image: url('../assets/contact/send-message.png');
+    background-image: url('/assets/contact/send-message.png');
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -1549,7 +1549,7 @@ button:focus {
     transition: 400ms left ease-in-out;
     -webkit-transition: 400ms left ease-in-out;
     content: "";
-    background-image: url(../assets/contact/send-message\ grey.png);
+    background-image: url(/assets/contact/send-message\ grey.png);
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -1733,11 +1733,11 @@ button:focus {
     width: 27px;
     height: 32px;
     margin-top: 3px;
-    background-image: url("../assets/icons/fb.png");
+    background-image: url("/assets/icons/fb.png");
     background-size: cover;
 }
 .contact > address > .topContainerContact > .socialMedia > a:nth-child(1) > .facebook:hover{
-    background-image: url("../assets/icons/fb\ grey.png");
+    background-image: url("/assets/icons/fb\ grey.png");
     width: 27px;
     height: 32px;
     transition: all 0.3s ease;
@@ -1748,13 +1748,13 @@ button:focus {
     width: 35px;
     height: 35px;
     margin-top: 3.3px;
-    background-image: url("../assets/icons/linkedIn logo.png");
+    background-image: url("/assets/icons/linkedIn logo.png");
     background-size: cover;
 }
 .contact > address > .topContainerContact > .socialMedia > a:nth-child(2) > .linkedIn:hover{
     width: 35px;
     height: 32px;
-    background-image: url("../assets/icons/linkedIn grey logo.png");
+    background-image: url("/assets/icons/linkedIn grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -1763,13 +1763,13 @@ button:focus {
     position: absolute;
     width: 47px;
     height: 37px;
-    background-image: url("../assets/icons/twitter logo.png");
+    background-image: url("/assets/icons/twitter logo.png");
     background-size: cover;
 }
 .contact > address > .topContainerContact > .socialMedia > a:nth-child(3) > .twitter:hover{
     width: 47px;
     height: 47px;
-    background-image: url("../assets/icons/twitter grey logo.png");
+    background-image: url("/assets/icons/twitter grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;
@@ -1780,7 +1780,7 @@ button:focus {
     width: 52px;
     height: 52px;
     margin-top: -5.7px;
-    background-image: url("../assets/icons/github logo.png");
+    background-image: url("/assets/icons/github logo.png");
     background-size: cover;
 }
 
@@ -1788,7 +1788,7 @@ button:focus {
 .contact > address > .topContainerContact > .socialMedia > a:nth-child(4) > .gitHub:hover{
     width: 52px;
     height: 52px;
-    background-image: url("../assets/icons/github grey logo.png");
+    background-image: url("/assets/icons/github grey logo.png");
     transition: all 0.6s ease;
     transform: translate(0, -10px);
     background-size: cover;

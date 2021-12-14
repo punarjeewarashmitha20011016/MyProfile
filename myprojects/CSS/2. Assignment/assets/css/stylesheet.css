@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body > main{
     position: relative;
 }
@@ -10,7 +11,7 @@ body > main > header:nth-child(1){
 }
 body > main > header:nth-child(1) > div{
     position: absolute;
-    background-image: url(/assets/ijselogo.png);
+    background-image: url(/assets/images/ijselogo.png);
     width: 250px;
     height: 50px;
     z-index: 4;
@@ -40,7 +41,7 @@ body > main > nav:nth-child(2){
     width: 200px;
     color: white;
     background-color: rgb(76, 0, 130);
-    font-family: "Readex Pro", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     z-index: 4;
 }
@@ -92,7 +93,7 @@ body > footer{
 }
 body > footer > p{
     position: absolute;
-    right: 10px;
+    right: 28px;
     top: 5px;
     text-align: center;
     font-family: "Readex Pro", sans-serif;
