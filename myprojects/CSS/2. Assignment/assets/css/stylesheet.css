@@ -11,7 +11,7 @@ body > main > header:nth-child(1){
 }
 body > main > header:nth-child(1) > div{
     position: absolute;
-    background-image: url(/assets/images/ijselogo.png);
+    background-image: url(../images/ijselogo.png);
     width: 250px;
     height: 50px;
     z-index: 4;
@@ -35,7 +35,7 @@ body > main > header:nth-child(1) > nav > ul > li{
 
 body > main > nav:nth-child(2){
     position: absolute;
-    top: 48px;
+    top: 52px;
     left: 0;
     bottom: 0;
     width: 200px;
