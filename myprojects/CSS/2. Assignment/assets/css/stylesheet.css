@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body > header{
     position: relative;
     height: 50px;
@@ -48,6 +49,7 @@ body > main > nav{
 body > main > nav > ul{
     list-style: none;
     margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 body > main > nav > ul > li{
     margin-top: 10px;
