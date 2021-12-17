@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
-<head>
+<header>
     <section class="headerBar">
         <div class="container">
             <div class="loader">
@@ -29,6 +29,7 @@
                 </div>
             </div>
         </div>
+        
         <nav>
             <ul>
                 <li><a href="#HOME">HOME</a></li>
@@ -42,7 +43,7 @@
             </ul>
         </nav>
     </section>
-</head>
+</header>
 <main>
                 
     <section class="home" id="HOME">
@@ -50,12 +51,20 @@
         <div class="childImageContainer">
             <img class="child" src="assets/images/CHP_8311.jpg" alt="">
         </div>
-        <p>I'M</p>
-        <div class="text-box">
-            <h1>PUNARJEEWA</h1>
-        </div>
-        <h3>a <span class="txt-rotate" data-period="2000"
+
+        <div class="textboxContainer">
+            <p>I'M</p>
+            <div class="text-box">
+                <h1>PUNARJEEWA</h1>
+                <h3>a <span class="txt-rotate" data-period="2000"
                     data-rotate='[ "Programmer.", "Developer.", "Designer.", "Freelancer."]'></span></h3>
+            </div>
+        </div>
+
+        <div class="buttonContainer">
+            <button>Contact Me</button>
+        </div>
+        
     </section>
     <!-- -------------------------------------------ABOUT-------------------------------------------------  -->
     <section class="about" id="ABOUT">
@@ -367,6 +376,7 @@
             <input class="subject" type="text" placeholder="SUBJECT">
             <textarea name="" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
             <button class="sendBtn" type="submit">SEND</button>
+            <button class="discardBtn" type="submit">DISCARD</button>
         </form>
         <address>
             <div class="topContainerContact">
