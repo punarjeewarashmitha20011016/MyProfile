@@ -17,8 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet" rel="stylesheet" />
 
     <script src="assets/JS/paper-plane.js"></script>
+
+    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
 </head>
 <body>
+
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
 <header>
     <section class="headerBar">
@@ -62,7 +65,14 @@
         </div>
 
         <div class="buttonContainer">
-            <button>Contact Me</button>
+            <button>Connect With Me <span>&#8594;</span></button>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Punarjeewa2001" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/punarjeewarashmitha20011016" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         
     </section>
@@ -91,19 +101,19 @@
                 <br>and career opportunities.
             </p>
             <nav class="socialMedia">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank">
                     <div class="facebook"></div>
                 </a>
 
-                <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/">
+                <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank">
                     <div class="linkedIn"></div>
                 </a>
 
-                <a href="https://twitter.com/home" target="_blank">
+                <a href="https://twitter.com/Punarjeewa2001" target="_blank">
                     <div class="twitter"></div>
                 </a>
 
-                <a href="https://github.com/punarjeewarashmitha20011016">
+                <a href="https://github.com/punarjeewarashmitha20011016" target="_blank">
                     <div class="gitHub"></div>
                 </a>
             </nav>
@@ -375,8 +385,13 @@
             <input class="email" type="text" placeholder="E-MAIL">
             <input class="subject" type="text" placeholder="SUBJECT">
             <textarea name="" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-            <button class="sendBtn" type="submit">SEND</button>
+            <button class="sendBtn" type="submit" value="SEND">
+                <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                </div>
+            </button>
             <button class="discardBtn" type="submit">DISCARD</button>
+
         </form>
         <address>
             <div class="topContainerContact">
@@ -391,19 +406,19 @@
 
 
                 <nav class="socialMedia">
-                    <a href="https:://facebook.com" target="_blank">
+                    <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank">
                         <div class="facebook"></div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/">
+                    <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank">
                         <div class="linkedIn"></div>
                     </a>
 
-                    <a href="https://twitter.com/home" target="_blank">
+                    <a href="https://twitter.com/Punarjeewa2001" target="_blank">
                         <div class="twitter"></div>
                     </a>
 
-                    <a href="https://github.com/punarjeewarashmitha20011016">
+                    <a href="https://github.com/punarjeewarashmitha20011016" target="_blank">
                         <div class="gitHub"></div>
                     </a>
                 </nav>
@@ -412,25 +427,42 @@
                 <hr>
             </div>
             <div class="bottomContainerContact">
-                <div class="phone">
-                    <img class="logo" src="assets/icons/smartphone.png" alt="">
-                    <h2>PHONE</h2>
-                    <p>+94768777908</p>
-                </div>
-                <div class="email">
-                    <img class="logo" src="assets/icons/email.png" alt="">
-                    <h2>E-MAIL</h2>
-                    <p>punarjeewarashmitha1@gmail.com</p>
-                </div>
-                <div class="map">
-                    <img class="logo" src="assets/icons/map.png" alt="">
-                    <h2>LOCATION</h2>
-                    <p>Bandaragama, Sri Lanka</p>
-                </div>
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i style="color: rgb(75, 71, 71);" class="fa fa-map-marker fa-2x">
+                            <span class="contact-text place">Bandaragama, Sri Lanka</span>
+                        </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i style="color: rgb(75, 71, 71);" class="fas fa-phone-alt fa-2x">
+                            <span class="contact-text phone">
+                                <a href="tel:0768777908" title="Give me a call">0768777908</a>
+                            </span>
+                        </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i style="color: rgb(75, 71, 71);" class="fa fa-envelope fa-2x">
+                            <span class="contact-text gmail">
+                                <a href="mailto:#" title="Send me an email">punarjeewarashmitha1@gmail.com</a>
+                            </span>
+                        </i>
+                    </li>
+                </ul>
             </div>
         </address>
     </section>
 </main>
 </body>
+<script type="text/javascript">
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+
+</script>
 <script src="assets/JS/slider.js"></script>
 </html>

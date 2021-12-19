@@ -5,7 +5,6 @@ html {
 main{
     overflow-x: hidden;
 }
-
 .headerBar{
     z-index: 1;
     position: fixed;
@@ -215,22 +214,25 @@ main{
 .home > .buttonContainer{
   position: absolute;
   top: 430px;
-  left: 410px;
-  width: 838px;
+  left: 422px;
+  width: 500px;
   height: 50px;
 }
 .home > .buttonContainer > button:nth-child(1){
   position: absolute;
-  right: 10px;
+  left: 0;
   border: 2px solid #FFA500;
-  width: 160px;
+  width: 200px;
   height: 50px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   overflow: hidden;
   transition: background 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home > .buttonContainer > button:nth-child(1):hover {
   background: rgba(255, 255, 255, 0.15) radial-gradient(circle, rgba(255, 255, 255, 0.15) 1%, transparent 1%) center/15000%;
@@ -240,6 +242,64 @@ main{
   background-color: transparent;
   background-size: 100%;
   transition: background 0s;
+}
+.home > .buttonContainer > button:nth-child(1) > span {
+  font-size: 30px;
+  line-height: 15px;
+  margin-left: 5px;
+}
+.home > .social-links{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 70px;
+  top: 420px;
+  left: 630px;
+}
+@-webkit-keyframes social-pulse {
+  0% { box-shadow:0 0 8px #FFA500, inset 0 0 8px #FFA500; }
+  50% { box-shadow:0 0 8px #FFA500, inset 0 0 14px #c5bba9; }
+  100% { box-shadow:0 0 8px #FFA500, inset 0 0 8px #FFA500; }
+}
+.home > .social-links > a{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.05);
+  margin: 0 30px;
+  border-radius: 50%;
+  background:linear-gradient(rgb(87, 82, 82),rgb(34, 32, 32));
+  overflow: hidden;
+  transition: transform 0.3s;-webkit-animation: social-pulse 2s linear 1s infinite;
+}
+.home > .social-links > a > .fab{
+  font-size: 20px;
+  line-height: 60px;
+  position: relative;
+  z-index: 10;
+  transition:color 0.3s;
+}
+.home > .social-links > a::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg,#ed1c94,#ffec17);
+  position: absolute;
+  transition: 0.3s;
+}
+.home > .social-links > a:hover:after{
+  top: 0;
+}
+.home > .social-links > a:hover{
+  transform: translateY(-10px);
 }
 
 .about {
@@ -1376,7 +1436,7 @@ button:focus {
 }
 .contact > .content{
     position: relative;
-    top: 25%;
+    top: 22%;
     left: 11%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -1454,33 +1514,32 @@ button:focus {
 .contact > .content > .sendBtn{
     position: absolute;
     color: white;
-    background-color: #FFA500;
-    height: 25px;
-    width: 80px;
+    background-color: #489ac0;
+    height: 35px;
+    width: 455px;
     margin-top: 31.4%;
     border: 0;
     border-radius: 30px;
-    margin-left: 27.8%;
+    margin-left: 0;
+    overflow: hidden;
+   transition: all .2s ease-in-out;
 }
-.contact > .content > .sendBtn:hover{
-    transition: color 0.3s ease;
-    background-color: #444965;
+.contact > .content > .sendBtn > .alt-send-button {
+  margin-top: 7px;
+  width: 455px;
+  height: 35px;
+  transition: all .2s ease-in-out;
 }
-.contact > .content > .discardBtn{
-  position: absolute;
-  color: white;
-  background-color: #555351;
-  height: 25px;
-  width: 80px;
-  margin-top: 31.4%;
-  border: 0;
-  border-radius: 30px;
-  margin-left: 20.8%;
+
+.contact > .content > .sendBtn > .alt-send-button > .send-text {
+  display: block;
+  margin-top: 15px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
 }
-.contact > .content > .discardBtn:hover{
-  transition: color 0.1s ease;
-  background-color: #afb1b8;
-  color: black;
+
+.contact > .content > .sendBtn > .alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
 }
 
 .contact > hr{
@@ -1491,7 +1550,7 @@ button:focus {
     border-radius: 30px;
     transform: rotate(90deg);
     background-color: #726b6b;
-    margin-top: 26.2%;
+    margin-top: 24.9%;
     margin-left: -6.5%;
 }
 
@@ -1748,22 +1807,6 @@ button:focus {
     text-transform: uppercase;
   }
   
-  /*.shadow {
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.26);
-  }
-  
-  .shadow.bottom {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
-  }
-  
-  .shadow.top {
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26);
-  }
-  
-  .shadow.tobo {
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26), 0px 2px 5px rgba(0, 0, 0, 0.26);
-  }*/
-  
   .flex {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1881,92 +1924,60 @@ button:focus {
     position: absolute;
     width: 40%;
     height: 15%;
-    margin-top: 27%;
-    margin-left: 54%;
+    margin-top: 26%;
+    margin-left: 55%;
     font-size: 22px;
 }
-.contact > address > .bottomContainerContact > .phone{
-    position: absolute;
-    margin-top: 2%;
-    width: 350px;
-    height: 60px;
-    margin-left: 12%;
-}
-.contact > address > .bottomContainerContact > .phone > .logo{
-    width: 50px;
-    height: 50px;
-    margin: 9.2px 3px;
-}
-.contact > address > .bottomContainerContact > .phone > h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22.3%;
-    margin-top: -18%;
-    font-weight: 600;
-    font-size: 1em;
-}
-.contact > address > .bottomContainerContact > .phone > p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22.3%;
-    margin-top: -4.9%;
-    font-size: 0.75em;
+
+/* Location, Phone, Email Section */
+.contact > address > .bottomContainerContact > .contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
 }
 
-.contact > address > .bottomContainerContact > .email{
-    position: absolute;
-    margin-top: 17%;
-    width: 350px;
-    height: 60px;
-    margin-left: 12%;
+.contact > address > .bottomContainerContact > .contact-list > .list-item {
+  line-height: 3.5;
+  color: #aaa;
 }
-.contact > address > .bottomContainerContact > .email > .logo{
-    width: 50px;
-    height: 50px;
-    margin: 9.2px 3px;
+
+.contact > address > .bottomContainerContact > .contact-list > .list-item .contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: rgb(87, 83, 83);
 }
-.contact > address > .bottomContainerContact > .email > h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22%;
-    margin-top: -18%;
-    font-weight: 600;
-    font-size: 1em;
+
+.contact > address > .bottomContainerContact > .contact-list > .list-item > .fa{
+  font-size: 30px;
 }
-.contact > address > .bottomContainerContact > .email > p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22.3%;
-    margin-top: -4.9%;
-    font-size: 0.75em;
+.contact > address > .bottomContainerContact > .contact-list > .list-item > .fas{
+  font-size: 30px;
 }
-.contact > address > .bottomContainerContact > .map{
-    position: absolute;
-    margin-top: 32%;
-    width: 350px;
-    height: 60px;
-    margin-left: 12%;
+
+.place {
+  margin-left: 35px;
 }
-.contact > address > .bottomContainerContact > .map > .logo{
-    width: 50px;
-    height: 50px;
-    margin: 9.2px 3px;
+
+.phone {
+  margin-left: 30px;
 }
-.contact > address > .bottomContainerContact > .map > h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22%;
-    margin-top: -18%;
-    font-weight: 600;
-    font-size: 1em;
+
+.gmail {
+  margin-left: 32px;
 }
-.contact > address > .bottomContainerContact > .map > p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    margin-left: 22.3%;
-    margin-top: -4.9%;
-    font-size: 0.75em;
+
+.contact-text a {
+  color: rgb(87, 83, 83);
+  text-decoration: none;
+  transition-duration: 0.2s;
 }
+
+.contact-text a:hover {
+  font-weight: 600;
+  color: rgb(20, 19, 19);
+  text-decoration: none;
+}
+
 
 /*Media Queries*/
 @media screen and (max-width: 1000px){
