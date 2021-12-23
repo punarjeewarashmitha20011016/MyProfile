@@ -276,7 +276,8 @@ main{
   border-radius: 50%;
   background:linear-gradient(rgb(87, 82, 82),rgb(34, 32, 32));
   overflow: hidden;
-  transition: transform 0.3s;-webkit-animation: social-pulse 2s linear 1s infinite;
+  transition: transform 0.3s;
+  -webkit-animation: social-pulse 2s linear 1s infinite;
 }
 .home > .social-links > a > .fab{
   font-size: 20px;
