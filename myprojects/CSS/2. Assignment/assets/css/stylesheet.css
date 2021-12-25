@@ -6,7 +6,7 @@ body > header{
 }
 body > header > div:nth-child(1){
     position: absolute;
-    background-image: url(/assets/images/ijselogo.png);
+    background-image: url(../images/ijselogo.png);
     background-size: contain;
     top: 0;
     bottom: 0;
@@ -71,17 +71,17 @@ body > main > section > div:nth-child(1){
 }
 body > main > section > div:nth-child(1) > div:nth-child(1){
     width: calc(100%/3);
-    background-image: url("/assets/images/5973466.png");
+    background-image: url("../images/5973466.png");
     background-size: cover;
 }
 body > main > section > div:nth-child(1) > div:nth-child(2){
     width: calc(100%/3);
-    background-image: url("/assets/images/javascript.jpg");
+    background-image: url("../images/javascript.jpg");
     background-size: cover;
 }
 body > main > section > div:nth-child(1) > div:nth-child(3){
     width: calc(100%/3);
-    background-image: url("/assets/images/html.jpg");
+    background-image: url("../images/html.jpg");
     background-size: cover;
 }
 
