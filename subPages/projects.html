@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/JS/autoTyping.js">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+        body{
+            overflow-x: hidden;
+        }
+        body > .ball {
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0.7;
+        z-index: 0;
+        overflow: hidden;
+        }
+
+        header > div{
+            position: fixed;
+            width: 100%;
+            height: 55px;
+            background-color: rgb(122, 115, 122);z-index: 2;
+        }
+        body > header > div > h2{
+            position: absolute;
+            color: white;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            font-family: 'Quicksand', serif;
+        }
+        body > main > section{
+            position: relative;
+            background-color: #d1d1d1;
+            top: 40px;
+            width: 100%;
+            height: 117vh;
+            overflow: hidden;
+        }
+
+        body > main > section > div{
+            position: absolute;
+            width: 1200px;
+            height: 700px;
+            top: 60px;
+            left: 125px;
+            margin: auto;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            z-index: 1;
+        }
+
+        body > main > section > div > div{
+            transition: all 0.5s;
+        }
+        body > main > section > div > div:hover{
+            transform: translateY(-10px);
+            transition: all 0.5s;
+        }
+        body > main > section > div > div:nth-child(1){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+        }
+        body > main > section > div > div:nth-child(2){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            left: calc(100%/3*1);
+        }
+        body > main > section > div > div:nth-child(3){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            left: calc(100%/3*2);
+        }
+        body > main > section > div > div:nth-child(4){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            top: calc(100%/2);
+        }
+        body > main > section > div > div:nth-child(5){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            left: calc(100%/3*1);
+            top: calc(100%/2);
+        }
+        body > main > section > div > div:nth-child(6){
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            left: calc(100%/3*2);
+            top: calc(100%/2);
+        }
+   
+        body > main > section > div > div .image{
+            position: absolute;
+            height: 135px;
+            width: 100%;
+            background-color: rgb(220, 223, 217);
+        }
+        body > main > section > div > div:nth-child(2) .image > img{
+            width: 100%;
+            height: 100%;
+        }
+        body > main > section > div > div:nth-child(3) .image > img{
+            width: 100%;
+            height: 100%;
+        }
+        body > main > section > div > div:nth-child(4) .image > img{
+            width: 100%;
+            height: 100%;
+        }
+        body > main > section > div > div:nth-child(5) .image > img{
+            width: 100%;
+            height: 100%;
+        }
+        body > main > section > div > div:nth-child(6) .image > img{
+            width: 100%;
+            height: 100%;
+        }
+        body > main > section > div > div .image > img{
+            background-position: center;
+            background-size: cover;
+            width: 45%;
+            height: 67%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > section > div > div .textBox{
+            position: absolute;
+            width: 100%;
+            top: 135px;
+            height: calc(100%/2*1);
+            background: linear-gradient(to bottom left, #d87987 40%, #af7653 100%);
+            font-family: 'Quicksand', serif;
+        }
+        body > main > section > div > div .textBox h3{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 17px;
+            top: 10px;
+        }
+
+        body > main > section > div > div:nth-child(2) .textBox > p{
+            position: absolute;
+            top: 25px;
+            font-size: 14.8px;
+            text-align: center;
+            color: white;
+        }
+        body > main > section > div > div:nth-child(3) .textBox > p{
+            position: absolute;
+            top: 25px;
+            font-size: 14.8px;
+            text-align: center;
+            color: white;
+        }
+        body > main > section > div > div:nth-child(5) .textBox > p{
+            position: absolute;
+            top: 25px;
+            font-size: 14.8px;
+            text-align: center;
+            color: white;
+        }
+        body > main > section > div > div:nth-child(6) .textBox > p{
+            position: absolute;
+            top: 35px;
+            font-size: 14.8px;
+            text-align: center;
+            color: white;
+        }
+        body > main > section > div > div .textBox > p{
+            position: absolute;
+            top: 40px;
+            font-size: 14.8px;
+            text-align: center;
+            color: white;
+        }
+        body > main > section > div > div:nth-child(6) .textBox > a{
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 110px;
+            margin: auto;
+            text-decoration: none;
+            width: 180px;
+            height: 30px;
+        }
+        body > main > section > div > div .textBox > a{
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 105px;
+            margin: auto;
+            text-decoration: none;
+            width: 180px;
+            height: 30px;
+        }
+        body > main > section > div > div .textBox > a .btn{
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: white;
+            height: 100%;
+        }
+        body > main > section > div > div .textBox > a .btn:hover{
+            background-color: rgba(255, 255, 255, 0.12);
+            font-weight: 700;
+        }
+
+        @media all and (max-width:320px){
+            body > .ball {
+            display: none;
+            }
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > main > section{
+                top: 40px;
+                width: 100%;
+                height: 290vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                position: absolute;
+                width: 230px;
+                height: 2200px;
+                top: 60px;
+                left: 0px;
+                right: 0;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(6,1fr);
+                z-index: 1;
+            }
+
+            @keyframes anim {
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-10px);
+                }
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 230px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/6*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/6*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/6*2);
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/6*3);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/6*4);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/6*5);
+            }
+    
+            body > main > section > div > div .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+
+        @media all and (min-width:321px) and (max-width:375px){
+            body > .ball {
+            display: none;
+            }
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > main > section{
+                top: 40px;
+                width: 100%;
+                height: 290vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 230px;
+                height: 2200px;
+                top: 60px;
+                left: 0px;
+                right: 0;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(6,1fr);
+                z-index: 1;
+            }
+
+            @keyframes anim {
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-10px);
+                }
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 230px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/6*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/6*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/6*2);
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/6*3);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/6*4);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/6*5);
+            }
+    
+            body > main > section > div > div .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+
+
+        @media all and (min-width:376px) and (max-width:425px){
+            body > .ball {
+                display: none;
+            }
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > main > section{
+                top: 40px;
+                width: 100%;
+                height: 290vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 230px;
+                height: 2200px;
+                top: 60px;
+                left: 0px;
+                right: 0;
+                margin: auto;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(6,1fr);
+                z-index: 1;
+            }
+
+            @keyframes anim {
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-10px);
+                }
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 230px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/6*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/6*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/6*2);
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/6*3);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/6*4);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/6*5);
+            }
+    
+            body > main > section > div > div .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+
+        @media all and (min-width:426px) and (max-width:768px){
+            body > .ball {
+            display: none;
+            }
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > main > section{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                height: 155vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 550px;
+                height: 2200px;
+                top: 120px;
+                left: 50px;
+                right: 0;
+                margin: auto;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+                z-index: 1;
+            }
+
+            @keyframes anim {
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-10px);
+                }
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 230px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/6*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/6*0);
+                left: calc(100%/2);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/6*1);
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/6*1);
+                left: calc(100%/2);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/6*2);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/6*2);
+                left: calc(100%/2);
+            }
+    
+            body > main > section > div > div:nth-child(1) .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+
+        @media all and (min-width:769px) and (max-width:1024px){
+            body > .ball {
+            display: none;
+            }
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > main > section{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                height: 105vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 800px;
+                height: 700px;
+                top: 120px;
+                left: 20px;
+                right: 0;
+                margin: auto;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                z-index: 1;
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 250px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/2*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/2*0);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/2*0);
+                left: calc(100%/3*2);
+            }
+            body > main > section > div > div:nth-child(3) .textBox p{
+                top: 33px;
+            }
+
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/2*1);
+                left: calc(100%/3*0);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/2*1);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/2*1);
+                left: calc(100%/3*2);
+            }
+    
+            body > main > section > div > div:nth-child(1) .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+
+
+        @media all and (min-width:1025px) and (max-width:1440px){
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            body > main > section{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                height: 130vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 1100px;
+                height: 700px;
+                top: 120px;
+                left: 70px;
+                right: 0;
+                margin: auto;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                z-index: 1;
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 280px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/2*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/2*0);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/2*0);
+                left: calc(100%/3*2);
+            }
+            body > main > section > div > div:nth-child(3) .textBox p{
+                top: 33px;
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/2*1);
+                left: calc(100%/3*0);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/2*1);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/2*1);
+                left: calc(100%/3*2);
+            }
+    
+            body > main > section > div > div:nth-child(1) .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+        @media all and (min-width:1441px) and (max-width:2560px){
+            body > header > div > h2{
+                font-size: 22px;
+            }
+            body > .ball{
+                position: absolute;
+                top: -1500px;
+                bottom: 0;
+            }
+            body > main > section{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                height: 110vh;
+                overflow: hidden;
+            }
+
+            body > main > section > div{
+                width: 2000px;
+                height: 700px;
+                top: 120px;
+                left: 160px;
+                right: 0;
+                margin: auto;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                z-index: 1;
+            }
+
+            body > main > section > div:nth-child(1) > div{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                width: 500px;
+                height: 320px;
+                left: 0;
+
+                animation-name: anim;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+            body > main > section > div > div:nth-child(1){
+                top: calc(100%/2*0);
+            }
+            body > main > section > div > div:nth-child(2){
+                top: calc(100%/2*0);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(3){
+                top: calc(100%/2*0);
+                left: calc(100%/3*2);
+            }
+            body > main > section > div > div:nth-child(3) .textBox p{
+                top: 33px;
+            }
+            body > main > section > div > div:nth-child(4){
+                top: calc(100%/2*1);
+                left: calc(100%/3*0);
+            }
+            body > main > section > div > div:nth-child(5){
+                top: calc(100%/2*1);
+                left: calc(100%/3*1);
+            }
+            body > main > section > div > div:nth-child(6){
+                top: calc(100%/2*1);
+                left: calc(100%/3*2);
+            }
+    
+            body > main > section > div > div:nth-child(1) .image{
+                position: absolute;
+                height: 135px;
+                width: 100%;
+                background-color: rgb(220, 223, 217);
+            }
+            
+            body > main > section > div > div .textBox h3{
+                font-size: 17px;
+            }
+
+            body > main > section > div:nth-child(1) > div .textBox > p{
+                font-size: 14.8px;
+            }
+            body > main > section > div:nth-child(1) > div .textBox > a{
+                top: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <header>
+        <div>
+            <h2>PROJECTS</h2>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <div class="image">
+                        <img src="/assets/projects/extraSmall.png" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h3>Computer Shop Management System</h3>
+                        <p>This is the fist semester final project which I have done using Layered Architecture.
+                        </p>
+
+                        <a href=""><button class="btn">View More</button></a>
+                    </div>      
+                </div>
+
+
+                <div>
+                    <div class="image">
+                        <img src="/assets/projects/POS.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h3>POS System</h3>
+                        <p>This is one of the courseworks which was assigned by IJSE. I have done this using Layered Architecture.
+                        </p>
+
+                        <a href=""><button class="btn">View More</button></a>
+                    </div>          
+                </div>
+
+                <div>
+                    <div>
+                        <div class="image">
+                            <img src="/assets/projects/toDo.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h3>ToDo List Management System</h3>
+                            <p>This is an application which I have built to save my ToDo works. This was implemented using MVC Architecture.
+                            </p>
+    
+                            <a href=""><button class="btn">View More</button></a>
+                        </div>          
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="image">
+                            <img src="/assets/projects/parking logo.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h3>Parking Management System</h3>
+                            <p>This is a Vehicle Parking System done using MVC Architecture.
+                            </p>
+    
+                            <a href=""><button class="btn">View More</button></a>
+                        </div>          
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="image">
+                            <img src="/assets/projects/POS-Hibernate.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h3>POS System - Hibernate</h3>
+                            <p>This is a POS System implemented using Layered Architecture. And this system use Hibernate for data saving.
+                            </p>
+    
+                            <a href=""><button class="btn">View More</button></a>
+                        </div>          
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="image">
+                            <img src="/assets/projects/Sipsewana -Hibernate.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h3>Institute Management System - Hibernate</h3>
+                            <p>This is an Institute Management System implemented using Layered Architecture. This application consists Hibernate.
+                            </p>
+    
+                            <a href=""><button class="btn">View More</button></a>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/assets/JS/backgroundAnim.js"></script>
+</body>
+</html>

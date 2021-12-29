@@ -19,12 +19,35 @@
     <script src="assets/JS/paper-plane.js"></script>
 
     <link rel="stylesheet" href="assets/css/fonts/css/all.css">
+    <script src="assets/JS/slideMenu.js"></script>
 </head>
 <body>
 
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
 <header>
     <section class="headerBar">
+        <div class="mobileNav" >
+            <div class="menuBtn" >
+                <i class="fas fa-bars"id="btnMenu"></i>
+            </div>
+            <nav class="slide-menu-container" id="slide-menu-container">
+                <div class="menu" id="slide-menu" style="left: -110px;">
+                    <ul id="menu-icon">
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#EDUCATION">EDUCATION</a></li>
+                        <li><a href="#SKILLS">SKILLS</a></li>
+                        <li><a href="#PROJECTS">PROJECTS</a></li>
+                        <li><a href="#ASSIGNMENTS">ASSIGNMENTS</a></li>
+                        <li><a href="#SERVICES">SERVICES</a></li>
+                        <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+                        <li><a href="#CONTACT ME">CONTACT ME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
         <div class="container">
             <div class="loader">
                 <div class="ball">
@@ -102,21 +125,10 @@
                 <br>and career opportunities.
             </p>
             <nav class="socialMedia">
-                <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank">
-                    <div class="facebook"></div>
-                </a>
-
-                <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank">
-                    <div class="linkedIn"></div>
-                </a>
-
-                <a href="https://twitter.com/Punarjeewa2001" target="_blank">
-                    <div class="twitter"></div>
-                </a>
-
-                <a href="https://github.com/punarjeewarashmitha20011016" target="_blank">
-                    <div class="gitHub"></div>
-                </a>
+                <a class="facebook" href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="twitter" href="https://twitter.com/Punarjeewa2001" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="linkedIn" href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="gitHub" href="https://github.com/punarjeewarashmitha20011016" target="_blank"><i class="fab fa-github"></i></a>
             </nav>
             <div class="button">
                 <button class="downloadCv" type="submit">DOWNLOAD CV</button>
@@ -267,13 +279,13 @@
                             <p class="text description">JAVA, JAVAFX</p>
                         </div>
                     
-                        <div class="info next--info">
-                            <h1 class="text name">POS System</h1>
+                        <div class="info next--info" id="nextTxt">
+                            <h1 class="text name"><span>POS System</span></h1>
                             <p class="text description">JAVA, JAVAFX, MYSQL, JASPER-REPORTS</p>
                         </div>
 
-                        <div class="info previous--info">
-                            <h1 style="font-size: 19px;" class="text name">Computer Shop Management System</h1>
+                        <div class="info previous--info" id="previousTxt">
+                            <h1 style="font-size: 19px;" class="text name">Computer Shop Management<br><span>System</span></h1>
                             <p style="font-size: 14px;" class="text description">JAVA, JAVAFX, MYSQL, JASPER-REPORTS</p>
                         </div>
                 </div>
@@ -290,6 +302,12 @@
                 <div class="app__bg__image previous--image">
                     <img src="assets/projects/green computers background.jpg" alt=""/>
                 </div>
+            </div>
+
+            <div class="viewAllProjects">
+                <a href="subPages/projects.html" target="_blank">
+                    <button>View All</button>
+                </a>
             </div>
         </div>
 
@@ -317,11 +335,49 @@
     <section class="assignments" id="ASSIGNMENTS">
         <h2 class="title">ASSIGNMENTS</h2>
         <div class="boxContainer">
-            <div class="a-box1">
+                <a href="/myprojects/CSS/1. Assignment/index.html" target="_blank">
+                    <div class="cards">   
+                        <img src="/assets/Assignments/Assignment 1.jpg" alt="">
+                            <div class="textBox">
+                            <p>This is an assignment of Positions in css.</p>
+                            <h3>Assignment 1</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/myprojects/CSS/2. Assignment/index.html" target="_blank">
+                    <div class="cards">
+                        <img src="/assets/Assignments/Assignment 2.jpg" alt="">
+                        <div class="textBox">
+                            <p>This is an assignment of a design using Absolute,Relative and Box model in css.</p>
+                            <h3>Assignment 2</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/myprojects/CSS/3. Assignment/index.html" target="_blank">
+                    <div class="cards">
+                        <img src="/assets/Assignments/Assignment 3 dup.jpg" alt="">
+                            <div class="textBox">
+                                <p>This a an assignment of Absolute,Relative and Fixed positions in css.</p>
+                                <h3>Assignment 3</h3>
+                            </div>
+                    </div>
+                </a>
+
+            <a href="subPages/assignments.html" target="_blank">
+                <button>View All</button>
+            </a>
+        </div>
+
+
+        <!-- mobileSlide -->
+        <div class="boxContainerMobile">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/1.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/1. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 1.jpg">
                         </a>
                     </div>
@@ -329,18 +385,18 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 1</h3>
-                    <div>
+                    <div class="box1Txt">
                         This is an assignment of Positions in css.
                     </div>
                 </div>
             </div>
 
 
-            <div class="a-box2">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/2.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/2. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 2.jpg">
                         </a>
                     </div>
@@ -348,17 +404,17 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 2</h3>
-                    <div>
+                    <div class="box2Txt">
                         This is an assignment of a design using Absolute,Relative and Box model in css.
                     </div>
                 </div>
             </div>
 
-            <div class="a-box3">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/3.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/3. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 3.jpg">
                         </a>
                     </div>
@@ -366,17 +422,17 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 3</h3>
-                    <div>
+                    <div class="box3Txt">
                         This a an assignment of Absolute,Relative and Fixed positions in css.
                     </div>
                 </div>
             </div>
 
-            <div class="a-box4">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/4.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/4. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 4.jpg">
                         </a>
                     </div>
@@ -384,17 +440,17 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 4</h3>
-                    <div>
+                    <div class="box4Txt">
                         This an assignment of Absolute,Relative and Sticky positions in css.
                     </div>
                 </div>
             </div>
 
-            <div class="a-box5">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/5.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/5. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 5.jpg">
                         </a>
                     </div>
@@ -402,17 +458,17 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 5</h3>
-                    <div>
+                    <div class="box5Txt">
                         This an assignment which was to make assignment 2 responsive in css.
                     </div>
                 </div>
             </div>
 
-            <div class="a-box6">
+            <div class="mySlides">
                 <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew"style="background-color: white;">
-                        <a href="https://github.com/punarjeewarashmitha20011016/MyProfile/tree/master/myprojects/CSS/6.%20Assignment" target="_blank">
+                        <a href="myprojects/CSS/6. Assignment/index.html" target="_blank">
                             <img src="assets/Assignments/Assignment 6.jpg">
                         </a>
                     </div>
@@ -420,12 +476,13 @@
                 </div>
                 <div class="text-container">
                     <h3>Assignment 6</h3>
-                    <div>
+                    <div class="box6Txt">
                         This an assignment of transitions in css.
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- -------------------------------------------SERVICES-------------------------------------------------  -->
@@ -584,4 +641,5 @@
 
 </script>
 <script src="assets/JS/slider.js"></script>
+<script src="assets/JS/assignmentsSlide.js"></script>
 </html>
