@@ -4171,32 +4171,3 @@ body > footer > h3{
 
     /*---------------------------------------------------------------------*/
 }
-
-
-
-    /*Media Queries*/
-    @media screen and (max-width: 1000px) {
-        .home > .text-box {
-            left: 25%;
-        }
-
-        .home > .text-box > p {
-            font-size: 20px;
-        }
-
-        .home > .text-box > h1 {
-            font-size: 50px;
-        }
-
-        .home > .text-box > h3 {
-            font-size: 2px;
-        }
-    }
-
-
-    @keyframes back {
-        100% {
-            background-position: 2000px 0;
-        }
-    }
-}

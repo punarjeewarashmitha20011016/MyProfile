@@ -1,13 +1,13 @@
 body > main > section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 body > main > section > header{
     position: -webkit-sticky;
     position: sticky;
     top:0;
-    width: 100vw;
+    width: 100%;
     height: 60px;
 }
 body > main > section:nth-child(1) > header{
