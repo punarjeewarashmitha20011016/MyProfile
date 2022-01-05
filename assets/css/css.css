@@ -1975,7 +1975,7 @@ button:focus {
 }
 
 .contact > address > .topContainerContact > .container > .banner > a > p {
-    margin: 1px 6px;
+    margin-top: 0px;
 }
 
 .contact > address > .topContainerContact > .container > .banner > a > i {
@@ -2599,7 +2599,7 @@ body > footer > h3{
         color: #3b5999;
         /*left: calc(100%/4*0);
       padding-left: 25px;*/
-        animation-name: social-links-facebookAndLinkedIn;
+        animation-name: social-links-facebookAndTwitter;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -2611,7 +2611,7 @@ body > footer > h3{
         /*left: calc(100%/4*1);
       padding-left: 25px;*/
         color: #007fb2;
-        animation-name: social-links-facebookAndLinkedIn;
+        animation-name: social-links-LinkedInAndGithub;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -2623,7 +2623,7 @@ body > footer > h3{
         /*left: calc(100%/4*2);
       padding-left: 25px;*/
         color: #55adee;
-        animation-name: social-links-twitterAndGithub;
+        animation-name: social-links-facebookAndTwitter;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -2635,14 +2635,14 @@ body > footer > h3{
         color: #000000;
         /*left: calc(100%/4*3);
       padding-left: 25px;*/
-        animation-name: social-links-twitterAndGithub;
+        animation-name: social-links-LinkedInAndGithub;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
 
-    @keyframes social-links-facebookAndLinkedIn {
+    @keyframes social-links-facebookAndTwitter {
         0% {
             transform: translate(0, 0px);
         }
@@ -2651,7 +2651,7 @@ body > footer > h3{
             transform: translate(0, -10px);
         }
     }
-    @keyframes social-links-twitterAndGithub {
+    @keyframes social-links-LinkedInAndGithub {
         0% {
             transform: translate(0, -10px);
         }
@@ -2899,6 +2899,7 @@ body > footer > h3{
         0% {
             margin-bottom: -200px;
             opacity: 10%;
+            
         }
         100% {
             margin-bottom: 0px;
@@ -2999,7 +3000,7 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(5) > .content > .copy {
-        font-weight: 800;
+        font-weight: 800;color: white;
     }
 
     .skills > .page-content > .card:nth-child(6):before {
@@ -3185,13 +3186,13 @@ body > footer > h3{
     }
     @-webkit-keyframes pulse-assignmentsMobile {
         0% {
-            box-shadow: 0 0 5px #a7a6a4, inset 0 0 5px #a7a6a4;
+            box-shadow: 0 0 8px #747472, inset 0 0 8px #868585;
         }
         50% {
-            box-shadow: 0 0 8px #a7a6a4, inset 0 0 12px #a7a6a4;
+            box-shadow: 0 0 12px #747472, inset 0 0 16px #868585;
         }
         100% {
-            box-shadow: 0 0 5px #a7a6a4, inset 0 0 5px #a7a6a4;
+            box-shadow: 0 0 8px #747472, inset 0 0 8px #868585;
         }
     }
     .assignments > .boxContainerMobile {
@@ -3206,13 +3207,8 @@ body > footer > h3{
         height: 220px;
         overflow-x: scroll;
         overflow-y: hidden;
-        background-color: rgb(207, 206, 206);
+        background-color: rgb(209, 206, 206);
         border-radius: 5px;
-        -webkit-animation-name: pulse-assignmentsMobile;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-duration: 2s;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-iteration-count: infinite;
     }
     .assignments > .boxContainerMobile::-webkit-scrollbar {
         width: 12px;               /* width of the entire scrollbar */
@@ -3221,7 +3217,7 @@ body > footer > h3{
     }  
     
     .assignments > .boxContainerMobile::-webkit-scrollbar-track {
-        background: rgb(209, 209, 209);        /* color of the tracking area */
+        background: rgb(190, 190, 190);        /* color of the tracking area */
     }
       
     .assignments > .boxContainerMobile::-webkit-scrollbar-thumb {
@@ -3233,6 +3229,9 @@ body > footer > h3{
         0%{
             left: 0%;
         }
+        5%{
+            left: 0%;
+        }
         20%{
             left: -100%;
         }
@@ -3240,13 +3239,13 @@ body > footer > h3{
             left: -200%;
         }
         60%{
-            left: -300%;
+            left: -295%;
         }
         80%{
-            left: -395%;
+            left: -295%;
         }
         100%{
-            left: -395%;
+            left: -295%;
         }
     }
     
@@ -3255,55 +3254,59 @@ body > footer > h3{
       width: calc(100%*5);
       height: 170px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       margin: auto;
-      background-color: rgb(207, 206, 206);
+      background-color: rgba(233, 230, 230, 0.842);
       -webkit-animation-name: sliderMobileAssignments,pulse-assignmentsMobile;
       -webkit-animation-timing-function: linear;
       -webkit-animation-duration: 40s;
       -webkit-animation-direction: alternate;
       -webkit-animation-iteration-count: infinite;
     }
-    .assignments .mySlides a{
-        position: relative;
+    .assignments .boxContainerMobile .mySlides a{
+        position: absolute;
         width: 100%;
         height: 100%;
         left: 35px;
-        top: 5px;
+        justify-content: center;
+        align-items: center;
+        top: 12px;
     }
 
-    .assignments .mySlides a .cards:nth-child(1){
-        position: relative;
+    .assignments .boxContainerMobile .mySlides a .cards:nth-child(1){
+        position: absolute;
         width: calc(100%/8);
-        height: calc(100%/10);
+        height: calc(100%/1.2);
         transition: all 0.5s;
-        top: 10px;
     }
-    .assignments .mySlides a:nth-child(1) .cards:nth-child(1){
+    .assignments .boxContainerMobile .mySlides a:nth-child(1) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*0);
+        left: calc(100%/5*0.05);
         top: 0;
     }
-    .assignments .mySlides a:nth-child(2) .cards:nth-child(1){
+    .assignments .boxContainerMobile .mySlides a:nth-child(2) .cards:nth-child(1){
         position: relative;
         left: calc(100%/5*1);
-        top: -17px;
-    }.assignments .mySlides a:nth-child(3) .cards:nth-child(1){
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(3) .cards:nth-child(1){
         position: relative;
         left: calc(100%/5*2);
-        top: -34px;
-    }.assignments .mySlides a:nth-child(4) .cards:nth-child(1){
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
         position: relative;
         left: calc(100%/5*3);
-        top: -51px;
-    }.assignments .mySlides a:nth-child(5) .cards:nth-child(1){
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(5) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*4);
-        top: -68px;
+        left: calc(100%/5*3);
+        top: 0;
     }
     .assignments .mySlides a .cards img{
         position: absolute;
@@ -3311,14 +3314,14 @@ body > footer > h3{
         height: 100%;
         background-position: center;
         background-size: cover;
-        height: calc(130px);
+        height: calc(110px);
         z-index: 1;
     }
     
     .assignments .mySlides a .cards .textBox{
         position: relative;
         width: 100%;
-        height: 81px;
+        height: 62px;
         top: 80px;
         background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
         z-index: 0;transition: all 0.5s;
@@ -3333,7 +3336,7 @@ body > footer > h3{
         color: white;
         bottom: 0;
         font-size: 14px;
-        top: 58px;
+        top: 38px;
         left: 0;
         right: 0;
         margin: auto;
@@ -3347,28 +3350,37 @@ body > footer > h3{
         }
     }
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
-    .assignments a:nth-child(4) > button{
+    .assignments > a:nth-child(4){
         position: absolute;
+        display: block;
         left: 0;
         right: 0;
         bottom: 25px;
         margin: auto;
-        text-align: center;
-        width: 100px;
-        height: 35px;
+        width: 90px;
+        height: 20px;
     
-        text-decoration: none;
         padding: 7px 10px;
         background-color: #122;
         border-radius: 3px;
-        color: #FFF;
-        font-family: "Montserrat";
         
         animation-name: mobileAssignmentsViewAllBtn;
         animation-timing-function: linear;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
+    }
+    .assignments > a:nth-child(4) > button{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #FFF;
+        font-family: "Montserrat";
     }
     @keyframes mobileAssignmentsViewAllBtn {
         0%{
@@ -3523,7 +3535,7 @@ body > footer > h3{
 
 
     .portfolio {
-        height: 155vh;
+        height: 145vh;
     }
     
     .portfolio > .title {
@@ -3916,7 +3928,7 @@ body > footer > h3{
         position: absolute;
         left: calc(100%/4*0);
         color: #3b5999;
-        animation-name: social-links-facebookAndLinkedIn;
+        animation-name: social-links-facebookAndTwitter;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -3924,9 +3936,9 @@ body > footer > h3{
     }
     .contact > address > .topContainerContact > .socialMedia > .linkedIn {
         position: absolute;
-        left: calc(100%/4*2);
+        left: calc(100%/4*1);
         color: #007fb2;
-        animation-name: social-links-facebookAndLinkedIn;
+        animation-name: social-links-LinkedInAndGithub;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -3936,9 +3948,9 @@ body > footer > h3{
     
     .contact > address > .topContainerContact > .socialMedia > .twitter {
         position: absolute;
-        left: calc(100%/4*1);
+        left: calc(100%/4*2);
         color: #55adee;
-        animation-name: social-links-twitterAndGithub;
+        animation-name: social-links-facebookAndTwitter;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -3950,7 +3962,7 @@ body > footer > h3{
         position: absolute;
         left: calc(100%/4*3);
         color: #000000;
-        animation-name: social-links-twitterAndGithub;
+        animation-name: social-links-LinkedInAndGithub;
         animation-duration: 2s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
