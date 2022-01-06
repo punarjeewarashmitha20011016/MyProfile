@@ -1396,6 +1396,7 @@ button:focus {
     transition: all 0.5s;
     left: calc(100%/3*0);
     top: 0;
+    height: auto;
 }
 
 .assignments > .boxContainer a .cards:hover{
@@ -1422,15 +1423,17 @@ button:focus {
     background-size: cover;
     height: calc(130px);
     z-index: 1;
+    border: 1px solid rgb(131, 130, 130);
 }
 
 .assignments > .boxContainer a .cards .textBox{
     position: relative;
-    width: 100%;
+    width: 100.6%;
     height: 100px;
     top: 80px;
     background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
     z-index: 0;transition: all 0.5s;
+   
 }
 
 .assignments > .boxContainer a .cards:nth-child(1) .textBox p{
@@ -2260,6 +2263,7 @@ button:focus {
     margin-top: 26%;
     margin-left: 55%;
     font-size: 22px;
+    z-index: 1;
 }
 
 /* Location, Phone, Email Section */
@@ -2280,24 +2284,168 @@ button:focus {
     color: rgb(87, 83, 83);
 }
 
+.contact > address > .bottomContainerContact > .contact-list > .list-item > .circle {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #539fdd;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    margin-left: -10px;
+    margin-top: 14px;
+}
+
+@keyframes circleOuter {
+    0%{
+        width: 45px;
+        height: 45px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        margin-left: -18px;
+        margin-top: 7px;
+    }
+}
+.contact > address > .bottomContainerContact > .contact-list > .list-item > .circleOuter {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #d5d6d6;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    margin-left: -10px;
+    margin-top: 14px;
+    animation-name: circleOuter;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes emailAnim{
+    0%{
+        transform: translateY(18px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
 .contact > address > .bottomContainerContact > .contact-list > .list-item > .fa {
-    font-size: 30px;
+    font-size: 35px;
+    animation-name: emailAnim;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    margin-left: -2px;
 }
 
 .contact > address > .bottomContainerContact > .contact-list > .list-item > .fas {
     font-size: 30px;
 }
+.contact > address > .bottomContainerContact > .contact-list > .list-item > #phoneFont{
+    animation-name: phoneRing;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes phoneRing{
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+.contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse {
+    background: #d6d4d4;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 18px 0px 0px -255px;
+    transform: rotateX(55deg);
+    z-index: -1;
+  }
+  .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: -13px 0 0 -13px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    box-shadow: 0 0 1px 2px #00cae9;
+    animation-delay: 1.1s;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.1, 0.1);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1.2, 1.2);
+      opacity: 0;
+    }
+  }
+
+
+/*-----------------------------------------------------------------------*/
 
 .place {
     margin-left: 35px;
 }
 
 .phone {
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .gmail {
-    margin-left: 32px;
+    margin-left: 27px;
 }
 
 .contact-text a {
@@ -3177,7 +3325,7 @@ body > footer > h3{
         right: 0;
         margin: auto;
         width: max-content;
-        top: 16px;
+        top: -7px;
         padding-bottom: 10px;
     }
 
@@ -3195,7 +3343,7 @@ body > footer > h3{
             box-shadow: 0 0 8px #747472, inset 0 0 8px #868585;
         }
     }
-    .assignments > .boxContainerMobile {
+    /*.assignments > .boxContainerMobile {
         position: absolute;
         top: 20px;
         bottom: 0;
@@ -3209,7 +3357,7 @@ body > footer > h3{
         overflow-y: hidden;
         background-color: rgb(209, 206, 206);
         border-radius: 5px;
-    }
+    }*/
     .assignments > .boxContainerMobile::-webkit-scrollbar {
         width: 12px;               /* width of the entire scrollbar */
         height: 14px;
@@ -3225,6 +3373,63 @@ body > footer > h3{
         border-radius: 20px;       /* roundness of the scroll thumb */
         border: 2px solid rgb(155, 154, 152);  /* creates padding around scroll thumb */
     }
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+    .assignments .boxContainerMobile{
+        position: absolute;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1000px;
+        box-sizing: border-box;
+        width: 70%;
+        height: 65%;
+        left: 0;
+        right: 0;
+        top: 5px;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        transform-style: preserve-3d;
+    }
+    .assignments .boxContainerMobile .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .assignments .boxContainerMobile .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        /*padding: 0rem 5rem;*/
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+    .assignments .boxContainerMobile .card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(214, 213, 213);
+        z-index: 1;
+        transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+        opacity: calc(1 - var(--opacity));
+    }
+      
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
     @keyframes sliderMobileAssignments {
         0%{
             left: 0%;
@@ -3249,7 +3454,7 @@ body > footer > h3{
         }
     }
     
-    .assignments > .boxContainerMobile > .mySlides {
+    .assignments > .boxContainerMobile .mySlides {
       position: absolute;
       width: calc(100%*5);
       height: 170px;
@@ -3266,6 +3471,7 @@ body > footer > h3{
       -webkit-animation-duration: 40s;
       -webkit-animation-direction: alternate;
       -webkit-animation-iteration-count: infinite;
+      
     }
     .assignments .boxContainerMobile .mySlides a{
         position: absolute;
@@ -3275,17 +3481,21 @@ body > footer > h3{
         justify-content: center;
         align-items: center;
         top: 12px;
+
     }
 
     .assignments .boxContainerMobile .mySlides a .cards:nth-child(1){
         position: absolute;
-        width: calc(100%/8);
-        height: calc(100%/1.2);
+        width: 150px;
+        height: 140px;
         transition: all 0.5s;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        transform-style: preserve-3d;
+        z-index: 1;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(1) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*0.05);
+        left: calc(100%/5*0.01);
         top: 0;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(2) .cards:nth-child(1){
@@ -3344,18 +3554,13 @@ body > footer > h3{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
-    @keyframes assignmentsViewAllBtn{
-        0%{
-            transform: translateY(-10px);
-        }
-    }
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     .assignments > a:nth-child(4){
         position: absolute;
         display: block;
         left: 0;
         right: 0;
-        bottom: 25px;
+        bottom: 16px;
         margin: auto;
         width: 90px;
         height: 20px;
