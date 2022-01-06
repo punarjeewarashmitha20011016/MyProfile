@@ -2480,26 +2480,6 @@ body > footer > h3{
 }
 
 
-/*Media Queries*/
-@media screen and (max-width: 1000px) {
-    .home > .text-box {
-        left: 25%;
-    }
-
-    .home > .text-box > p {
-        font-size: 20px;
-    }
-
-    .home > .text-box > h1 {
-        font-size: 50px;
-    }
-
-    .home > .text-box > h3 {
-        font-size: 2px;
-    }
-}
-
-
 @keyframes back {
     100% {
         background-position: 2000px 0;
@@ -3296,7 +3276,7 @@ body > footer > h3{
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         -webkit-animation-duration: 3s;
-        background-color: rgb(131, 130, 128);
+        background-color: rgb(95, 95, 93);
     }
     .projects .viewAllProjects a button > span{
         position: absolute;
@@ -4385,28 +4365,1875 @@ body > footer > h3{
         font-weight: 600;
         color: rgb(20, 19, 19);
         text-decoration: none;
+    } 
+
+    body > footer{
+        height: 25px;
+    }
+    body > footer > h3{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 10px;
+        margin: auto;
+        height: max-content;
+        color:white;
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 375px) {
+    .headerBar {
+        position: fixed;
+        width: 100vw;
+        height: 45px;
+        transition: all 0.3s ease;
+        background: #373d41;
+    }
+
+    .headerBar > .container {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        top: -5px;
+        right: 5px;
+    }
+
+    .headerBar > nav {
+        display: none;
+    }
+    .headerBar > .mobileNav{
+        display: block;
+    }
+    .headerBar > .mobileNav > .slide-menu-container {
+        position: relative;
+        height: calc(100vh - 40px);
+        width: 100vw;
+        display: none;
+    }
+
+    .headerBar > .mobileNav > .menuBtn > .fas {
+        position: absolute;
+        font-size: 25px;
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+        transition: 0.5s;
+    }
+
+    .headerBar > .mobileNav > nav > .menu {
+        position: absolute;
+        width: 35vw;
+        height: 100vh;
+        background-color: rgb(66, 66, 64);
+        top: 45px;
+        transition: all 0.5s;
+    }
+
+    .headerBar > .mobileNav > nav > .menu > ul {
+        position: absolute;
+        width: 35vw;
+        left: 0;
+        top: 20px;
+        height: 60vh;
+    }
+
+    .headerBar > .mobileNav > nav > .menu > ul > li {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        margin-left: -28px;
+        padding-top: 18px;
+    }
+
+    .headerBar > .mobileNav > nav > .menu > ul > li > a {
+        text-decoration: none;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .home{
+        height: 80vh;
+    }
+    .home > .childImageContainer {
+        top: -100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 210px;
+    }
+
+    .home > .textboxContainer {
+        position: absolute;
+        top: 175px;
+        bottom: 0;
+        left: -200px;
+        right: 0;
+        margin: auto;
+        width: 38px;
+        height: 22px;
+    }
+
+    .home > .textboxContainer > p:nth-child(1) {
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 0px;
+        margin: auto;
+        font-size: 50px;
+        font-weight: 600;
+        font-family: sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+    .home > .textboxContainer > .text-box {
+        position: absolute;
+        color: #fff;
+        top: -18px;
+        left: 76px;
+        width: 180px;
+        height: 80px;
+    }
+
+    .home > .textboxContainer > .text-box > h1 {
+        margin-top: 23px;
+        font-size: 23px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        font-family: sans-serif;
+        background: url(../icons/back1.png);
+        -webkit-background-clip: text;
+        animation: back 20s linear infinite;
+        text-align: top;
+    }
+
+    .home > .textboxContainer > .text-box > h3 {
+        position: absolute;
+        color: white;
+        top: 28px;
+        left: 0px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+
+    .home > .buttonContainer {
+        display: none;
+    }
+
+    .home > .social-links {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 455px;
+        left: 0;
+        right: 0;
+        width: max-content;
+        height: max-content;
+        margin: auto;
+    }
+
+    .home > .social-links > a {
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    .home > .social-links > a > .fab {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .about {
+        height: 88vh;
+    }
+
+    .about > .title {
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        right: 0;
+        margin: auto;
+        width: max-content;
+    }
+
+    .about > .aboutProPicImg {
+        position: absolute;
+        width: 85%;
+        top: 75px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .about > .content {
+        top: 295px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 23px;
+    }
+
+    .about > .content > .header1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 25px;
+    }
+
+    .about > .content > .header2 {
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 25px;
+    }
+
+    .about > .content > .aboutDetails {
+        position: relative;
+        font-size: 13px;
+        font-weight: 600;
+        left: 0;
+        right: 0;
+        padding-left: 18px;
+    }
+
+    .about > .content > .socialMedia {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-left: 23px;
+        margin-top: 27px;
+        grid-gap: 0px;
+        width: 100%;
+
+    }
+
+    .about > .content > .socialMedia > .facebook {
+        font-size: 30px;
+        color: #3b5999;
+        /*left: calc(100%/4*0);
+      padding-left: 25px;*/
+        animation-name: social-links-facebookAndTwitter;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .about > .content > .socialMedia > .linkedIn {
+        font-size: 30px;
+        /*left: calc(100%/4*1);
+      padding-left: 25px;*/
+        color: #007fb2;
+        animation-name: social-links-LinkedInAndGithub;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .about > .content > .socialMedia > .twitter {
+        font-size: 30px;
+        /*left: calc(100%/4*2);
+      padding-left: 25px;*/
+        color: #55adee;
+        animation-name: social-links-facebookAndTwitter;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .about > .content > .socialMedia > .gitHub {
+        font-size: 30px;
+        color: #000000;
+        /*left: calc(100%/4*3);
+      padding-left: 25px;*/
+        animation-name: social-links-LinkedInAndGithub;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes social-links-facebookAndTwitter {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        100% {
+            transform: translate(0, -10px);
+        }
+    }
+    @keyframes social-links-LinkedInAndGithub {
+        0% {
+            transform: translate(0, -10px);
+        }
+
+        100% {
+            transform: translate(0, 0px);
+        }
+    }
+
+    .about > .content > .button {
+        border-radius: 20px;
+        top: 280px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .about > .content > .button > .downloadCv {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 150px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .about > .content > .button > .hireMe {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 150px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .education {
+        height: 60vh;
+        margin-top: -1px;
+    }
+
+    .education > .title {
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+    }
+
+
+    .education > .content {
+        width: 300px;
+        grid-gap: 35px;
+        left: 160px;
+        left: 0;
+        right: 0;
+        top: 230px;
+        margin: auto;
+        transform: translate(0, -40%);
+    }
+
+    .education > .content > div {
+        width: 300px;
+        height: 60px;
+        background: #D7D7D7;
+        box-shadow: 9px 9px 10px 0px #928c8c;
+    }
+
+    .education > .content > .ijse::after {
+        width: 104%;
+        height: 5px;
+        transform: translateY(25px);
+        left: -6px;
+    }
+
+    .education > .content > .ijse > .logo {
+        width: 110px;
+        height: 110px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .education > .content > div > .sub-title, .education-type, .year {
+        left: 85px;
+    }
+
+    .education > .content > div > .sub-title {
+        font-size: 8px;
+        top: 0px;
+        font-weight: 700;
+    }
+
+    .education > .content > div > .education-type {
+        font-size: 10px;
+        top: 10px;
+    }
+
+    .education > .content > div > .year {
+        font-size: 8px;
+        top: 39px;
+    }
+
+    .education > .content > div > a {
+        right: 10px;
+        bottom: 3px;
+        width: 43px;
+        height: 12px;
+    }
+
+    .education > .content > div > a > .Morebutton {
+        font-size: 8px;
+        border: 0;
+    }
+
+    .education > .content > div > a > .Morebutton:hover {
+        transition: 0.6s;
+        background-color: #928c8c;
+    }
+
+    .education > .content > div > a > .Morebutton:focus {
+        outline: none !important;
+    }
+
+    .education > .content > div > a > .Morebutton > span {
+        position: relative;
+        text-decoration: none;
+        top: 5%;
+    }
+
+
+    .education > .content > #div2Edu {
+        background: #c7c676;
+        width: 300px;
+        height: 60px;
+        box-shadow: 9px 9px 10px 0px #928c8c;
+    }
+
+    .education > .content > .mahanama::after {
+        width: 104%;
+        height: 5px;
+        transform: translateY(25px);
+        left: -6px;
+    }
+
+    .education > .content > .mahanama > .logo {
+        position: absolute;
+        width: 80px;
+        height: 70px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0px;
+    }
+
+    .education > .content > #div3Edu {
+        width: 300px;
+        height: 60px;
+        box-shadow: 9px 9px 10px 0px #928c8c;
+        background: #a2adbd;
+    }
+
+    .education > .content > #div3Edu > .AshokaLogo {
+        position: absolute;
+        width: 50px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 17px;
+    }
+
+    .education > .content .mahanama .sub-title {
+        top: 5px;
+    }
+
+    .education > .content .mahanama .education-type {
+        top: 15px;
+    }
+
+    .education > .content .mahanama .year {
+        top: 33px;
+    }
+
+    .education > .content #div3Edu .sub-title {
+        top: 5px;
+    }
+
+    .education > .content #div3Edu .education-type {
+        top: 15px;
+    }
+
+    .education > .content #div3Edu .year {
+        top: 33px;
+    }
+
+    .skills {
+        position: relative;
+        background-color: #E5E5E5;
+        height: 100vh;
+    }
+
+    .skills > .title {
+        padding-top: 20px;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;
+        top: 0px;
+    }
+
+    /*------------------------------------------------*/
+    @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+    .skills > .page-content {
+        position: relative;
+        top: 70px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        padding: 5rem;
+        max-width: 1024px;
+        margin-left: -100px;
+    }
+
+    .skills > .page-content > .card {
+        padding: 1rem;
+        width: 90%;
+        height: 150px;
+        top: -50px;
+        left: 40px;
+        margin: auto;
+    }
+
+    .skills > .page-content > .card:nth-child(1):before {
+        background-image: url(../skills/java.png);
+        background-size: cover;
+        width: 180%;
+        height: 120%;
+        left: -100px;
+        opacity: 80%;
+    }
+
+    @keyframes skills-anim {
+        0% {
+            margin-bottom: -200px;
+            opacity: 10%;
+            
+        }
+        100% {
+            margin-bottom: 0px;
+            background-color: transparent;
+        }
+    }
+    .skills > .page-content > .card .content {
+        top: 40px;
+        -webkit-animation-name: skills-anim;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+
+    .skills > .page-content > .card:nth-child(1) > .content > .copy {
+        color: white;
+    }
+
+    .skills > .page-content > .card:nth-child(1) > .content > .title {
+        margin-top: 10%;
+        color: white;
+    }
+
+    .skills > .page-content > .card:nth-child(2) {
+        opacity: 90%;
+    }
+
+    .skills > .page-content > .card:nth-child(2):before {
+        background-size: contain;
+        width: 130%;
+        height: 100%;
+        left: -20px;
+        opacity: 80%;
+    }
+
+    .skills > .page-content > .card:nth-child(2) > .content {
+        top: 100px;
+    }
+
+    .skills > .page-content > .card:nth-child(2) > .content > .copy {
+        font-weight: 1000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+    }
+
+    .skills > .page-content > .card:nth-child(2) > .content > .btn {
+        display: none;
+    }
+
+
+    .skills > .page-content > .card:nth-child(3):before {
+        background-size: contain;
+        width: 256%;
+        height: 100%;
+        left: -30px;
+        opacity: 80%;
+    }
+
+    .skills > .page-content > .card:nth-child(3) > .content {
+        top: 120px;
+    }
+
+    .skills > .page-content > .card:nth-child(3) > .content > .title{
+        font-weight: 700;
+        top: 100px;
+    }
+
+    .skills > .page-content > .card:nth-child(3) > .content > .btn {
+        display: none;
+    }
+
+    .skills > .page-content > .card:nth-child(4):before {
+        background-size: contain;
+        width: 180%;
+        height: 100%;
+        left: -50px;
+        opacity: 80%;
+    }
+
+    .skills > .page-content > .card:nth-child(4) > .content {
+        top: 50px;
+    }
+
+    .skills > .page-content > .card:nth-child(4) > .content > .title {
+        color: white;
+    }
+    .skills > .page-content > .card:nth-child(4) > .content > .copy {
+        color: white;
+    }
+
+    .skills > .page-content > .card:nth-child(5):before {
+        background-size: contain;
+        width: 180%;
+        height: 100%;
+        left: -50px;
+        opacity: 80%;
+    }
+
+    .skills > .page-content > .card:nth-child(5) > .content {
+        top: 30px;
+    }
+
+    .skills > .page-content > .card:nth-child(5) > .content > .copy {
+        font-weight: 800;color: white;
+    }
+
+    .skills > .page-content > .card:nth-child(6):before {
+        background-size: contain;
+        width: 200%;
+        height: 100%;
+        left: -50px;
+        opacity: 80%;
+    }
+
+    .skills > .page-content > .card:nth-child(6) > .content {
+        top: 50px;
+    }
+
+    .skills > .page-content > .card:nth-child(6) > .content > .copy {
+        color: white;
+    }
+
+
+    .projects {
+        --card-width: 100px;
+        --card-height: 100px;
+        --card-transition-duration: 800ms;
+        --card-transition-easing: ease;
+
+        width: 100%;
+        height: 65vh;
+    }
+
+    .projects .title {
+        padding-top: 20px;
+        top: -180px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .app__bg__image {
+        left: 10%;
+        top: 50%;
+    }
+
+    .app__bg__image img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .cardList .cards__wrapper {
+        top: -40px;
+    }
+
+    .cardList__btn {
+        top: -40px;
+    }
+
+    .cardList__btn.btn--left {
+        left: -4%;
+    }
+
+    @keyframes projectsNavBtnAnime {
+        0% {
+            border-radius: 22px;
+            box-shadow: 0 0 5px #FFA500, inset 0 0 5px #FFA500;
+        }
+        50% {
+            box-shadow: 0 0 5px #FFA500, inset 0 0 6px #c5bba9;
+        }
+        100% {
+            border-radius: 0;
+            box-shadow: 0 0 5px #FFA500, inset 0 0 5px #FFA500;
+        }
+
+    }
+    .card.next--card, .card.previous--card {
+        margin-left: 1px;
+    }
+
+    .card.next--card button, .card.previous--card button {
+        display: none;
+    }
+
+    .card button {
+        width: 100px;
+        height: 25px;
+        bottom: -30px;
+        -webkit-animation-name: projectsNavBtnAnime;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-duration: 3s;
+
+    }
+
+    .infoList {
+        margin-top: 120px;
+        line-height: 15px;
+        margin-left: -50px;
+        letter-spacing: 4px;
+    }
+    .info .description {
+        font-weight: 800;
+        text-align: center;
+        margin-left: -10px;
+    }
+    .info .text {
+        font-size: calc(var(--card-width) * var(--text-size-offset, 0.1))!important;
+    }
+    #nextTxt span{
+        position: relative;
+        left: 70px;
+    }
+    #nextTxt{
+        position: relative;
+        left: -16px;
+    }
+    #previousTxt{
+        position: relative;
+        left: -20px;
+    }
+    #previousTxt span{
+        position: relative;
+        left: 88px;
+    }
+    @keyframes projectsViewAllAnime {
+        0%{
+            display: none;
+        }
+        100%{
+            display: none;
+        }
+    }
+    .projects .viewAllProjects a button{
+        position: absolute;
+        width: 120px;
+        height: 28px;
+        top: -310px;
+        border-radius:30px;
+        font-size: 14px;
+        left: -195px;
+        right: 0;
+        margin: auto;
+        -webkit-animation-name: projectsNavBtnAnime;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-duration: 3s;
+        background-color: rgb(95, 95, 93);
+    }
+    .projects .viewAllProjects a button > span{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+
+
+
+    .assignments {
+      position: relative;
+      background-color: #E5E5E5;
+      height: 60vh;
+     }
+  
+    .assignments > .title {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .assignments > .boxContainer{
+      display: none;
+    }
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+    .assignments .boxContainerMobile{
+        position: absolute;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1000px;
+        box-sizing: border-box;
+        width: 70%;
+        height: 50%;
+        left: 0;
+        right: 0;
+        top: -20px;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        transform-style: preserve-3d;
+    }
+    .assignments .boxContainerMobile .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .assignments .boxContainerMobile .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        /*padding: 0rem 5rem;*/
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+    .assignments .boxContainerMobile .card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(214, 213, 213);
+        z-index: 1;
+        transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+        opacity: calc(1 - var(--opacity));
+    }
+      
+    /*---------------------------------------------------------------------*/
+    /*---------------------------------------------------------------------*/
+    @keyframes sliderMobileAssignments {
+        0%{
+            left: 0%;
+        }
+        5%{
+            left: 0%;
+        }
+        20%{
+            left: -100%;
+        }
+        40%{
+            left: -200%;
+        }
+        60%{
+            left: -290%;
+        }
+        80%{
+            left: -290%;
+        }
+        100%{
+            left: -290%;
+        }
+    }
+    
+    .assignments > .boxContainerMobile .mySlides {
+      position: absolute;
+      width: calc(100%*5);
+      height: 170px;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      background-color: rgba(233, 230, 230, 0.842);
+      -webkit-animation-name: sliderMobileAssignments,pulse-assignmentsMobile;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-duration: 40s;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-iteration-count: infinite;
+      
+    }
+    .assignments .boxContainerMobile .mySlides a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 35px;
+        justify-content: center;
+        align-items: center;
+        top: 12px;
+
+    }
+
+    .assignments .boxContainerMobile .mySlides a .cards:nth-child(1){
+        position: absolute;
+        width: 150px;
+        height: 140px;
+        transition: all 0.5s;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        transform-style: preserve-3d;
+        z-index: 1;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(1) .cards:nth-child(1){
+        position: relative;
+        left: calc(100%/5*0.09);
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(2) .cards:nth-child(1){
+        position: relative;
+        left: calc(100%/5*1);
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(3) .cards:nth-child(1){
+        position: relative;
+        left: calc(100%/5*2);
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
+        position: relative;
+        left: calc(100%/5*3);
+        top: 0;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(5) .cards:nth-child(1){
+        position: relative;
+        left: calc(100%/5*3);
+        top: 0;
+    }
+    .assignments .mySlides a .cards img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        height: calc(110px);
+        z-index: 1;
+    }
+    
+    .assignments .mySlides a .cards .textBox{
+        position: relative;
+        width: 100%;
+        height: 62px;
+        top: 80px;
+        background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+        z-index: 0;transition: all 0.5s;
+    }
+
+    .assignments .mySlides a .cards .textBox p{
+        display: none;
+    }
+    
+    .assignments .mySlides a .cards .textBox h3{
+        position: absolute;
+        color: white;
+        bottom: 0;
+        font-size: 14px;
+        top: 38px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    .assignments > a:nth-child(4){
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 35px;
+        margin: auto;
+        width: 90px;
+        height: 20px;
+    
+        padding: 7px 10px;
+        background-color: #122;
+        border-radius: 3px;
+        
+        animation-name: mobileAssignmentsViewAllBtn;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    .assignments > a:nth-child(4) > button{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #FFF;
+        font-family: "Montserrat";
+    }
+    @keyframes mobileAssignmentsViewAllBtn {
+        0%{
+            transform: translateY(0px);
+            border-radius: 0px;
+        }
+        100%{
+            transform: translateY(-5px);
+            border-radius: 20px;
+        }
+    }
+
+    .services {
+        position: relative;
+        background-color: #565151;
+        height: 182vh;
+    }
+    
+    .services > .title {
+        position: absolute;
+        font-family: 'Ubuntu', sans-serif;
+        padding-top: 20px;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;
+        top: 15px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    
+    .services > .title::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: " ";
+        width: 100%;
+        height: 8px;
+        background: #FFA500;
+        border-radius: 30px;
+    }
+    
+    .services > .content {
+        position: absolute;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        left: 54.5%;
+        top: 680px;
+        transform: translate(0%, -43%);
+        width: 250px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .services > .content > article{
+        position: relative;
+        left: -25px;
+        right: 0;
+        margin: auto;
+        top: 0;
+    }
+    .services > .content article::after  {
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 4px;
+        background: white;
+        border-radius: 30px;
+        transform: rotate(0deg);
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .services > .content article:nth-child(1):after  {
+        width: 83.8%;
+        transform: rotate(0deg);
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .services > .content article:nth-child(2):after  {
+        width: 83.8%;
+        transform: rotate(0deg);
+        bottom: -80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .services > .content article:nth-child(3){
+        top: 15px;
+    }
+    .services > .content article:nth-child(5){
+        top: -15px;
+    }
+    .services > .content article:nth-child(6){
+        top: -35px;
+    }
+    .services > .content article:nth-child(3):after  {
+        width: 83.8%;
+        transform: rotate(0deg);
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .services > .content article:nth-child(4):after  {
+        width: 83.8%;
+        transform: rotate(0deg);
+        bottom: 295px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .services > .content article:nth-child(5):after  {
+        width: 83.8%;
+        transform: rotate(0deg);
+        bottom: 300px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .services > .content article:nth-child(6):after  {
+        display: none;
+    }
+
+    .services > .content > article > .sub-title {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        margin-top: 60px;
+    }
+    
+    .services > .content > article > .sub-content {
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+        color: white;
+        width: 300px;
+        height: 90px;
+        margin-top: -10px;
+    }
+    
+    .services > .content > article .icon {
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        left: 0;
+        right: 0;
+        margin:auto;
+    }
+
+
+    .portfolio {
+        height: 100vh;
+    }
+    
+    .portfolio > .title {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        top: 16px;
+    }
+    
+    .portfolio > .image1Container {
+        position: absolute;
+        top: 300px;
+        left: 32px;
+        right: 0;
+        margin: auto;
+    }
+    
+    .portfolio > .image1Container > .image1 {
+        position: absolute;
+        width: 310px;
+        height: 250px;
+        object-fit: cover;
+        background-position: center;
+        box-shadow: 0px 10px 10px 1px #928c8c;
+    }
+    
+    .portfolio > .image2Container {
+        position: relative;
+        top: 120px;
+        left: 32px;
+        right: 0;
+        margin: auto;
+    }
+    
+    .portfolio > .image2Container > .image2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px #928c8c;
+    }
+    
+    .portfolio > .image3Container {
+        position: relative;
+        top: 120px;
+        left: 194px;
+        right: 0;
+        margin: auto;
+    }
+    
+    .portfolio > .image3Container > .image3 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px #928c8c;
+    }
+    
+    .portfolio > .image4Container {
+        position: relative;
+        top: 580px;
+        left: 32px;
+    }
+    
+    .portfolio > .image4Container > .image4 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px #928c8c;
+    }
+    
+    .portfolio > .image5Container {
+        position: relative;
+        top: 580px;
+        left: 194px;
+    }
+    
+    .portfolio > .image5Container > .image5 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px #928c8c;
+    }
+
+    .contact {
+        position: relative;
+        background-color: #E5E5E5;
+        height: 115vh;
+    }
+    
+    .contact > .title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;
+    }
+    
+    .contact > .content {
+        position: relative;
+        top: 290px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 300px;
+        height: 270px;
+    }
+    .contact > .content > .name::placeholder,.email::placeholder,.subject::placeholder,#message::placeholder {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 14px;
+        width: max-content;
+        height: max-content;
+    }
+    .contact > .content > .name {
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        padding: none;
+        margin: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+    
+    .contact > .content > .email {
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        padding: none;
+        margin: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+    
+    .contact > .content > .subject {
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        padding: 12px 20px;
+        margin: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+    .contact > .content > #message::placeholder{
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .contact > .content > #message {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        padding: none;
+        margin: none;
+        transition: all 0.3s ease;
+        top: 120px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+    @keyframes formAnim {
+        0% {
+            box-shadow: 0 0 2px #141414, inset 0 0 2px #424241;
+        }
+        50% {
+            box-shadow: 0 0 4px #141414, inset 0 0 4px #424241;
+        }
+        100% {
+            box-shadow: 0 0 2px #141414, inset 0 0 2px #424241;
+        }
+    }
+    
+    .contact > .content > .sendBtn {
+        position: absolute;
+        height: 30px;
+        width: 200px;
+        top: 235px;
+        left:0;
+        right: 0;
+        margin: auto;
+        transition: all .2s ease-in-out;
+    }
+    @keyframes sendBtnContact {
+        0%,50%{
+            transform: translate3d(0px, 0px, 0px);
+        }
+        70%,100%{
+            transform: translate3d(0px, -29px, 0px);
+        }
+    }
+    
+    .contact > .content > .sendBtn > .alt-send-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        padding-top: 12px;
+
+        animation-name: sendBtnContact;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    .contact > .content > .sendBtn > .alt-send-button > .send-text {
+        display: block;
+        margin-top: 14px;
+    }
+    .contact > .content > .discardBtn{
+        display: none;
+    }
+    
+    .contact > hr {
+        display: none;
+    }
+    
+    .contact > address > .topContainerContact {
+        position: absolute;
+        top: 15px;
+        left: -25px;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        height: 170px;
+    }
+    
+    .contact > address > .topContainerContact > .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        line-height: 15px;
+        background-color: transparent;
+    
+    }
+    
+    .contact > address > .topContainerContact > .container > .banner {
+        width: 100%;
+        height: 80px;
+        min-height: 100px;
+        left: 0px;
+        top: 0px;
+        background-color: transparent;
+    }
+    
+    .contact > address > .topContainerContact > .container > .banner > p {
+        color: black;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    
+    .contact > address > .topContainerContact > .container > .banner > a {
+        color: #0D47A1;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .contact > address > .topContainerContact > .container > .banner > a > i:before {
+        color: #0D47A1;
+        position: relative;
+        transition: 400ms left ease-in-out;
+        -webkit-transition: 400ms left ease-in-out;
+        width: 25px;
+        height: 25px;
+        left: 18px;
+        top: -10px;
+        bottom: 0;
+        margin: auto;
+        animation: paper-plane 10s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+    }
+    
+    .contact > address > .topContainerContact > .container > .banner > a > i > span {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+        left: -7px;
+        transition: 400ms left ease-in-out;
+        -webkit-transition: 400ms left ease-in-out;
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* animation beginning */
+    
+    @keyframes paper-plane {
+        0% {
+            left: 23px;
+            top: 0px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        10% {
+            left: 125px;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+        20% {
+            top: -80px;
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+        30% {
+            left: -200px;
+            -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+        }
+        40% {
+            top: -10px;
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+        }
+        50%,100% {
+            top: -10px;
+            left: 19px;
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg)
+        }
+    }
+    
+    .contact > address > .topContainerContact > .socialMedia {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        top: -50px;
+        left: 32px;
+        right: 0;
+        margin: auto;
+        width: 260px;
+    }
+    .contact > address > .topContainerContact > .socialMedia > a .fab{
+        font-size: 22px;
+    }
+    .contact > address > .topContainerContact > .socialMedia > .facebook {
+        position: absolute;
+        left: calc(100%/4*0);
+        color: #3b5999;
+        animation-name: social-links-facebookAndTwitter;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .contact > address > .topContainerContact > .socialMedia > .linkedIn {
+        position: absolute;
+        left: calc(100%/4*1);
+        color: #007fb2;
+        animation-name: social-links-LinkedInAndGithub;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
     
     
-    /*Media Queries*/
-    @media screen and (max-width: 1000px) {
-        .home > .text-box {
-            left: 25%;
-        }
-    
-        .home > .text-box > p {
-            font-size: 20px;
-        }
-    
-        .home > .text-box > h1 {
-            font-size: 50px;
-        }
-    
-        .home > .text-box > h3 {
-            font-size: 2px;
-        }
+    .contact > address > .topContainerContact > .socialMedia > .twitter {
+        position: absolute;
+        left: calc(100%/4*2);
+        color: #55adee;
+        animation-name: social-links-facebookAndTwitter;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
     
+    
+    .contact > address > .topContainerContact > .socialMedia > .gitHub {
+        position: absolute;
+        left: calc(100%/4*3);
+        color: #000000;
+        animation-name: social-links-LinkedInAndGithub;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    
+    .contact > address > .topContainerContact > p {
+        display: none;
+    }
+    
+    .contact > address > .topContainerContact > hr:nth-child(4) {
+        position: relative;
+        width: 250px;
+        border: 0;
+        border-radius: 30px;
+        height: 4px;
+        margin-top: 0%;
+        background-color: #726b6b;
+        /*margin-left: 15px;*/
+        
+    }
+    .contact > address > .topContainerContact > hr:nth-child(5) {
+        position: relative;
+        display: block;
+        width: 250px;
+        border: 0;
+        border-radius: 30px;
+        height: 4px;
+        margin-top: 105%;
+        background-color: #726b6b;
+        margin-left: 40px;
+    }
+    .contact > address > .bottomContainerContact {
+        position: absolute;
+        top: 620px;
+        width: 200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 22px;
+        z-index: 1;
+    }
+    
+    /* Location, Phone, Email Section */
+    .contact > address > .bottomContainerContact > .contact-list {
+        position: absolute;
+        list-style-type: none;
+        margin-left: 0;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 230px;
+        left: -21px;
+        right: 0;
+        margin: auto;
+    }
+    
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(1){
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 1;
+        color: #aaa;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(2) {
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        top: 80px;
+        margin: auto;
+        line-height: 1;
+        color: #aaa;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(3) {
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        top: 165px;
+        margin: auto;
+        line-height: 1;
+        color: #aaa;
+    }
+    
+    .contact > address > .bottomContainerContact > .contact-list > .list-item .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: rgb(87, 83, 83);
+    }
+    
+    .contact > address > .bottomContainerContact > .contact-list > .list-item .fa,.fas {
+        position: absolute;
+        top: 0px;
+        font-size: 25px;
+        left: 0;
+        right: 0;
+        width: max-content;
+        margin: auto;   
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(1) .fas{
+        font-size: 32px;
+        margin-top: -15px;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(2) .fas{
+        font-size: 30px;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item:nth-child(3) .fa{
+        font-size: 35px;
+        margin-top: -6px;
+    }
+    @keyframes emailAnim{
+        0%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(-5px);
+        }
+    }
+    @keyframes circleOuter {
+        0%{
+            width: 45px;
+            height: 45px;
+        }
+        100%{
+            width: 60px;
+            height: 60px;
+            top: -18px;
+        }
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .circle {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -10px;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .circleOuter {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -10px;
+    }
+    
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse {
+        background: #d6d4d4;
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        margin-left: -7px;
+        margin-top: -22px;
+        transform: rotateX(55deg);
+        z-index: -1;
+      }
+      .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse:after {
+        content: "";
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        margin: -13px 0 0 -13px;
+        animation: pulsate 1s ease-out;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        opacity: 0;
+        box-shadow: 0 0 1px 2px #00cae9;
+        animation-delay: 1.1s;
+      }
+    
+    .place {
+        position: relative;
+        top: 35px;
+        margin-left: 10px;
+        font-size: 16px!important;
+    }
+    .phone { 
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        font-size: 16px!important;
+    }
+    
+    .gmail { 
+        position: relative;
+        top: 35px;
+        left: -15px;
+        right: 0;
+        margin: auto;
+        font-size: 14px!important;
+    }
+    
+    .contact-text a {
+        color: rgb(87, 83, 83);
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+    
+    .contact-text a:hover {
+        font-weight: 600;
+        color: rgb(20, 19, 19);
+        text-decoration: none;
+    } 
     
     @keyframes back {
         100% {
@@ -4427,6 +6254,6 @@ body > footer > h3{
         color:white;
         font-size: 10px;
     }
+}
 
     /*---------------------------------------------------------------------*/
-}
