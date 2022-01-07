@@ -4459,7 +4459,7 @@ body > footer > h3{
 
     .home > .textboxContainer {
         position: absolute;
-        top: 195px;
+        top: 205px;
         bottom: 0;
         left: -200px;
         right: 0;
@@ -4564,7 +4564,7 @@ body > footer > h3{
     }
 
     .about > .content {
-        top: 203px;
+        top: 300px;
         left: 0;
         right: 0;
         margin: auto;
@@ -5584,7 +5584,7 @@ body > footer > h3{
 
 
     .portfolio {
-        height: 100vh;
+        height: 108vh;
     }
     
     .portfolio > .title {
@@ -5675,7 +5675,7 @@ body > footer > h3{
     .contact {
         position: relative;
         background-color: #E5E5E5;
-        height: 140vh;
+        height: 124vh;
     }
     
     .contact > .title {
