@@ -4725,7 +4725,7 @@ body > footer > h3{
         left: 160px;
         left: 0;
         right: 0;
-        top: 230px;
+        top: 214px;
         margin: auto;
         transform: translate(0, -40%);
     }
@@ -5345,7 +5345,7 @@ body > footer > h3{
         left: calc(100%/5*2);
         top: 0;
     }
-    .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
+    .assignments .boxContainerMobile .mySlides a:nth-child(4){
         display: block;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
