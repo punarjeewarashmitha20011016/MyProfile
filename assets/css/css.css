@@ -3419,7 +3419,7 @@ body > footer > h3{
       background-color: rgba(233, 230, 230, 0.842);
       -webkit-animation-name: sliderMobileAssignments,pulse-assignmentsMobile;
       -webkit-animation-timing-function: linear;
-      -webkit-animation-duration: 10s;
+      -webkit-animation-duration: 40s;
       -webkit-animation-direction: alternate;
       -webkit-animation-iteration-count: infinite;
       
@@ -3556,7 +3556,7 @@ body > footer > h3{
     .services {
         position: relative;
         background-color: #565151;
-        height: 182vh;
+        height: 193vh;
     }
     
     .services > .title {
