@@ -4542,7 +4542,7 @@ body > footer > h3{
     }
 
     .about {
-        height: 88vh;
+        height: 90vh;
     }
 
     .about > .title {
@@ -4574,7 +4574,7 @@ body > footer > h3{
     .about > .content > .header1 {
         position: relative;
         top: 0;
-        left: 0;
+        left: 26px;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -4582,7 +4582,7 @@ body > footer > h3{
 
     .about > .content > .header2 {
         top: 0;
-        left: 0;
+        left: 26px;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -4592,7 +4592,7 @@ body > footer > h3{
         position: relative;
         font-size: 13px;
         font-weight: 600;
-        left: 0;
+        left: 5px;
         right: 0;
         padding-left: 18px;
     }
@@ -4602,7 +4602,7 @@ body > footer > h3{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-left: 23px;
+        margin-left: 31px;
         margin-top: 27px;
         grid-gap: 0px;
         width: 100%;
