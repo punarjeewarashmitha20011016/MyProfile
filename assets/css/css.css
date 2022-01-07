@@ -5038,12 +5038,16 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(6) > .content {
-        top: 20px;
+        top: 40px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content > .copy {
         color: white;
+    }.skills > .page-content > .card:nth-child(6) > .content > .title {
+        color: white;
+        margin-bottom: 0px;
     }
+
 
 
     .projects {
