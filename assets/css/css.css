@@ -3699,7 +3699,7 @@ body > footer > h3{
 
 
     .portfolio {
-        height: 100vh;
+        height: 104vh;
     }
     
     .portfolio > .title {
@@ -3737,7 +3737,7 @@ body > footer > h3{
     
     .portfolio > .image2Container > .image2 {
         position: absolute;
-        width: 150px;
+        width: 152px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3746,14 +3746,14 @@ body > footer > h3{
     .portfolio > .image3Container {
         position: relative;
         top: 120px;
-        left: 162px;
+        left: 163px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image3Container > .image3 {
         position: absolute;
-        width: 150px;
+        width: 152px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3767,7 +3767,7 @@ body > footer > h3{
     
     .portfolio > .image4Container > .image4 {
         position: absolute;
-        width: 150px;
+        width: 152px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3776,12 +3776,12 @@ body > footer > h3{
     .portfolio > .image5Container {
         position: relative;
         top: 580px;
-        left: 162px;
+        left: 163px;
     }
     
     .portfolio > .image5Container > .image5 {
         position: absolute;
-        width: 150px;
+        width: 152px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
