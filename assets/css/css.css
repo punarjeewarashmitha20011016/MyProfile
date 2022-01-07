@@ -2579,7 +2579,7 @@ body > footer > h3{
 
     .home > .textboxContainer {
         position: absolute;
-        top: 175px;
+        top: 195px;
         bottom: 0;
         left: -200px;
         right: 0;
@@ -2624,9 +2624,9 @@ body > footer > h3{
     .home > .textboxContainer > .text-box > h3 {
         position: absolute;
         color: white;
-        top: 28px;
+        top: 34px;
         left: 0px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         font-family: sans-serif;
     }
