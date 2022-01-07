@@ -4978,13 +4978,13 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(3) > .content {
-        top: 120px;
+        top: 119px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .title{
         font-weight: 700;
         top: 100px;
-        margin-bottom: -4px;
+        margin-bottom: -3px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
