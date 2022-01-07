@@ -5281,13 +5281,13 @@ body > footer > h3{
             left: -200%;
         }
         60%{
-            left: -290%;
+            left: -298%;
         }
         80%{
-            left: -290%;
+            left: -392%;
         }
         100%{
-            left: -290%;
+            left: -392%;
         }
     }
     
@@ -5346,13 +5346,16 @@ body > footer > h3{
         top: 0;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
+        display: block;
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*3);
+        left: calc(100%/5*4);
         top: 0;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(5) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*3);
+        left: calc(100%/5*5);
         top: 0;
     }
     .assignments .mySlides a .cards img{
