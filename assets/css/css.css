@@ -5320,6 +5320,9 @@ body > footer > h3{
         top: 12px;
 
     }
+    .assignments .boxContainerMobile .mySlides a:nth-child(4){
+        display: block;
+    }
 
     .assignments .boxContainerMobile .mySlides a .cards:nth-child(1){
         position: absolute;
@@ -5345,9 +5348,7 @@ body > footer > h3{
         left: calc(100%/5*2);
         top: 0;
     }
-    .assignments .boxContainerMobile .mySlides a:nth-child(4){
-        display: block;
-    }
+
     .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
         position: relative;
         left: calc(100%/5*3);
