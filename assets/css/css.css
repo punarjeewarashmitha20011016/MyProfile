@@ -4984,6 +4984,7 @@ body > footer > h3{
     .skills > .page-content > .card:nth-child(3) > .content > .title{
         font-weight: 700;
         top: 100px;
+        margin-bottom: -4px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
