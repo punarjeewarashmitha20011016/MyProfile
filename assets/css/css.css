@@ -4867,7 +4867,7 @@ body > footer > h3{
     .skills {
         position: relative;
         background-color: #E5E5E5;
-        height: 100vh;
+        height: 106vh;
     }
 
     .skills > .title {
@@ -4952,7 +4952,10 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(2) > .content {
-        top: 100px;
+        top: 45px;
+    }
+    .skills > .page-content > .card:nth-child(2) > .content > .title{
+        margin-bottom: 0px;
     }
 
     .skills > .page-content > .card:nth-child(2) > .content > .copy {
@@ -4996,11 +4999,12 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(4) > .content {
-        top: 50px;
+        top: 15px;
     }
 
     .skills > .page-content > .card:nth-child(4) > .content > .title {
         color: white;
+        margin-bottom: -4px;
     }
     .skills > .page-content > .card:nth-child(4) > .content > .copy {
         color: white;
@@ -5015,11 +5019,14 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(5) > .content {
-        top: 30px;
+        top: 10px;
     }
 
     .skills > .page-content > .card:nth-child(5) > .content > .copy {
         font-weight: 800;color: white;
+    }
+    .skills > .page-content > .card:nth-child(5) > .content > .title {
+        margin-bottom: -4px;
     }
 
     .skills > .page-content > .card:nth-child(6):before {
@@ -5031,7 +5038,7 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(6) > .content {
-        top: 50px;
+        top: 20px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content > .copy {
