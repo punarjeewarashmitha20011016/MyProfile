@@ -3395,13 +3395,13 @@ body > footer > h3{
             left: -200%;
         }
         60%{
-            left: -290%;
+            left: -292%;
         }
         80%{
-            left: -290%;
+            left: -292%;
         }
         100%{
-            left: -290%;
+            left: -292%;
         }
     }
     
@@ -3428,7 +3428,7 @@ body > footer > h3{
         position: absolute;
         width: 100%;
         height: 100%;
-        left: 35px;
+        left: 20px;
         justify-content: center;
         align-items: center;
         top: 12px;
@@ -3466,7 +3466,7 @@ body > footer > h3{
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(5) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*3);
+        left: calc(100%/5*4);
         top: 0;
     }
     .assignments .mySlides a .cards img{
