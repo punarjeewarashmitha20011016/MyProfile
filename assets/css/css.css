@@ -4445,7 +4445,7 @@ body > footer > h3{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .home{
-        height: 80vh;
+        height: 100vh;
     }
     .home > .childImageContainer {
         top: -100px;
@@ -4459,7 +4459,7 @@ body > footer > h3{
 
     .home > .textboxContainer {
         position: absolute;
-        top: 175px;
+        top: 195px;
         bottom: 0;
         left: -200px;
         right: 0;
@@ -4521,7 +4521,7 @@ body > footer > h3{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        top: 455px;
+        top: 518px;
         left: 0;
         right: 0;
         width: max-content;
