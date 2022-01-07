@@ -5112,7 +5112,7 @@ body > footer > h3{
     .card button {
         width: 100px;
         height: 25px;
-        bottom: -30px;
+        bottom: -45px;
         -webkit-animation-name: projectsNavBtnAnime;
         -webkit-animation-direction: alternate;
         -webkit-animation-iteration-count: infinite;
@@ -5163,7 +5163,7 @@ body > footer > h3{
         position: absolute;
         width: 120px;
         height: 28px;
-        top: -310px;
+        top: -262px;
         border-radius:30px;
         font-size: 14px;
         left: -195px;
