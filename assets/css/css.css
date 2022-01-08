@@ -5896,7 +5896,7 @@ body > footer > h3{
         text-align: center;
         align-items: center;
         font-size: 18px;
-        margin-top: 10px;
+        margin-top: 82px;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > i:before {
@@ -6046,9 +6046,9 @@ body > footer > h3{
         border: 0;
         border-radius: 30px;
         height: 4px;
-        margin-top: 105%;
+        margin-top: 128%;
         background-color: #726b6b;
-        margin-left: 40px;
+        margin-left: 15px;
     }
     .contact > address > .bottomContainerContact {
         position: absolute;
