@@ -5693,7 +5693,7 @@ body > footer > h3{
     
     .contact > .content {
         position: relative;
-        top: 290px;
+        top: 280px;
         left: 0;
         right: 0;
         margin: auto;
@@ -5937,7 +5937,7 @@ body > footer > h3{
             transform: rotate(0deg);
         }
         10% {
-            left: 125px;
+            left: 118px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
