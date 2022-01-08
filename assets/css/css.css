@@ -5603,14 +5603,14 @@ body > footer > h3{
     .portfolio > .image1Container {
         position: absolute;
         top: 300px;
-        left: 32px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image1Container > .image1 {
         position: absolute;
-        width: 310px;
+        width: 300px;
         height: 250px;
         object-fit: cover;
         background-position: center;
@@ -5620,14 +5620,14 @@ body > footer > h3{
     .portfolio > .image2Container {
         position: relative;
         top: 120px;
-        left: 32px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image2Container > .image2 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -5636,14 +5636,14 @@ body > footer > h3{
     .portfolio > .image3Container {
         position: relative;
         top: 120px;
-        left: 194px;
+        left: 164px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image3Container > .image3 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -5652,12 +5652,12 @@ body > footer > h3{
     .portfolio > .image4Container {
         position: relative;
         top: 580px;
-        left: 32px;
+        left: 10px;
     }
     
     .portfolio > .image4Container > .image4 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -5666,12 +5666,12 @@ body > footer > h3{
     .portfolio > .image5Container {
         position: relative;
         top: 580px;
-        left: 194px;
+        left: 164px;
     }
     
     .portfolio > .image5Container > .image5 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
