@@ -4574,7 +4574,7 @@ body > footer > h3{
     .about > .content > .header1 {
         position: relative;
         top: 0;
-        left: 26px;
+        left: 0;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -4582,7 +4582,7 @@ body > footer > h3{
 
     .about > .content > .header2 {
         top: 0;
-        left: 26px;
+        left: 0;
         right: 0;
         margin: auto;
         padding-left: 25px;
