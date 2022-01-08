@@ -6454,7 +6454,7 @@ body > footer > h3{
     }
 
     .about > .content {
-        top: 265px;
+        top: 296px;
         left: 0;
         right: 0;
         margin: auto;
@@ -6464,7 +6464,7 @@ body > footer > h3{
     .about > .content > .header1 {
         position: relative;
         top: 0;
-        left: 0;
+        left: 28px;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -6472,7 +6472,7 @@ body > footer > h3{
 
     .about > .content > .header2 {
         top: 0;
-        left: 0;
+        left: 28px;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -6568,7 +6568,7 @@ body > footer > h3{
 
     .about > .content > .button {
         border-radius: 20px;
-        top: 305px;
+        top: 284px;
         left: 0;
         right: 0;
         margin: auto;
@@ -6757,7 +6757,7 @@ body > footer > h3{
     .skills {
         position: relative;
         background-color: #E5E5E5;
-        height: 106vh;
+        height: 105vh;
     }
 
     .skills > .title {
