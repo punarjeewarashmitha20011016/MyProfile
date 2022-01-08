@@ -4565,7 +4565,8 @@ body > footer > h3{
     }
 
     .about > .content {
-        top: 265px;
+        /*top: 265px;*/
+        top: 40%;
         left: 0;
         right: 0;
         margin: auto;
