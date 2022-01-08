@@ -7583,7 +7583,7 @@ body > footer > h3{
     
     .contact > .content {
         position: relative;
-        top: 280px;
+        top: 290px;
         left: 0;
         right: 0;
         margin: auto;
@@ -7778,6 +7778,8 @@ body > footer > h3{
         color: black;
         text-transform: uppercase;
         font-size: 15px;
+        margin-left: 5px;
+        width: 100%;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a {
@@ -7787,6 +7789,7 @@ body > footer > h3{
         align-items: center;
         font-size: 18px;
         margin-top: 82px;
+        margin-left: -286px;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > i:before {
@@ -7859,7 +7862,7 @@ body > footer > h3{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        top: -50px;
+        top: -46px;
         left: 32px;
         right: 0;
         margin: auto;
@@ -7936,9 +7939,9 @@ body > footer > h3{
         border: 0;
         border-radius: 30px;
         height: 4px;
-        margin-top: 128%;
+        margin-top: 105%;
         background-color: #726b6b;
-        margin-left: 15px;
+        margin-left: 36px;
     }
     .contact > address > .bottomContainerContact {
         position: absolute;
