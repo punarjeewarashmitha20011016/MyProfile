@@ -6868,12 +6868,12 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(3) > .content {
-        top: 51px;
+        top: 94px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .title{
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: -16px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
