@@ -4375,7 +4375,8 @@ body > footer > h3{
         width: 100vw;
         height: 45px;
         transition: all 0.3s ease;
-        background: #373d41;
+        /*background: #373d41;*/
+        background-color: #D49B00;
     }
 
     .headerBar > .container {
@@ -6265,8 +6266,8 @@ body > footer > h3{
         width: 100vw;
         height: 45px;
         transition: all 0.3s ease;
-        /*background: #373d41;*/
-        background-color: #D49B00;
+        background: #373d41;
+        
     }
 
     .headerBar > .container {
