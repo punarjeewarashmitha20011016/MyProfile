@@ -4369,7 +4369,7 @@ body > footer > h3{
     }
 }
 
-@media all and (min-width: 321px) and (max-width: 375px) {
+@media all and (min-width: 320px) and (max-width: 375px) {
     .headerBar {
         position: fixed;
         width: 100vw;
@@ -6259,7 +6259,7 @@ body > footer > h3{
 }
 
 
-@media all and (min-width: 376px) and (max-width: 425px) {
+@media all and (min-width: 375px) and (max-width: 425px) {
     .headerBar {
         position: fixed;
         width: 100vw;
