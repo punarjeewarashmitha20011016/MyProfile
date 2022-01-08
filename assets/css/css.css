@@ -6432,7 +6432,7 @@ body > footer > h3{
     }
 
     .about {
-        height: 110vh;
+        height: 90vh;
     }
 
     .about > .title {
@@ -6454,17 +6454,17 @@ body > footer > h3{
     }
 
     .about > .content {
-        top: 330px;
+        top: 265px;
         left: 0;
         right: 0;
         margin: auto;
-        font-size: 26px;
+        font-size: 23px;
     }
 
     .about > .content > .header1 {
         position: relative;
         top: 0;
-        left: 34px;
+        left: 0;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -6472,7 +6472,7 @@ body > footer > h3{
 
     .about > .content > .header2 {
         top: 0;
-        left: 34px;
+        left: 0;
         right: 0;
         margin: auto;
         padding-left: 25px;
@@ -6480,9 +6480,9 @@ body > footer > h3{
 
     .about > .content > .aboutDetails {
         position: relative;
-        font-size: 15.5px;
+        font-size: 13px;
         font-weight: 600;
-        left: -2px;
+        left: 5px;
         right: 0;
         padding-left: 18px;
     }
@@ -6492,7 +6492,7 @@ body > footer > h3{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-left: 36px;
+        margin-left: 23px;
         margin-top: 27px;
         grid-gap: 0px;
         width: 100%;
@@ -6568,7 +6568,7 @@ body > footer > h3{
 
     .about > .content > .button {
         border-radius: 20px;
-        top: 310px;
+        top: 305px;
         left: 0;
         right: 0;
         margin: auto;
@@ -6610,7 +6610,7 @@ body > footer > h3{
 
 
     .education > .content {
-        width: 380px;
+        width: 300px;
         grid-gap: 35px;
         left: 160px;
         left: 0;
@@ -6621,7 +6621,7 @@ body > footer > h3{
     }
 
     .education > .content > div {
-        width: 380px;
+        width: 300px;
         height: 60px;
         background: #D7D7D7;
         box-shadow: 9px 9px 10px 0px #928c8c;
@@ -6647,19 +6647,19 @@ body > footer > h3{
     }
 
     .education > .content > div > .sub-title {
-        font-size: 11px;
+        font-size: 8px;
         top: 0px;
         font-weight: 700;
     }
 
     .education > .content > div > .education-type {
         font-size: 10px;
-        top: 15px;
+        top: 10px;
     }
 
     .education > .content > div > .year {
-        font-size: 10px;
-        top: 30px;
+        font-size: 8px;
+        top: 39px;
     }
 
     .education > .content > div > a {
@@ -6692,7 +6692,7 @@ body > footer > h3{
 
     .education > .content > #div2Edu {
         background: #c7c676;
-        width: 380px;
+        width: 300px;
         height: 60px;
         box-shadow: 9px 9px 10px 0px #928c8c;
     }
@@ -6715,7 +6715,7 @@ body > footer > h3{
     }
 
     .education > .content > #div3Edu {
-        width: 380px;
+        width: 300px;
         height: 60px;
         box-shadow: 9px 9px 10px 0px #928c8c;
         background: #a2adbd;
@@ -6731,38 +6731,33 @@ body > footer > h3{
     }
 
     .education > .content .mahanama .sub-title {
-        top: 0px;
+        top: 5px;
     }
 
     .education > .content .mahanama .education-type {
-        font-size: 10px;
         top: 15px;
     }
 
     .education > .content .mahanama .year {
-        font-size: 10px;
-        top: 30px;
+        top: 33px;
     }
 
     .education > .content #div3Edu .sub-title {
-        top: 0px;
+        top: 5px;
     }
 
     .education > .content #div3Edu .education-type {
-        font-size: 10px;
         top: 15px;
     }
 
     .education > .content #div3Edu .year {
-        font-size: 10px;
-        top: 30px;
+        top: 33px;
     }
 
     .skills {
         position: relative;
         background-color: #E5E5E5;
-        height: 1058vh;
-        margin-top: -1px;
+        height: 106vh;
     }
 
     .skills > .title {
@@ -6850,7 +6845,7 @@ body > footer > h3{
         top: 45px;
     }
     .skills > .page-content > .card:nth-child(2) > .content > .title{
-        margin-bottom: -5px;
+        margin-bottom: 0px;
     }
 
     .skills > .page-content > .card:nth-child(2) > .content > .copy {
@@ -6873,12 +6868,12 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(3) > .content {
-        top: 119px;
+        top: 51px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .title{
         font-weight: 700;
-        margin-bottom: -5px;
+        margin-bottom: 15px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
@@ -7064,8 +7059,8 @@ body > footer > h3{
         height: 28px;
         top: -262px;
         border-radius:30px;
-        font-size: 14px;
-        left: -195px;
+        font-size: 13px;
+        left: -141px;
         right: 0;
         margin: auto;
         -webkit-animation-name: projectsNavBtnAnime;
@@ -7180,7 +7175,7 @@ body > footer > h3{
             left: -200%;
         }
         60%{
-            left: -298%;
+            left: -300%;
         }
         80%{
             left: -392%;
@@ -7234,7 +7229,7 @@ body > footer > h3{
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(1) .cards:nth-child(1){
         position: relative;
-        left: calc(100%/5*0.09);
+        left: 20px;
         top: 0;
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(2) .cards:nth-child(1){
@@ -7484,7 +7479,7 @@ body > footer > h3{
 
 
     .portfolio {
-        height: 108vh;
+        height: 105vh;
     }
     
     .portfolio > .title {
@@ -7498,14 +7493,14 @@ body > footer > h3{
     .portfolio > .image1Container {
         position: absolute;
         top: 300px;
-        left: 32px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image1Container > .image1 {
         position: absolute;
-        width: 310px;
+        width: 300px;
         height: 250px;
         object-fit: cover;
         background-position: center;
@@ -7515,14 +7510,14 @@ body > footer > h3{
     .portfolio > .image2Container {
         position: relative;
         top: 120px;
-        left: 32px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image2Container > .image2 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -7531,14 +7526,14 @@ body > footer > h3{
     .portfolio > .image3Container {
         position: relative;
         top: 120px;
-        left: 194px;
+        left: 164px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image3Container > .image3 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -7547,12 +7542,12 @@ body > footer > h3{
     .portfolio > .image4Container {
         position: relative;
         top: 580px;
-        left: 32px;
+        left: 10px;
     }
     
     .portfolio > .image4Container > .image4 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -7561,12 +7556,12 @@ body > footer > h3{
     .portfolio > .image5Container {
         position: relative;
         top: 580px;
-        left: 194px;
+        left: 164px;
     }
     
     .portfolio > .image5Container > .image5 {
         position: absolute;
-        width: 150px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -7588,7 +7583,7 @@ body > footer > h3{
     
     .contact > .content {
         position: relative;
-        top: 290px;
+        top: 280px;
         left: 0;
         right: 0;
         margin: auto;
@@ -7791,7 +7786,7 @@ body > footer > h3{
         text-align: center;
         align-items: center;
         font-size: 18px;
-        margin-top: 10px;
+        margin-top: 82px;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > i:before {
@@ -7832,7 +7827,7 @@ body > footer > h3{
             transform: rotate(0deg);
         }
         10% {
-            left: 125px;
+            left: 118px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
@@ -7842,7 +7837,7 @@ body > footer > h3{
             transform: rotate(-180deg);
         }
         30% {
-            left: -200px;
+            left: -204px;
             -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
         }
@@ -7941,9 +7936,9 @@ body > footer > h3{
         border: 0;
         border-radius: 30px;
         height: 4px;
-        margin-top: 105%;
+        margin-top: 128%;
         background-color: #726b6b;
-        margin-left: 40px;
+        margin-left: 15px;
     }
     .contact > address > .bottomContainerContact {
         position: absolute;
