@@ -22,47 +22,47 @@
 _This is the up-to-date output of My Profile Home section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/My%20Profile%20Home.jpg)
+![ScreenShot](assets/images/readme%20images/My%20Profile%20Home.jpg)
 <br/>
 _This is the up-to-date output of My Profile About section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/About Me.jpg)
+![ScreenShot](assets/images/readme%20images/About%20Me.jpg)
 <br/>
 _This is the up-to-date output of My Profile Education section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Education.jpg)
+![ScreenShot](assets/images/readme%20images/Education.jpg)
 <br/>
 _This is the up-to-date output of My Profile Skills section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Skills.jpg)
+![ScreenShot](assets/images/readme%20images/Skills.jpg)
 <br/>
 _This is the up-to-date output of My Profile Projects section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Projects.jpg)
+![ScreenShot](assets/images/readme%20images/Projects.jpg)
 <br/>
 _This is the up-to-date output of My Profile Assignments section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Assignments.jpg)
+![ScreenShot](assets/images/readme%20images/Assignments.jpg)
 <br/>
 _This is the up-to-date output of My Profile Services section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Services.jpg)
+![ScreenShot](assets/images/readme%20images/Services.jpg)
 <br/>
 _This is the up-to-date output of My Profile Portfolio section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Portfolio.jpg)
+![ScreenShot](assets/images/readme%20images/Portfolio.jpg)
 <br/>
 _This is the up-to-date output of My Profile Contact Me section._
 <br/>
 <br/>
-![ScreenShot](assets/images/readme images/Contact Me.jpg)
+![ScreenShot](assets/images/readme%20images/Contact%20Me.jpg)
 
 
 
