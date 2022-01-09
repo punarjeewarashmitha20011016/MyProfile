@@ -32,13 +32,13 @@
 
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
 <header>
-    <section class="headerBar">
+    <section class="headerBar"">
         <div class="mobileNav" >
-            <div class="menuBtn" >
-                <i class="fas fa-bars"id="btnMenu"></i>
+            <div class="menuBtn">
+                <i class="fas fa-bars" id="btnMenu" onclick="openNav()"></i>
             </div>
             <nav class="slide-menu-container" id="slide-menu-container">
-                <div class="menu" id="slide-menu" style="left: -110px;">
+                <div class="menu" id="slide-menu">
                     <ul id="menu-icon">
                         <li><a href="#HOME">HOME</a></li>
                         <li><a href="#ABOUT">ABOUT</a></li>
@@ -651,5 +651,16 @@
 </script>
 <script src="assets/JS/slider.js"></script>
 <script src="assets/JS/assignmentsSlide.js"></script>
+
+<script>
+    function openNav() {
+      document.getElementById("slide-menu").style.left = "35vw";
+      document.getElementById("btnMenu").style.color = "red";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 
 </html>

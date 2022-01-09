@@ -4387,9 +4387,6 @@ body > footer > h3{
         right: 5px;
     }
 
-    .headerBar > nav {
-        display: none;
-    }
     .headerBar > .mobileNav{
         display: block;
     }
@@ -4397,7 +4394,8 @@ body > footer > h3{
         position: relative;
         height: calc(100vh - 40px);
         width: 100vw;
-        display: none;
+        display: block;
+        transition: all 10s ease;
     }
 
     .headerBar > .mobileNav > .menuBtn > .fas {
@@ -4410,7 +4408,7 @@ body > footer > h3{
         margin: auto;
         width: max-content;
         height: max-content;
-        transition: 0.5s;
+        transition: all 10s ease;
     }
 
     .headerBar > .mobileNav > nav > .menu {
@@ -4420,6 +4418,7 @@ body > footer > h3{
         background-color: rgb(66, 66, 64);
         top: 45px;
         transition: all 0.5s;
+        left: -35vw;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul {
