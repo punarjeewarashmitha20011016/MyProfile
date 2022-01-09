@@ -19,51 +19,49 @@
 [Click the Link]( https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/)
 <br/>
 <br/>
-<br/>
 _This is the up-to-date output of My Profile Home section._
 <br/>
+![ScreenShot](assets/images/readme%20images/My%20Profile%20Home.jpg)
 <br/>
-![ScreenShot]()
 <br/>
 _This is the up-to-date output of My Profile About section._
 <br/>
+![ScreenShot](assets/images/readme%20images/About%20Me.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/About Me.jpg)
 <br/>
 _This is the up-to-date output of My Profile Education section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Education.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Education.jpg)
 <br/>
 _This is the up-to-date output of My Profile Skills section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Skills.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Skills.jpg)
 <br/>
 _This is the up-to-date output of My Profile Projects section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Projects.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Projects.jpg)
 <br/>
 _This is the up-to-date output of My Profile Assignments section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Assignments.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Assignments.jpg)
 <br/>
 _This is the up-to-date output of My Profile Services section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Services.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Services.jpg)
 <br/>
 _This is the up-to-date output of My Profile Portfolio section._
 <br/>
+![ScreenShot](assets/images/readme%20images/Portfolio.jpg)
 <br/>
-![ScreenShot](assets/images/readme images/Portfolio.jpg)
 <br/>
 _This is the up-to-date output of My Profile Contact Me section._
 <br/>
-<br/>
-![ScreenShot](assets/images/readme images/Contact Me.jpg)
+![ScreenShot](assets/images/readme%20images/Contact%20Me.jpg)
 
 
 
