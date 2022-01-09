@@ -1,6 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?width=760&color=%2336BCF7&lines=Hi+%F0%9F%91%8B%2C+I'm+Punarjeewa+Rashmitha.;+IJSE-+%F0%9F%91%8B%2C+Institute+of+Java+and+Software+Engineering.;This+is+my+portfolio+website.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?width=765&color=%2336BCF7&lines=Hi+%F0%9F%91%8B%2C+I'm+Punarjeewa+Rashmitha.;+IJSE-+%F0%9F%91%8B%2C+Institute+of+Java+and+Software+Engineering.;This+is+my+portfolio+website.)](https://git.io/typing-svg)
 <br/>
-## <a href="https://punarjeewarashmitha20011016.github.io/MyProfile/" target="_blank">Click Here To Visit</a> :footprints:
 <hr>
 
 ### This is the direct link of my portfolio github page URL
