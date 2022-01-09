@@ -27,18 +27,26 @@
 
     <link rel="stylesheet" href="assets/css/fonts/css/all.css">
     <script src="assets/JS/slideMenu.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("slide-menu").style.transform = "translateX(0)";
+        }
+        function closeNav() {
+            document.getElementById("slide-menu").style.transform = "translateX(-35vw)";
+        }    
+    </script>
 </head>
 <body>
 
 <!-- -------------------------------------------Navigation BAR-------------------------------------------------  -->
 <header>
-    <section class="headerBar"">
+    <section class="headerBar">
         <div class="mobileNav" >
-            <div class="menuBtn">
-                <i class="fas fa-bars" id="btnMenu" onclick="openNav()"></i>
-            </div>
+                    <i class="fas fa-bars" id="btnMenu" onclick="openNav()"></i>
             <nav class="slide-menu-container" id="slide-menu-container">
                 <div class="menu" id="slide-menu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <ul id="menu-icon">
                         <li><a href="#HOME">HOME</a></li>
                         <li><a href="#ABOUT">ABOUT</a></li>
@@ -651,16 +659,5 @@
 </script>
 <script src="assets/JS/slider.js"></script>
 <script src="assets/JS/assignmentsSlide.js"></script>
-
-<script>
-    function openNav() {
-      document.getElementById("slide-menu").style.left = "35vw";
-      document.getElementById("btnMenu").style.color = "red";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
 
 </html>

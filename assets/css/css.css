@@ -4397,8 +4397,7 @@ body > footer > h3{
         display: block;
         transition: all 10s ease;
     }
-
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
@@ -4408,19 +4407,26 @@ body > footer > h3{
         margin: auto;
         width: max-content;
         height: max-content;
+        overflow-x: hidden;
         transition: all 10s ease;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
         top: 45px;
         transition: all 0.5s;
-        left: -35vw;
+        transform: translateX(-35vw);
     }
-
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+    }
     .headerBar > .mobileNav > nav > .menu > ul {
         position: absolute;
         width: 35vw;
