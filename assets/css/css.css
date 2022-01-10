@@ -8307,27 +8307,25 @@ body > footer > h3{
     .about > .content > .header1 {
         position: relative;
         top: 0;
-        left: 55px;
+        left: 35px;
         right: 0;
         margin: auto;
-        padding-left: 25px;
+        font-size: 25px;
     }
 
     .about > .content > .header2 {
         top: 0;
-        left: 55px;
+        left: 35px;
         right: 0;
         margin: auto;
-        padding-left: 25px;
+        font-size: 20px;
     }
 
     .about > .content > .aboutDetails {
         position: relative;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 600;
-        left: 32px;
-        right: 0;
-        padding-left: 18px;
+        left: 20px;
     }
 
     .about > .content > .socialMedia {
@@ -8453,7 +8451,7 @@ body > footer > h3{
 
 
     .education > .content {
-        width: 300px;
+        width: 350px;
         grid-gap: 35px;
         left: 160px;
         left: 0;
@@ -8464,7 +8462,7 @@ body > footer > h3{
     }
 
     .education > .content > div {
-        width: 300px;
+        width: 350px;
         height: 60px;
         background: #D7D7D7;
         box-shadow: 9px 9px 10px 0px #928c8c;
@@ -8535,7 +8533,7 @@ body > footer > h3{
 
     .education > .content > #div2Edu {
         background: #c7c676;
-        width: 300px;
+        width: 350px;
         height: 60px;
         box-shadow: 9px 9px 10px 0px #928c8c;
     }
@@ -8558,7 +8556,7 @@ body > footer > h3{
     }
 
     .education > .content > #div3Edu {
-        width: 300px;
+        width: 350px;
         height: 60px;
         box-shadow: 9px 9px 10px 0px #928c8c;
         background: #a2adbd;
@@ -8632,15 +8630,6 @@ body > footer > h3{
         top: -50px;
         left: 40px;
         margin: auto;
-    }
-
-    .skills > .page-content > .card:nth-child(1):before {
-        background-image: url(../skills/java.png);
-        background-size: cover;
-        width: 180%;
-        height: 120%;
-        left: -100px;
-        opacity: 80%;
     }
 
     @keyframes skills-anim {
