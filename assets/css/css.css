@@ -7525,6 +7525,7 @@ body > footer > h3{
         position: relative;
         background-color: #E5E5E5;
         height: 124vh;
+        margin-top: -1px;
     }
     
     .contact > .title {
@@ -9620,7 +9621,7 @@ body > footer > h3{
         width: 100%;
         height: 80px;
         min-height: 100px;
-        left: 0px;
+        left: -5px;
         top: 0px;
         background-color: transparent;
         margin-top: -24px;
