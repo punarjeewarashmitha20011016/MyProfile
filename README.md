@@ -6,7 +6,7 @@
 
 ## <a href="https://punarjeewarashmitha20011016.github.io/MyProfile/" target="_blank">Click Here To Visit</a> :footprints:
 
-### This is the direct link of my portfolio OOWebHost page URL
+### This is the direct link of my portfolio 000WebHost page URL
 
 ## <a href="https://punarjeewarashmitha.000webhostapp.com/" target="_blank">Click Here To Visit</a> :footprints:
 ### This is the direct link of my portfolio website mockup made using Figma
