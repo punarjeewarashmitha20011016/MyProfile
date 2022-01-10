@@ -10346,7 +10346,7 @@ body > footer > h3{
     }
 
     .education {
-        height: 56vh;
+        height: 57vh;
         margin-top: -1px;
     }
 
@@ -10559,15 +10559,6 @@ body > footer > h3{
         margin: auto;
     }
 
-    .skills > .page-content > .card:nth-child(1):before {
-        background-image: url(../skills/java.png);
-        background-size: cover;
-        width: 180%;
-        height: 120%;
-        left: -100px;
-        opacity: 80%;
-    }
-
     @keyframes skills-anim {
         0% {
             margin-bottom: -200px;
@@ -10613,15 +10604,11 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(2):before {
-        background-size: contain;
-        width: 130%;
-        height: 100%;
-        left: -20px;
-        opacity: 80%;
+        background-size: cover;
     }
 
     .skills > .page-content > .card:nth-child(2) > .content {
-        top: 45px;
+        top: 25px;
     }
     .skills > .page-content > .card:nth-child(2) > .content > .title{
         margin-bottom: 0px;
@@ -10637,11 +10624,9 @@ body > footer > h3{
 
 
     .skills > .page-content > .card:nth-child(3):before {
-        background-size: contain;
-        width: 256%;
-        height: 100%;
-        left: -30px;
-        opacity: 80%;
+        background-size: cover;
+        background-position: center;
+        width: 400px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content {
@@ -10657,11 +10642,8 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(4):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
+        background-size: cover;
+        width: 400px;
     }
 
     .skills > .page-content > .card:nth-child(4) > .content {
@@ -10677,11 +10659,7 @@ body > footer > h3{
     }
 
     .skills > .page-content > .card:nth-child(5):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
+        background-size: cover;
     }
 
     .skills > .page-content > .card:nth-child(5) > .content {
