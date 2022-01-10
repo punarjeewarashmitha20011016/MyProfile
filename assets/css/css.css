@@ -4907,14 +4907,6 @@ body > footer > h3{
         margin: auto;
     }
 
-    .skills > .page-content > .card:nth-child(1):before {
-        background-image: url(../skills/java.png);
-        background-size: cover;
-        width: 180%;
-        height: 120%;
-        left: -100px;
-        opacity: 80%;
-    }
 
     @keyframes skills-anim {
         0% {
@@ -4934,8 +4926,18 @@ body > footer > h3{
         -webkit-animation-duration: 5s;
         -webkit-animation-iteration-count: infinite;
         overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-
+    .skills > .page-content > .card > .content > .copy{
+        font-size: 13px;
+        font-weight: 600;
+    } 
+    .skills > .page-content > .card > .content > .title{
+        font-size: 15px;
+    } 
+    .skills > .page-content > .card:nth-child(1) > .content {
+        top: -10px;
+    }
     .skills > .page-content > .card:nth-child(1) > .content > .copy {
         color: white;
     }
@@ -4949,14 +4951,6 @@ body > footer > h3{
         opacity: 90%;
     }
 
-    .skills > .page-content > .card:nth-child(2):before {
-        background-size: contain;
-        width: 130%;
-        height: 100%;
-        left: -20px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(2) > .content {
         top: 45px;
     }
@@ -4966,46 +4960,30 @@ body > footer > h3{
 
     .skills > .page-content > .card:nth-child(2) > .content > .copy {
         font-weight: 1000;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
     }
 
     .skills > .page-content > .card:nth-child(2) > .content > .btn {
         display: none;
     }
 
-
-    .skills > .page-content > .card:nth-child(3):before {
-        background-size: contain;
-        width: 256%;
-        height: 100%;
-        left: -30px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(3) > .content {
-        top: 51px;
+        top: 40px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .title{
-        font-weight: 700;
-        margin-bottom: 15px;
+        position: relative;
+        margin-bottom: -24px;
+    }
+    .skills > .page-content > .card:nth-child(3) > .content > .copy{
+        margin-bottom: 10px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
         display: none;
     }
 
-    .skills > .page-content > .card:nth-child(4):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(4) > .content {
-        top: 35px;
+        top: 25px;
     }
 
     .skills > .page-content > .card:nth-child(4) > .content > .title {
@@ -5016,14 +4994,6 @@ body > footer > h3{
         color: white;
     }
 
-    .skills > .page-content > .card:nth-child(5):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(5) > .content {
         top: 26px;
     }
@@ -5032,19 +5002,11 @@ body > footer > h3{
         font-weight: 800;color: white;
     }
     .skills > .page-content > .card:nth-child(5) > .content > .title {
-        margin-bottom: -4px;
-    }
-
-    .skills > .page-content > .card:nth-child(6):before {
-        background-size: contain;
-        width: 200%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
+        margin-bottom: 20px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content {
-        top: 40px;
+        top: 30px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content > .copy {
@@ -5169,16 +5131,12 @@ body > footer > h3{
             display: none;
         }
     }
-    .projects .viewAllProjects a button{
+    .projects .app .viewAllProjects{
         position: absolute;
+        top: 91%;
         width: 120px;
         height: 28px;
-        top: -262px;
-        border-radius:30px;
         font-size: 13px;
-        left: -141px;
-        right: 0;
-        margin: auto;
         -webkit-animation-name: projectsNavBtnAnime;
         -webkit-animation-direction: alternate;
         -webkit-animation-iteration-count: infinite;
@@ -5197,6 +5155,7 @@ body > footer > h3{
         bottom: 0;
         margin: auto;
         padding-top: 10px;
+        font-weight: 500;
     }
 
 
