@@ -947,6 +947,7 @@ main {
 
 /*------------------------------------------------*/
 .projects {
+    position: relative;
     --card-width: 300px;
     --card-height: 300px;
     --card-transition-duration: 800ms;
@@ -1023,7 +1024,7 @@ button:focus {
         transform: translateY(-20px);
     }
 }
-.viewAllProjects{
+.projects > .viewAllProjects{
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -1040,7 +1041,7 @@ button:focus {
 
 }
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-.viewAllProjects > a > button{
+.projects .viewAllProjects > a > button{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1060,7 +1061,7 @@ button:focus {
     transition: .35s ease-in-out;
     font-family: "Montserrat";
 }
-.viewAllProjects > a > button:hover{
+.projects .viewAllProjects > a > button:hover{
     color: #FFA500;
     border-radius: 15px;
 }
@@ -2507,9 +2508,6 @@ body > footer > h3{
         right: 5px;
     }
 
-    .headerBar > nav {
-        display: none;
-    }
     .headerBar > .mobileNav{
         display: block;
     }
@@ -2517,10 +2515,10 @@ body > footer > h3{
         position: relative;
         height: calc(100vh - 40px);
         width: 100vw;
-        display: none;
+        display: block;
+        transition: all 10s ease;
     }
-
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
@@ -2530,18 +2528,26 @@ body > footer > h3{
         margin: auto;
         width: max-content;
         height: max-content;
-        transition: 0.5s;
+        overflow-x: hidden;
+        transition: all 10s ease;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
         top: 45px;
         transition: all 0.5s;
+        transform: translateX(-35vw);
     }
-
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+    }
     .headerBar > .mobileNav > nav > .menu > ul {
         position: absolute;
         width: 35vw;
@@ -2565,7 +2571,7 @@ body > footer > h3{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .home{
-        height: 80vh;
+        height: 100vh;
     }
     .home > .childImageContainer {
         top: -100px;
@@ -2579,7 +2585,7 @@ body > footer > h3{
 
     .home > .textboxContainer {
         position: absolute;
-        top: 195px;
+        top: 205px;
         bottom: 0;
         left: -200px;
         right: 0;
@@ -2624,9 +2630,9 @@ body > footer > h3{
     .home > .textboxContainer > .text-box > h3 {
         position: absolute;
         color: white;
-        top: 34px;
+        top: 28px;
         left: 0px;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
         font-family: sans-serif;
     }
@@ -2641,7 +2647,7 @@ body > footer > h3{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        top: 455px;
+        top: 518px;
         left: 0;
         right: 0;
         width: max-content;
@@ -2662,7 +2668,7 @@ body > footer > h3{
     }
 
     .about {
-        height: 92vh;
+        height: 90vh;
     }
 
     .about > .title {
@@ -2684,7 +2690,8 @@ body > footer > h3{
     }
 
     .about > .content {
-        top: 271px;
+        /*top: 265px;*/
+        top: 39%;
         left: 0;
         right: 0;
         margin: auto;
@@ -2712,7 +2719,7 @@ body > footer > h3{
         position: relative;
         font-size: 13px;
         font-weight: 600;
-        left: 0;
+        left: 5px;
         right: 0;
         padding-left: 18px;
     }
@@ -2798,7 +2805,7 @@ body > footer > h3{
 
     .about > .content > .button {
         border-radius: 20px;
-        top: 315px;
+        top: 305px;
         left: 0;
         right: 0;
         margin: auto;
@@ -2826,7 +2833,7 @@ body > footer > h3{
     }
 
     .education {
-        height: 57vh;
+        height: 56vh;
         margin-top: -1px;
     }
 
@@ -2845,7 +2852,7 @@ body > footer > h3{
         left: 160px;
         left: 0;
         right: 0;
-        top: 220px;
+        top: 214px;
         margin: auto;
         transform: translate(0, -40%);
     }
@@ -2987,8 +2994,7 @@ body > footer > h3{
     .skills {
         position: relative;
         background-color: #E5E5E5;
-        height: 105vh;
-        margin-top: -1px;
+        height: 106vh;
     }
 
     .skills > .title {
@@ -3022,14 +3028,6 @@ body > footer > h3{
         margin: auto;
     }
 
-    .skills > .page-content > .card:nth-child(1):before {
-        background-image: url(../skills/java.png);
-        background-size: cover;
-        width: 180%;
-        height: 120%;
-        left: -100px;
-        opacity: 80%;
-    }
 
     @keyframes skills-anim {
         0% {
@@ -3049,8 +3047,18 @@ body > footer > h3{
         -webkit-animation-duration: 5s;
         -webkit-animation-iteration-count: infinite;
         overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-
+    .skills > .page-content > .card > .content > .copy{
+        font-size: 13px;
+        font-weight: 600;
+    } 
+    .skills > .page-content > .card > .content > .title{
+        font-size: 15px;
+    } 
+    .skills > .page-content > .card:nth-child(1) > .content {
+        top: -10px;
+    }
     .skills > .page-content > .card:nth-child(1) > .content > .copy {
         color: white;
     }
@@ -3064,100 +3072,71 @@ body > footer > h3{
         opacity: 90%;
     }
 
-    .skills > .page-content > .card:nth-child(2):before {
-        background-size: contain;
-        width: 130%;
-        height: 100%;
-        left: -20px;
-        opacity: 80%;
+    .skills > .page-content > .card:nth-child(2) > .content {
+        top: 45px;
+    }
+    .skills > .page-content > .card:nth-child(2) > .content > .title{
+        margin-bottom: 0px;
     }
 
-    .skills > .page-content > .card:nth-child(2) > .content {
-        top: 100px;
-    }
     .skills > .page-content > .card:nth-child(2) > .content > .copy {
         font-weight: 1000;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
     }
 
     .skills > .page-content > .card:nth-child(2) > .content > .btn {
         display: none;
     }
 
-
-    .skills > .page-content > .card:nth-child(3):before {
-        background-size: contain;
-        width: 256%;
-        height: 100%;
-        left: -30px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(3) > .content {
-        top: 120px;
+        top: 40px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .title{
-        font-weight: 700;
-        position: absolute;
-        top: -15px;
+        position: relative;
+        margin-bottom: -24px;
+    }
+    .skills > .page-content > .card:nth-child(3) > .content > .copy{
+        margin-bottom: 10px;
     }
 
     .skills > .page-content > .card:nth-child(3) > .content > .btn {
         display: none;
     }
 
-    .skills > .page-content > .card:nth-child(4):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(4) > .content {
-        top: 50px;
+        top: 25px;
     }
 
     .skills > .page-content > .card:nth-child(4) > .content > .title {
         color: white;
+        margin-bottom: -4px;
     }
     .skills > .page-content > .card:nth-child(4) > .content > .copy {
         color: white;
     }
 
-    .skills > .page-content > .card:nth-child(5):before {
-        background-size: contain;
-        width: 180%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
-    }
-
     .skills > .page-content > .card:nth-child(5) > .content {
-        top: 51px;
+        top: 26px;
     }
 
     .skills > .page-content > .card:nth-child(5) > .content > .copy {
-        font-weight: 800;color: white;margin-top: -9px;
+        font-weight: 800;color: white;
     }
-
-    .skills > .page-content > .card:nth-child(6):before {
-        background-size: contain;
-        width: 200%;
-        height: 100%;
-        left: -50px;
-        opacity: 80%;
+    .skills > .page-content > .card:nth-child(5) > .content > .title {
+        margin-bottom: 20px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content {
-        top: 50px;
+        top: 30px;
     }
 
     .skills > .page-content > .card:nth-child(6) > .content > .copy {
         color: white;
+    }.skills > .page-content > .card:nth-child(6) > .content > .title {
+        color: white;
+        margin-bottom: 0px;
     }
+
 
 
     .projects {
@@ -3273,14 +3252,18 @@ body > footer > h3{
             display: none;
         }
     }
-    .projects .viewAllProjects a button{
-        position: absolute;
+    .projects .viewAllProjects{
+        bottom: 32;
+        left: 0;
+        right: 0;
+
+    }
+    .projects .viewAllProjects a > button{
+        position: relative;
         width: 120px;
         height: 28px;
-        top: -260px;
         border-radius:30px;
-        font-size: 14px;
-        left: -140px;
+        font-size: 13px;
         right: 0;
         margin: auto;
         -webkit-animation-name: projectsNavBtnAnime;
@@ -3288,7 +3271,6 @@ body > footer > h3{
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         -webkit-animation-duration: 3s;
-        background-color: rgb(95, 95, 93);
     }
     .projects .viewAllProjects a button > span{
         position: absolute;
@@ -3301,6 +3283,7 @@ body > footer > h3{
         bottom: 0;
         margin: auto;
         padding-top: 10px;
+        font-weight: 500;
     }
 
 
@@ -3344,6 +3327,7 @@ body > footer > h3{
         overflow: hidden;
         box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
         transform-style: preserve-3d;
+        border-radius: 10px;
     }
     .assignments .boxContainerMobile .container {
         position: absolute;
@@ -3395,7 +3379,7 @@ body > footer > h3{
             left: -200%;
         }
         60%{
-            left: -292%;
+            left: -300%;
         }
         80%{
             left: -392%;
@@ -3419,59 +3403,60 @@ body > footer > h3{
       background-color: rgba(233, 230, 230, 0.842);
       -webkit-animation-name: sliderMobileAssignments,pulse-assignmentsMobile;
       -webkit-animation-timing-function: linear;
-      -webkit-animation-duration: 40s;
+      -webkit-animation-duration: 30s;
       -webkit-animation-direction: alternate;
       -webkit-animation-iteration-count: infinite;
+     
       
     }
     .assignments .boxContainerMobile .mySlides a{
         position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 20px;
-        justify-content: center;
+        width: 180px;
+        height: 170px;
         align-items: center;
-        top: 12px;
-
+        top: 0px;
+        bottom: 0;
+        margin: auto;
+        
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(1){
+        left: calc(100%/5*0.1);
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(2){
+        left: calc(100%/5*1.1);
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(3){
+        left: calc(100%/5*2.1);
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(4){
+        left: calc(100%/5*3.1);
+    }
+    .assignments .boxContainerMobile .mySlides a:nth-child(5){
+        left: calc(100%/5*4.03);
     }
     .assignments .boxContainerMobile .mySlides a:nth-child(4){
         display: block;
-
     }
-
-    .assignments .boxContainerMobile .mySlides a .cards:nth-child(1){
+    .assignments .boxContainerMobile .mySlides a .outerCard{
         position: absolute;
-        width: 150px;
-        height: 140px;
-        transition: all 0.5s;
-        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        content: "";
+        width: 180px;
+        height: 170px;
+        background-color: #6a6d6e;
+        z-index: 2;
         transform-style: preserve-3d;
-        z-index: 1;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
     }
-    .assignments .boxContainerMobile .mySlides a:nth-child(1) .cards:nth-child(1){
-        position: relative;
-        left: calc(100%/5*0.09);
+    .assignments .boxContainerMobile .mySlides a .outerCard .cards:nth-child(1){
+        position: absolute;
+        left: 0;
+        right: 0;
         top: 0;
-    }
-    .assignments .boxContainerMobile .mySlides a:nth-child(2) .cards:nth-child(1){
-        position: relative;
-        left: calc(100%/5*1);
-        top: 0;
-    }
-    .assignments .boxContainerMobile .mySlides a:nth-child(3) .cards:nth-child(1){
-        position: relative;
-        left: calc(100%/5*2);
-        top: 0;
-    }
-    .assignments .boxContainerMobile .mySlides a:nth-child(4) .cards:nth-child(1){
-        position: relative;
-        left: calc(100%/5*3);
-        top: 0;
-    }
-    .assignments .boxContainerMobile .mySlides a:nth-child(5) .cards:nth-child(1){
-        position: relative;
-        left: calc(100%/5*4);
-        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform-style: preserve-3d;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     }
     .assignments .mySlides a .cards img{
         position: absolute;
@@ -3481,6 +3466,8 @@ body > footer > h3{
         background-size: cover;
         height: calc(110px);
         z-index: 1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .assignments .mySlides a .cards .textBox{
@@ -3490,6 +3477,8 @@ body > footer > h3{
         top: 80px;
         background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
         z-index: 0;transition: all 0.5s;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .assignments .mySlides a .cards .textBox p{
@@ -3556,13 +3545,13 @@ body > footer > h3{
     .services {
         position: relative;
         background-color: #565151;
-        height: 193vh;
+        height: 195vh;
     }
     
     .services > .title {
         position: absolute;
         font-family: 'Ubuntu', sans-serif;
-        padding-top: 20px;
+        padding-top: 25px;
         left: 0;
         right: 0;
         width: max-content;
@@ -3699,7 +3688,7 @@ body > footer > h3{
 
 
     .portfolio {
-        height: 104vh;
+        height: 105vh;
     }
     
     .portfolio > .title {
@@ -3713,14 +3702,14 @@ body > footer > h3{
     .portfolio > .image1Container {
         position: absolute;
         top: 300px;
-        left: 5px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image1Container > .image1 {
         position: absolute;
-        width: 310px;
+        width: 300px;
         height: 250px;
         object-fit: cover;
         background-position: center;
@@ -3730,14 +3719,14 @@ body > footer > h3{
     .portfolio > .image2Container {
         position: relative;
         top: 120px;
-        left: 5px;
+        left: 10px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image2Container > .image2 {
         position: absolute;
-        width: 152px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3746,14 +3735,14 @@ body > footer > h3{
     .portfolio > .image3Container {
         position: relative;
         top: 120px;
-        left: 163px;
+        left: 164px;
         right: 0;
         margin: auto;
     }
     
     .portfolio > .image3Container > .image3 {
         position: absolute;
-        width: 152px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3762,12 +3751,12 @@ body > footer > h3{
     .portfolio > .image4Container {
         position: relative;
         top: 580px;
-        left: 5px;
+        left: 10px;
     }
     
     .portfolio > .image4Container > .image4 {
         position: absolute;
-        width: 152px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3776,12 +3765,12 @@ body > footer > h3{
     .portfolio > .image5Container {
         position: relative;
         top: 580px;
-        left: 163px;
+        left: 164px;
     }
     
     .portfolio > .image5Container > .image5 {
         position: absolute;
-        width: 152px;
+        width: 147px;
         height: 150px;
         object-fit: cover;
         box-shadow: 0px 10px 10px 1px #928c8c;
@@ -3790,7 +3779,7 @@ body > footer > h3{
     .contact {
         position: relative;
         background-color: #E5E5E5;
-        height: 118vh;
+        height: 124vh;
     }
     
     .contact > .title {
@@ -4006,8 +3995,7 @@ body > footer > h3{
         text-align: center;
         align-items: center;
         font-size: 18px;
-        margin-top: 80px;
-        margin-left: -210px;
+        margin-top: 82px;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > i:before {
@@ -4048,7 +4036,7 @@ body > footer > h3{
             transform: rotate(0deg);
         }
         10% {
-            left: 80px;
+            left: 118px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
@@ -4058,7 +4046,7 @@ body > footer > h3{
             transform: rotate(-180deg);
         }
         30% {
-            left: -200px;
+            left: -204px;
             -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
         }
@@ -4147,7 +4135,7 @@ body > footer > h3{
         height: 4px;
         margin-top: 0%;
         background-color: #726b6b;
-        margin-left: 15px;
+        /*margin-left: 15px;*/
         
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
@@ -4157,13 +4145,13 @@ body > footer > h3{
         border: 0;
         border-radius: 30px;
         height: 4px;
-        margin-top: 120%;
+        margin-top: 128%;
         background-color: #726b6b;
         margin-left: 15px;
     }
     .contact > address > .bottomContainerContact {
         position: absolute;
-        top: 600px;
+        top: 620px;
         width: 200px;
         left: 0;
         right: 0;
@@ -5131,18 +5119,25 @@ body > footer > h3{
             display: none;
         }
     }
-    .projects .app .viewAllProjects{
-        position: absolute;
-        top: 91%;
+    .projects .viewAllProjects{
+        bottom: 32;
+        left: 0;
+        right: 0;
+
+    }
+    .projects .viewAllProjects a > button{
+        position: relative;
         width: 120px;
         height: 28px;
+        border-radius:30px;
         font-size: 13px;
+        right: 0;
+        margin: auto;
         -webkit-animation-name: projectsNavBtnAnime;
         -webkit-animation-direction: alternate;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         -webkit-animation-duration: 3s;
-        background-color: rgb(95, 95, 93);
     }
     .projects .viewAllProjects a button > span{
         position: absolute;
@@ -7025,14 +7020,18 @@ body > footer > h3{
             display: none;
         }
     }
-    .projects .viewAllProjects a button{
-        position: absolute;
+    .projects .viewAllProjects{
+        bottom: 32;
+        left: 0;
+        right: 0;
+
+    }
+    .projects .viewAllProjects a > button{
+        position: relative;
         width: 120px;
         height: 28px;
-        top: -262px;
         border-radius:30px;
         font-size: 13px;
-        left: -195px;
         right: 0;
         margin: auto;
         -webkit-animation-name: projectsNavBtnAnime;
@@ -7040,7 +7039,6 @@ body > footer > h3{
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
         -webkit-animation-duration: 3s;
-        background-color: rgb(95, 95, 93);
     }
     .projects .viewAllProjects a button > span{
         position: absolute;
