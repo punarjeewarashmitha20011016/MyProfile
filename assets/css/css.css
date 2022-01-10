@@ -10360,7 +10360,7 @@ body > footer > h3{
 
 
     .education > .content {
-        width: 300px;
+        width: 500px;
         grid-gap: 35px;
         left: 160px;
         left: 0;
@@ -10371,8 +10371,8 @@ body > footer > h3{
     }
 
     .education > .content > div {
-        width: 300px;
-        height: 60px;
+        width: 500px;
+        height: 70px;
         background: #D7D7D7;
         box-shadow: 9px 9px 10px 0px #928c8c;
     }
@@ -10388,6 +10388,7 @@ body > footer > h3{
         width: 110px;
         height: 110px;
         top: 0;
+        left: 0;
         bottom: 0;
         margin: auto;
     }
@@ -10397,31 +10398,42 @@ body > footer > h3{
     }
 
     .education > .content > div > .sub-title {
-        font-size: 8px;
+        font-size: 12px;
         top: 0px;
+        left: 100px;
         font-weight: 700;
     }
 
     .education > .content > div > .education-type {
-        font-size: 10px;
-        top: 10px;
+        font-size: 11px;
+        top: 17px;
+        left: 100px;
     }
 
     .education > .content > div > .year {
-        font-size: 8px;
-        top: 39px;
+        font-size: 10px;
+        top: 35px;
+        left: 100px;
     }
 
     .education > .content > div > a {
         right: 10px;
         bottom: 3px;
-        width: 43px;
-        height: 12px;
+        width: 60px;
+        height: 18px;
     }
 
     .education > .content > div > a > .Morebutton {
-        font-size: 8px;
+        font-size: 10px;
         border: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
     }
 
     .education > .content > div > a > .Morebutton:hover {
@@ -10442,8 +10454,8 @@ body > footer > h3{
 
     .education > .content > #div2Edu {
         background: #c7c676;
-        width: 300px;
-        height: 60px;
+        width: 500px;
+        height: 70px;
         box-shadow: 9px 9px 10px 0px #928c8c;
     }
 
@@ -10461,12 +10473,12 @@ body > footer > h3{
         top: 0;
         bottom: 0;
         margin: auto;
-        left: 0px;
+        left: 10px;
     }
 
     .education > .content > #div3Edu {
-        width: 300px;
-        height: 60px;
+        width: 500px;
+        height: 70px;
         box-shadow: 9px 9px 10px 0px #928c8c;
         background: #a2adbd;
     }
@@ -10477,31 +10489,37 @@ body > footer > h3{
         top: 0;
         bottom: 0;
         margin: auto;
-        left: 17px;
+        left: 25px;
     }
 
     .education > .content .mahanama .sub-title {
-        top: 5px;
+        top: 0px;
+        left: 100px;
     }
 
     .education > .content .mahanama .education-type {
-        top: 15px;
+        top: 17px;
+        left: 100px;
     }
 
     .education > .content .mahanama .year {
-        top: 33px;
+        top: 35px;
+        left: 100px;
     }
 
     .education > .content #div3Edu .sub-title {
-        top: 5px;
+        top: 0px;
+        left: 100px;
     }
 
     .education > .content #div3Edu .education-type {
-        top: 15px;
+        top: 17px;
+        left: 100px;
     }
 
     .education > .content #div3Edu .year {
-        top: 33px;
+        top: 35px;
+        left: 100px;
     }
 
     .skills {
