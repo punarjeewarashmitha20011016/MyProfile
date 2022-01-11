@@ -11541,7 +11541,7 @@ body > footer > h3{
             transform: rotate(0deg);
         }
         10% {
-            left: 118px;
+            left: 170px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
@@ -11551,7 +11551,7 @@ body > footer > h3{
             transform: rotate(-180deg);
         }
         30% {
-            left: -204px;
+            left: -248px;
             -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
         }
