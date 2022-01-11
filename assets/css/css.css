@@ -11639,21 +11639,20 @@ body > footer > h3{
         border-radius: 30px;
         height: 4px;
         background-color: #726b6b;
-        left: 10px;
+        left: 22px;
         right: 0;
         margin: auto;
         top:300px;
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
         display: block;
-
         position: absolute;
         width: 420px;
         border: 0;
         border-radius: 30px;
         height: 4px;
         background-color: #726b6b;
-        left: 70px;
+        left: 75px;
         top:60px;
     }
     .contact > address > .bottomContainerContact {
