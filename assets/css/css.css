@@ -11172,6 +11172,36 @@ body > footer > h3{
     .services > .content > .Innovative_Ideas::after,.Web-Development::after{
         display: none;
     }
+
+    .services > .content > .App-Development::before,.Web-Design::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        top: 245px;
+    }
+    .services > .content > .Web-Design::before{
+        top: 210px;
+    }
+    .services > .content > .Web-Development::before,.Innovative_Ideas::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        top: 245px;
+    }
+    .services > .content > .Innovative_Ideas{
+        top: 15px;
+    }
+    .services > .content article:nth-child(6) {
+        top: -17px;
+    }
+    .services > .content > .Innovative_Ideas::before{
+        top: 210px;
+    }
+
     
 
 
