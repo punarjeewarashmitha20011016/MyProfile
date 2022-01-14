@@ -12594,8 +12594,8 @@ body > footer > h3{
     .projects > .viewAllProjects{
         position: absolute;
         bottom: 30px;
-        right: -800px;
-        margin: none;
+        left: 850px;
+        margin: 0;
     }
     .projects .viewAllProjects > a > button{
         position: absolute;
@@ -12687,21 +12687,14 @@ body > footer > h3{
         position: absolute;
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
-        left: 100px;
-        top: 16px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        top: 55px;
         padding-bottom: 10px;
     }
-    
-    .assignments > .title::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        content: "";
-        background-color: #FFA500;
-        width: 100%;
-        height: 8px;
-        border-radius: 30px;
-    }
+
     .assignments > .boxContainerMobile{
         display: none;
     }
@@ -12713,134 +12706,33 @@ body > footer > h3{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        width: 1100px;
+        width: 965px;
         height: 230px;
-        left: 0px;
+        left: 0;
         right: 0;
-        top: 90px;
-        bottom: 0;
         margin: auto;
     }
     
     .assignments > .boxContainer a .cards:nth-child(1){
         position: relative;
-        width: 340px;
+        width: 300px;
         transition: all 0.5s;
-        left: calc(100%/3*0);
         top: 0;
         height: auto;
+        padding-left: 7px;
     }
-    
-    .assignments > .boxContainer a .cards:hover{
-        transform: translateY(-10px);
-        transition: all 0.5s;
+    .assignments > .boxContainer a .cards:nth-child(1) .textBox{
+        width: 102.8%;
     }
-    
-    .assignments > .boxContainer .cards:hover .textBox{
-        transform: translateY(50px);
-        transition: all 0.5s;
-    }
-    
-    .assignments > .boxContainer a .cards:hover p{
-        transform: translateY(10px);
-        transition: all 0.5s;
-    }
-    
-    
-    
-    .assignments > .boxContainer a .cards img{
-        position: absolute;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        height: calc(130px);
-        z-index: 1;
-        border: 1px solid rgb(131, 130, 130);
-    }
-    
-    .assignments > .boxContainer a .cards .textBox{
-        position: relative;
-        width: 100.6%;
-        height: 100px;
-        top: 80px;
-        background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
-        z-index: 0;transition: all 0.5s;
-       
-    }
-    
-    .assignments > .boxContainer a .cards:nth-child(1) .textBox p{
-        top: 20px;
-    }
-    
-    .assignments > .boxContainer a .cards .textBox p{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 5px;
-        margin-top: -10px;
-        text-align: center;
-        color: white;
-        font-family: sans-serif;
-        transition: all 0.5s;
-    }
-    
-    .assignments > .boxContainer a .cards .textBox h3{
-        position: absolute;
-        color: white;
-        bottom: 0;
-        top: 65px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: max-content;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    
     
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 0;
-        bottom: -50px;
-        -webkit-animation-name: assignmentsViewAllBtn;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-duration: 2s;
-    }
-    
-    @keyframes assignmentsViewAllBtn{
-        0%{
-            transform: translateY(-10px);
-        }
+        right: 6px;
     }
     
     .assignments a:nth-child(4){
         display: none;
-    }
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-    .assignments .boxContainer a:nth-child(4) > button{
-        position: absolute;
-        right: 0;
-        bottom: 0px;
-        text-align: center;
-        width: 100px;
-        height: 35px;
-    
-        text-decoration: none;
-        padding: 7px 10px;
-        background-color: #122;
-        border-radius: 3px;
-        color: #FFF;
-        transition: .35s ease-in-out;
-        font-family: "Montserrat";
-        
-    }
-    .assignments .boxContainer a:nth-child(4) > button:hover{
-        background-color: rgba(75, 71, 71, 0.514);
-        transition: all 0.5s;
-        border-radius: 15px;
-        color: black;
     }
     /*---------------------------------*/
     
