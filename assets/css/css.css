@@ -12250,7 +12250,10 @@ body > footer > h3{
         position: absolute;
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
-        left: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
         top: 16px;
         padding-bottom: 10px;
     }
@@ -12272,9 +12275,11 @@ body > footer > h3{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-gap: 50px;
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
+        top: 43%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
         font-family: 'Ubuntu', sans-serif;
     }
     
@@ -12310,22 +12315,22 @@ body > footer > h3{
     
     .education > .content > div > .sub-title, .education-type, .year {
         position: absolute;
-        left: 160px;
+        left: 160px!important;
     }
     
     .education > .content > div > .sub-title {
         font-size: 16px;
-        top: 5px;
+        top: 5px !important;
     }
     
     .education > .content > div > .education-type {
         font-size: 20px;
-        top: 27px;
+        top: 27px !important;
     }
     
     .education > .content > div > .year {
         font-size: 14px;
-        top: 65px;
+        top: 65px !important;
     }
     
     .education > .content > div > a {
@@ -12386,7 +12391,7 @@ body > footer > h3{
     
     .education > .content > .mahanama > .logo {
         position: absolute;
-        width: 200px;
+        width: 240px;
         height: 110px;
         background: url("../images/mahanama logo.png") no-repeat center;
         background-size: contain;
@@ -12410,7 +12415,7 @@ body > footer > h3{
         background: url("../images/Ashoka Logo.png") no-repeat center;
         background-size: contain;
         top: 0%;
-        left: 2.5%;
+        left: 4.5%;
         transform: rotate(-360deg);
     }
     
