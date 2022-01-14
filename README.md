@@ -15,7 +15,7 @@
 
 ### This is the direct link of my portfolio website wireframe
 
-## <a href="https://wireframe.cc/iloEGs" target="_blank">Click Here To Visit</a> :footprints:
+## <a href="https://drive.google.com/file/d/1z3unpkoMntcGaESsjAdXuw1Ot_flmEMk/view?usp=sharing" target="_blank">Click Here To Visit</a> :footprints:
 ### This is the direct link of my portfolio website sitemap
 
 ## <a href="https://www.gloomaps.com/zlJh7m2bet" target="_blank">Click Here To Visit</a> :footprints:
