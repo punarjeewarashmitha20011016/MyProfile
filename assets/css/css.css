@@ -12525,58 +12525,6 @@ body > footer > h3{
         top:calc(100%/2*0)
     }
 
-    .skills > .page-content > .card:nth-child(1):before {
-        background-image: url(../skills/java.png);
-    }
-    
-    .skills > .page-content > .card:nth-child(1) > .content > .copy {
-        color: white;
-    }
-    
-    .skills > .page-content > .card:nth-child(1) > .content > .title {
-        margin-top: 10%;
-        color: white;
-    }
-    
-    .skills > .page-content > .card:nth-child(1) > .content > .copy {
-        margin-top: -5%;
-    }
-    
-    .skills > .page-content > .card:nth-child(2):before {
-        background-image: url(../skills/mysql.jpg);
-    }
-    .skills > .page-content > .card:nth-child(2):hover .content .copy{
-        color: white;
-    }
-    .skills > .page-content > .card:nth-child(2) > .content > .title, .copy {
-        font-weight: 800;
-        color: black;
-    }
-    
-    
-    
-    .skills > .page-content > .card:nth-child(3):before {
-        background-image: url(../skills/hibernate-framework.png);
-    }
-    
-    .skills > .page-content > .card:nth-child(3) > .content > .title, .copy {
-        color: black;
-        font-weight: 600;
-    }
-    
-    
-    .skills > .page-content > .card:nth-child(4):before {
-        background-image: url(../skills/html.jpg);
-    }
-    
-    .skills > .page-content > .card:nth-child(5):before {
-        background-image: url(../skills/css.png);
-    }
-    
-    .skills > .page-content > .card:nth-child(6):before {
-        background-image: url(../skills/javascript.jpg);
-    }
-    
     .skills > .page-content > .card > .content {
         position: relative;
         display: flex;
@@ -12586,10 +12534,6 @@ body > footer > h3{
         padding: 1rem;
         transition: transform var(--d) var(--e);
         z-index: 1;
-    }
-    
-    .skills > .page-content > .card > .content > * + * {
-        margin-top: 1rem;
     }
     
     .skills > .page-content > .card > .content > .title {
@@ -12603,56 +12547,10 @@ body > footer > h3{
         font-size: 1.125rem;
         line-height: 1.35;
     }
-    
-    @media (hover: hover) and (min-width: 600px) {
-        .skills > .page-content > .card:after {
-            transform: translateY(0);
-        }
-    
-        .skills > .page-content > .card > .content {
-            transform: translateY(calc(100% - 4.5rem));
-        }
-    
-        .skills > .page-content > .card > .content > *:not(.title) {
-            opacity: 0;
-            transform: translateY(1rem);
-            transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-        }
-    
-        .skills > .page-content > .card:hover,
-        .skills > .page-content > .card:focus-within {
-            align-items: center;
-        }
-    
-        .skills > .page-content > .card:hover:before,
-        .skills > .page-content > .card:focus-within:before {
-            transform: translateY(-4%);
-            opacity: 50%;
-        }
-    
-        .skills > .page-content > .card:hover:after,
-        .skills > .page-content > .card:focus-within:after {
-            transform: translateY(-50%);
-        }
-    
-        .skills > .page-content > .card:hover .content,
-        .skills > .page-content > .card:focus-within .content {
-            transform: translateY(0);
-        }
-    
-        .skills > .page-content > .card:hover .content > *:not(.title),
-        .skills > .page-content > .card:focus-within .content > *:not(.title) {
-            opacity: 1;
-            transform: translateY(0);
-            transition-delay: calc(var(--d) / 8);
-        }
-    
-        .skills > .page-content > .card:focus-within:before, .card:focus-within:after,
-        .skills > .page-content > .card:focus-within .content,
-        .skills > .page-content > .card:focus-within .content > *:not(.title) {
-            transition-duration: 0s;
-        }
+    .skills > .page-content > .card:nth-child(1) > .content{
+        margin-top: 150px;
     }
+    
     
     /*------------------------------------------------*/
     .projects {
@@ -12675,56 +12573,16 @@ body > footer > h3{
     }
     
     .projects .title {
-        position: relative;
+        position: absolute;
         font-family: 'Ubuntu', sans-serif;
-        padding-top: 20px;
-        margin-top: -480px;
-        margin-left: -1140px;
-        padding-bottom: 10px;
         color: white;
-    }
-    
-    .projects .title::after {
-        position: absolute;
+        z-index: 1;
         left: 0;
-        bottom: 0;
-        content: " ";
-        width: 100%;
-        height: 8px;
-        background: #FFA500;
-        border-radius: 30px;
+        top: 55px;
+        right: 0;
+        width: max-content;
     }
-    
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
-    button {
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-    
-    button:focus {
-        outline: none;
-        border: none;
-    }
-    
-    .app {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .app__bg {
-        position: absolute;
-        width: 100%;
-        height: 110%;
-        z-index: -5;
-        pointer-events: none;
-        user-select: none;
-        overflow: hidden;
-    }
+   
     @keyframes projectsViewAllAnime {
         0%{
             transform: translateY(0px);
@@ -12736,20 +12594,9 @@ body > footer > h3{
     .projects > .viewAllProjects{
         position: absolute;
         bottom: 30px;
-        right: 30px;
-        width: 120px;
-        margin: auto;
-        height: 40px;
-        text-align: center;
-    
-        animation-name: projectsViewAllAnime;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-duration: 3s;border-radius: 20px;
-    
+        right: -800px;
+        margin: none;
     }
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
     .projects .viewAllProjects > a > button{
         position: absolute;
         top: 0;
@@ -12761,203 +12608,59 @@ body > footer > h3{
         height: 100%;
         font-weight: 700;
         font-size: 16px;
-        
-        text-decoration: none;
-        padding: 7px 10px;
-        background-color: rgb(62, 70, 70);
-        border-radius: 0px;
-        color: #FFF;
-        transition: .35s ease-in-out;
-        font-family: "Montserrat";
+    }
+    .projects .viewAllProjects > a > button > span{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
     }
     .projects .viewAllProjects > a > button:hover{
         color: #FFA500;
         border-radius: 15px;
     }
     
-    .app__bg::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #000;
-        z-index: 1;
-        opacity: 0.8;
-    }
-    
-    .app__bg__image {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
-        width: 180%;
-        height: 180%;
-        transition: transform 1000ms ease, opacity 1000ms ease;
-        overflow: hidden;
-    }
-    
-    .app__bg__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .app__bg__image.current--image {
-        opacity: 1;
-        --image-translate-offset: 0;
-    }
-    
-    .app__bg__image.previous--image, .app__bg__image.next--image {
-        opacity: 0;
-    }
-    
-    .app__bg__image.previous--image {
-        --image-translate-offset: -25%;
-    }
-    
-    .app__bg__image.next--image {
-        --image-translate-offset: 25%;
-    }
-    
-    .cardList {
-        position: absolute;
-        width: calc(3 * var(--card-width));
-        height: auto;
-    }
     
     .cardList__btn {
-        --btn-size: 35px;
-        width: var(--btn-size);
-        height: var(--btn-size);
         position: absolute;
-        top: 50%;
         transform: translateY(-50%);
         z-index: 1;
     }
-    
-    .cardList__btn.btn--left {
-        left: -5%;
+    .card button{
+        transform: translateY(-20px);
     }
-    
-    .cardList__btn.btn--right {
-        right: -5%;
+    .card #currentBtn{
+        transform: translate(55px,-120px);
     }
-    
-    .cardList__btn .icon {
-        width: 100%;
-        height: 100%;
+    .infoList #posH1{
+        left: 40px;
     }
-    
-    .cardList__btn .icon svg {
-        width: 100%;
-        height: 100%;
+    .infoList #computerShopH1{
+        top: -20px;
+        font-size: 20px !important;
+        left: 22px;
     }
-    
-    .cardList .cards__wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        perspective: 1000px;
+    .infoList #computerShopH1 span{
+        top: 15px;
+        left: 170px;
     }
-    
-    .card {
-        --card-translateY-offset: 100vh;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
-        display: inline-block;
-        width: var(--card-width);
-        height: var(--card-height);
-        transition: transform var(--card-transition-duration) var(--card-transition-easing);
-        user-select: none;
+    .infoList #computerShopP{
+        top: -7px;
+        font-size: 15px !important;
+        left: 28px;
     }
-    
-    .card::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #000;
-        z-index: 1;
-        transition: opacity var(--card-transition-duration) var(--card-transition-easing);
-        opacity: calc(1 - var(--opacity));
-    }
-    
-    .card button {
-        position: absolute;
-        width: 100px;
-        height: 30px;
-        top: 220px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        z-index: 10;
-        color: white;
-        font-size: 12px;
-        transition: all 0.5s;
-    }
-    
-    
-    .card__image {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .card__image img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .card.current--card button:hover {
-        color: #FFA500;
-        border-radius: 10px;
-        transition: all 0.5s;
-    }
-    
-    
-    .card.current--card {
-        --current-card-rotation-offset: 0;
-        --card-translateX-offset: 0;
-        --card-rotation-offset: var(--current-card-rotation-offset);
-        --card-scale-offset: 1.2;
-        --opacity: 0.8;
-    }
-    
-    .card.previous--card {
-        --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
-        --card-rotation-offset: 25deg;
-    }
-    
-    .card.next--card {
-        --card-translateX-offset: calc(var(--card-width) * 1.1);
-        --card-rotation-offset: -25deg;
-    }
-    
-    .card.previous--card, .card.next--card {
-        --card-scale-offset: 0.9;
-        --opacity: 0.4;
-    }
-    
     .infoList {
         position: absolute;
         width: calc(3 * var(--card-width));
         height: var(--card-height);
         pointer-events: none;
-        margin-top: 360px;
+        margin-top: 280px;
         line-height: 15px;
-        margin-left: 100px;
+        margin-left: -2px;
         letter-spacing: 4px;
     }
     
@@ -12970,87 +12673,6 @@ body > footer > h3{
         align-items: flex-end;
         perspective: 1000px;
         transform-style: preserve-3d;
-    }
-    
-    .info {
-        margin-bottom: calc(var(--card-height) / 8);
-        margin-left: calc(var(--card-width) / 1.5);
-        transform: translateZ(2rem);
-        transition: transform var(--card-transition-duration) var(--card-transition-easing);
-    }
-    
-    .info .text {
-        position: relative;
-        font-family: "Montserrat";
-        font-size: calc(var(--card-width) * var(--text-size-offset, 0.1));
-        white-space: nowrap;
-        color: #fff;
-    
-    
-    }
-    
-    .info .name {
-        text-transform: uppercase;
-        width: fit-content;
-    }
-    
-    .info .description {
-        --text-size-offset: 0.065;
-        font-weight: 500;
-    }
-    
-    .info.current--info {
-        opacity: 1;
-        display: block;
-    }
-    
-    .info.next--info {
-        opacity: 0;
-        display: none;
-    }
-    
-    .info.previous--info, .info.next--info {
-        opacity: 0;
-        display: none;
-    }
-    
-    .loading__wrapper {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        z-index: 200;
-    }
-    
-    .loading__wrapper .loader--text {
-        color: #fff;
-        font-family: "Montserrat";
-        font-weight: 500;
-        margin-bottom: 1.4rem;
-    }
-    
-    .loading__wrapper .loader {
-        position: relative;
-        width: 200px;
-        height: 2px;
-        background: rgba(255, 255, 255, 0.25);
-    }
-    
-    .loading__wrapper .loader span {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: red;
-        transform: scaleX(0);
-        transform-origin: left;
     }
     
     /*-----------------------------------*/
