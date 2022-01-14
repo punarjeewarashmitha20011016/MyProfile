@@ -4145,7 +4145,7 @@ body > footer > h3{
         height: 4px;
         margin-top: 0%;
         background-color: #726b6b;
-        /*margin-left: 15px;*/
+        margin-left: 15px;
         
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
@@ -6016,7 +6016,7 @@ body > footer > h3{
         height: 4px;
         margin-top: 0%;
         background-color: #726b6b;
-        /*margin-left: 15px;*/
+        margin-left: 15px;
         
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
@@ -7882,7 +7882,7 @@ body > footer > h3{
         height: 4px;
         margin-top: 0%;
         background-color: #726b6b;
-        /*margin-left: 15px;*/
+        margin-left: 36px;
         
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
@@ -11894,105 +11894,32 @@ body > footer > h3{
 
 @media all and (min-width:1024px) and (max-width:1440px){
     .headerBar {
-        z-index: 2;
-        position: fixed;
-        width: 100vw;
+        width: 100%;
         height: 50px;
-        transition: all 0.3s ease;
-        background: #373d41;
     }
     .headerBar > .mobileNav{
         display: none;
     }
-    .headerBar > .container {
+    .headerBar > .container{
         position: absolute;
-        width: 40px;
-        margin-left: 20px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        top: -5px;
-    }
-    
-    .headerBar > .container > .loader {
-        position: relative;
-        width: 100%;
-        height: 32.8px;
-        border-radius: 50%;
-        border: 4px solid transparent;
-        border-bottom: 4px solid whitesmoke;
-        border-right: 4px solid whitesmoke;
-        transform: rotate(45deg);
-        animation: animate 4s ease-in-out infinite;
-    
-    }
-    
-    @keyframes animate {
-        0% {
-            transform: rotate(0deg);
-        }
-        50% {
-            transform: rotate(90deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    
-    }
-    
-    .headerBar > .container > .loader > .ball {
-        position: absolute;
-        top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        animation: animateBall 4s ease-in-out infinite;
     }
-    
-    .headerBar > .container > .loader > .ball::before {
-        content: "";
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        right: 7px;
-        bottom: 50%;
-        transform: translateY(-50%);
-        border: 2px solid whitesmoke;
-        background-color: white;
-        border-radius: 50%;
-    }
-    
-    @keyframes animateBall {
-        0% {
-            transform: rotate(0deg);
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    
     .headerBar > nav {
         position: absolute;
         display: flex;
-        text-align: center;
-        padding: 0px 0px;
-        width: 97.6vw;
-        margin-left: -10px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
     }
-    
-    .headerBar > nav > ul {
-        flex: 1;
-        text-align: right;
+    .headerBar > nav > ul{
+        position: absolute;
+        right:10px
     }
-    
     .headerBar > nav > ul > li {
         display: inline-block;
         list-style: none;
-        margin: 0 20px;
+        margin: 0 10px;
+        font-size: 15px;
     }
     
     .headerBar > nav > ul > li > a {
@@ -12000,28 +11927,9 @@ body > footer > h3{
         text-decoration: none;
         color: white;
     }
-    
-    .headerBar > nav > ul > li > a::after {
-        position: absolute;
-        content: "";
-        background-color: white;
-        bottom: 0;
-        height: 3px;
-        border-radius: 30px;
-        transform: translateX(-50%);
-        left: 50%;
-        bottom: -5px;
-        transition: width 0.4s ease;
+    main{
+        overflow: hidden;
     }
-    
-    .headerBar > nav > ul > li > a:hover {
-        color: #FFA500;
-    }
-    
-    .headerBar > nav > ul > li > a:hover::after {
-        width: 100%;
-    }
-    
     
     .home {
         z-index: 0;
@@ -12033,49 +11941,28 @@ body > footer > h3{
     .home > .backgroundImg {
         position: relative;
         background-size: cover;
+        background-position: center;
         width: 100%;
         height: 100%;
-    
-    }
-    
-    @-webkit-keyframes pulse {
-        0% {
-            box-shadow: 0 0 8px #FFA500, inset 0 0 8px #FFA500;
-        }
-        50% {
-            box-shadow: 0 0 16px #FFA500, inset 0 0 14px #FFA500;
-        }
-        100% {
-            box-shadow: 0 0 8px #FFA500, inset 0 0 8px #FFA500;
-        }
     }
     
     .home > .childImageContainer {
         position: absolute;
-        top: 190px;
-        left: 80px;
-        width: 300px;
-        height: 310px;
-        border-radius: 100%;
-        border: 5px solid transparent;
-        box-shadow: 0 0 8px #FFA500, inset 0 0 8px #FFA500;
-        -webkit-animation: pulse 2s linear 1s infinite;
-    }
-    
-    .home > .childImageContainer > .child {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        /*top: 10%;
-        left: 20%;*/
-        border-radius: 100%;
+        top: 0px;
+        bottom: 0;
+        left: -600px;
+        width: 250px;
+        height: 250px;
+        margin: auto;
     }
     
     .home > .textboxContainer {
         position: absolute;
-        top: 185px;
-        left: 410px;
-        width: 838px;
+        top: -50px;
+        bottom: 0;
+        margin: auto;
+        left: 310px;
+        width: 600px;
         height: 222px;
     }
     
@@ -12083,134 +11970,78 @@ body > footer > h3{
         position: absolute;
         color: white;
         top: 0;
+        bottom: 0;
+        height: max-content;
         left: 0px;
         margin: auto;
-        font-size: 190px;
-        font-weight: 600;
-        font-family: sans-serif;
-        letter-spacing: 1.5px;
+        font-size: 133px;
     }
     
     .home > .textboxContainer > .text-box {
         position: absolute;
         color: #fff;
         top: 0;
-        left: 270px;
-        width: 564px;
+        left: 190px;
+        width: 410px;
         height: 222px;
     }
     
     .home > .textboxContainer > .text-box > h1 {
-        margin-top: 24px;
-        font-size: 80px;
-        color: transparent;
-        -webkit-text-stroke: 1px #fff;
-        font-family: sans-serif;
-        background: url(../icons/back1.png);
-        -webkit-background-clip: text;
-        animation: back 20s linear infinite;
-        text-align: top;
+        margin-top: 51px;
+        font-size: 50px;
     }
     
     .home > .textboxContainer > .text-box > h3 {
-        position: absolute;
-        color: white;
-        top: 70px;
-        left: 0px;
-        font-size: 53px;
-        font-weight: 500;
-        font-family: sans-serif;
+        margin-top: 94px;
+        font-size: 36px;
     }
     
     .home > .buttonContainer {
+        display: block;
         position: absolute;
-        top: 430px;
-        left: 422px;
-        width: 500px;
+        top: 400px;
+        left: 367px;
+        width: 166px;
         height: 50px;
     }
     
     .home > .buttonContainer > button:nth-child(1) {
         position: absolute;
         left: 0;
-        border: 2px solid #FFA500;
-        width: 200px;
+        width: 100%;
         height: 50px;
-        color: white;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 500;
-        font-size: 17px;
-        overflow: hidden;
-        transition: background 0.8s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .home > .buttonContainer > button:nth-child(1):hover {
-            background-color: rgba(255, 255, 255, 0.12);
-        border-color: rgb(255, 255, 255);
-        color: #FFA500;
-    }
-    
-    .home > .buttonContainer > button:nth-child(1):active {
-        background-color: transparent;
-        background-size: 100%;
-        transition: background 0s;
+        font-size: 14px;
     }
     
     .home > .buttonContainer > button:nth-child(1) > span {
-        font-size: 30px;
-        line-height: 15px;
-        margin-left: 5px;
+        margin-top: -5px;
     }
     
     .home > .social-links {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
+        width: 300px;
         height: 70px;
-        top: 420px;
-        left: 630px;
-    }
-    
-    @-webkit-keyframes social-pulse {
-        0% {
-            box-shadow: 0 0 8px #FFA500, inset 0 0 8px #FFA500;
-        }
-        50% {
-            box-shadow: 0 0 8px #FFA500, inset 0 0 14px #c5bba9;
-        }
-        100% {
-            box-shadow: 0 0 8px #FFA500, inset 0 0 8px #FFA500;
-        }
+        top: 390px;
+        left: 430px;
+        justify-content: flex-start;
     }
     
     .home > .social-links > a {
         position: relative;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.05);
-        margin: 0 30px;
-        border-radius: 50%;
-        background: linear-gradient(rgb(87, 82, 82), rgb(34, 32, 32));
-        overflow: hidden;
-        transition: transform 0.3s;
-        -webkit-animation: social-pulse 2s linear 1s infinite;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
     }
     
     .home > .social-links > a > .fab {
-        font-size: 20px;
-        line-height: 60px;
-        position: relative;
-        z-index: 10;
-        transition: color 0.3s;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: max-content;
+        width: max-content;
+        font-size: 18px;
     }
     
     .home > .social-links > a::after {
@@ -12234,29 +12065,14 @@ body > footer > h3{
     
     .about {
         position: relative;
-        padding-bottom: 20px;
-        height: 100vh;
-        background-color: #E5E5E5;
+        height: 80vh;
     }
     
     .about > .title {
         position: absolute;
-        font-family: 'Ubuntu', sans-serif;
-        padding-top: 20px;
         left: 100px;
         top: 16px;
-        padding-bottom: 10px;
-    }
-    
-    .about > .title::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        content: " ";
-        width: 100%;
-        height: 8px;
-        background: #FFA500;
-        border-radius: 30px;
+        margin: 0;
     }
     
     .about > .aboutProPicImg {
@@ -12269,8 +12085,9 @@ body > footer > h3{
     .about > .content {
         position: absolute;
         top: 55px;
-        left: 59%;
+        left: 56%;
         font-size: 30px;
+        height: 514px;
     }
     
     .about > .content > .header1 {
@@ -12292,7 +12109,9 @@ body > footer > h3{
         font-family: "Segoe UI";;
         font-size: 18px;
         font-weight: 600;
-        left: 5.3%;
+        left: 0.3%;
+        width: 405px;
+         line-height: 21px;
     }
     
     .about > .content > .socialMedia {
@@ -12300,8 +12119,11 @@ body > footer > h3{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-left: 90px;
-        margin-top: 30px;
+        left: 52px;
+        top: 351px;
+        right: 0;
+        width: max-content;
+        margin: auto;
         grid-gap: 120px;
         height: 32px;
     }
@@ -12362,14 +12184,15 @@ body > footer > h3{
         position: absolute;
         border: 0;
         border-radius: 20px;
-        left: 40px;
+        left: -15px;
         margin-top: 100px;
         transform: translateX(0%);
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 90px;
     }
     
     .about > .content > .button > .downloadCv {
-        position: relative;
+        position: absolute;
         color: black;
         background-color: #FFBB00;
         font-weight: 600;
@@ -12380,7 +12203,9 @@ body > footer > h3{
         font-size: 16px;
         cursor: pointer;
         transition: all 0.6s ease;
-        margin-left: 17%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     
     .about > .content > .button > .downloadCv:hover {
@@ -12391,8 +12216,8 @@ body > footer > h3{
     }
     
     .about > .content > .button > .hireMe {
-        position: relative;
-        margin-top: 4%;
+        position: absolute;
+        bottom: 0;
         color: white;
         background-color: #464237;
         font-weight: 600;
@@ -12403,7 +12228,9 @@ body > footer > h3{
         font-size: 16px;
         cursor: pointer;
         transition: all 0.6s ease;
-        margin-left: 17%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     
     .about > .content > .button > .hireMe:hover {
