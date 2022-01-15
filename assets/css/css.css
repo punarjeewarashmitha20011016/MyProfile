@@ -12897,7 +12897,7 @@ body > footer > h3{
     .contact {
         position: relative;
         background-color: #E5E5E5;
-        height: 100vh;
+        height: 108vh;
         margin-top: -1px;
     }
     
@@ -12906,14 +12906,14 @@ body > footer > h3{
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
         left: 100px;
-        top: 55px;
+        top: 105px;
         margin: 0;
         padding-bottom: 10px;
     }
     
     .contact > .content {
         position: absolute;
-        top: 26%;
+        top: 32%;
         left: 8%;
         margin: unset;
     }
@@ -12997,7 +12997,7 @@ body > footer > h3{
         border-radius: 30px;
         transform: rotate(90deg);
         background-color: #726b6b;
-        margin-top: 41%;
+        margin-top: 46.2%;
         margin-left: -19%;
     }
     
@@ -13079,7 +13079,7 @@ body > footer > h3{
             transform: rotate(0deg);
         }
         20% {
-            left: 215px;
+            left: 200px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
@@ -13089,7 +13089,7 @@ body > footer > h3{
             transform: rotate(-180deg);
         }
         60% {
-            left: -315px;
+            left: -300px;
             -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
         }
@@ -13207,7 +13207,6 @@ body > footer > h3{
         height: 40%;
         font-size: 22px;
         z-index: 1;
-        border: 1px solid red;
         margin: 0;
         left: 550px;
         top: 410px;
@@ -13251,32 +13250,25 @@ body > footer > h3{
     
     @keyframes circleOuter {
         0%{
-            width: 45px;
-            height: 45px;
+            transform:scale(1);
         }
         100%{
-            width: 60px;
-            height: 60px;
-            left: 0;
-            right: 0;
-            margin: auto;
+            transform:scale(1.4);
         }
     }
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .circleOuter {
         position: absolute;
-        width: 45px;
-        height: 45px;
+        content: "";
+        top: 30px;
+        left: 0px;
         z-index: -2;
-        top: 23px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: max-content;
+        transform:scale(1);
         animation-name: circleOuter;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-duration: 2s;
         animation-timing-function: linear;
+        /*animation-play-state: paused;*/
     }
     
     @keyframes emailAnim{
@@ -13294,7 +13286,11 @@ body > footer > h3{
         animation-direction: alternate;
         animation-duration: 5s;
         animation-timing-function: linear;
-        margin-left: -2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50px;
+
     }
     
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .fas {
@@ -13312,6 +13308,7 @@ body > footer > h3{
         animation-direction: alternate;
         animation-duration: 2s;
         animation-timing-function: linear;
+        top: 40px;
     }
     @keyframes phoneRing{
         0% {
@@ -13398,11 +13395,13 @@ body > footer > h3{
     }
     
     .phone {
-        margin-left: 35px;
+        top: 90px;
+        margin-left: 145px;
     }
     
     .gmail {
-        margin-left: 27px;
+        top: 100px;
+        margin-left: 85px;
     }
     
     .contact-text a {
