@@ -12832,7 +12832,7 @@ body > footer > h3{
     
     .portfolio > .image2Container {
         position: absolute;
-        top: 29%;
+        top: 28%;
         left: 43.5%;
         width: 260px;
         height: 180px;
@@ -12848,8 +12848,8 @@ body > footer > h3{
     
     .portfolio > .image3Container {
         position: absolute;
-        top: 29%;
-        left: 72%;
+        top: 28%;
+        left: 71.8%;
         width: 260px;
         height: 180px;
     }
@@ -12864,7 +12864,7 @@ body > footer > h3{
     
     .portfolio > .image4Container {
         position: absolute;
-        top: 64%;
+        top: 65%;
         left: 43.5%;
         width: 260px;
         height: 180px;
@@ -12880,8 +12880,8 @@ body > footer > h3{
     
     .portfolio > .image5Container {
         position: absolute;
-        top: 64%;
-        left: 72%;
+        top: 65%;
+        left: 71.8%;
         width: 260px;
         height: 180px;
     }
@@ -12905,18 +12905,16 @@ body > footer > h3{
         position: absolute;
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 100px;
         top: 55px;
-        width: max-content;
+        margin: 0;
         padding-bottom: 10px;
     }
     
     .contact > .content {
         position: absolute;
-        top: 22%;
-        left: 11%;
+        top: 26%;
+        left: 8%;
         margin: unset;
     }
     
@@ -12948,6 +12946,7 @@ body > footer > h3{
     .contact > .content > #message {
         position: absolute;
         width: 370px;
+        height: 250px;
         margin: 15px 0px;
         display: block;
         border-radius: 16px;
@@ -12957,7 +12956,7 @@ body > footer > h3{
     .contact > .content > .sendBtn {
         position: absolute;
         width: 370px;
-        margin-top: 5.4%;
+        margin-top: 35%;
         border: 0;
         border-radius: 30px;
         transition: all .2s ease-in-out;
@@ -12965,7 +12964,7 @@ body > footer > h3{
     
     .contact > .content > .sendBtn > .alt-send-button {
         position: absolute;
-        top: 0;
+        top: 3px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -12986,39 +12985,40 @@ body > footer > h3{
     }
     
     .contact > .content > .sendBtn > .alt-send-button:hover {
-        transform: translateY(-25px);
+        transform: translateY(-27px);
     }
     
     .contact > hr {
         display: block;
         position: absolute;
-        width: 390px;
+        width: 485px;
         height: 8px;
         border: 0;
         border-radius: 30px;
         transform: rotate(90deg);
         background-color: #726b6b;
-        margin-top: 32%;
-        margin-left: -10%;
+        margin-top: 41%;
+        margin-left: -19%;
     }
     
     .contact > address > .topContainerContact {
         position: absolute;
-        margin-top: 185px;
-        margin-left: 45%;
+        margin-top: 145px;
+        margin-left: 52%;
         width: 50%;
-        height: 400px;
+        height: 200px;
     }
     
     .contact > address > .topContainerContact > .container {
-        position: relative;
-        margin-top: 26%;
-        margin-left: 4%;
-        width: 100%;
-        height: 10%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 20%;
         background-color: transparent;
         line-height: 15px;
-    
+        margin: auto;
     }
     
     /* for background beginning */
@@ -13033,54 +13033,27 @@ body > footer > h3{
     
     .contact > address > .topContainerContact > .container > .banner {
         width: 100%;
-        height: 160px;
+        height: 100%;
         min-height: 100px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
         position: absolute;
         left: 0px;
-        top: calc((100% - 200px) / 2);
         z-index: 0;
     }
     
     .contact > address > .topContainerContact > .container > .banner > p {
+        position: absolute;
+        top: 10px;
         color: black;
-        -ms-flex-item-align: center;
-        align-self: center;
-        text-transform: uppercase;
-        font-size: 25px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-    }
-    
-    .contact > address > .topContainerContact > .container > .banner > a {
-        color: #0D47A1;
-        height: auto;
-        text-align: center;
-        text-transform: uppercase;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-style: normal;
-        font-weight: 500;
         font-size: 20px;
     }
     
-    .contact > address > .topContainerContact > .container > .banner > a > p {
-        margin-top: 0px;
-    }
-    
-    .contact > address > .topContainerContact > .container > .banner > a > i {
-        color: #BDBDBD;
-        margin-left: -5px;
-        margin-top: 2px;
+    .contact > address > .topContainerContact > .container > .banner > a {
+        font-size: 20px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > i:before {
@@ -13088,82 +13061,25 @@ body > footer > h3{
         /* filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); -webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); */
         color: #0D47A1;
         position: relative;
-        top: 0px;
-        left: 23px;
+        top: -10px;
+        left: 18px;
         z-index: 1;
-        transition: 400ms left ease-in-out;
-        -webkit-transition: 400ms left ease-in-out;
-        content: "";
-        background-image: url('../contact/send-message.png');
-        width: 30px;
-        height: 30px;
-        background-size: cover;
-        margin-top: -12%;
+        animation: none;
     }
-    
-    .contact > address > .topContainerContact > .container > .banner > a > i > span {
-        display: inline-block;
-        position: relative;
-        top: 0px;
-        left: -7px;
-        z-index: 0;
-        transition: 400ms left ease-in-out;
-        -webkit-transition: 400ms left ease-in-out;
-        content: "";
-        background-image: url(../contact/send1grey.png);
-        width: 30px;
-        height: 30px;
-        background-size: cover;
-        margin-top: -12%;
-    }
-    
-    
-    .contact > address > .topContainerContact > .container > .banner > a.active > i:before, .container > .banner > a:hover > i:before,
-    .contact > address > .topContainerContact > .container > .banner > a:focus > i:before {
+    .contact > address > .topContainerContact > .container > .banner > a:hover > i:before {
         animation: paper-plane 4s ease-in-out;
-        -webkit-animation: paper-plane 4s ease-in-out;
     }
-    
-    
     /* animation beginning */
-    
-    @-webkit-keyframes paper-plane {
-        0% {
-            left: 23px;
-            top: 0px;
-            -webkit-transform: rotate(0deg);
-        }
-        20% {
-            left: 235px;
-            -webkit-transform: rotate(-90deg);
-        }
-        40% {
-            top: -80px;
-            -webkit-transform: rotate(-180deg);
-        }
-        60% {
-            left: -335px;
-            -webkit-transform: rotate(-270deg);
-        }
-        80% {
-            top: 0px;
-            -webkit-transform: rotate(-360deg);
-        }
-        100% {
-            left: 23px;
-            -webkit-transform: rotate(-360deg);
-        }
-    }
     
     @keyframes paper-plane {
         0% {
             left: 23px;
-            top: 0px;
+            top: 0px !important;
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
         20% {
-            left: 235px;
+            left: 215px;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
         }
@@ -13173,7 +13089,7 @@ body > footer > h3{
             transform: rotate(-180deg);
         }
         60% {
-            left: -335px;
+            left: -315px;
             -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
         }
@@ -13195,79 +13111,12 @@ body > footer > h3{
     
     /* global classes beginning */
     
-    .heading {
-        color: #222;
-    }
-    
-    .text {
-        font-family: Josefin Sans, sans-serif;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        cursor: default;
-    }
-    
-    .text.nodecoration {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .text.black {
-        color: #444;
-    }
-    
-    .text.white {
-        color: #F5F3F3;
-    }
-    
-    .text.outline {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-    }
-    
-    .text.outline.white {
-        -webkit-text-stroke-color: #FCFCFC;
-    }
-    
-    .text.outline.black {
-        -webkit-text-stroke-color: #444;
-    }
-    
-    .offwhite-light {
-        background-color: #FCFCFC;
-    }
-    
-    .offwhite-dark {
-        background-color: #F5F3F3;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .flex {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-    }
-    
-    .flex.vertical {
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-    }
-    
-    .flex.horizontal {
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-    
-    
     .contact > address > .topContainerContact > .socialMedia {
         position: relative;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        top: 35px;
+        top: 100px;
         left: 0;
         right: 0;
         margin: auto;
@@ -13329,24 +13178,24 @@ body > footer > h3{
     }
     
     .contact > address > .topContainerContact > p {
-        position: relative;
-        font-weight: 500;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-left: 22%;
-        font-size: 18px;
-        margin-top: 10%;
-        font-style: normal;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 160px;
+        margin: auto;
+        width: max-content;
     }
     
     .contact > address > .topContainerContact > hr:nth-child(4) {
-        position: relative;
-        width: 550px;
-        border: 0;
-        border-radius: 30px;
-        height: 8px;
-        margin-top: 5%;
-        background-color: #726b6b;
-        margin-left: 12%;
+        position: absolute;
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 225px;
+        margin: auto;
+        width: 480px;
+        height: 6px;
     }
     .contact > address > .topContainerContact > hr:nth-child(5) {
         display: none;
@@ -13355,18 +13204,24 @@ body > footer > h3{
     .contact > address > .bottomContainerContact {
         position: absolute;
         width: 40%;
-        height: 15%;
-        margin-top: 26%;
-        margin-left: 55%;
+        height: 40%;
         font-size: 22px;
         z-index: 1;
+        border: 1px solid red;
+        margin: 0;
+        left: 550px;
+        top: 410px;
+        
     }
     
     /* Location, Phone, Email Section */
     .contact > address > .bottomContainerContact > .contact-list {
-        list-style-type: none;
-        margin-left: -30px;
-        padding-right: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        height: 100%;
     }
     
     .contact > address > .bottomContainerContact > .contact-list > .list-item {
@@ -13388,8 +13243,10 @@ body > footer > h3{
         border-radius: 50%;
         position: absolute;
         z-index: -1;
-        margin-left: -10px;
-        margin-top: 14px;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     
     @keyframes circleOuter {
@@ -13400,20 +13257,21 @@ body > footer > h3{
         100%{
             width: 60px;
             height: 60px;
-            margin-left: -18px;
-            margin-top: 7px;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
     }
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .circleOuter {
-        content: "";
+        position: absolute;
         width: 45px;
         height: 45px;
-        background-color: #d5d6d6;
-        border-radius: 50%;
-        position: absolute;
         z-index: -2;
-        margin-left: -10px;
-        margin-top: 14px;
+        top: 23px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
         animation-name: circleOuter;
         animation-iteration-count: infinite;
         animation-direction: alternate;
@@ -13440,6 +13298,12 @@ body > footer > h3{
     }
     
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .fas {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
         font-size: 30px;
     }
     .contact > address > .bottomContainerContact > .contact-list > .list-item > #phoneFont{
@@ -13488,16 +13352,11 @@ body > footer > h3{
     
     /*-----------------------------------------------------------------------*/
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse {
-        background: #d6d4d4;
-        border-radius: 50%;
-        height: 14px;
-        width: 14px;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: 18px 0px 0px -255px;
-        transform: rotateX(55deg);
-        z-index: -1;
+        left: -15px;
+        right: 0;
+        margin: auto;
+        width: max-content;
       }
       .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse:after {
         content: "";
@@ -13533,7 +13392,9 @@ body > footer > h3{
     /*-----------------------------------------------------------------------*/
     
     .place {
-        margin-left: 35px;
+        position: absolute;
+        top: 63px;
+        margin-left: 85px;
     }
     
     .phone {
