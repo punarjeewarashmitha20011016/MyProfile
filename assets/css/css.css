@@ -14736,7 +14736,7 @@ body > footer > h3{
     .services {
         position: relative;
         background-color: #565151;
-        height: 130vh;
+        height: 120vh;
     }
     
     .services > .title {
@@ -14744,126 +14744,57 @@ body > footer > h3{
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
         left: 100px;
-        top: 16px;
+        top: 55px;
         padding-bottom: 10px;
-        color: white;
+        margin: 0;
     }
     
-    .services > .title::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        content: " ";
-        width: 100%;
-        height: 8px;
-        background: #FFA500;
-        border-radius: 30px;
-    }
     
     .services > .content {
         position: absolute;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 70px;
-        left: 54.5%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 0;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1100px;
+        height: 600px;
+        transform: translate(0,0);
+        grid-gap: 0;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .services > .content > .App-Development::after, .Web-Development::after, .Innovative_Ideas::after, .Ecommerce::after {
-        position: absolute;
-        content: " ";
-        width: 250px;
-        height: 4px;
-        background: white;
-        border-radius: 30px;
-        transform: rotate(270deg);
-        margin-left: -50px;
-    }
-    
-    .services > .content > .App-Development::after, .Web-Development::after {
-        top: 120px;
-        left: 205px;
-    }
-    
-    .services > .content > .Web-Development::after {
-        left: 575px;
-    }
-    
-    .services > .content > .Innovative_Ideas::after, .Ecommerce::after {
-        top: 440px;
-    }
-    
-    .services > .content > .Innovative_Ideas::after {
-        left: 205px;
-    }
-    
-    .services > .content > .Ecommerce::after {
-        left: 575px;
-    }
-    
-    .services > .content > article > .sub-title {
-        font-size: 24px;
-        color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    
-    .services > .content > article > .sub-content {
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
+
+    .services > .content > article{
+        flex-grow: 1;
+        position: relative;
+        padding-left: 50px;
         width: 300px;
-        height: 90px;
+        height: 250px;
+        border-right: 3px solid white;
     }
-    
-    .services > .content > .App-Development > .icon {
-        background-image: url("../icons/App-Development.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > article .icon,.sub-title,.sub-content{
+        position: relative;
+        left: 35px;
     }
-    
-    .services > .content > .Web-Development > .icon {
-        background-image: url("../icons/Web-Development.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > article:nth-child(3){
+        border: 0;
     }
-    
-    .services > .content > .Web-Design > .icon {
-        background-image: url("../icons/Web-Design.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > article:nth-child(6){
+        border: 0;
+        top: 0;
     }
-    
-    .services > .content > .Innovative_Ideas > .icon {
-        background-image: url("../icons/Innovative-Ideas.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > article:nth-child(4){
+        top: 0;
     }
-    
-    .services > .content > .Ecommerce > .icon {
-        background-image: url("../icons/E-commerce.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > .App-Development::before,.Web-Development::before,.Web-Design::before,.Innovative_Ideas::before{
+        display: none;
     }
-    
-    .services > .content > .Graphic-Design > .icon {
-        background-image: url("../icons/Graphic Design.png");
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-size: contain;
+    .services > .content > .App-Development::after,.Web-Development::after,.Innovative_Ideas::after,.Ecommerce::after{
+        display: none;
     }
     
     .portfolio {
