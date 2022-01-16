@@ -14895,21 +14895,21 @@ body > footer > h3{
         font-family: 'Ubuntu', sans-serif;
         padding-top: 20px;
         left: 100px;
-        top: 16px;
+        top: 55px;
         padding-bottom: 10px;
+        margin: 0;
     }
-    
-    .contact > .title::after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        content: " ";
-        width: 100%;
-        height: 8px;
-        background: #FFA500;
-        border-radius: 30px;
+    @keyframes formAnim {
+        0% {
+            box-shadow: 0 0 2px #141414, inset 0 0 2px #424241;
+        }
+        50% {
+            box-shadow: 0 0 4px #141414, inset 0 0 4px #424241;
+        }
+        100% {
+            box-shadow: 0 0 2px #141414, inset 0 0 2px #424241;
+        }
     }
-    
     .contact > .content {
         position: relative;
         top: 22%;
@@ -14929,6 +14929,11 @@ body > footer > h3{
         /*box-shadow: 0 0 10px #8a8a8e;*/
         font-size: 16px;
         transition: all 0.3s ease;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
     }
     
     .contact > .content > .email {
@@ -14943,6 +14948,11 @@ body > footer > h3{
         /*box-shadow: 0 0 10px #8a8a8e;*/
         font-size: 16px;
         transition: all 0.3s ease;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
     }
     
     .contact > .content > .subject {
@@ -14957,11 +14967,17 @@ body > footer > h3{
         /*box-shadow: 0 0 10px #8a8a8e;*/
         font-size: 16px;
         transition: all 0.3s ease;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
     }
     
     .contact > .content > #message {
         position: absolute;
         width: 450px;
+        height: 260px;
         padding: 12px 20px;
         margin: 180px 0px;
         display: inline-block;
@@ -14971,6 +14987,18 @@ body > footer > h3{
         /*box-shadow: 0 0 10px #8a8a8e;*/
         font-size: 16px;
         transition: all 0.3s ease;
+        animation-name: formAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+    .contact > .content > #message::placeholder{
+        position: absolute;
+        inset: 0 0 0 0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
     }
     
     .contact > .content > .name:hover {
@@ -15000,7 +15028,7 @@ body > footer > h3{
         background-color: #489ac0;
         height: 35px;
         width: 455px;
-        margin-top: 31.4%;
+        margin-top: 32%;
         border: 0;
         border-radius: 30px;
         margin-left: 0;
@@ -15028,14 +15056,14 @@ body > footer > h3{
     
     .contact > hr {
         position: absolute;
-        width: 400px;
+        width: 500px;
         height: 8px;
         border: 0;
         border-radius: 30px;
         transform: rotate(90deg);
         background-color: #726b6b;
-        margin-top: 24.9%;
-        margin-left: -6.5%;
+        margin-top: 28%;
+        margin-left: -8.5%;
     }
     
     .contact > address > .topContainerContact {
@@ -15118,6 +15146,8 @@ body > footer > h3{
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
+        position: relative;
+        top: 15px;
     }
     
     .contact > address > .topContainerContact > .container > .banner > a > p {
@@ -15235,86 +15265,13 @@ body > footer > h3{
             transform: rotate(-360deg)
         }
     }
-    
-    
-    /* animation end */
-    
-    
-    /* global classes beginning */
-    
-    .heading {
-        color: #222;
-    }
-    
-    .text {
-        font-family: Josefin Sans, sans-serif;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        cursor: default;
-    }
-    
-    .text.nodecoration {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .text.black {
-        color: #444;
-    }
-    
-    .text.white {
-        color: #F5F3F3;
-    }
-    
-    .text.outline {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-    }
-    
-    .text.outline.white {
-        -webkit-text-stroke-color: #FCFCFC;
-    }
-    
-    .text.outline.black {
-        -webkit-text-stroke-color: #444;
-    }
-    
-    .offwhite-light {
-        background-color: #FCFCFC;
-    }
-    
-    .offwhite-dark {
-        background-color: #F5F3F3;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .flex {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-    }
-    
-    .flex.vertical {
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-    }
-    
-    .flex.horizontal {
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-    
-    
+
     .contact > address > .topContainerContact > .socialMedia {
         position: relative;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        top: 35px;
+        top: 13px;
         left: 0;
         right: 0;
         margin: auto;
@@ -15328,7 +15285,7 @@ body > footer > h3{
         transition: all 0.5s;
     }
     .contact > address > .topContainerContact > .socialMedia > a .fab{
-        font-size: 26px;
+        font-size: 30px;
     }
     .contact > address > .topContainerContact > .socialMedia > .facebook {
         position: relative;
@@ -15376,22 +15333,22 @@ body > footer > h3{
     }
     
     .contact > address > .topContainerContact > p {
-        position: relative;
+        position: absolute;
         font-weight: 500;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin-left: 22%;
         font-size: 18px;
-        margin-top: 10%;
+        margin-top: 20%;
         font-style: normal;
     }
     
     .contact > address > .topContainerContact > hr:nth-child(4) {
-        position: relative;
+        position: absolute;
         width: 550px;
         border: 0;
         border-radius: 30px;
         height: 8px;
-        margin-top: 5%;
+        margin-top: 20%;
         background-color: #726b6b;
         margin-left: 12%;
     }
@@ -15402,18 +15359,23 @@ body > footer > h3{
     .contact > address > .bottomContainerContact {
         position: absolute;
         width: 40%;
-        height: 15%;
-        margin-top: 26%;
-        margin-left: 55%;
+        height: 40%;
         font-size: 22px;
         z-index: 1;
+        margin: 0;
+        left:715px;
+        top: 360px;
+        margin: unset;
     }
     
     /* Location, Phone, Email Section */
     .contact > address > .bottomContainerContact > .contact-list {
-        list-style-type: none;
-        margin-left: -30px;
-        padding-right: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        height: 100%;
     }
     
     .contact > address > .bottomContainerContact > .contact-list > .list-item {
@@ -15435,59 +15397,35 @@ body > footer > h3{
         border-radius: 50%;
         position: absolute;
         z-index: -1;
-        margin-left: -10px;
-        margin-top: 14px;
+        top: 105px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     
     @keyframes circleOuter {
         0%{
-            width: 45px;
-            height: 45px;
+            transform:scale(1);
         }
         100%{
-            width: 60px;
-            height: 60px;
-            margin-left: -18px;
-            margin-top: 7px;
+            transform:scale(1.4);
         }
     }
     .contact > address > .bottomContainerContact > .contact-list > .list-item > .circleOuter {
-        content: "";
-        width: 45px;
-        height: 45px;
-        background-color: #d5d6d6;
-        border-radius: 50%;
         position: absolute;
+        content: "";
+        top: 105px;
+        left: 0;
+        right: 0;
+        margin: auto;
         z-index: -2;
-        margin-left: -10px;
-        margin-top: 14px;
+        transform:scale(1);
         animation-name: circleOuter;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-duration: 2s;
         animation-timing-function: linear;
-    }
-    
-    @keyframes emailAnim{
-        0%{
-            transform: translateY(18px);
-        }
-        100%{
-            transform: translateY(-2px);
-        }
-    }
-    .contact > address > .bottomContainerContact > .contact-list > .list-item > .fa {
-        font-size: 35px;
-        animation-name: emailAnim;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-duration: 5s;
-        animation-timing-function: linear;
-        margin-left: -2px;
-    }
-    
-    .contact > address > .bottomContainerContact > .contact-list > .list-item > .fas {
-        font-size: 30px;
+        /*animation-play-state: paused;*/
     }
     .contact > address > .bottomContainerContact > .contact-list > .list-item > #phoneFont{
         animation-name: phoneRing;
@@ -15495,6 +15433,7 @@ body > footer > h3{
         animation-direction: alternate;
         animation-duration: 2s;
         animation-timing-function: linear;
+        top: 115px;
     }
     @keyframes phoneRing{
         0% {
@@ -15533,18 +15472,47 @@ body > footer > h3{
         }
     }
     
-    /*-----------------------------------------------------------------------*/
-    .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse {
-        background: #d6d4d4;
-        border-radius: 50%;
-        height: 14px;
-        width: 14px;
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .fa {
+        font-size: 35px;
+        animation-name: emailAnim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 5s;
+        animation-timing-function: linear;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: 18px 0px 0px -255px;
-        transform: rotateX(55deg);
-        z-index: -1;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        top: 205px;
+        
+
+    }
+    @keyframes emailAnim{
+        0%{
+            transform: translateY(18px);
+        }
+        100%{
+            transform: translateY(-2px);
+        }
+    }
+    
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .fas {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+        font-size: 30px;
+    }
+    .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse {
+        position: absolute;
+        left: -15px;
+        right: 0;
+        top: 35px;
+        margin: auto;
+        width: max-content;
       }
       .contact > address > .bottomContainerContact > .contact-list > .list-item > .pulse:after {
         content: "";
@@ -15577,18 +15545,22 @@ body > footer > h3{
       }
     
     
-    /*-----------------------------------------------------------------------*/
-    
     .place {
-        margin-left: 35px;
+        position: absolute;
+        top: 60px;
+        margin-left: 120px;
     }
     
     .phone {
-        margin-left: 35px;
+        position: absolute;
+        top:160px;
+        margin-left: 185px;
     }
     
     .gmail {
-        margin-left: 27px;
+        position: absolute;
+        top: 268px;
+        margin-left: 85px;
     }
     
     .contact-text a {
@@ -15602,6 +15574,7 @@ body > footer > h3{
         color: rgb(20, 19, 19);
         text-decoration: none;
     }
+    
     
     body > footer{
         position: relative;
