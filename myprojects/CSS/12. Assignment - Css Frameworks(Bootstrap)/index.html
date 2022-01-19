@@ -38,7 +38,202 @@
     </header>
     <main>
         <section class="Home container-fluid position-relative">
-                <div class="container position-absolute start-2 w-25" style="border: 1px solid red;"></div>
+                <div class="container-fluid position-absolute shadow">
+                    <div class="row h-50 position-relative start-0 end-0 m-auto" style="width: 95%;top: 20px;">
+                        <div class="col-3 bg-light shadow">
+                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Customer Details</h3>
+                            </div>
+
+                            <div class="form-floating position-relative" style="top: 20px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Id" style="height: 40px;">
+                                <label for="floatingPassword"><span>Id</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 30px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                <label for="floatingPassword"><span>Name</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 40px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Address" style="height: 40px;">
+                                <label for="floatingPassword"><span>Address</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 50px;">
+                                <input type="tel" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                <label for="floatingPassword"><span>Tel</span></label>
+                            </div>
+
+                        </div>
+                        <div class="col-6 bg-light mx-4 shadow">
+                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Item Details</h3>
+                            </div>
+
+                            <div class="row" style="height: 86%;">
+                                <div class="col border">
+                                    <div class="form-floating position-relative" style="top: 20px;">
+                                        <select class="form-select bg-transparent" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; width: 100%;">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                          <label for="floatingSelect">Code</label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 30px;">
+                                        <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Name" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Name</span></label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 40px;">
+                                        <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Address" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Qty</span></label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 50px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Unit Price</span></label>
+                                    </div>
+                                </div>
+                                <div class="col border position-relative">
+                                    <div class="form-floating position-relative" style="top: 20px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Qty On Hand</span></label>
+                                    </div>
+        
+                                    <div class="form-floating position-relative" style="top: 30px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Discount</span></label>
+                                    </div>
+
+                                    <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 150px;bottom: 110px;">
+                                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;">Add To Cart</button>
+                                        <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col bg-light shadow position-relative">
+                            <div class="form position-relative" style="top: 20px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingId" placeholder="Order Id">
+                            </div>
+
+                            <div class="container-fluid position-absolute start-0" style="top: 25%;width: 100%;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Discount</span></label>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Cash</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Balance</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row position-relative">
+                                    <div class="col-6 position-relative">
+                                        <h6 class="position-relative" style="top: 8px;">Sub Total - </h6>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row position-relative mt-2">
+                                    <div class="col-6 position-relative">
+                                        <h6 class="position-relative" style="top: 8px;">Total - </h6>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="row position-relative start-0 end-0 m-auto" style="width: 95%;top: 40px; height: 20%;">
+                        <div class="col bg-light">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Customer Id</th>
+                                        <th scope="col">Item Code</th>
+                                        <th scope="col">Item Description</th>
+                                        <th scope="col">Item Qty</th>
+                                        <th scope="col">Item Price</th>
+                                        <th scope="col">Item Discount</th>
+                                        <th scope="col">Total</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>C-001</td>
+                                      <td>I-001</td>
+                                      <td>Maliban Piti</td>
+                                      <td>1</td>
+                                      <td>370.0</td>
+                                      <td>0</td>
+                                      <td>370.0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>C-001</td>
+                                        <td>I-002</td>
+                                        <td>Kiri samba kg</td>
+                                        <td>1</td>
+                                        <td>400.0</td>
+                                        <td>0</td>
+                                        <td>400.0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>C-001</td>
+                                        <td>I-003</td>
+                                        <td>Maliban Chocalate Biscuit</td>
+                                        <td>1</td>
+                                        <td>100.0</td>
+                                        <td>0</td>
+                                        <td>100.0</td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid position-absolute end-0 w-25 me-5" style="margin-top: 120px;">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-outline-success w-100">Purchase</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger w-100">Discard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </section>
     </main>
 </body>

@@ -61,13 +61,32 @@ body > header > nav > div > div:nth-child(5):hover {
 body > main > .Home{
     width: 100%;
     height: 92.5vh;
-    background-color: rgb(247, 247, 247) !important;
+    background-color: rgb(233, 233, 233) !important;
 }
 body > main > .Home > div:nth-child(1){
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
+    width: 95%;
     height: 92%;
     background-color: rgb(241, 240, 240) !important;
     border-radius: 15px;
+}
+body > main > .Home > .container-fluid > .row > div:nth-child(2) > div input{
+    width: 50%;
+}
+
+body > main > .Home > .container-fluid > .row > div div label > span{
+    position: absolute;
+    top: 7px;
+}
+body > main > .Home > .container-fluid > .row > div > div label{
+    width: 150px;
+    font-size: 15px;
+}
+body > main > .Home > .container-fluid > .row > div:nth-child(3) div input:focus::placeholder{
+    position: absolute;
+    top: -5px;
 }
