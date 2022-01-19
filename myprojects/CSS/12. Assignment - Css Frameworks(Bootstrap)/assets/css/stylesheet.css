@@ -1,0 +1,73 @@
+body > header > nav{
+    background-color: #575454 !important;
+    box-shadow: 0px 1px 10px 1px;
+}
+body > header > nav ul > li{
+    width: 102px;
+    transition: all 0.5s;
+    text-align: center;
+}
+body > header > nav ul > li a{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;   
+    transition: all 0.5s;
+}
+body > header > nav ul > li a span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+}
+body > header > nav ul > li:hover a{
+    background-color: rgb(143, 141, 141);
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+body > header > nav > div > div:nth-child(5) {
+    right: 10px;
+    width: 30px;
+    height: 35px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer;
+}
+body > header > nav > div > div:nth-child(5) i {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+}
+body > header > nav > div > div:nth-child(5) h3 {
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+}
+body > header > nav > div > div:nth-child(5):hover {
+    width: 100px;
+    right: 20px;
+    transition: all 1s;
+}
+
+body > main > .Home{
+    width: 100%;
+    height: 92.5vh;
+    background-color: rgb(247, 247, 247) !important;
+}
+body > main > .Home > div:nth-child(1){
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 92%;
+    background-color: rgb(241, 240, 240) !important;
+    border-radius: 15px;
+}
