@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items</title>
+    <title>Customer</title>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/stylesheet.css">
     <link rel="stylesheet" href="/assets/css/fonts/css/all.css">
@@ -34,8 +34,8 @@
                     <ul class="position-absolute navbar-nav flex-row w-100 justify-content-start fs-6 px-4" style="left:200px;">
                         <li class="nav-item"><a class="nav-link text-white" href="/index.html"><span>Home</span></a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="orders.html"><span>Orders</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#"><span>Items</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="customer.html"><span>Customers</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="Items.html"><span>Items</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><span>Customers</span></a></li>
                     </ul>
                 </div>
                 <div class="logout position-absolute d-none d-lg-block" >
@@ -59,19 +59,19 @@
                             <div class="col position-relative">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Code</span></label>
+                                    <label for="floatingPassword"><span>Id</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Description</span></label>
+                                    <label for="floatingPassword"><span>Name</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Qty</span></label>
+                                    <label for="floatingPassword"><span>Contact No</span></label>
                                 </div>
                             </div>
                         </div>
@@ -79,19 +79,13 @@
                             <div class="col">
                                 <div class="form-floating position-relative" >
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Buying Price</span></label>
+                                    <label for="floatingPassword"><span>Nic</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Unit Price</span></label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Discount</span></label>
+                                    <label for="floatingPassword"><span>Address</span></label>
                                 </div>
                             </div>
                         </div>
@@ -100,23 +94,23 @@
 
                 <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
                     <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
                             <a href="">
-                            <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
+                            <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Customer</button>
                             </a>
                         </div>
                     </div>
                     <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
                             <a href="">
-                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Item</button>
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Customer</button>
                             </a>
                         </div>
                     </div>
                     <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
                             <a href="">
-                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete Item</button>
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete Customer</button>
                             </a>
                         </div>
                     </div>
@@ -127,87 +121,70 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Code</th>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Buying Price</th>
-                                    <th scope="col">Unit Price</th>
-                                    <th scope="col">Discount</th>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Nic</th>
+                                    <th scope="col">Contact No</th>
+                                    <th scope="col">Address</th>
                                   </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                   <th scope="row">1</th>
-                                  <td>I-001</td>
-                                  <td>Maliban Piti 250g</td>
-                                  <td>100</td>
-                                  <td>280.0</td>
-                                  <td>300.0</td>
-                                  <td>0</td>
+                                  <td>C-001</td>
+                                  <td>Saman Bandara</td>
+                                  <td>20010201001</td>
+                                  <td>0767878787</td>
+                                  <td>Bandaragama</td>
                                 </tr>
 
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>I-002</td>
-                                    <td>Maliban Piti 500g</td>
-                                    <td>100</td>
-                                    <td>480.0</td>
-                                    <td>500.0</td>
-                                    <td>0</td>
+                                    <td>C-002</td>
+                                    <td>Namal Kumara</td>
+                                    <td>6001020100</td>
+                                    <td>0785656565</td>
+                                    <td>Horana</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">3</th>
-                                    <td>I-003</td>
-                                    <td>Maliban Piti 1kg</td>
-                                    <td>100</td>
-                                    <td>680.0</td>
-                                    <td>700.0</td>
-                                    <td>0</td>
+                                    <td>C-003</td>
+                                    <td>Sunimal Bandara</td>
+                                    <td>6201020100</td>
+                                    <td>0785622565</td>
+                                    <td>Horana</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">4</th>
-                                    <td>I-004</td>
-                                    <td>Maliban Chocalate Biscuit 100g</td>
-                                    <td>100</td>
-                                    <td>120.0</td>
-                                    <td>150.0</td>
-                                    <td>0</td>
+                                    <td>C-004</td>
+                                    <td>Kamal Bandara</td>
+                                    <td>9001020100</td>
+                                    <td>0765622565</td>
+                                    <td>Panadura</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">5</th>
-                                    <td>I-005</td>
-                                    <td>Munchee Chocalate Biscuit 100g</td>
-                                    <td>100</td>
-                                    <td>130.0</td>
-                                    <td>150.0</td>
-                                    <td>0</td>
+                                    <td>C-005</td>
+                                    <td>Sirimal Bandara</td>
+                                    <td>20010201000</td>
+                                    <td>0721222565</td>
+                                    <td>Horana</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">6</th>
-                                    <td>I-006</td>
-                                    <td>Munchee Chocalate Biscuit 250g</td>
-                                    <td>100</td>
-                                    <td>230.0</td>
-                                    <td>250.0</td>
-                                    <td>0</td>
+                                    <td>C-006</td>
+                                    <td>Amal Bandara</td>
+                                    <td>6701020100</td>
+                                    <td>0715622565</td>
+                                    <td>Horana</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">7</th>
-                                    <td>I-007</td>
-                                    <td>Munchee Chocalate Biscuit 100g</td>
-                                    <td>100</td>
-                                    <td>130.0</td>
-                                    <td>150.0</td>
-                                    <td>0</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">8</th>
-                                    <td>I-008</td>
-                                    <td>Nadu rice 1kg</td>
-                                    <td>100kg</td>
-                                    <td>130.0</td>
-                                    <td>150.0</td>
-                                    <td>0</td>
+                                    <td>C-007</td>
+                                    <td>Nimal Kumara</td>
+                                    <td>5201020100</td>
+                                    <td>0766622565</td>
+                                    <td>Piliyandala</td>
                                   </tr>
                               </tbody>
                         </table>
