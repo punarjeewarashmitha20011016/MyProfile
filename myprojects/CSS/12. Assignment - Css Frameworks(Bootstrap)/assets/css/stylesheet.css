@@ -29,10 +29,9 @@ body > header > nav ul > li:hover a{
     border-radius: 30px;
     transition: all 0.5s;
 }
-
 body > header > nav > div > div:nth-child(5) {
-    right: 10px;
-    width: 30px;
+    right: 70px;
+    width: 35px;
     height: 35px;
     overflow: hidden;
     transition: all 1s;
@@ -46,13 +45,42 @@ body > header > nav > div > div:nth-child(5) i {
     height: max-content;
 }
 body > header > nav > div > div:nth-child(5) h3 {
-    left: 40px;
+    width: 70px;
+    left: 45px;
     top: 0;
     bottom: 0;
     margin: auto;
     height: max-content;
 }
 body > header > nav > div > div:nth-child(5):hover {
+    width: 110px;
+    right: 70px;
+    transition: all 1s;
+}
+
+body > header > nav > div > div:nth-child(6) {
+    right: 10px;
+    width: 30px;
+    height: 35px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer;
+}
+body > header > nav > div > div:nth-child(6) i {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+}
+body > header > nav > div > div:nth-child(6) h3 {
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+}
+body > header > nav > div > div:nth-child(6):hover {
     width: 100px;
     right: 20px;
     transition: all 1s;
