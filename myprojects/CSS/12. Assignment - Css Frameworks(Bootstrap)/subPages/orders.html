@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <link rel="stylesheet" href="/assets/css/fonts/css/all.css">
+
+    <style>
+        body > main > section > .container-fluid > .row > div div label > span{
+            position: absolute;
+            top: 8px;
+        }
+        body > main > section > .container-fluid > .row > div > div label{
+            width: 100%;
+            font-size: 13px;
+        }
+        body > main > section > .container-fluid > .row > div div input:focus::placeholder{
+            position: absolute;
+            top: -5px;
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h3 class="navbar-brand text-white fs-4" href="#" style="margin-left: 20px;height: 30px;">WebPos</h3>
+                <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 140px;"></i>
+                <hr class="position-absolute opacity-100" style="transform: rotate(90deg);width: 35px;height: 4px;left: 180px;background-color: white;">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="position-absolute navbar-nav flex-row w-100 justify-content-start fs-6 px-4" style="left:200px;">
+                        <li class="nav-item"><a class="nav-link text-white" href=""><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href=""><span>Orders</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href=""><span>Items</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href=""><span>Customers</span></a></li>
+                    </ul>
+                </div>
+                <div class="logout position-absolute d-none d-lg-block" >
+                    <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
+                    <h3 class="position-absolute text-white fs-6">Logout</h3>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fas fa-bars text-white"></i>
+                  </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Orders container-fluid position-relative">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
+                    <div class="col position-relative">
+                        <div class="form-floating position-relative" style="top: 30px;">
+                            <input type="text" class="form-control bg-transparent border-3" id="floatingPassword" placeholder="Name" style="height: 40px;width: 760px;">
+                            <label for="floatingPassword"><span>Search Order by Order Id, Customer Id</span></label>
+                        </div>
+                    </div>
+                    <div class="col position-absolute" style="top: 30px; left: 79.5%;">
+                        <button class="btn btn-secondary">View Order Details</button>
+                    </div>
+                </div>
+                <div class="row position-absolute border-5" style="top: 25%; left: 0;right: 0;margin: auto;">
+                    <div class="col position-relative" style="height: 380px;">
+                        <table class="table table-hover shadow position-absolute start-0 end-0 m-auto" style="width: 90%;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Customer Id</th>
+                                    <th scope="col">Order Id</th>
+                                    <th scope="col">Order Date</th>
+                                    <th scope="col">Order Time</th>
+                                    <th scope="col">Discount</th>
+                                    <th scope="col">Totl Amount</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>O-001</td>
+                                  <td>C-001</td>
+                                  <td>01/20/2022</td>
+                                  <td>10:58 AM</td>
+                                  <td>0</td>
+                                  <td>870.0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>O-002</td>
+                                    <td>C-002</td>
+                                    <td>01/20/2022</td>
+                                    <td>11:58 AM</td>
+                                    <td>0</td>
+                                    <td>1870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>O-003</td>
+                                    <td>C-003</td>
+                                    <td>01/20/2022</td>
+                                    <td>12:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>O-004</td>
+                                    <td>C-005</td>
+                                    <td>01/20/2022</td>
+                                    <td>01:20 PM</td>
+                                    <td>0</td>
+                                    <td>270.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>O-005</td>
+                                    <td>C-005</td>
+                                    <td>01/20/2022</td>
+                                    <td>01:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>O-006</td>
+                                    <td>C-001</td>
+                                    <td>01/20/2022</td>
+                                    <td>02:58 AM</td>
+                                    <td>0</td>
+                                    <td>2870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>O-007</td>
+                                    <td>C-002</td>
+                                    <td>01/20/2022</td>
+                                    <td>03:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>O-008</td>
+                                    <td>C-008</td>
+                                    <td>01/20/2022</td>
+                                    <td>05:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
