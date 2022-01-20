@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <link rel="stylesheet" href="/assets/css/fonts/css/all.css">
+    <style>
+        body > main > section > .container-fluid > .row > div div label > span{
+            position: absolute;
+            top: 7px;
+        }
+        body > main > section > .container-fluid > .row > div > div label{
+            width: 100%;
+            font-size: 16px;
+        }
+        body > main > section > .container-fluid > .row > div div input:focus::placeholder{
+            position: absolute;
+            top: -5px;
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h3 class="navbar-brand text-white fs-4" href="#" style="margin-left: 20px;height: 30px;">WebPos</h3>
+                <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 140px;"></i>
+                <hr class="position-absolute opacity-100" style="transform: rotate(90deg);width: 35px;height: 4px;left: 180px;background-color: white;">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="position-absolute navbar-nav flex-row w-100 justify-content-start fs-6 px-4" style="left:200px;">
+                        <li class="nav-item"><a class="nav-link text-white" href="/index.html"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="orders.html"><span>Orders</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><span>Items</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href=""><span>Customers</span></a></li>
+                    </ul>
+                </div>
+                <div class="logout position-absolute d-none d-lg-block" >
+                    <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
+                    <h3 class="position-absolute text-white fs-6">Logout</h3>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fas fa-bars text-white"></i>
+                  </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Orders container-fluid position-relative">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
+                    <div class="col position-relative">
+                        <div class="row position-relative" style="top: 0;">
+                            <div class="col position-relative">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Code</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Description</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Qty</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative" style="top: 10px;">
+                            <div class="col">
+                                <div class="form-floating position-relative" >
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Buying Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Unit Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword"><span>Discount</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Item</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete Item</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
+                    <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
+                        <table class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto" style="width: 90;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Buying Price</th>
+                                    <th scope="col">Unit Price</th>
+                                    <th scope="col">Discount</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>I-001</td>
+                                  <td>Maliban Piti 250g</td>
+                                  <td>100</td>
+                                  <td>280.0</td>
+                                  <td>300.0</td>
+                                  <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>I-002</td>
+                                    <td>Maliban Piti 500g</td>
+                                    <td>100</td>
+                                    <td>480.0</td>
+                                    <td>500.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>I-003</td>
+                                    <td>Maliban Piti 1kg</td>
+                                    <td>100</td>
+                                    <td>680.0</td>
+                                    <td>700.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>I-004</td>
+                                    <td>Maliban Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>120.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>I-005</td>
+                                    <td>Munchee Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>I-006</td>
+                                    <td>Munchee Chocalate Biscuit 250g</td>
+                                    <td>100</td>
+                                    <td>230.0</td>
+                                    <td>250.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>I-007</td>
+                                    <td>Munchee Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>I-008</td>
+                                    <td>Nadu rice 1kg</td>
+                                    <td>100kg</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
