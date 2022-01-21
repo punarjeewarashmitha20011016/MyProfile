@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Order Details</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/stylesheet.css">
     <link rel="stylesheet" href="../assets/css/fonts/css/all.css">
+
+    <style>
+        body{
+            overflow-x: hidden !important;
+        }
+    </style>
 </head>
-<body class="overflow-hidden">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -44,8 +51,8 @@
     <main>
         <section class="container-fluid position-relative">
             <div class="container-fluid position-absolute shadow">
-                <div class="row position-absolute border-5" style="top: 5%; left: 0;right: 0;margin: auto;">
-                    <div class="col position-relative" style="height: 380px;">
+                <div class="row position-absolute" style="top: 5%; left: 0;right: 0;margin: auto;height: 90%;width: 90%;">
+                    <div class="col shadow position-relative" style="height: 100%;overflow: auto">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
