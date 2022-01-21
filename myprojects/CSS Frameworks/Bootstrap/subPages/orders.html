@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Orders</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/stylesheet.css">
@@ -27,6 +28,49 @@
         }
 
         @media all and (max-width:320px){
+            body > main > section > .container-fluid > div:nth-child(1){
+                width: 100% !important;
+                height: 100px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1){
+                position: absolute;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+                position: absolute;
+                top: 5px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
+                width: 100% !important;
+                position: absolute;
+                left: 0;right: 0;margin: auto;
+                top: unset !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label > span{
+                font-size: 12px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2){
+                position: absolute;
+                left: 0 !important;
+                right: 0 !important;
+                margin: auto !important;
+                width: 70%;
+                height: 40px !important;
+                bottom: 0px !important;
+                top: unset !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
+                position: absolute;
+                left: 0 !important;
+                right: 0 !important;
+                margin: auto !important;
+                height: 40px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(2) > div:nth-child(1){
+                position: absolute;
+                left: 0;right: 0;
+                margin: auto;
+
+            }
         }
     </style>
 </head>
@@ -65,22 +109,22 @@
     <main>
         <section class="Orders container-fluid position-relative">
             <div class="container-fluid position-absolute shadow">
-                <div class="row container position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
-                    <div class="col position-relative">
+                <div class="row container-fluid position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
+                    <div class="col-12 position-relative col-sm">
                         <div class="form-floating position-relative" style="top: 30px;">
-                            <input type="text" class="form-control bg-transparent border-3" id="floatingPassword" placeholder="Name" style="height: 40px;width: 760px;">
+                            <input type="text" class="form-control bg-transparent border-3" id="floatingPassword" placeholder="Name" style="height: 40px;width: 760px  ">
                             <label for="floatingPassword"><span>Search Order by Order Id, Customer Id</span></label>
                         </div>
                     </div>
-                    <div class="col position-absolute" style="top: 30px; left: 79.5%;">
+                    <div class="col-12 position-absolute col-sm" style="top: 30px; left: 79.5%;">
                         <a href="orderDetails.html">
                         <button class="btn btn-secondary">View Order Details</button>
                         </a>
                     </div>
                 </div>
-                <div class="row position-absolute border-5" style="top: 25%; left: 0;right: 0;margin: auto;height: 400px;width: 93%;">
-                    <div class="col position-relative" style="height: 100%;overflow:auto;">
-                        <table class="table table-hover shadow position-absolute start-0 end-0 m-auto" >
+                <div class="row position-absolute border-5 shadow" style="top: 25%; left: 0;right: 0;margin: auto;height: 400px;width: 93%;">
+                    <div class="col-11 position-relative col-sm-12" style="height: 100%;overflow:auto;">
+                        <table class="table table-hover position-absolute start-0 end-0 m-auto" >
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
