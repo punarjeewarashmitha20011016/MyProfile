@@ -73,7 +73,7 @@
             }
         }
 
-        @media all and (min-width:320px) and (max-width: 1024px){
+        @media all and (min-width:320px) and (max-width: 425px){
             body > main > section > .container-fluid > div:nth-child(1){
                 width: 100% !important;
                 height: 100px !important;
@@ -118,18 +118,10 @@
 
             }
         }
-
-        @media all and (min-width:1024px) and (max-width: 2560px){
-            body > main > section > .container-fluid > div:nth-child(1){
-                width: 100% !important;
-                height: 100px !important;
-            }
-            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1){
-                position: absolute;
-            }
+        @media all and (min-width:426px) and (max-width: 768px){
             body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-                position: absolute;
-                top: 5px !important;
+                position: relative;
+                left: 5% !important;
             }
             body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
                 width: 100% !important;
@@ -137,18 +129,15 @@
                 left: 0;right: 0;margin: auto;
                 top: unset !important;
             }
-            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label > span{
-                font-size: 12px !important;
-            }
             body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2){
                 position: absolute;
-                left: 0 !important;
-                right: 0 !important;
-                margin: auto !important;
-                width: 70%;
-                height: 40px !important;
-                bottom: 0px !important;
-                top: unset !important;
+                left: unset !important;
+                width: 200px;
+                right:5% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1){
+                position: relative;
+                width: 100% !important;
             }
             body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
                 position: absolute;
@@ -157,6 +146,7 @@
                 margin: auto !important;
                 height: 40px !important;
             }
+          
             body > main > section > .container-fluid > div:nth-child(2) > div:nth-child(1){
                 position: absolute;
                 left: 0;right: 0;
@@ -164,6 +154,81 @@
 
             }
         }
+
+        @media all and (min-width:769px) and (max-width: 1024px){
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+                position: relative;
+                left: 8% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
+                width: 100% !important;
+                position: absolute;
+                left: 0;right: 0;margin: auto;
+                top: unset !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2){
+                position: absolute;
+                left: unset !important;
+                width: 200px;
+                right:8% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1){
+                position: relative;
+                width: 100% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
+                position: absolute;
+                left: 0 !important;
+                right: 0 !important;
+                margin: auto !important;
+                height: 40px !important;
+            }
+          
+            body > main > section > .container-fluid > div:nth-child(2) > div:nth-child(1){
+                position: absolute;
+                left: 0;right: 0;
+                margin: auto;
+
+            }
+        }
+
+        @media all and (min-width:1025px) and (max-width: 2560px){
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+                position: relative;
+                left: 10% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
+                width: 100% !important;
+                position: absolute;
+                left: 0;right: 0;margin: auto;
+                top: unset !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2){
+                position: absolute;
+                left: unset !important;
+                width: 200px;
+                right:10% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1){
+                position: relative;
+                width: 100% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
+                position: absolute;
+                left: 0 !important;
+                right: 0 !important;
+                margin: auto !important;
+                height: 40px !important;
+            }
+          
+            body > main > section > .container-fluid > div:nth-child(2) > div:nth-child(1){
+                position: absolute;
+                left: 0;right: 0;
+                margin: auto;
+
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -202,7 +267,7 @@
         <section class="Orders container-fluid position-relative">
             <div class="container-fluid position-absolute shadow">
                 <div class="row container-fluid position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
-                    <div class="col-12 position-relative col-sm">
+                    <div class="col-12 position-relative col-sm-8">
                         <div class="form-floating position-relative" style="top: 30px;">
                             <input type="text" class="form-control bg-transparent border-3" id="floatingPassword" placeholder="Name" style="height: 40px;width: 760px  ">
                             <label for="floatingPassword"><span>Search Order by Order Id, Customer Id</span></label>

@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Items</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/stylesheet.css">
     <link rel="stylesheet" href="../assets/css/fonts/css/all.css">
     <style>
+        body{
+            overflow: hidden;
+        }
         body > main > section > .container-fluid > .row > div div label > span{
             position: absolute;
             top: 7px;
@@ -21,9 +25,48 @@
             position: absolute;
             top: -5px;
         }
+
+        @media all and (max-width: 320px){
+            body{
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            body > main > section{
+                height: 105vh !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1){
+                --bs-gutter-x: 0 !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1){
+                width: 100% !important;
+                --bs-gutter-x: 0 !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+                position: relative;
+                margin-top: 10px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword6{
+                position: relative;
+                margin-top: 10px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
+                font-size: 14px !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(3){
+                top: 51% !important;
+                height: 270px !important;
+                width: 90% !important;
+            }
+            body > main > section > .container-fluid > div:nth-child(2){
+             border: 1px solid red;
+            }
+            body > main > section > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a button{
+                width: 100px !important;
+            }
+        }
     </style>
 </head>
-<body class="overflow-hidden">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -56,47 +99,47 @@
     </header>
 
     <main>
-        <section class="Orders container-fluid position-relative">
+        <section class="container-fluid position-relative">
             <div class="container-fluid position-absolute shadow">
                 <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
                     <div class="col position-relative">
                         <div class="row position-relative" style="top: 0;">
-                            <div class="col position-relative">
+                            <div class="col-6 col-sm position-relative">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Code</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword1" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword1"><span>Code</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword2" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword2"><span>Description</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Description</span></label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Qty</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword3" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword3"><span>Qty</span></label>
                                 </div>
                             </div>
                         </div>
                         <div class="row position-relative" style="top: 10px;">
-                            <div class="col">
+                            <div class="col-6 col-sm">
                                 <div class="form-floating position-relative" >
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Buying Price</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword4" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword4"><span>Buying Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword5" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword5"><span>Unit Price</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Unit Price</span></label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword" placeholder="Name" style="height: 40px;">
-                                    <label for="floatingPassword"><span>Discount</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword6" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword6"><span>Discount</span></label>
                                 </div>
                             </div>
                         </div>
@@ -104,14 +147,14 @@
                 </div>
 
                 <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
-                    <div class="col position-relative">
+                    <div class="col-6 col-sm position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
                             <a href="">
                             <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
                             </a>
                         </div>
                     </div>
-                    <div class="col position-relative">
+                    <div class="col-sm col-6 position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
                             <a href="">
                             <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Item</button>
