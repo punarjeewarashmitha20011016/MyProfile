@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/stylesheet.css">
-    <link rel="stylesheet" href="/assets/css/fonts/css/all.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/fonts/css/all.css">
 
     <style>
+        body{
+            overflow-x: hidden !important;
+        }
         body > main > section > .container-fluid > .row > div div label > span{
             position: absolute;
             top: 8px;
@@ -22,9 +25,12 @@
             position: absolute;
             top: -5px;
         }
+
+        @media all and (max-width:320px){
+        }
     </style>
 </head>
-<body class="overflow-hidden">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -51,7 +57,7 @@
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <i class="fas fa-bars text-white"></i>
-                  </button>
+                </button>
             </div>
         </nav>
     </header>
