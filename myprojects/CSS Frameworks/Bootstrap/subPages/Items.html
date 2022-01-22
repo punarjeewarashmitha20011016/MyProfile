@@ -426,15 +426,15 @@
                         <li class="nav-item"><a class="nav-link text-white" href="customer.html"><span>Customers</span></a></li>
                     </ul>
                 </div>
-                <a href="signup.html" id="signUpBtn">   
-                    <div class="logout position-absolute d-none d-lg-block">
+                <a href="signup.html" id="signUpBtn" class="d-none d-lg-block">   
+                    <div class="logout position-absolute">
                         <i class="fas fa-user-plus text-white fs-3 position-absolute"></i>
                         <h3 class="position-absolute text-white fs-6">Sign Up</h3>
                     </div>
                 </a>
 
-                <a href="../index.html" id="logoutBtn">
-                    <div class="logout position-absolute d-none d-lg-block">
+                <a href="../index.html" id="logoutBtn" class="d-none d-lg-block">
+                    <div class="logout position-absolute">
                         <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
                         <h3 class="position-absolute text-white fs-6">Logout</h3>
                     </div>
@@ -442,7 +442,26 @@
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <i class="fas fa-bars text-white"></i>
-                  </button>
+                </button>
+
+                <div class="offcanvas offcanvas-end d-block d-sm-block d-md-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent !important;">
+                    <div class="offcanvas-header" style="background-color: #575454 !important;">
+                      <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WebPos</h5>
+                      <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 110px;"></i>
+                        <div class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none !important;color: white !important;font-size: 30px;">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item" style="top: 100px !important;"><a class="nav-link text-white" href="#"><span>Home</span></a></li>
+                        <li class="nav-item" style="top: 150px !important;"><a class="nav-link text-white" href="orders.html"><span>Orders</span></a></li>
+                        <li class="nav-item" style="top: 200px !important;"><a class="nav-link text-white" href="Items.html"><span>Items</span></a></li>
+                        <li class="nav-item" style="top: 250px !important;"><a class="nav-link text-white" href="customer.html"><span>Customers</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             </div>
         </nav>
     </header>
