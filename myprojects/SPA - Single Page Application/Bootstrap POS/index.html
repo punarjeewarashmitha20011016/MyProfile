@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body > main > section > div img{
+                width: 60%;
+            }
+        body > main > section > div:nth-child(1){
+            position: absolute;
+            top: 0;
+            bottom: unset;
+            left: 0;
+            right: unset;
+            margin: unset;
+            width: unset;
+            height: unset;
+            background-color: unset !important;
+            border-radius: unset;
+        }
+        body > main > section > div:nth-child(2){
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+        body > main > section > div:nth-child(3){
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+        body > main > section > div:nth-child(4){
+            position: absolute;
+            top: 40%;
+            left: 15%;
+        }
+        body > main > section > div:nth-child(5){
+            position: absolute;
+            top: 60%;
+            left: 2%;
+        }
+        body > main > section > div:nth-child(6){
+            position: absolute;
+            top: 70%;
+            left: 15%;
+        }
+        body > main > section > div:nth-child(7){
+            position: absolute;
+            top: 85%;
+            left: 5%;
+        }
+        body > main > section > div:nth-child(8){
+            position: absolute;
+            top: 0%;
+            left: 25%;
+        }
+        body > main > section > div:nth-child(9){
+            position: absolute;
+            top: 2%;
+            left: 75%;
+        }
+        body > main > section > div:nth-child(10){
+            position: absolute;
+            top: 1%;
+            left: 45%;
+        }
+        body > main > section > div:nth-child(11){
+            position: absolute;
+            top: 2%;
+            left: 60%;
+        }
+        body > main > section > div:nth-child(12){
+            position: absolute;
+            top: 2%;
+            left: 90%;
+        }
+        body > main > section > div:nth-child(13){
+            position: absolute;
+            top: 20%;
+            left: 80%;
+        }
+        body > main > section > div:nth-child(14){
+            position: absolute;
+            top: 40%;
+            left: 92%;
+        }
+        body > main > section > div:nth-child(15){
+            position: absolute;
+            top: 60%;
+            left: 85%;
+        }
+        body > main > section > div:nth-child(16){
+            position: absolute;
+            top: 85%;
+            left: 77%;
+        }
+        body > main > section > div:nth-child(17){
+            position: absolute;
+            top: 80%;
+            left: 90%;
+        }
+        body > main > section > div:nth-child(18){
+            position: absolute;
+            top: 40%;
+            left: 78%;
+        }
+        body > main > section > div:nth-child(19){
+            position: absolute;
+            top: 85%;
+            left: 65%;
+        }
+        body > main > section > div:nth-child(20){
+            position: absolute;
+            top: 88%;
+            left: 50%;
+        }
+        body > main > section > div:nth-child(21){
+            position: absolute;
+            top: 85%;
+            left: 35%;
+        }
+        body > main > section > div:nth-child(22){
+            position: absolute;
+            top: 85%;
+            left: 22%;
+        }
+        body > main > section > .container-fluid > .row > .col > div > input:focus{
+            border: 2px solid black;
+            box-shadow: none;
+        }
+        body > main > section > .container-fluid > .row > .col > div > label > span{
+            position: absolute;
+            top: 0;bottom: 0;
+            margin: auto;
+            width: 100px;
+            height: 30px;
+        }
+        @media all and (max-width:375px){
+            body > main > section > div img{
+                width: 60%;
+            }
+            body > main > section > div:nth-child(1){
+            position: absolute;
+            top: 0;
+            bottom: unset;
+            left: 0;
+            right: unset;
+            margin: unset;
+            width: unset;
+            height: unset;
+            background-color: unset !important;
+            border-radius: unset;
+            }
+            body > main > section > div:nth-child(2){
+                position: absolute;
+                top: 65%;
+                left: -2%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(3){
+                position: absolute;
+                top: 40%;
+                left: -2%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(4){
+                position: absolute;
+                top: 20%;
+                left: -2.5%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(5){
+                position: absolute;
+                top: 5%;
+                left: 30%;
+            }
+            body > main > section > div:nth-child(6){
+                position: absolute;
+                top: 1%;
+                left: 60%;
+            }
+            body > main > section > div:nth-child(7){
+                position: absolute;
+                top: 88%;
+                left: 2%;
+            }
+            body > main > section > div:nth-child(8){
+                position: absolute;
+                top: 8%;
+                left: 85%;
+                width: 100px;
+            }
+            body > main > section > div:nth-child(9){
+                position: absolute;
+                top: 2%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(10){
+                position: absolute;
+                top: 1%;
+                left: 45%;display: none;
+            }
+            body > main > section > div:nth-child(11){
+                position: absolute;
+                top: 2%;
+                left: 60%;
+                display: none;
+            }
+            body > main > section > div:nth-child(12){
+                position: absolute;
+                top: 50%;
+                left: 90%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(13){
+                position: absolute;
+                top: 20%;
+                left: 80%;display: none;
+            }
+            body > main > section > div:nth-child(14){
+                position: absolute;
+                top: 30%;
+                left: 88%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(15){
+                position: absolute;
+                top: 70%;
+                left: 90%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(16){
+                position: absolute;
+                top: 85%;
+                left: 77%;display: none;
+            }
+            body > main > section > div:nth-child(17){
+                position: absolute;
+                top: 80%;
+                left: 90%;display: none;
+            }
+            body > main > section > div:nth-child(18){
+                position: absolute;
+                top: 40%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(19){
+                position: absolute;
+                top: 90%;
+                left: 75%;
+            }
+            body > main > section > div:nth-child(20){
+                position: absolute;
+                top: 87%;
+                left: 38%;
+            }
+            body > main > section > div:nth-child(21){
+                position: absolute;
+                top: 85%;
+                left: 35%;display: none;
+            }
+            body > main > section > div:nth-child(22){
+                position: absolute;
+                top: 85%;
+                left: 22%;display: none;
+            }
+
+            body > main > section > .container-fluid{
+                width: 80% !important;
+            }
+            body > main > section > .container-fluid .row{
+                width: 88% !important;
+            }
+            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
+                width: 180px !important;
+            }
+        }
+
+        @media all and (min-width:375px) and (max-width:571px){
+            body > main > section > div img{
+                width: 60%;
+            }
+            body > main > section > div:nth-child(1){
+            position: absolute;
+            top: 0;
+            bottom: unset;
+            left: 0;
+            right: unset;
+            margin: unset;
+            width: unset;
+            height: unset;
+            background-color: unset !important;
+            border-radius: unset;
+            }
+            body > main > section > div:nth-child(2){
+                position: absolute;
+                top: 65%;
+                left: -1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(3){
+                position: absolute;
+                top: 40%;
+                left: -1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(4){
+                position: absolute;
+                top: 20%;
+                left: -1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(5){
+                position: absolute;
+                top: 5%;
+                left: 30%;
+            }
+            body > main > section > div:nth-child(6){
+                position: absolute;
+                top: 1%;
+                left: 60%;
+            }
+            body > main > section > div:nth-child(7){
+                position: absolute;
+                top: 88%;
+                left: 2%;
+            }
+            body > main > section > div:nth-child(8){
+                position: absolute;
+                top: 8%;
+                left: 85%;
+                width: 100px;
+            }
+            body > main > section > div:nth-child(9){
+                position: absolute;
+                top: 2%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(10){
+                position: absolute;
+                top: 1%;
+                left: 45%;display: none;
+            }
+            body > main > section > div:nth-child(11){
+                position: absolute;
+                top: 2%;
+                left: 60%;
+                display: none;
+            }
+            body > main > section > div:nth-child(12){
+                position: absolute;
+                top: 50%;
+                left: 91%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(13){
+                position: absolute;
+                top: 20%;
+                left: 80%;display: none;
+            }
+            body > main > section > div:nth-child(14){
+                position: absolute;
+                top: 30%;
+                left: 90%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(15){
+                position: absolute;
+                top: 70%;
+                left: 90%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(16){
+                position: absolute;
+                top: 85%;
+                left: 77%;display: none;
+            }
+            body > main > section > div:nth-child(17){
+                position: absolute;
+                top: 80%;
+                left: 90%;display: none;
+            }
+            body > main > section > div:nth-child(18){
+                position: absolute;
+                top: 40%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(19){
+                position: absolute;
+                top: 90%;
+                left: 75%;
+            }
+            body > main > section > div:nth-child(20){
+                position: absolute;
+                top: 87%;
+                left: 38%;
+            }
+            body > main > section > div:nth-child(21){
+                position: absolute;
+                top: 85%;
+                left: 35%;display: none;
+            }
+            body > main > section > div:nth-child(22){
+                position: absolute;
+                top: 85%;
+                left: 22%;display: none;
+            }
+
+            body > main > section > .container-fluid{
+                width: 80% !important;
+            }
+            body > main > section > .container-fluid .row{
+                width: 88% !important;
+            }
+            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
+                width: 180px !important;
+            }
+        }
+        @media all and (min-width:571px) and (max-width:1024px){
+            body > main > section > div img{
+                width: 60%;
+            }
+            body > main > section > div:nth-child(1){
+            position: absolute;
+            top: 0;
+            bottom: unset;
+            left: 0;
+            right: unset;
+            margin: unset;
+            width: unset;
+            height: unset;
+            background-color: unset !important;
+            border-radius: unset;
+            }
+            body > main > section > div:nth-child(2){
+                position: absolute;
+                top: 65%;
+                left: 1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(3){
+                position: absolute;
+                top: 40%;
+                left: 1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(4){
+                position: absolute;
+                top: 20%;
+                left: 1%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(5){
+                position: absolute;
+                top: 5%;
+                left: 30%;
+            }
+            body > main > section > div:nth-child(6){
+                position: absolute;
+                top: 1%;
+                left: 60%;
+            }
+            body > main > section > div:nth-child(7){
+                position: absolute;
+                top: 88%;
+                left: 2%;
+            }
+            body > main > section > div:nth-child(8){
+                position: absolute;
+                top: 6%;
+                left: 85%;
+                width: 100px;
+            }
+            body > main > section > div:nth-child(9){
+                position: absolute;
+                top: 2%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(10){
+                position: absolute;
+                top: 1%;
+                left: 45%;display: none;
+            }
+            body > main > section > div:nth-child(11){
+                position: absolute;
+                top: 2%;
+                left: 60%;
+                display: none;
+            }
+            body > main > section > div:nth-child(12){
+                position: absolute;
+                top: 50%;
+                left: 92%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(13){
+                position: absolute;
+                top: 20%;
+                left: 80%;display: none;
+            }
+            body > main > section > div:nth-child(14){
+                position: absolute;
+                top: 30%;
+                left: 92%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(15){
+                position: absolute;
+                top: 70%;
+                left: 92%;
+                width: 70px;
+            }
+            body > main > section > div:nth-child(16){
+                position: absolute;
+                top: 85%;
+                left: 77%;display: none;
+            }
+            body > main > section > div:nth-child(17){
+                position: absolute;
+                top: 80%;
+                left: 90%;display: none;
+            }
+            body > main > section > div:nth-child(18){
+                position: absolute;
+                top: 40%;
+                left: 75%;display: none;
+            }
+            body > main > section > div:nth-child(19){
+                position: absolute;
+                top: 90%;
+                left: 75%;
+            }
+            body > main > section > div:nth-child(20){
+                position: absolute;
+                top: 87%;
+                left: 38%;
+            }
+            body > main > section > div:nth-child(21){
+                position: absolute;
+                top: 85%;
+                left: 35%;display: none;
+            }
+            body > main > section > div:nth-child(22){
+                position: absolute;
+                top: 85%;
+                left: 22%;display: none;
+            }
+
+            body > main > section > .container-fluid{
+                width: 80% !important;
+            }
+            body > main > section > .container-fluid .row{
+                width: 88% !important;
+            }
+            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
+                width: 180px !important;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container-fluid position-relative" style="height: 100vh;width: 100%;background-color: rgb(231, 231, 231) !important;">
+                <div><img src="assets/shapes/small icon-01.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-02.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-03.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-04.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-06.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-07.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-08.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-09.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-10.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-11.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-14.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-14.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-04.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+                <div class="container-fluid shadow" style="position: absolute;inset: 0 0 0 0;margin: auto;width: 50%;height: 70%;background-color: rgb(228, 225, 225) !important;border-radius: 20px;">
+                    <h3 style="position: absolute;left: 0;right: 0;margin: auto;width: max-content;top: 40px;">WebPos</h3>
+                    <div class="row position-absolute" style="top: 25%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
+                        <div class="col">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingPassword" class="position-absolute"><span>User Name</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row position-absolute" style="top: 40%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
+                        <div class="col">
+                            <div class="form-floating position-relative shadow">
+                                <input type="password" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingPassword" class="position-absolute"><span>Password</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="position:absolute;top: 63%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
+                        <div class="col-12">
+                            <a href="subPages/Main.html" id="loginBtn">
+                                <button class="btn btn-outline-success shadow w-100">Login</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="position:absolute;top: 75%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
+                        <div class="col-12">
+                            <a href="subPages/signup.html">
+                                <button class="btn btn-outline-secondary shadow w-100">Signup</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
