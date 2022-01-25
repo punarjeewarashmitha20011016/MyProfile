@@ -14,9 +14,6 @@
         z-index: 0;
         overflow: hidden;
         }
-        body{
-                overflow-x: hidden;
-            }
         header{
             position: fixed;
             width: 100%;
@@ -217,35 +214,36 @@
         }
 
         
-
-
-
-
-
+        body{
+            overflow-x: hidden;
+            overflow-y: visible;
+        }
         body > main > section{
             position: relative;
             background-color: #d1d1d1;
             width: 100%;
-            height: 195vh;
-            overflow-x: hidden;
+            height: 180vh !important;
+            overflow: hidden;
         }
 
         body > main > section > .container{
             position: relative;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(4,1fr);
-            grid-row-gap: 300px;
             top: 120px;
             left: 18px;
             bottom: 0;
             right: 0;
             margin: auto;
             width: 1150px;
+            height: 870px;
             z-index: 1;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
+        
         body > main > section > .container a .card:nth-child(1){
-            position: absolute;
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             transition: all 0.5s;
@@ -259,94 +257,118 @@
             transition: all 0.5s;
         }
         body > main > section > .container a .card:hover p{
-            transform: translateY(10px);
+            transform: translateY(35px) !important;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(2){
-            position: absolute;
+        body > main > section > .container a:nth-child(2) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*1);
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(3){
-            position: absolute;
+        body > main > section > .container a:nth-child(3) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*2);
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(4){
-            position: absolute;
+        body > main > section > .container a:nth-child(4) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*0);
-            top: calc(100%/4);
+            top: calc(100%/5);
             margin-top: 55px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(5){
-            position: absolute;
+        body > main > section > .container a:nth-child(5) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*1);
-            top: calc(100%/4);
+            top: calc(100%/5);
             margin-top: 55px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(6){
-            position: absolute;
+        body > main > section > .container a:nth-child(6) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*2);
-            top: calc(100%/4);
+            top: calc(100%/5);
             margin-top: 55px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card:nth-child(7){
-            position: absolute;
+        body > main > section > .container a:nth-child(7) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*0);
-            top: calc(100%/4*2);
+            top: calc(100%/5*2);
             margin-top: 110px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card div:nth-child(8){
-            position: absolute;
+        body > main > section > .container a:nth-child(8) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*1);
-            top: calc(100%/4*2);
+            top: calc(100%/5*2);
             margin-top: 110px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card div:nth-child(9){
-            position: absolute;
+        body > main > section > .container a:nth-child(9) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*2);
-            top: calc(100%/4*2);
+            top: calc(100%/5*2);
             margin-top: 110px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card div:nth-child(10){
-            position: absolute;
+        body > main > section > .container a:nth-child(10) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*0);
-            top: calc(100%/4*3);
+            top: calc(100%/5*3);
             margin-top: 165px;
             transition: all 0.5s;
         }
-        body > main > section > .container a .card div:nth-child(11){
-            position: absolute;
+        body > main > section > .container a:nth-child(11) .card{
+            position: relative;
             width: 340px;
             height: calc(100%/4);
             left: calc(100%/3*1);
-            top: calc(100%/4*3);
+            top: calc(100%/5*3);
             margin-top: 165px;
             transition: all 0.5s;
+        }
+        body > main > section > .container a:nth-child(12) .card{
+            position: relative;
+            width: 340px;
+            height: calc(100%/4);
+            left: calc(100%/3*2);
+            top: calc(100%/5*3);
+            margin-top: 165px;
+            transition: all 0.5s;
+        }
+        body > main > section > .container a:nth-child(13) .card{
+            position: relative;
+            width: 340px;
+            height: calc(100%/4);
+            left: calc(100%/3*0);
+            top: calc(100%/5*4);
+            margin-top: 215px;
+            transition: all 0.5s;
+        }
+        body > main > section > .container a:nth-child(13) .card .textBox p{
+            font-size: 14px !important;
+        }
+        body > main > section > .container a:nth-child(13) .card:hover .textBox p{
+            top: -10px !important;
         }
 
 
@@ -386,11 +408,12 @@
             font-weight: 500;
             color: white;
             bottom: 0;
-            top: 65px;
+            top: 75px !important;
             left: 0;
             right: 0;
             margin: auto;
             width: max-content;
+            font-size: 17px !important;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
@@ -399,208 +422,683 @@
         @media all and (max-width:320px){
 
             .ball{
-                display: none;
+                display: none !important;
             }
             body > main > section{
-                height: 360vh;
+                height: 400vh !important;
             }
 
             body > main > section > .container{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: repeat(11,1fr);
-            grid-row-gap: 240px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             top: 100px;
             left: 0;
             right: 0;
             margin: auto;
-            width: 300px;
+            width: 250px;
+            height: 72%;
+            }
+            body > main > section > .container a{
+                width: 100% !important;
+            }
+            body > main > section > .container a .card{
+                position: absolute;
+                width: 100% !important;
+                height: calc(100%/5) !important;
+                left: 0 !important;
+                margin: unset !important;
+                top: 0 !important;
+                bottom: unset !important;
+                right: unset !important;
+            }
+            body > main > section > .container a:nth-child(1){
+                position: relative;
+                top: calc(100%/13*0) !important;
+            }
+            body > main > section > .container a:nth-child(2){
+                position: relative;
+                top: calc(100%/13*1) !important;
+            }
+            body > main > section > .container a:nth-child(3){
+                position: relative;
+                top: calc(100%/13*2) !important;
+            }
+            body > main > section > .container a:nth-child(4){
+                position: relative;
+                top: calc(100%/13*3) !important;
+            }
+            body > main > section > .container a:nth-child(5){
+                position: relative;
+                top: calc(100%/13*4) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                position: relative;
+                top: calc(100%/13*5) !important;
+            }
+            body > main > section > .container a:nth-child(7){
+                position: relative;
+                top: calc(100%/13*6) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                position: relative;
+                top: calc(100%/13*7) !important;
+            }
+            body > main > section > .container a:nth-child(9){
+                position: relative;
+                top: calc(100%/13*8) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                position: relative;
+                top: calc(100%/13*9) !important;
+            }
+            body > main > section > .container a:nth-child(11){
+                position: relative;
+                top: calc(100%/13*10) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                position: relative;
+                top: calc(100%/13*11) !important;
+            }
+            body > main > section > .container a:nth-child(13){
+                position: relative;
+                top: calc(100%/13*12) !important;
+            }
+
+            body > main > section > .container a .card .textBox{
+                position: relative;
+                width: 100%;
+                height: calc(50px);
+                top: 130px;
+                background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+                z-index: 1;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox p{
+                display: none;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox h3{
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                margin: auto;
+                height: max-content;
+            }
+        
         }
-        body > main > section > .container a .card:nth-child(1){
-            position: absolute;
+        
+
+        @media all and (min-width:320px) and (max-width:375px){
+            .ball{
+                display: none !important;
+            }
+            body > main > section{
+                height: 400vh !important;
+            }
+
+            body > main > section > .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 100px;
             left: 0;
             right: 0;
             margin: auto;
             width: 250px;
-            height: calc(100%/11);
-
-            animation-name: cardAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-        }
-        
-        @keyframes cardAnim {
-            0%{
-                transform: translateY(0px);
+            height: 72%;
             }
-            100%{
-                transform: translateY(-10px);
+            body > main > section > .container a{
+                width: 100% !important;
             }
-        }
-        @keyframes txtBoxAnim {
-            0%{
-                transform: translateY(0px);
-            }
-            100%{
-                transform: translateY(30px);
-                height: 120px;
-            }
-        }
-        @keyframes textAnim {
-            0%{
-                transform: translateY(0px);
-            }
-            100%{
-                transform: translateY(35px);
-            }
-        }
-        @keyframes titleAnim {
-            0%{
-                transform: translateY(0px);
-            }
-            100%{
-                transform: translateY(22px);
-            }
-        }
-
-        body > main > section > .container a .card .textBox{
-            position: relative;
-            width: 100%;
-            height: calc(100%/2);
-            top: 80px;
-            background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
-            z-index: 0;
-
-            animation-name: txtBoxAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-        }
-        body > main > section > .container a .card:nth-child(1) .textBox p{
-            top: 2px;
-            animation-name: textAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-        }
-       
-        body > main > section > .container a .card:nth-child(1) .textBox h3{
-            animation-name: titleAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-        }
-        
-        }
-        
-
-        @media all and (min-width:321px) and (max-width:375px){
-            .ball{
-                display: none;
-            }
-            body > main > section{
-                height: 370vh;
-            }
-
-            body > main > section > .container{
-                grid-template-columns: repeat(1,1fr);
-                grid-template-rows: repeat(11,1fr);
-                grid-row-gap: 240px;
-                top: 100px;
-                width: 300px;
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
-            body > main > section > .container a .card:nth-child(1){
+            body > main > section > .container a .card{
                 position: absolute;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: 250px;
-                height: calc(100%/11);
-
-                animation-name: cardAnim;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-timing-function: linear;
-                animation-duration: 4s;
+                width: 100% !important;
+                height: calc(100%/5) !important;
+                left: 0 !important;
+                margin: unset !important;
+                top: 0 !important;
+                bottom: unset !important;
+                right: unset !important;
             }
-            @keyframes cardAnim {
-                0%{
-                    transform: translateY(0px);
-                }
-                100%{
-                    transform: translateY(-10px);
-                }
+            body > main > section > .container a:nth-child(1){
+                position: relative;
+                top: calc(100%/13*0) !important;
             }
-            @keyframes txtBoxAnim {
-                0%{
-                    transform: translateY(0px);
-                }
-                100%{
-                    transform: translateY(30px);
-                    height: 120px;
-                }
+            body > main > section > .container a:nth-child(2){
+                position: relative;
+                top: calc(100%/13*1) !important;
             }
-            @keyframes textAnim {
-                0%{
-                    transform: translateY(-15px);
-                }
-                100%{
-                    transform: translateY(25px);
-                }
+            body > main > section > .container a:nth-child(3){
+                position: relative;
+                top: calc(100%/13*2) !important;
             }
-            @keyframes titleAnim {
-                0%{
-                    transform: translateY(0px);
-                }
-                100%{
-                    transform: translateY(22px);
-                }
+            body > main > section > .container a:nth-child(4){
+                position: relative;
+                top: calc(100%/13*3) !important;
+            }
+            body > main > section > .container a:nth-child(5){
+                position: relative;
+                top: calc(100%/13*4) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                position: relative;
+                top: calc(100%/13*5) !important;
+            }
+            body > main > section > .container a:nth-child(7){
+                position: relative;
+                top: calc(100%/13*6) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                position: relative;
+                top: calc(100%/13*7) !important;
+            }
+            body > main > section > .container a:nth-child(9){
+                position: relative;
+                top: calc(100%/13*8) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                position: relative;
+                top: calc(100%/13*9) !important;
+            }
+            body > main > section > .container a:nth-child(11){
+                position: relative;
+                top: calc(100%/13*10) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                position: relative;
+                top: calc(100%/13*11) !important;
+            }
+            body > main > section > .container a:nth-child(13){
+                position: relative;
+                top: calc(100%/13*12) !important;
             }
 
             body > main > section > .container a .card .textBox{
-            position: relative;
-            width: 100%;
-            height: calc(100%/2);
-            top: 80px;
-            background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
-            z-index: 0;
-
-            animation-name: txtBoxAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-            }
-            body > main > section > .container a .card .textBox p{
-            top: 0px;
-            animation-name: textAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
+                position: relative;
+                width: 100%;
+                height: calc(50px);
+                top: 130px;
+                background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+                z-index: 1;
             }
             body > main > section > .container a .card:nth-child(1) .textBox p{
-            top: 15px;
+                display: none;
             }
             body > main > section > .container a .card:nth-child(1) .textBox h3{
-            animation-name: titleAnim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 4s;
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                margin: auto;
+                height: max-content;
+            }
+            
+            body > main > section > .container a:nth-child(13) .card .textBox h3{
+                font-size: 15px !important;
+            }
+        }
+
+        @media all and (min-width:375px) and (max-width:425px){
+            .ball{
+                display: none !important;
+            }
+            body > main > section{
+                height: 400vh !important;
+            }
+
+            body > main > section > .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 300px !important;
+            height: 72%;
+            }
+            body > main > section > .container a{
+                width: 100% !important;
+            }
+            body > main > section > .container a .card{
+                position: absolute;
+                width: 100% !important;
+                height: calc(100%/5) !important;
+                left: 0 !important;
+                margin: unset !important;
+                top: 0 !important;
+                bottom: unset !important;
+                right: unset !important;
+            }
+            body > main > section > .container a:nth-child(1){
+                position: relative;
+                top: calc(100%/13*0) !important;
+            }
+            body > main > section > .container a:nth-child(2){
+                position: relative;
+                top: calc(100%/13*1) !important;
+            }
+            body > main > section > .container a:nth-child(3){
+                position: relative;
+                top: calc(100%/13*2) !important;
+            }
+            body > main > section > .container a:nth-child(4){
+                position: relative;
+                top: calc(100%/13*3) !important;
+            }
+            body > main > section > .container a:nth-child(5){
+                position: relative;
+                top: calc(100%/13*4) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                position: relative;
+                top: calc(100%/13*5) !important;
+            }
+            body > main > section > .container a:nth-child(7){
+                position: relative;
+                top: calc(100%/13*6) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                position: relative;
+                top: calc(100%/13*7) !important;
+            }
+            body > main > section > .container a:nth-child(9){
+                position: relative;
+                top: calc(100%/13*8) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                position: relative;
+                top: calc(100%/13*9) !important;
+            }
+            body > main > section > .container a:nth-child(11){
+                position: relative;
+                top: calc(100%/13*10) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                position: relative;
+                top: calc(100%/13*11) !important;
+            }
+            body > main > section > .container a:nth-child(13){
+                position: relative;
+                top: calc(100%/13*12) !important;
+            }
+
+            body > main > section > .container a .card .textBox{
+                position: relative;
+                width: 100%;
+                height: calc(50px);
+                top: 130px;
+                background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+                z-index: 1;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox p{
+                display: none;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox h3{
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                margin: auto;
+                height: max-content;
             }
 
         }
+        @media all and (min-width:425px) and (max-width:571px){
+            .ball{
+                display: none !important;
+            }
+            body > main > section{
+                height: 400vh !important;
+            }
+
+            body > main > section > .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 250px;
+            height: 72%;
+            }
+            body > main > section > .container a{
+                width: 100% !important;
+            }
+            body > main > section > .container a .card{
+                position: absolute;
+                width: 100% !important;
+                height: calc(100%/5) !important;
+                left: 0 !important;
+                margin: unset !important;
+                top: 0 !important;
+                bottom: unset !important;
+                right: unset !important;
+            }
+            body > main > section > .container a:nth-child(1){
+                position: relative;
+                top: calc(100%/13*0) !important;
+            }
+            body > main > section > .container a:nth-child(2){
+                position: relative;
+                top: calc(100%/13*1) !important;
+            }
+            body > main > section > .container a:nth-child(3){
+                position: relative;
+                top: calc(100%/13*2) !important;
+            }
+            body > main > section > .container a:nth-child(4){
+                position: relative;
+                top: calc(100%/13*3) !important;
+            }
+            body > main > section > .container a:nth-child(5){
+                position: relative;
+                top: calc(100%/13*4) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                position: relative;
+                top: calc(100%/13*5) !important;
+            }
+            body > main > section > .container a:nth-child(7){
+                position: relative;
+                top: calc(100%/13*6) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                position: relative;
+                top: calc(100%/13*7) !important;
+            }
+            body > main > section > .container a:nth-child(9){
+                position: relative;
+                top: calc(100%/13*8) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                position: relative;
+                top: calc(100%/13*9) !important;
+            }
+            body > main > section > .container a:nth-child(11){
+                position: relative;
+                top: calc(100%/13*10) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                position: relative;
+                top: calc(100%/13*11) !important;
+            }
+            body > main > section > .container a:nth-child(13){
+                position: relative;
+                top: calc(100%/13*12) !important;
+            }
+
+            body > main > section > .container a .card .textBox{
+                position: relative;
+                width: 100%;
+                height: calc(50px);
+                top: 130px;
+                background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+                z-index: 1;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox p{
+                display: none;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox h3{
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                margin: auto;
+                height: max-content;
+            }
+            body > main > section > .container a:nth-child(13) .textBox h3{
+                font-size: 15px !important;
+            }
+
+        }
+        @media all and (min-width:571px) and (max-width:768px){
+            .ball{
+                display: none !important;
+            }
+            body > main > section{
+                height: 250vh !important;
+            }
+
+            body > main > section > .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 600px;
+            height: 92%;
+            }
+            body > main > section > .container a{
+                width: 100% !important;
+            }
+            body > main > section > .container a .card{
+                position: absolute;
+                width: calc(100%/2.3) !important;
+                height: calc(100%/5) !important;
+                left: 0 !important;
+                margin: unset !important;
+                top: 0 !important;
+                bottom: unset !important;
+                right: unset !important;
+            }
+            body > main > section > .container a:nth-child(1){
+                position: relative;
+                top: calc(100%/7*0) !important;
+            }
+            body > main > section > .container a:nth-child(2){
+                position: absolute;
+                top: calc(100%/7*0) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(3){
+                position: absolute;
+                top: calc(100%/7*1) !important;
+            }
+            body > main > section > .container a:nth-child(4){
+                position: absolute;
+                top: calc(100%/7*1) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(5){
+                position: absolute;
+                top: calc(100%/7*2) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                position: absolute;
+                top: calc(100%/7*2) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(7){
+                position: absolute;
+                top: calc(100%/7*3) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                position: absolute;
+                top: calc(100%/7*3) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(9){
+                position: absolute;
+                top: calc(100%/7*4) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                position: absolute;
+                top: calc(100%/7*4) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(11){
+                position: absolute;
+                top: calc(100%/7*5) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                position: absolute;
+                top: calc(100%/7*5) !important;
+                left: calc(100%/2*1.13);
+            }
+            body > main > section > .container a:nth-child(13){
+                position: absolute;
+                top: calc(100%/7*6) !important;
+            }
+            body > main > section > .container a:nth-child(13) .textBox h3{
+                font-size: 15px !important;
+            }
 
 
-        @media all and (min-width:376px) and (max-width:425px){
+            body > main > section > .container a .card .textBox{
+                position: relative;
+                width: 100%;
+                height: calc(50px);
+                top: 130px;
+                background:linear-gradient(rgb(190, 121, 121),rgb(179, 99, 99));
+                z-index: 1;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox p{
+                display: none;
+            }
+            body > main > section > .container a .card:nth-child(1) .textBox h3{
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                margin: auto;
+                height: max-content;
+            }
+
+        }
+        @media all and (min-width:1441px) and (max-width:2560px){
+            body > main > section{
+                position: relative;
+                background-color: #d1d1d1;
+                width: 100%;
+                height: 250vh !important;
+                overflow: hidden;
+            }
+
+            body > main > section > .container{
+                position: relative;
+                top: 120px;
+                left: 18px;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 92% !important;
+                height: 55% !important;
+                z-index: 1;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                border: 1px solid red;
+            }
+            body > main > section > .container a{
+                position: absolute !important;
+                height: 230px !important;
+                width: 350px !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a .card{
+                position: absolute !important;
+                width: 100% !important;
+                height: 100% !important;
+                left: 0 !important;
+                top: 0 !important;
+                bottom: unset !important;
+                margin: unset !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a .card img{
+                height: 70% !important;
+            }
+            body > main > section > .container a .card .textBox{
+                height: 60% !important;
+                top: 40% !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a .card .textBox p{
+                font-size: 18px !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a .card .textBox h3{
+                font-size: 20px !important;
+                bottom: 25px !important;
+                top: unset !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a:hover .card .textBox{
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a:hover .card .textBox p{
+                top: 10px !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a:hover .card .textBox h3{
+                bottom: 45px !important;
+                transition: all 0.5s !important;
+            }
+            body > main > section > .container a:nth-child(1){
+                left: calc(100%/3*0) !important;
+                top: calc(100%/3*0) !important;
+            }
+            body > main > section > .container a:nth-child(2){
+                left: calc(100%/3*1.1) !important;
+                top: calc(100%/3*0) !important;
+            }
+            body > main > section > .container a:nth-child(3){
+                left: calc(100%/3*2.2) !important;
+                top: calc(100%/3*0) !important;
+            }
+            body > main > section > .container a:nth-child(4){
+                left: calc(100%/3*0) !important;
+                top: calc(100%/3*1) !important;
+            }
+            body > main > section > .container a:nth-child(5){
+                left: calc(100%/3*1.1) !important;
+                top: calc(100%/3*1) !important;
+            }
+            body > main > section > .container a:nth-child(6){
+                left: calc(100%/3*2.2) !important;
+                top: calc(100%/3*1) !important;
+            }
+            body > main > section > .container a:nth-child(7){
+                left: calc(100%/3*0) !important;
+                top: calc(100%/3*2) !important;
+            }
+            body > main > section > .container a:nth-child(8){
+                left: calc(100%/3*1.1) !important;
+                top: calc(100%/3*2) !important;
+            }
+            body > main > section > .container a:nth-child(9){
+                left: calc(100%/3*2.2) !important;
+                top: calc(100%/3*2) !important;
+            }
+            body > main > section > .container a:nth-child(10){
+                left: calc(100%/3*0) !important;
+                top: calc(100%/3*3) !important;
+            }
+            body > main > section > .container a:nth-child(11){
+                left: calc(100%/3*1.1) !important;
+                top: calc(100%/3*3) !important;
+            }
+            body > main > section > .container a:nth-child(12){
+                left: calc(100%/3*2.2) !important;
+                top: calc(100%/3*3) !important;
+            }
+            body > main > section > .container a:nth-child(13){
+                left: calc(100%/3*0) !important;
+                top: calc(100%/3*4) !important;
+            }
+            body > main > section > .container a:nth-child(13) .card .textBox p{
+                font-size: 17px !important;
+            }
+            body > main > section > .container a:nth-child(13):hover .card .textBox p{
+                top: 10px !important;
+            }
+            body > main > section > .container a:nth-child(13):hover .card .textBox h3{
+                bottom: 30px !important;
+            }
+        }
+
+
+        /* @media all and (min-width:375px) and (max-width:425px){
 
             .ball{
                 display: none;
@@ -805,7 +1303,7 @@
             animation-duration: 4s;
             }
 
-        }
+        } */
 
         @media all and (min-width:769px) and (max-width:1024px){
             header{
