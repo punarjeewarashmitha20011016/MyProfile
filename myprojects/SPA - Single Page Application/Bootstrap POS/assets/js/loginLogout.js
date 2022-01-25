@@ -1,4 +1,4 @@
-var signUpBtn = document.getElementById("signUpBtn");
+var signUpBtn = document.getElementById("signupBtn");
 var logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("mouseover", function( event ) {

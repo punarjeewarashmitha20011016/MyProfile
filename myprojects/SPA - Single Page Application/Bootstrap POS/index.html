@@ -5,625 +5,888 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <title>Bootstrap SPA -Assignment</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <style>
-        body > main > section > div img{
-                width: 60%;
-            }
-        body > main > section > div:nth-child(1){
-            position: absolute;
-            top: 0;
-            bottom: unset;
-            left: 0;
-            right: unset;
-            margin: unset;
-            width: unset;
-            height: unset;
-            background-color: unset !important;
-            border-radius: unset;
-        }
-        body > main > section > div:nth-child(2){
-            position: absolute;
-            top: 10%;
-            left: 10%;
-        }
-        body > main > section > div:nth-child(3){
-            position: absolute;
-            top: 30%;
-            left: 5%;
-        }
-        body > main > section > div:nth-child(4){
-            position: absolute;
-            top: 40%;
-            left: 15%;
-        }
-        body > main > section > div:nth-child(5){
-            position: absolute;
-            top: 60%;
-            left: 2%;
-        }
-        body > main > section > div:nth-child(6){
-            position: absolute;
-            top: 70%;
-            left: 15%;
-        }
-        body > main > section > div:nth-child(7){
-            position: absolute;
-            top: 85%;
-            left: 5%;
-        }
-        body > main > section > div:nth-child(8){
-            position: absolute;
-            top: 0%;
-            left: 25%;
-        }
-        body > main > section > div:nth-child(9){
-            position: absolute;
-            top: 2%;
-            left: 75%;
-        }
-        body > main > section > div:nth-child(10){
-            position: absolute;
-            top: 1%;
-            left: 45%;
-        }
-        body > main > section > div:nth-child(11){
-            position: absolute;
-            top: 2%;
-            left: 60%;
-        }
-        body > main > section > div:nth-child(12){
-            position: absolute;
-            top: 2%;
-            left: 90%;
-        }
-        body > main > section > div:nth-child(13){
-            position: absolute;
-            top: 20%;
-            left: 80%;
-        }
-        body > main > section > div:nth-child(14){
-            position: absolute;
-            top: 40%;
-            left: 92%;
-        }
-        body > main > section > div:nth-child(15){
-            position: absolute;
-            top: 60%;
-            left: 85%;
-        }
-        body > main > section > div:nth-child(16){
-            position: absolute;
-            top: 85%;
-            left: 77%;
-        }
-        body > main > section > div:nth-child(17){
-            position: absolute;
-            top: 80%;
-            left: 90%;
-        }
-        body > main > section > div:nth-child(18){
-            position: absolute;
-            top: 40%;
-            left: 78%;
-        }
-        body > main > section > div:nth-child(19){
-            position: absolute;
-            top: 85%;
-            left: 65%;
-        }
-        body > main > section > div:nth-child(20){
-            position: absolute;
-            top: 88%;
-            left: 50%;
-        }
-        body > main > section > div:nth-child(21){
-            position: absolute;
-            top: 85%;
-            left: 35%;
-        }
-        body > main > section > div:nth-child(22){
-            position: absolute;
-            top: 85%;
-            left: 22%;
-        }
-        body > main > section > .container-fluid > .row > .col > div > input:focus{
-            border: 2px solid black;
-            box-shadow: none;
-        }
-        body > main > section > .container-fluid > .row > .col > div > label > span{
-            position: absolute;
-            top: 0;bottom: 0;
-            margin: auto;
-            width: 100px;
-            height: 30px;
-        }
-        @media all and (max-width:375px){
-            body > main > section > div img{
-                width: 60%;
-            }
-            body > main > section > div:nth-child(1){
-            position: absolute;
-            top: 0;
-            bottom: unset;
-            left: 0;
-            right: unset;
-            margin: unset;
-            width: unset;
-            height: unset;
-            background-color: unset !important;
-            border-radius: unset;
-            }
-            body > main > section > div:nth-child(2){
-                position: absolute;
-                top: 65%;
-                left: -2%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(3){
-                position: absolute;
-                top: 40%;
-                left: -2%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(4){
-                position: absolute;
-                top: 20%;
-                left: -2.5%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(5){
-                position: absolute;
-                top: 5%;
-                left: 30%;
-            }
-            body > main > section > div:nth-child(6){
-                position: absolute;
-                top: 1%;
-                left: 60%;
-            }
-            body > main > section > div:nth-child(7){
-                position: absolute;
-                top: 88%;
-                left: 2%;
-            }
-            body > main > section > div:nth-child(8){
-                position: absolute;
-                top: 8%;
-                left: 85%;
-                width: 100px;
-            }
-            body > main > section > div:nth-child(9){
-                position: absolute;
-                top: 2%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(10){
-                position: absolute;
-                top: 1%;
-                left: 45%;display: none;
-            }
-            body > main > section > div:nth-child(11){
-                position: absolute;
-                top: 2%;
-                left: 60%;
-                display: none;
-            }
-            body > main > section > div:nth-child(12){
-                position: absolute;
-                top: 50%;
-                left: 90%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(13){
-                position: absolute;
-                top: 20%;
-                left: 80%;display: none;
-            }
-            body > main > section > div:nth-child(14){
-                position: absolute;
-                top: 30%;
-                left: 88%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(15){
-                position: absolute;
-                top: 70%;
-                left: 90%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(16){
-                position: absolute;
-                top: 85%;
-                left: 77%;display: none;
-            }
-            body > main > section > div:nth-child(17){
-                position: absolute;
-                top: 80%;
-                left: 90%;display: none;
-            }
-            body > main > section > div:nth-child(18){
-                position: absolute;
-                top: 40%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(19){
-                position: absolute;
-                top: 90%;
-                left: 75%;
-            }
-            body > main > section > div:nth-child(20){
-                position: absolute;
-                top: 87%;
-                left: 38%;
-            }
-            body > main > section > div:nth-child(21){
-                position: absolute;
-                top: 85%;
-                left: 35%;display: none;
-            }
-            body > main > section > div:nth-child(22){
-                position: absolute;
-                top: 85%;
-                left: 22%;display: none;
-            }
-
-            body > main > section > .container-fluid{
-                width: 80% !important;
-            }
-            body > main > section > .container-fluid .row{
-                width: 88% !important;
-            }
-            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
-                width: 180px !important;
-            }
-        }
-
-        @media all and (min-width:375px) and (max-width:571px){
-            body > main > section > div img{
-                width: 60%;
-            }
-            body > main > section > div:nth-child(1){
-            position: absolute;
-            top: 0;
-            bottom: unset;
-            left: 0;
-            right: unset;
-            margin: unset;
-            width: unset;
-            height: unset;
-            background-color: unset !important;
-            border-radius: unset;
-            }
-            body > main > section > div:nth-child(2){
-                position: absolute;
-                top: 65%;
-                left: -1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(3){
-                position: absolute;
-                top: 40%;
-                left: -1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(4){
-                position: absolute;
-                top: 20%;
-                left: -1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(5){
-                position: absolute;
-                top: 5%;
-                left: 30%;
-            }
-            body > main > section > div:nth-child(6){
-                position: absolute;
-                top: 1%;
-                left: 60%;
-            }
-            body > main > section > div:nth-child(7){
-                position: absolute;
-                top: 88%;
-                left: 2%;
-            }
-            body > main > section > div:nth-child(8){
-                position: absolute;
-                top: 8%;
-                left: 85%;
-                width: 100px;
-            }
-            body > main > section > div:nth-child(9){
-                position: absolute;
-                top: 2%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(10){
-                position: absolute;
-                top: 1%;
-                left: 45%;display: none;
-            }
-            body > main > section > div:nth-child(11){
-                position: absolute;
-                top: 2%;
-                left: 60%;
-                display: none;
-            }
-            body > main > section > div:nth-child(12){
-                position: absolute;
-                top: 50%;
-                left: 91%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(13){
-                position: absolute;
-                top: 20%;
-                left: 80%;display: none;
-            }
-            body > main > section > div:nth-child(14){
-                position: absolute;
-                top: 30%;
-                left: 90%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(15){
-                position: absolute;
-                top: 70%;
-                left: 90%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(16){
-                position: absolute;
-                top: 85%;
-                left: 77%;display: none;
-            }
-            body > main > section > div:nth-child(17){
-                position: absolute;
-                top: 80%;
-                left: 90%;display: none;
-            }
-            body > main > section > div:nth-child(18){
-                position: absolute;
-                top: 40%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(19){
-                position: absolute;
-                top: 90%;
-                left: 75%;
-            }
-            body > main > section > div:nth-child(20){
-                position: absolute;
-                top: 87%;
-                left: 38%;
-            }
-            body > main > section > div:nth-child(21){
-                position: absolute;
-                top: 85%;
-                left: 35%;display: none;
-            }
-            body > main > section > div:nth-child(22){
-                position: absolute;
-                top: 85%;
-                left: 22%;display: none;
-            }
-
-            body > main > section > .container-fluid{
-                width: 80% !important;
-            }
-            body > main > section > .container-fluid .row{
-                width: 88% !important;
-            }
-            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
-                width: 180px !important;
-            }
-        }
-        @media all and (min-width:571px) and (max-width:1024px){
-            body > main > section > div img{
-                width: 60%;
-            }
-            body > main > section > div:nth-child(1){
-            position: absolute;
-            top: 0;
-            bottom: unset;
-            left: 0;
-            right: unset;
-            margin: unset;
-            width: unset;
-            height: unset;
-            background-color: unset !important;
-            border-radius: unset;
-            }
-            body > main > section > div:nth-child(2){
-                position: absolute;
-                top: 65%;
-                left: 1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(3){
-                position: absolute;
-                top: 40%;
-                left: 1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(4){
-                position: absolute;
-                top: 20%;
-                left: 1%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(5){
-                position: absolute;
-                top: 5%;
-                left: 30%;
-            }
-            body > main > section > div:nth-child(6){
-                position: absolute;
-                top: 1%;
-                left: 60%;
-            }
-            body > main > section > div:nth-child(7){
-                position: absolute;
-                top: 88%;
-                left: 2%;
-            }
-            body > main > section > div:nth-child(8){
-                position: absolute;
-                top: 6%;
-                left: 85%;
-                width: 100px;
-            }
-            body > main > section > div:nth-child(9){
-                position: absolute;
-                top: 2%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(10){
-                position: absolute;
-                top: 1%;
-                left: 45%;display: none;
-            }
-            body > main > section > div:nth-child(11){
-                position: absolute;
-                top: 2%;
-                left: 60%;
-                display: none;
-            }
-            body > main > section > div:nth-child(12){
-                position: absolute;
-                top: 50%;
-                left: 92%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(13){
-                position: absolute;
-                top: 20%;
-                left: 80%;display: none;
-            }
-            body > main > section > div:nth-child(14){
-                position: absolute;
-                top: 30%;
-                left: 92%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(15){
-                position: absolute;
-                top: 70%;
-                left: 92%;
-                width: 70px;
-            }
-            body > main > section > div:nth-child(16){
-                position: absolute;
-                top: 85%;
-                left: 77%;display: none;
-            }
-            body > main > section > div:nth-child(17){
-                position: absolute;
-                top: 80%;
-                left: 90%;display: none;
-            }
-            body > main > section > div:nth-child(18){
-                position: absolute;
-                top: 40%;
-                left: 75%;display: none;
-            }
-            body > main > section > div:nth-child(19){
-                position: absolute;
-                top: 90%;
-                left: 75%;
-            }
-            body > main > section > div:nth-child(20){
-                position: absolute;
-                top: 87%;
-                left: 38%;
-            }
-            body > main > section > div:nth-child(21){
-                position: absolute;
-                top: 85%;
-                left: 35%;display: none;
-            }
-            body > main > section > div:nth-child(22){
-                position: absolute;
-                top: 85%;
-                left: 22%;display: none;
-            }
-
-            body > main > section > .container-fluid{
-                width: 80% !important;
-            }
-            body > main > section > .container-fluid .row{
-                width: 88% !important;
-            }
-            body > main > section > .container-fluid .row:nth-child(3) ~ .row{
-                width: 180px !important;
-            }
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
 </head>
 <body>
+    <header id="headerNav" style="display: none;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h3 class="navbar-brand text-white fs-4" href="#" style="margin-left: 20px;height: 30px;">WebPos</h3>
+                <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 140px;"></i>
+                <hr class="position-absolute opacity-100" style="transform: rotate(90deg);width: 35px;height: 4px;left: 180px;background-color: white;">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="position-absolute navbar-nav flex-row w-100 justify-content-start fs-6 px-4" style="left:200px;">
+                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Home"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Orders"><span>Orders</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Items"><span>Items</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Customer"><span>Customers</span></a></li>
+                    </ul>
+                </div>
+                
+                <a href="#" id="signupBtn" class="d-none d-lg-block">   
+                    <div class="logout position-absolute">
+                        <i class="fas fa-user-plus text-white fs-3 position-absolute"></i>
+                        <h3 class="position-absolute text-white fs-6">Sign Up</h3>
+                    </div>
+                </a>
+
+                <a href="#" id="logoutBtn" class="d-none d-lg-block">
+                    <div class="logout position-absolute">
+                        <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
+                        <h3 class="position-absolute text-white fs-6">Logout</h3>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end d-block d-sm-block d-md-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent !important;">
+                    <div class="offcanvas-header" style="background-color: #575454 !important;">
+                      <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WebPos</h5>
+                      <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 110px;"></i>
+                        <div class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none !important;color: white !important;font-size: 30px;">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item" style="top: 100px !important;"><a class="nav-link text-white" href="#" id="mobileNavHome"><span>Home</span></a></li>
+                        <li class="nav-item" style="top: 150px !important;"><a class="nav-link text-white" href="#" id="mobileNavOrders"><span>Orders</span></a></li>
+                        <li class="nav-item" style="top: 200px !important;"><a class="nav-link text-white" href="#" id="mobileNavItems"><span>Items</span></a></li>
+                        <li class="nav-item" style="top: 250px !important;"><a class="nav-link text-white" href="#" id="mobileNavCustomer"><span>Customers</span></a></li>
+                        <li class="nav-item" style="top: 300px !important;"><a class="nav-link text-white" href="#" id="mobileNavSignup"><span>Signup</span></a></li>
+                        <li class="nav-item" style="top: 350px !important;"><a class="nav-link text-white" href="#" id="mobileNavLogout"><span>Logout</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <section class="container-fluid position-relative" style="height: 100vh;width: 100%;background-color: rgb(231, 231, 231) !important;">
-                <div><img src="assets/shapes/small icon-01.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-02.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-03.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-04.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-06.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-07.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-08.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-09.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-10.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-11.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-14.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-14.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-04.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-12.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-13.png" alt=""></div>
-                <div><img src="assets/shapes/small icon-05.png" alt=""></div>
-                <div class="container-fluid shadow" style="position: absolute;inset: 0 0 0 0;margin: auto;width: 50%;height: 70%;background-color: rgb(228, 225, 225) !important;border-radius: 20px;">
-                    <h3 style="position: absolute;left: 0;right: 0;margin: auto;width: max-content;top: 40px;">WebPos</h3>
-                    <div class="row position-absolute" style="top: 25%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
-                        <div class="col">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingPassword" class="position-absolute"><span>User Name</span></label>
+        <!-- -------------------Home section---------------------------- -->
+        <section id="homeSection" class="Home container-fluid position-relative" style="display: none;">
+                <div class="container-fluid position-absolute shadow">
+                    <div class="row h-50 position-relative start-0 end-0 m-auto" style="width: 95%;top: 20px;">
+                        <div class="col-sm-3 bg-light shadow col-12">
+                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Customer Details</h3>
+                            </div>
+
+                            <div class="form-floating position-relative" style="top: 20px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Id" style="height: 40px;">
+                                <label for="floatingPassword"><span>Id</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 30px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Name" style="height: 40px;">
+                                <label for="floatingPassword"><span>Name</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 40px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Address" style="height: 40px;">
+                                <label for="floatingPassword"><span>Address</span></label>
+                            </div>
+                            <div class="form-floating position-relative" style="top: 50px;">
+                                <input type="tel" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                <label for="floatingPassword"><span>Tel</span></label>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 bg-light mx-4 shadow col-12 col-md-5">
+                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Item Details</h3>
+                            </div>
+
+                            <div class="row" style="height: 86%;">
+                                <div class="col border">
+                                    <div class="form-floating position-relative" style="top: 20px;">
+                                        <select class="form-select bg-transparent" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; width: 100%;">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingSelect">Code</label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 30px;">
+                                        <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Name" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Name</span></label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 40px;">
+                                        <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Address" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Qty</span></label>
+                                    </div>
+                                    <div class="form-floating position-relative" style="top: 50px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Unit Price</span></label>
+                                    </div>
+                                </div>
+                                <div class="col border position-relative">
+                                    <div class="form-floating position-relative" style="top: 20px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Qty On Hand</span></label>
+                                    </div>
+        
+                                    <div class="form-floating position-relative" style="top: 30px;">
+                                        <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;width: 100%;">
+                                        <label for="floatingPassword"><span>Discount</span></label>
+                                    </div>
+
+                                    <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 120px;bottom: 110px;">
+                                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;">Add To Cart</button>
+                                        <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm bg-light shadow position-relative col-12">
+                            <div class="form position-relative" style="top: 10px;">
+                                <input type="text" class="form-control bg-transparent" id="floatingId" placeholder="Order Id">
+                            </div>
+
+                            
+                                <div class="row position-relative" style="top: 10px;">
+                                    <div class="col col-sm-12 mt-sm-2 mt-2">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Discount</span></label>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col col-sm-12 mt-sm-2 mt-2">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Cash</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-relative" style="top: 20px;">
+                                    <div class="col">
+                                        <div class="form-floating position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 40px;">
+                                            <label for="floatingPassword"><span>Balance</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row position-relative" style="top: 25px;">
+                                    <div class="col-6 position-relative">
+                                        <h6 class="position-relative" style="top: 8px;">Sub Total - </h6>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword"  style="height: 34px;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row position-relative" style="top: 30px;">
+                                    <div class="col-6 position-relative">
+                                        <h6 class="position-relative" style="top: 8px;">Total - </h6>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form position-relative">
+                                            <input type="tel" class="form-control  bg-transparent" id="floatingPassword" style="height: 34px;">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row position-relative start-0 end-0 m-auto" style="width: 95%;top: 40px; height: 30%;">
+                        <div class="col bg-light position-relative" style="height: 100%;overflow: auto;">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Customer Id</th>
+                                        <th scope="col">Item Code</th>
+                                        <th scope="col">Item Description</th>
+                                        <th scope="col">Item Qty</th>
+                                        <th scope="col">Item Price</th>
+                                        <th scope="col">Item Discount</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td>C-001</td>
+                                    <td>I-001</td>
+                                    <td>Maliban Piti</td>
+                                    <td>1</td>
+                                    <td>370.0</td>
+                                    <td>0</td>
+                                    <td>370.0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>C-001</td>
+                                        <td>I-002</td>
+                                        <td>Kiri samba kg</td>
+                                        <td>1</td>
+                                        <td>400.0</td>
+                                        <td>0</td>
+                                        <td>400.0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>C-001</td>
+                                        <td>I-003</td>
+                                        <td>Maliban Chocalate Biscuit</td>
+                                        <td>1</td>
+                                        <td>100.0</td>
+                                        <td>0</td>
+                                        <td>100.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row position-absolute end-0 w-25 me-5" style="margin-top: 60px;">
+                            <div class="col col-sm">
+                                <button class="btn btn-outline-success w-100">Purchase</button>
+                            </div>
+                            <div class="col col-sm">
+                                <button class="btn btn-outline-danger w-100">Discard</button>
                             </div>
                         </div>
                     </div>
-                    <div class="row position-absolute" style="top: 40%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
-                        <div class="col">
-                            <div class="form-floating position-relative shadow">
-                                <input type="password" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingPassword" class="position-absolute"><span>Password</span></label>
+
+        </section>
+
+        <!-- -------------------Orders section---------------------------- -->
+        <section id="ordersSection" class="Orders container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container-fluid position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
+                    <div class="col-12 position-relative col-sm-8">
+                        <div class="form-floating position-relative" style="top: 30px;">
+                            <input type="text" class="form-control bg-transparent border-3" id="floatingPassword" placeholder="Name" style="height: 40px;width: 760px  ">
+                            <label for="floatingPassword"><span>Search Order by Order Id, Customer Id</span></label>
+                        </div>
+                    </div>
+                    <div class="col-12 position-absolute col-sm" style="top: 30px; left: 79.5%;">
+                        <a href="#" id="viewOrderDetailsBtn">
+                        <button class="btn btn-secondary">View Order Details</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row position-absolute border-5 shadow" style="top: 25%; left: 0;right: 0;margin: auto;height: 400px;width: 93%;">
+                    <div class="col-11 position-relative col-sm-12" style="height: 100%;overflow:auto;">
+                        <table class="table table-hover position-absolute start-0 end-0 m-auto" >
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Customer Id</th>
+                                    <th scope="col">Order Id</th>
+                                    <th scope="col">Order Date</th>
+                                    <th scope="col">Order Time</th>
+                                    <th scope="col">Discount</th>
+                                    <th scope="col">Totl Amount</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>O-001</td>
+                                  <td>C-001</td>
+                                  <td>01/20/2022</td>
+                                  <td>10:58 AM</td>
+                                  <td>0</td>
+                                  <td>870.0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>O-002</td>
+                                    <td>C-002</td>
+                                    <td>01/20/2022</td>
+                                    <td>11:58 AM</td>
+                                    <td>0</td>
+                                    <td>1870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>O-003</td>
+                                    <td>C-003</td>
+                                    <td>01/20/2022</td>
+                                    <td>12:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>O-004</td>
+                                    <td>C-005</td>
+                                    <td>01/20/2022</td>
+                                    <td>01:20 PM</td>
+                                    <td>0</td>
+                                    <td>270.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>O-005</td>
+                                    <td>C-005</td>
+                                    <td>01/20/2022</td>
+                                    <td>01:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>O-006</td>
+                                    <td>C-001</td>
+                                    <td>01/20/2022</td>
+                                    <td>02:58 AM</td>
+                                    <td>0</td>
+                                    <td>2870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>O-007</td>
+                                    <td>C-002</td>
+                                    <td>01/20/2022</td>
+                                    <td>03:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>O-008</td>
+                                    <td>C-008</td>
+                                    <td>01/20/2022</td>
+                                    <td>05:58 PM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------Order Details Section--------------------- -->
+        <section id="orderDetailsSection" class="OrderDetails container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row position-absolute" style="top: 5%; left: 0;right: 0;margin: auto;height: 90%;width: 90%;">
+                    <div class="col shadow position-relative" style="height: 100%;overflow: auto">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Customer Id</th>
+                                    <th scope="col">Item Code</th>
+                                    <th scope="col">Item Description</th>
+                                    <th scope="col">Item Qty</th>
+                                    <th scope="col">Item Price</th>
+                                    <th scope="col">Item Discount</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>C-001</td>
+                                  <td>I-001</td>
+                                  <td>Maliban Piti</td>
+                                  <td>1</td>
+                                  <td>370.0</td>
+                                  <td>0</td>
+                                  <td>370.0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>C-001</td>
+                                    <td>I-002</td>
+                                    <td>Kiri samba kg</td>
+                                    <td>1</td>
+                                    <td>400.0</td>
+                                    <td>0</td>
+                                    <td>400.0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>C-001</td>
+                                    <td>I-003</td>
+                                    <td>Maliban Chocalate Biscuit</td>
+                                    <td>1</td>
+                                    <td>100.0</td>
+                                    <td>0</td>
+                                    <td>100.0</td>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------Items section----------------------------- -->
+        <section id="itemsSection" class="Items container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
+                    <div class="col position-relative">
+                        <div class="row position-relative" style="top: 0;">
+                            <div class="col-6 col-sm-6 col-md position-relative">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword1" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword1"><span>Code</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword2" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword2"><span>Description</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword3" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword3"><span>Qty</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative" style="top: 10px;">
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative" >
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword4" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword4"><span>Buying Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword5" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword5"><span>Unit Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword6" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword6"><span>Discount</span></label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="position:absolute;top: 63%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
-                        <div class="col-12">
-                            <a href="subPages/Main.html" id="loginBtn">
-                                <button class="btn btn-outline-success shadow w-100">Login</button>
+                </div>
+
+                <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
+                    <div class="col-6 col-sm position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
                             </a>
                         </div>
                     </div>
-                    <div class="row" style="position:absolute;top: 75%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
-                        <div class="col-12">
-                            <a href="subPages/signup.html">
-                                <button class="btn btn-outline-secondary shadow w-100">Signup</button>
+                    <div class="col-sm col-6 position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Item</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <a href="">
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete Item</button>
                             </a>
                         </div>
                     </div>
                 </div>
+                <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
+                    <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
+                        <table class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Buying Price</th>
+                                    <th scope="col">Unit Price</th>
+                                    <th scope="col">Discount</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>I-001</td>
+                                  <td>Maliban Piti 250g</td>
+                                  <td>100</td>
+                                  <td>280.0</td>
+                                  <td>300.0</td>
+                                  <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>I-002</td>
+                                    <td>Maliban Piti 500g</td>
+                                    <td>100</td>
+                                    <td>480.0</td>
+                                    <td>500.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>I-003</td>
+                                    <td>Maliban Piti 1kg</td>
+                                    <td>100</td>
+                                    <td>680.0</td>
+                                    <td>700.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>I-004</td>
+                                    <td>Maliban Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>120.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>I-005</td>
+                                    <td>Munchee Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>I-006</td>
+                                    <td>Munchee Chocalate Biscuit 250g</td>
+                                    <td>100</td>
+                                    <td>230.0</td>
+                                    <td>250.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>I-007</td>
+                                    <td>Munchee Chocalate Biscuit 100g</td>
+                                    <td>100</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>I-008</td>
+                                    <td>Nadu rice 1kg</td>
+                                    <td>100kg</td>
+                                    <td>130.0</td>
+                                    <td>150.0</td>
+                                    <td>0</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- -------------------Customers section-------------------------- -->
+        <section id="customerSection" class="Customer container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
+                    <div class="col position-relative">
+                        <div class="row position-relative" style="top: 0;">
+                            <div class="col-6 col-sm-6 col-md position-relative">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword1" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword1"><span>Id</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword2" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword2"><span>Name</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword3" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword3"><span>Contact No</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative" style="top: 10px;">
+                            <div class="col-6 col-sm-6 col-md">
+                                <div class="form-floating position-relative" >
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword4" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword4"><span>Nic</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="floatingPassword5" placeholder="Name" style="height: 40px;">
+                                    <label for="floatingPassword5"><span>Address</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                            <a href="">
+                            <button class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                            <a href="">
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                            <a href="">
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
+                    <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
+                        <table class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Nic</th>
+                                    <th scope="col">Contact No</th>
+                                    <th scope="col">Address</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>C-001</td>
+                                  <td>Saman Bandara</td>
+                                  <td>20010201001</td>
+                                  <td>0767878787</td>
+                                  <td>Bandaragama</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>C-002</td>
+                                    <td>Namal Kumara</td>
+                                    <td>6001020100</td>
+                                    <td>0785656565</td>
+                                    <td>Horana</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>C-003</td>
+                                    <td>Sunimal Bandara</td>
+                                    <td>6201020100</td>
+                                    <td>0785622565</td>
+                                    <td>Horana</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>C-004</td>
+                                    <td>Kamal Bandara</td>
+                                    <td>9001020100</td>
+                                    <td>0765622565</td>
+                                    <td>Panadura</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>C-005</td>
+                                    <td>Sirimal Bandara</td>
+                                    <td>20010201000</td>
+                                    <td>0721222565</td>
+                                    <td>Horana</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>C-006</td>
+                                    <td>Amal Bandara</td>
+                                    <td>6701020100</td>
+                                    <td>0715622565</td>
+                                    <td>Horana</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>C-007</td>
+                                    <td>Nimal Kumara</td>
+                                    <td>5201020100</td>
+                                    <td>0766622565</td>
+                                    <td>Piliyandala</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------Signup section-------------------------- -->
+        <section id="signupSection" class="Signup container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingId" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingId" class="position-absolute"><span>Id</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingName" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingName" class="position-absolute"><span>Name</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingNic" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingNic" class="position-absolute"><span>NIC</span></label>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="tel" class="form-control bg-transparent" id="floatingContactNo" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingContactNo" class="position-absolute"><span>Contact No</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingUserName" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingUserName" class="position-absolute"><span>User Name</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="password" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingPassword" class="position-absolute"><span>Password</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="floatingAddress" placeholder="Tel" style="height: 50px;">
+                                <label for="floatingAddress" class="position-absolute"><span>Address</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row position-absolute border" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                    <div class="col-6 col-sm-6 col-md">
+                        <button class="btn btn-outline-success" style="width: 100%;">Add</button>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md">
+                        <button class="btn btn-outline-secondary" style="width: 100%;">Update</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-danger" style="width: 100%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" id="logoutBtnInSignup">
+                <div class="logout position-absolute d-none d-lg-block">
+                    <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
+                    <h3 class="position-absolute text-white fs-6">Logout</h3>
+                </div>
+            </a>
+        </section>
+
+        <!-- ------------------Login Section----------------------------- -->
+        <section class="login container-fluid position-relative" style="height: 100vh;width: 100%;background-color: rgb(231, 231, 231) !important;display: block;" id="loginSection">
+            <div><img src="assets/shapes/small icon-01.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-02.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-03.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-04.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-06.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-07.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-08.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-09.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-10.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-11.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-14.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-14.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-04.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-12.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-13.png" alt=""></div>
+            <div><img src="assets/shapes/small icon-05.png" alt=""></div>
+            <div class="container-fluid shadow" style="position: absolute;inset: 0 0 0 0;margin: auto;width: 50%;height: 70%;background-color: rgb(228, 225, 225) !important;border-radius: 20px;">
+                <h3 style="position: absolute;left: 0;right: 0;margin: auto;width: max-content;top: 40px;">WebPos</h3>
+                <div class="row position-absolute" style="top: 25%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
+                    <div class="col">
+                        <div class="form-floating position-relative shadow">
+                            <input type="text" class="form-control bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
+                            <label for="floatingPassword" class="position-absolute"><span>User Name</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-absolute" style="top: 40%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
+                    <div class="col">
+                        <div class="form-floating position-relative shadow">
+                            <input type="password" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
+                            <label for="floatingPassword" class="position-absolute"><span>Password</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="position:absolute;top: 63%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
+                    <div class="col-12">
+                        <a href="#" id="loginBtn">
+                            <button class="btn btn-outline-success shadow w-100">Login</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="position:absolute;top: 75%;left: 0;right: 0;margin: auto;width: 200px;height: 40px;">
+                    <div class="col-12">
+                        <a href="#" id="signupBtnInLogin">
+                            <button class="btn btn-outline-secondary shadow w-100">Signup</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/loginLogout.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

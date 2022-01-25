@@ -174,6 +174,197 @@ input:focus{
     border: 2px solid black !important;
 }
 
+
+body > main > .Signup{
+    position: relative;
+    height: 100vh !important;
+}
+body > main > .Signup > .container-fluid{
+    height: 70% !important;
+    width: 70% !important;
+}
+body > main > .Signup > .container-fluid > .row > .row{
+    position: relative;
+    margin-top: 30px !important;
+}
+input:focus{
+    box-shadow: none !important;
+    border: 2px solid black !important;
+}
+body > main > .Signup a{
+    position: absolute !important;
+    right: 50px;
+    top: 30px;
+    width: 38px;
+    height: 40px;
+    overflow: hidden;
+    transition: all 1s;
+}
+body > main > .Signup > #logoutBtnInSignup:hover{
+    transition: all 1s;
+    width: 100px !important;
+}
+body > main > .Signup > #logoutBtnInSignup:hover h3{
+    right: 2px !important;
+    transition: all 1s;
+}
+body > main > .Signup > #logoutBtnInSignup div{
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+body > main > .Signup > #logoutBtnInSignup div h3{
+    position: absolute;
+    top: 0 !important;
+    bottom: 7px !important;
+    margin: auto !important;
+    height: max-content;
+    position: absolute !important;
+    right: -52px !important;
+    color: black !important;
+    transition: all 1s;
+}
+body > main > .Signup > #logoutBtnInSignup i{
+    color: black !important;
+    font-size: 35px !important;
+}
+body > main > .Signup label{
+    position: absolute;
+    top: 5px !important;
+}
+
+body > main > .login > div img{
+    width: 60%;
+}
+body > main > .login > div:nth-child(1){
+    position: absolute;
+    top: 0;
+    bottom: unset;
+    left: 0;
+    right: unset;
+    margin: unset;
+    width: unset;
+    height: unset;
+    background-color: unset !important;
+    border-radius: unset;
+}
+body > main > .login > div:nth-child(2){
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+body > main > .login > div:nth-child(3){
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+body > main > .login > div:nth-child(4){
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+body > main > .login > div:nth-child(5){
+    position: absolute;
+    top: 60%;
+    left: 2%;
+}
+body > main > .login > div:nth-child(6){
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+body > main > .login > div:nth-child(7){
+    position: absolute;
+    top: 85%;
+    left: 5%;
+}
+body > main > .login > div:nth-child(8){
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+body > main > .login > div:nth-child(9){
+    position: absolute;
+    top: 2%;
+    left: 75%;
+}
+body > main > .login > div:nth-child(10){
+    position: absolute;
+    top: 1%;
+    left: 45%;
+}
+body > main > .login > div:nth-child(11){
+    position: absolute;
+    top: 2%;
+    left: 60%;
+}
+body > main > .login > div:nth-child(12){
+    position: absolute;
+    top: 2%;
+    left: 90%;
+}
+body > main > .login > div:nth-child(13){
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+body > main > .login > div:nth-child(14){
+    position: absolute;
+    top: 40%;
+    left: 92%;
+}
+body > main > .login > div:nth-child(15){
+    position: absolute;
+    top: 60%;
+    left: 85%;
+}
+body > main > .login > div:nth-child(16){
+    position: absolute;
+    top: 85%;
+    left: 77%;
+}
+body > main > .login > div:nth-child(17){
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}
+body > main > .login > div:nth-child(18){
+    position: absolute;
+    top: 40%;
+    left: 78%;
+}
+body > main > .login > div:nth-child(19){
+    position: absolute;
+    top: 85%;
+    left: 65%;
+}
+body > main > .login > div:nth-child(20){
+    position: absolute;
+    top: 88%;
+    left: 50%;
+}
+body > main > .login > div:nth-child(21){
+    position: absolute;
+    top: 85%;
+    left: 35%;
+}
+body > main > .login > div:nth-child(22){
+    position: absolute;
+    top: 85%;
+    left: 22%;
+}
+body > main > .login > .container-fluid > .row > .col > div > input:focus{
+    border: 2px solid black;
+    box-shadow: none;
+}
+body > main > .login > .container-fluid > .row > .col > div > label > span{
+    position: absolute;
+    top: 0;bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+}
+
 /*Home .Home media queris*/
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -279,7 +470,7 @@ input:focus{
             margin: auto;
         }
         body > main > .Orders div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) label span{
-            font-size: 14px !important;
+            font-size: 12px !important;
         }
 
         /*Items 320px queries*/
@@ -511,9 +702,6 @@ input:focus{
             margin-top: 10px !important;
         }
 
-        body > main > .Orders div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) label span{
-            font-size: 14px !important;
-        }
     }
 
     @media all and (min-width:320px) and (max-width: 425px){
@@ -1178,5 +1366,572 @@ input:focus{
             left: 0;right: 0;
             margin: auto;
 
+        }
+    }
+
+    @media all and (max-width:575px){
+        body > main > .Signup > .container-fluid{
+            width: 85% !important;
+            height: 90% !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(1){
+            top: 10px !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(1) .row{
+            position: absolute;
+            left: 0 !important;
+            right: 0 !important;
+            margin: auto !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(1) .row:nth-child(2){
+            margin-top: 210px !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(1) .row:nth-child(3){
+            margin-top: 420px !important;
+        }
+        body > main > .Signup > .container-fluid input{
+            margin-top: 20px;
+        }
+        body > main > .Signup > .container-fluid > .row{
+            width: 100% !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(2){
+            margin-top: 50px !important;
+        }
+        body > main > .Signup > .container-fluid > .row:nth-child(2) .col:nth-child(3){
+            margin-top: 10px !important;
+        }
+        @keyframes anim{
+            0%{
+                width: 28px;
+                height: 25px;
+            }
+            100%{
+                width: 95px;
+                height: 25px;
+            }
+        }
+        
+        @keyframes anim2{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-60px);
+            }
+        }
+        body > main > .Signup > #logoutBtnInSignup{
+            position: absolute;
+            right: 10px !important;
+            top: 6px !important;
+            width: 28px;
+            height: 25px !important;
+            animation-name: anim;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+        }
+        body > main > .Signup > #logoutBtnInSignup div{
+            position: absolute !important;
+            left: 0 !important;
+            display: block !important;
+            
+        }
+        body > main > .Signup > #logoutBtnInSignup div i{
+            position: absolute !important;
+            left: 0 !important;
+            font-size: 25px !important;
+        }
+        body > main > .Signup > #logoutBtnInSignup div h3{
+            top: 5px !important;
+            animation-name: anim2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+        }
+    }
+
+    @media all and (min-width:574px) and (max-width:768px){
+        body > main > .Signup > .container-fluid > .row{
+            width: 90% !important;
+        }
+        @keyframes anim{
+            0%{
+                width: 28px;
+                height: 25px;
+            }
+            100%{
+                width: 95px;
+                height: 25px;
+            }
+        }
+        
+        @keyframes anim2{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-60px);
+            }
+        }
+        body > main > .Signup > #logoutBtnInSignup{
+            position: absolute;
+            right: 20px !important;
+            top: 30px !important;
+            width: 28px;
+            height: 25px !important;
+            animation-name: anim;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+        }
+        body > main > .Signup > #logoutBtnInSignup div{
+            position: absolute !important;
+            left: 0 !important;
+            display: block !important;
+            
+        }
+        body > main > .Signup > #logoutBtnInSignup div i{
+            position: absolute !important;
+            left: 0 !important;
+            font-size: 25px !important;
+        }
+        body > main > .Signup> #logoutBtnInSignup div h3{
+            top: 3px !important;
+            animation-name: anim2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+        }
+    }
+    @media all and (min-width:768px) and (max-width:1024px){
+        body > main > .Signup > .container-fluid > .row{
+            width: 90% !important;
+        }
+    }
+
+    @media all and (max-width:375px){
+        body > main > .login > div img{
+            width: 60%;
+        }
+        body > main > .login > div:nth-child(1){
+        position: absolute;
+        top: 0;
+        bottom: unset;
+        left: 0;
+        right: unset;
+        margin: unset;
+        width: unset;
+        height: unset;
+        background-color: unset !important;
+        border-radius: unset;
+        }
+        body > main > .login > div:nth-child(2){
+            position: absolute;
+            top: 65%;
+            left: -2%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(3){
+            position: absolute;
+            top: 40%;
+            left: -2%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(4){
+            position: absolute;
+            top: 20%;
+            left: -2.5%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(5){
+            position: absolute;
+            top: 5%;
+            left: 30%;
+        }
+        body > main > .login > div:nth-child(6){
+            position: absolute;
+            top: 1%;
+            left: 60%;
+        }
+        body > main > .login > div:nth-child(7){
+            position: absolute;
+            top: 88%;
+            left: 2%;
+        }
+        body > main > .login > div:nth-child(8){
+            position: absolute;
+            top: 8%;
+            left: 85%;
+            width: 100px;
+        }
+        body > main > .login > div:nth-child(9){
+            position: absolute;
+            top: 2%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(10){
+            position: absolute;
+            top: 1%;
+            left: 45%;display: none;
+        }
+        body > main > .login > div:nth-child(11){
+            position: absolute;
+            top: 2%;
+            left: 60%;
+            display: none;
+        }
+        body > main > .login > div:nth-child(12){
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(13){
+            position: absolute;
+            top: 20%;
+            left: 80%;display: none;
+        }
+        body > main > .login > div:nth-child(14){
+            position: absolute;
+            top: 30%;
+            left: 88%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(15){
+            position: absolute;
+            top: 70%;
+            left: 90%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(16){
+            position: absolute;
+            top: 85%;
+            left: 77%;display: none;
+        }
+        body > main > .login > div:nth-child(17){
+            position: absolute;
+            top: 80%;
+            left: 90%;display: none;
+        }
+        body > main > .login > div:nth-child(18){
+            position: absolute;
+            top: 40%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(19){
+            position: absolute;
+            top: 90%;
+            left: 75%;
+        }
+        body > main > .login > div:nth-child(20){
+            position: absolute;
+            top: 87%;
+            left: 38%;
+        }
+        body > main > .login > div:nth-child(21){
+            position: absolute;
+            top: 85%;
+            left: 35%;display: none;
+        }
+        body > main > .login > div:nth-child(22){
+            position: absolute;
+            top: 85%;
+            left: 22%;display: none;
+        }
+
+        body > main > .login > .container-fluid{
+            width: 80% !important;
+        }
+        body > main > .login > .container-fluid .row{
+            width: 88% !important;
+        }
+        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
+            width: 180px !important;
+        }
+    }
+
+    @media all and (min-width:375px) and (max-width:571px){
+        body > main > .login > div img{
+            width: 60%;
+        }
+        body > main > .login > div:nth-child(1){
+        position: absolute;
+        top: 0;
+        bottom: unset;
+        left: 0;
+        right: unset;
+        margin: unset;
+        width: unset;
+        height: unset;
+        background-color: unset !important;
+        border-radius: unset;
+        }
+        body > main > .login > div:nth-child(2){
+            position: absolute;
+            top: 65%;
+            left: -1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(3){
+            position: absolute;
+            top: 40%;
+            left: -1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(4){
+            position: absolute;
+            top: 20%;
+            left: -1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(5){
+            position: absolute;
+            top: 5%;
+            left: 30%;
+        }
+        body > main > .login > div:nth-child(6){
+            position: absolute;
+            top: 1%;
+            left: 60%;
+        }
+        body > main > .login > div:nth-child(7){
+            position: absolute;
+            top: 88%;
+            left: 2%;
+        }
+        body > main > .login > div:nth-child(8){
+            position: absolute;
+            top: 8%;
+            left: 85%;
+            width: 100px;
+        }
+        body > main > .login > div:nth-child(9){
+            position: absolute;
+            top: 2%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(10){
+            position: absolute;
+            top: 1%;
+            left: 45%;display: none;
+        }
+        body > main > .login > div:nth-child(11){
+            position: absolute;
+            top: 2%;
+            left: 60%;
+            display: none;
+        }
+        body > main > .login > div:nth-child(12){
+            position: absolute;
+            top: 50%;
+            left: 91%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(13){
+            position: absolute;
+            top: 20%;
+            left: 80%;display: none;
+        }
+        body > main > .login > div:nth-child(14){
+            position: absolute;
+            top: 30%;
+            left: 90%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(15){
+            position: absolute;
+            top: 70%;
+            left: 90%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(16){
+            position: absolute;
+            top: 85%;
+            left: 77%;display: none;
+        }
+        body > main > .login > div:nth-child(17){
+            position: absolute;
+            top: 80%;
+            left: 90%;display: none;
+        }
+        body > main > .login > div:nth-child(18){
+            position: absolute;
+            top: 40%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(19){
+            position: absolute;
+            top: 90%;
+            left: 75%;
+        }
+        body > main > .login > div:nth-child(20){
+            position: absolute;
+            top: 87%;
+            left: 38%;
+        }
+        body > main > .login > div:nth-child(21){
+            position: absolute;
+            top: 85%;
+            left: 35%;display: none;
+        }
+        body > main > .login > div:nth-child(22){
+            position: absolute;
+            top: 85%;
+            left: 22%;display: none;
+        }
+
+        body > main > .login > .container-fluid{
+            width: 80% !important;
+        }
+        body > main > .login > .container-fluid .row{
+            width: 88% !important;
+        }
+        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
+            width: 180px !important;
+        }
+    }
+    @media all and (min-width:571px) and (max-width:1024px){
+        body > main > .login > div img{
+            width: 60%;
+        }
+        body > main > .login > div:nth-child(1){
+        position: absolute;
+        top: 0;
+        bottom: unset;
+        left: 0;
+        right: unset;
+        margin: unset;
+        width: unset;
+        height: unset;
+        background-color: unset !important;
+        border-radius: unset;
+        }
+        body > main > .login > div:nth-child(2){
+            position: absolute;
+            top: 65%;
+            left: 1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(3){
+            position: absolute;
+            top: 40%;
+            left: 1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(4){
+            position: absolute;
+            top: 20%;
+            left: 1%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(5){
+            position: absolute;
+            top: 5%;
+            left: 30%;
+        }
+        body > main > .login > div:nth-child(6){
+            position: absolute;
+            top: 1%;
+            left: 60%;
+        }
+        body > main > .login > div:nth-child(7){
+            position: absolute;
+            top: 88%;
+            left: 2%;
+        }
+        body > main > .login > div:nth-child(8){
+            position: absolute;
+            top: 6%;
+            left: 85%;
+            width: 100px;
+        }
+        body > main > .login > div:nth-child(9){
+            position: absolute;
+            top: 2%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(10){
+            position: absolute;
+            top: 1%;
+            left: 45%;display: none;
+        }
+        body > main > .login > div:nth-child(11){
+            position: absolute;
+            top: 2%;
+            left: 60%;
+            display: none;
+        }
+        body > main > .login > div:nth-child(12){
+            position: absolute;
+            top: 50%;
+            left: 92%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(13){
+            position: absolute;
+            top: 20%;
+            left: 80%;display: none;
+        }
+        body > main > .login > div:nth-child(14){
+            position: absolute;
+            top: 30%;
+            left: 92%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(15){
+            position: absolute;
+            top: 70%;
+            left: 92%;
+            width: 70px;
+        }
+        body > main > .login > div:nth-child(16){
+            position: absolute;
+            top: 85%;
+            left: 77%;display: none;
+        }
+        body > main > .login > div:nth-child(17){
+            position: absolute;
+            top: 80%;
+            left: 90%;display: none;
+        }
+        body > main > .login > div:nth-child(18){
+            position: absolute;
+            top: 40%;
+            left: 75%;display: none;
+        }
+        body > main > .login > div:nth-child(19){
+            position: absolute;
+            top: 90%;
+            left: 75%;
+        }
+        body > main > .login > div:nth-child(20){
+            position: absolute;
+            top: 87%;
+            left: 38%;
+        }
+        body > main > .login > div:nth-child(21){
+            position: absolute;
+            top: 85%;
+            left: 35%;display: none;
+        }
+        body > main > .login > div:nth-child(22){
+            position: absolute;
+            top: 85%;
+            left: 22%;display: none;
+        }
+
+        body > main > .login > .container-fluid{
+            width: 80% !important;
+        }
+        body > main > .login > .container-fluid .row{
+            width: 88% !important;
+        }
+        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
+            width: 180px !important;
         }
     }
