@@ -646,6 +646,9 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             top: 0 !important;
             margin: unset !important;
         }
+        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
+            font-size: 16px !important;
+        }
     }
     @media all and (min-width: 320px) and (max-width: 375px){
         
@@ -701,7 +704,9 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
             margin-top: 10px !important;
         }
-
+        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
+            font-size: 16px !important;
+        }
     }
 
     @media all and (min-width:320px) and (max-width: 425px){
@@ -744,6 +749,9 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             left: 0;right: 0;
             margin: auto;
 
+        }
+        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
+            font-size: 16px !important;
         }
     }
 
@@ -828,7 +836,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             margin-top: 10px !important;
         }
         body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
+            font-size: 15px !important;
         }
         body > main > .Items > .container-fluid > div:nth-child(3){
             top: 51% !important;
@@ -986,7 +994,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             margin-top: 10px !important;
         }
         body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
+            font-size: 15px !important;
         }
         body > main > .Items > .container-fluid > div:nth-child(3){
             top: 51% !important;
@@ -1070,7 +1078,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             margin-top: 10px !important;
         }
         body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
+            font-size: 15px !important;
         }
         body > main > .Customer > .container-fluid > div:nth-child(3){
             top: 51% !important;
@@ -1653,9 +1661,15 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
             width: 180px !important;
         }
+        body > main > .login > .container-fluid .row .col div label{
+            top: 5px;
+        }
     }
 
     @media all and (min-width:375px) and (max-width:571px){
+        body > main > .login > .container-fluid .row .col div label{
+            top: 5px;
+        }
         body > main > .login > div img{
             width: 60%;
         }
@@ -1796,6 +1810,9 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         }
     }
     @media all and (min-width:571px) and (max-width:1024px){
+        body > main > .login > .container-fluid .row .col div label{
+            top: 5px;
+        }
         body > main > .login > div img{
             width: 60%;
         }
@@ -1933,5 +1950,10 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         }
         body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
             width: 180px !important;
+        }
+    }
+    @media all and (min-width:1024px) and (max-width:2560px){
+        body > main > .login > .container-fluid .row .col div label{
+            top: 5px;
         }
     }
