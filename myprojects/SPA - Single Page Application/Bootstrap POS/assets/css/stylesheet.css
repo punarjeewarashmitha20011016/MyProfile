@@ -1388,7 +1388,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
     }
     @media all and (min-width:1025px) and (max-width:1440px){
         body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
+            margin-top: 0px !important;
         }
         body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
             margin-top: 2px !important;
