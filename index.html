@@ -93,28 +93,33 @@
                 
     <section class="home" id="HOME">
         <img class="backgroundImg" src="assets/images/wallpaperflare.com_wallpaper%20(1).jpg" alt="">
-        <div class="childImageContainer">
-            <img class="child" src="assets/images/CHP_8311.jpg" alt="">
-        </div>
 
-        <div class="textboxContainer">
-            <p>I'M</p>
-            <div class="text-box">
-                <h1>PUNARJEEWA</h1>
-                <h3>a <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "Programmer.", "Developer.", "Designer.", "Freelancer."]'></span></h3>
+        <div class="boxContainer">
+            <div class="childImageContainer">
+                <img class="child" src="assets/images/CHP_8311.jpg" alt="">
             </div>
-        </div>
 
-        <div class="buttonContainer">
-            <button>Connect With Me <span>&#8594;</span></button>
-        </div>
+            <div class="textboxContainer">
+                <div>
+                    <p><span>I'M</span></p>
+                    <div class="text-box">
+                        <h1>PUNARJEEWA</h1>
+                        <h3>a <span class="txt-rotate" data-period="2000"
+                            data-rotate='[ "Programmer.", "Developer.", "Designer.", "Freelancer."]'></span></h3>
+                    </div>
+                </div>
+            </div>
 
-        <div class="social-links">
-            <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/Punarjeewa2001" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/punarjeewarashmitha20011016" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="buttonContainer">
+                <button>Connect With Me <span>&#8594;</span></button>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/punarjeewa.rashmitha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Punarjeewa2001" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/punarjeewa-rashmitha-59a4a3223/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/punarjeewarashmitha20011016" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
         
     </section>
@@ -181,7 +186,7 @@
             </div>
 
             <div id="div3Edu">
-                <div class="AshokaLogo"></div>
+                <div class="logo"></div>
                 <h3 class="sub-title">ASHOKA COLLEGE HORANA</h3>
                 <h3 class="education-type">PRIMARY AND SECONDARY EDUCATION</h3>
                 <h3 class="year">2006 - 2017</h3>
@@ -512,28 +517,34 @@
 
     <!-- -------------------------------------------PORTFOLIO-------------------------------------------------  -->
     <section class="portfolio" id="PORTFOLIO">
+        <div class="container">
+            <div class="mainImgCol">
+                <div class="image1Container">
+                    <img class="image1" src="assets/portfolio/image1.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="secondaryImgCol">
+                <div class="image2Container">
+                    <img class="image2" src="assets/portfolio/image2.jpg" alt="">
+                </div>
+                <div class="image3Container">
+                    <img class="image3" src="assets/portfolio/image3.jpg" alt="">
+                </div>
+                <div class="image4Container">
+                    <img class="image4" src="assets/portfolio/image4.jpg" alt="">
+                </div>
+                <div class="image5Container">
+                    <img class="image5" src="assets/portfolio/image5.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <h2 class="title">PORTFOLIO</h2>
-        <div class="image1Container">
-            <img class="image1" src="assets/portfolio/image1.jpg" alt="">
-        </div>
-        <div class="image2Container">
-            <img class="image2" src="assets/portfolio/image2.jpg" alt="">
-        </div>
-        <div class="image3Container">
-            <img class="image3" src="assets/portfolio/image3.jpg" alt="">
-        </div>
-        <div class="image4Container">
-            <img class="image4" src="assets/portfolio/image4.jpg" alt="">
-        </div>
-        <div class="image5Container">
-            <img class="image5" src="assets/portfolio/image5.jpg" alt="">
-        </div>
     </section>
 
     <!-- -------------------------------------------Contact Me-------------------------------------------------  -->
     <section class="contact" id="CONTACT ME">
         <h2 class="title">CONTACT ME</h2>
-        <hr>
         <form class="content">
             <input class="name" type="text" placeholder="NAME">
             <input class="email" type="text" placeholder="E-MAIL">
@@ -545,6 +556,7 @@
                 </div>
             </button>
             <button class="discardBtn" type="submit">DISCARD</button>
+            <div id="formContentHr"> </div>>
 
         </form>
         <address>
@@ -603,17 +615,17 @@
     <footer>
         <h3>Design and Developed by Punarjeewa Rashmitha</h3>        
     </footer>
+    <script type="text/javascript">
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.target.elements.name.value = '';
+        e.target.elements.email.value = '';
+        e.target.elements.message.value = '';
+      });
+    
+    </script>
+    <script src="assets/JS/slider.js"></script>
+    <script src="assets/JS/assignmentsSlide.js"></script>
+    <script src="assets/JS/script.js"></script>
 </body>
-<script type="text/javascript">
-    document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
-</script>
-<script src="assets/JS/slider.js"></script>
-<script src="assets/JS/assignmentsSlide.js"></script>
-
 </html>
