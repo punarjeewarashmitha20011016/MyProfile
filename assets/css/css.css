@@ -22315,7 +22315,7 @@ body > footer > h3{
     
     .home > .boxContainer .textboxContainer > div:nth-child(1) .text-box > h1 {
         position: absolute;
-        top: 9% !important;
+        top: 6% !important;
         margin: unset;
         /* font-size: 80px; */
         font-size: 60px;
