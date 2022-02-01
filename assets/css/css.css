@@ -16930,7 +16930,7 @@ body > footer > h3{
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 6px;
+        right: -15%;
     }
     
     .assignments a:nth-child(4){
@@ -18456,7 +18456,7 @@ body > footer > h3{
         .assignments .boxContainer a:nth-child(4){
             display: block;
             position: absolute;
-            right: 6px;
+            right: -15%;
         }
         
         .assignments a:nth-child(4){
@@ -19981,7 +19981,7 @@ body > footer > h3{
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 6px;
+        right: -15%;
     }
     
     .assignments a:nth-child(4){
@@ -21507,7 +21507,7 @@ body > footer > h3{
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 6px;
+        right: -15%;
     }
     
     .assignments a:nth-child(4){
@@ -23034,7 +23034,7 @@ body > footer > h3{
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 6px;
+        right: -15%;
     }
     
     .assignments a:nth-child(4){
@@ -24832,7 +24832,7 @@ body > footer > h3{
         grid-template-rows: repeat(1, 1fr);
         width: 1200px;
         height: 230px;
-        left: 0px;
+        left: 0;
         right: 0;
         top: 90px;
         bottom: 0;
@@ -24917,7 +24917,7 @@ body > footer > h3{
     .assignments .boxContainer a:nth-child(4){
         display: block;
         position: absolute;
-        right: 0;
+        right: -15%;
         bottom: -50px;
         -webkit-animation-name: assignmentsViewAllBtn;
         -webkit-animation-direction: alternate;
