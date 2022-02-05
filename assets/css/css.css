@@ -4681,7 +4681,7 @@ body > footer > h3{
         position: absolute;
         /* font-size: 23px; */
         font-size: 160% !important;
-        top: 18% !important;
+        top: 17% !important;
         margin: unset;
     }
 
@@ -6473,7 +6473,7 @@ body > footer > h3{
     }
 }
 
-@media all and (min-width: 351px) and (max-width: 375px) {
+@media all and (min-width: 350px) and (max-width: 375px) {
     .headerBar {
         position: fixed;
         width: 100vw;
@@ -6666,7 +6666,7 @@ body > footer > h3{
         position: absolute;
         /* font-size: 23px; */
         font-size: 160% !important;
-        top: 18% !important;
+        top: 17% !important;
         margin: unset;
     }
 
