@@ -2561,7 +2561,7 @@ body > footer > h3{
         position: relative;
         height: calc(100vh - 40px);
         width: 100vw;
-        display: block;
+        display: none;
     }
     .headerBar > .mobileNav > .fas {
         position: absolute;
@@ -4519,7 +4519,7 @@ body > footer > h3{
         position: relative;
         height: calc(100vh - 40px);
         width: 100vw;
-        display: block;
+        display: none;
         transition: all 10s ease;
     }
     .headerBar > .mobileNav > .fas {
@@ -6503,8 +6503,7 @@ body > footer > h3{
         position: relative;
         height: calc(100vh - 40px);
         width: 100vw;
-        display: block;
-        transition: all 10s ease;
+        display: none;
     }
     .headerBar > .mobileNav > .fas {
         position: absolute;
