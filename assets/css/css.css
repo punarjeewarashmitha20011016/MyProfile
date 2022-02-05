@@ -2551,6 +2551,8 @@ body > footer > h3{
 
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > nav{
         display: none;
@@ -2560,7 +2562,6 @@ body > footer > h3{
         height: calc(100vh - 40px);
         width: 100vw;
         display: block;
-        transition: all 10s ease;
     }
     .headerBar > .mobileNav > .fas {
         position: absolute;
@@ -2569,44 +2570,73 @@ body > footer > h3{
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
         overflow-x: hidden;
         transition: all 10s ease;
     }
-
     .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
         transform: translateX(-35vw);
     }
     .headerBar > .mobileNav > nav > #slide-menu .closebtn{
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-    }
-    .headerBar > .mobileNav > nav > .menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+    }
+
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
+        position: absolute;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -4479,6 +4509,8 @@ body > footer > h3{
 
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > nav{
         display: none;
@@ -4497,6 +4529,7 @@ body > footer > h3{
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
@@ -4509,32 +4542,60 @@ body > footer > h3{
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
         transform: translateX(-35vw);
     }
     .headerBar > .mobileNav > nav > #slide-menu .closebtn{
             position: absolute;
             top: 0;
-            right: 25px;
+            right: 10px;
             font-size: 36px;
             margin-left: 50px;
+            color: white;
     }
-    .headerBar > .mobileNav > nav > .menu > ul {
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -6412,7 +6473,7 @@ body > footer > h3{
     }
 }
 
-@media all and (min-width: 350px) and (max-width: 375px) {
+@media all and (min-width: 351px) and (max-width: 375px) {
     .headerBar {
         position: fixed;
         width: 100vw;
@@ -6432,6 +6493,8 @@ body > footer > h3{
 
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > nav{
         display: none;
@@ -6450,6 +6513,7 @@ body > footer > h3{
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
@@ -6462,32 +6526,61 @@ body > footer > h3{
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
         transform: translateX(-35vw);
     }
     .headerBar > .mobileNav > nav > #slide-menu .closebtn{
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-    }
-    .headerBar > .mobileNav > nav > .menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+    }
+
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
+        position: absolute;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -8390,6 +8483,8 @@ body > footer > h3{
     }
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > .mobileNav > .slide-menu-container {
         position: relative;
@@ -8398,43 +8493,80 @@ body > footer > h3{
         display: none;
     }
 
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
         transition: 0.5s;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
+        transform: translateX(-35vw);
+    }
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
     }
 
-    .headerBar > .mobileNav > nav > .menu > ul {
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -10309,6 +10441,8 @@ body > footer > h3{
     }
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > .mobileNav > .slide-menu-container {
         position: relative;
@@ -10317,43 +10451,80 @@ body > footer > h3{
         display: none;
     }
 
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
         transition: 0.5s;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
+        transform: translateX(-35vw);
+    }
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
     }
 
-    .headerBar > .mobileNav > nav > .menu > ul {
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -12263,6 +12434,8 @@ body > footer > h3{
     }
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > .mobileNav > .slide-menu-container {
         position: relative;
@@ -12271,43 +12444,80 @@ body > footer > h3{
         display: none;
     }
 
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
         transition: 0.5s;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
+        transform: translateX(-35vw);
+    }
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
     }
 
-    .headerBar > .mobileNav > nav > .menu > ul {
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {
@@ -14215,6 +14425,8 @@ body > footer > h3{
     }
     .headerBar > .mobileNav{
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .headerBar > .mobileNav > .slide-menu-container {
         position: relative;
@@ -14223,43 +14435,80 @@ body > footer > h3{
         display: none;
     }
 
-    .headerBar > .mobileNav > .menuBtn > .fas {
+    .headerBar > .mobileNav > .fas {
         position: absolute;
         font-size: 25px;
         color: white;
         top: 0;
         bottom: 0;
         left: 10px;
+        right: unset;
         margin: auto;
         width: max-content;
         height: max-content;
         transition: 0.5s;
     }
 
-    .headerBar > .mobileNav > nav > .menu {
+    .headerBar > .mobileNav > nav > #slide-menu {
         position: absolute;
         width: 35vw;
         height: 100vh;
         background-color: rgb(66, 66, 64);
-        top: 45px;
+        top: 0;
         transition: all 0.5s;
+        transform: translateX(-35vw);
+    }
+    .headerBar > .mobileNav > nav > #slide-menu .closebtn{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
     }
 
-    .headerBar > .mobileNav > nav > .menu > ul {
+    .headerBar > .mobileNav > nav > #slide-menu > ul {
         position: absolute;
-        width: 35vw;
-        left: 0;
+        width: 62%;
+        left: 0 !important;
         top: 20px;
-        height: 60vh;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li {
+        position: absolute;
+        text-align: center;
         text-decoration: none;
         display: flex;
         flex-direction: column;
         font-size: 13px;
-        margin-left: -28px;
-        padding-top: 18px;
+        left: 0;
+        right: 0;
+        top: 48px;
+        margin: auto;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(2) {
+        padding-top:28px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(3) {
+        padding-top:58px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(4) {
+        padding-top:88px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(5) {
+        padding-top:118px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(6) {
+        padding-top:148px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(7) {
+        padding-top:178px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(8) {
+        padding-top:208px;
+    }
+    .headerBar > .mobileNav > nav > .menu > ul > li:nth-child(9) {
+        padding-top:238px;
     }
 
     .headerBar > .mobileNav > nav > .menu > ul > li > a {

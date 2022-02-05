@@ -254,3 +254,14 @@ saveCustomer.click(function(){
         cusAddress.val($(this).children("td:nth-child(6)")[0].innerText)
     });
 });
+
+var cusIdHome = $("customerIdHome");
+var cusNameHome = $("customerNameHome");
+var cusAddressHome = $("customerAddressHome");
+var cusTelHome = $("customerTelHome");
+var itemCodeHome = $("itemCodeHome");
+var itemDescriptionHome = $("itemDescriptionHome");
+var itemQtyHome = $("itemQtyHome");
+var itemUnitPriceHome = $("itemUnitPriceHome");
+var itemQtyOnHandHome = $("itemQtyOnHandHome");
+var itemDiscountHome = $("itemDiscountHome");
