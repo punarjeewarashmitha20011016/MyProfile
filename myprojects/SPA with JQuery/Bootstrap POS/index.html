@@ -104,7 +104,6 @@
                                 <div class="col border">
                                     <div class="form-floating position-relative" style="top: 20px;">
                                         <select class="form-select bg-transparent" id="itemCodeHome" aria-label="Floating label select example" style="height: 40px; width: 100%;">
-                                            <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
@@ -136,7 +135,7 @@
                                     </div>
 
                                     <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 120px;bottom: 110px;">
-                                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;">Add To Cart</button>
+                                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;" id="addToCartBtn">Add To Cart</button>
                                         <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
                                     </div>
                                 </div>
@@ -145,30 +144,30 @@
 
                         <div class="col-sm-12 col-md bg-light shadow position-relative col-12">
                             <div class="form position-relative" style="top: 10px;">
-                                <input type="text" class="form-control bg-transparent" id="floatingId1" placeholder="Order Id">
+                                <input type="text" class="form-control bg-transparent" id="orderIdHome" placeholder="Order Id">
                             </div>
 
                             
                                 <div class="row position-relative" style="top: 10px;">
                                     <div class="col col-sm-12 mt-sm-2 mt-2">
                                         <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="customerIdHome0" placeholder="Tel" style="height: 40px;">
-                                            <label for="customerIdHome0"><span>Discount</span></label>
+                                            <input type="tel" class="form-control  bg-transparent" id="orderDiscount" placeholder="Tel" style="height: 40px;">
+                                            <label for="orderDiscount"><span>Discount</span></label>
                                         </div>
                                     </div>
         
                                     <div class="col col-sm-12 mt-sm-2 mt-2">
                                         <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="customerIdHome1" placeholder="Tel" style="height: 40px;">
-                                            <label for="customerIdHome1"><span>Cash</span></label>
+                                            <input type="tel" class="form-control  bg-transparent" id="orderCashReceived" placeholder="Tel" style="height: 40px;">
+                                            <label for="orderCashReceived"><span>Cash</span></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row position-relative" style="top: 20px;">
                                     <div class="col">
                                         <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="customerIdHome2" placeholder="Tel" style="height: 40px;">
-                                            <label for="customerIdHome2"><span>Balance</span></label>
+                                            <input type="tel" class="form-control  bg-transparent" id="orderCashBalance" placeholder="Tel" style="height: 40px;">
+                                            <label for="orderCashBalance"><span>Balance</span></label>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +178,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="form position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="customerIdHome3"  style="height: 34px;">
+                                            <input type="tel" class="form-control  bg-transparent" id="orderSubTotal"  style="height: 34px;">
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +189,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="form position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="customerIdHome4" style="height: 34px;">
+                                            <input type="tel" class="form-control  bg-transparent" id="orderTotal" style="height: 34px;">
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +199,7 @@
 
                     <div class="row position-relative start-0 end-0 m-auto" style="width: 95%;top: 40px; height: 30%;">
                         <div class="col bg-light position-relative" style="height: 100%;overflow: auto;">
-                            <table class="table table-hover">
+                            <table class="table table-hover" id="addToCartTable">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -214,38 +213,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                    <th scope="row">1</th>
-                                    <td>C-001</td>
-                                    <td>I-001</td>
-                                    <td>Maliban Piti</td>
-                                    <td>1</td>
-                                    <td>370.0</td>
-                                    <td>0</td>
-                                    <td>370.0</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>C-001</td>
-                                        <td>I-002</td>
-                                        <td>Kiri samba kg</td>
-                                        <td>1</td>
-                                        <td>400.0</td>
-                                        <td>0</td>
-                                        <td>400.0</td>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>C-001</td>
-                                        <td>I-003</td>
-                                        <td>Maliban Chocalate Biscuit</td>
-                                        <td>1</td>
-                                        <td>100.0</td>
-                                        <td>0</td>
-                                        <td>100.0</td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>

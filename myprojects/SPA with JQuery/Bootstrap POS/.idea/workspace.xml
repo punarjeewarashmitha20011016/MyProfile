@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fb5216d-493b-47e3-bedf-e3ecaabaa8e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../SPA - Single Page Application/Bootstrap POS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA - Single Page Application/Bootstrap POS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
       <workItem from="1643107607362" duration="196000" />
       <workItem from="1643107840085" duration="32000" />
       <workItem from="1643107881950" duration="972000" />
+      <workItem from="1644298087331" duration="177000" />
     </task>
     <servers />
   </component>
