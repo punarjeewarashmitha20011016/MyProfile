@@ -484,11 +484,11 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
             position: relative;
             margin-top: 10px !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword6{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
             position: relative;
             margin-top: 10px !important;
         }
@@ -572,7 +572,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #cusContactNo{
             position: relative;
             margin-top: 10px !important;
         }
@@ -827,11 +827,11 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
             position: relative;
             margin-top: 10px !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword6{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
             position: relative;
             margin-top: 10px !important;
         }
@@ -1058,11 +1058,11 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
             position: relative;
             margin-top: 10px !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword6{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
             position: relative;
             margin-top: 10px !important;
         }
@@ -1137,7 +1137,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             margin: unset !important;
         }
     }
-    @media all and (min-width: 320px) and (max-width:425px){
+    @media all and (min-width: 320px) and (max-width:767px){
         body > main > .Customer{
             height: 105vh !important;
         }
@@ -1146,7 +1146,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #cusContactNo{
             position: relative;
             margin-top: 10px !important;
         }
@@ -1221,13 +1221,6 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             margin: unset !important;
         }
     }
-    @media all and (min-width:425px) and (max-width:768px){
-        body > main > .Customer > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 90% !important;
-            height: 100px !important;
-        }
-    }
 
     @media all and (min-width:575px) and (max-width:767px){
         body > main > .Items{
@@ -1240,13 +1233,13 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
             width: 100% !important;
             --bs-gutter-x: 0 !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword3{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
             position: relative;
             margin-top: 10px !important;
         }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #floatingPassword6{
+        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
             position: relative;
-            margin-top: 0px !important;
+            margin-top: 10px !important;
         }
         body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
             font-size: 14px !important;
@@ -1440,7 +1433,7 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         }
     }
 
-    @media all and (max-width:575px){
+    @media all and (max-width:768px){
         body > main > .Signup > .container-fluid{
             width: 85% !important;
             height: 90% !important;
@@ -1524,61 +1517,6 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         }
     }
 
-    @media all and (min-width:574px) and (max-width:768px){
-        body > main > .Signup > .container-fluid > .row{
-            width: 90% !important;
-        }
-        @keyframes anim{
-            0%{
-                width: 28px;
-                height: 25px;
-            }
-            100%{
-                width: 95px;
-                height: 25px;
-            }
-        }
-        
-        @keyframes anim2{
-            0%{
-                transform: translateX(0);
-            }
-            100%{
-                transform: translateX(-60px);
-            }
-        }
-        body > main > .Signup > #logoutBtnInSignup{
-            position: absolute;
-            right: 20px !important;
-            top: 30px !important;
-            width: 28px;
-            height: 25px !important;
-            animation-name: anim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 5s;
-        }
-        body > main > .Signup > #logoutBtnInSignup div{
-            position: absolute !important;
-            left: 0 !important;
-            display: block !important;
-            
-        }
-        body > main > .Signup > #logoutBtnInSignup div i{
-            position: absolute !important;
-            left: 0 !important;
-            font-size: 25px !important;
-        }
-        body > main > .Signup> #logoutBtnInSignup div h3{
-            top: 3px !important;
-            animation-name: anim2;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 5s;
-        }
-    }
     @media all and (min-width:768px) and (max-width:1024px){
         body > main > .Signup > .container-fluid > .row{
             width: 90% !important;
