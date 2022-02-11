@@ -133,7 +133,7 @@ orderDetailsBtn.click(function(){
 
 // -----------------mobilenav-----------",--------
 
-var mobileNavHome = $("#moileNavHome");
+var mobileNavHome = $("#mobileNavHome");
 var mobileNavOrders =$("#mobileNavOrders");
 var mobileNavItems = $("#mobileNavItems");
 var mobileNavCustomer = $("#mobileNavCustomer");
@@ -142,7 +142,6 @@ var mobileNavLogout = $("#mobileNavLogout");
 
 mobileNavHome.click(function(){
     homeSection.css("display","block");
-    ordersSection.css("display","none");
     ordersSection.css("display","none");
     orderDetailsSection.css("display","none");
     itemsSection.css("display","none");
@@ -165,7 +164,7 @@ mobileNavOrders.click(function(){
 mobileNavItems.click(function(){
     homeSection.css("display","none");
     ordersSection.css("display","none");
-    orderDetailsSectio.css("display","none");
+    orderDetailsSection.css("display","none");
     itemsSection.css("display","block");
     customerSection.css("display","none");
     loginSection.css("display","none");
@@ -176,7 +175,7 @@ mobileNavItems.click(function(){
 mobileNavCustomer.click(function(){
     homeSection.css("display","none");
     ordersSection.css("display","none");
-    orderDetailsSectio.css("display","none");
+    orderDetailsSection.css("display","none");
     itemsSection.css("display","none");
     customerSection.css("display","block");
     loginSection.css("display","none");
