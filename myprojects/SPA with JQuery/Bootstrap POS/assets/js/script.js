@@ -491,6 +491,8 @@ saveCustomer.click(function(){
         cusNic.val($(this).children("td:nth-child(5)").text())
         cusAddress.val($(this).children("td:nth-child(6)").text())
     });
+
+    clearFieldsInCustomer();
 });
 
 cusId.keydown(function(e){
@@ -520,7 +522,16 @@ cusUpdateBtn.click(function(){
             $(this).replaceWith("<tr><td>"+rowNoToUpdate+"</td><td>"+cusArray[searchCusIndex][0]+"</td><td>"+cusArray[searchCusIndex][1]+"</td><td>"+cusArray[searchCusIndex][2]+"</td><td>"+cusArray[searchCusIndex][3]+"</td><td>"+cusArray[searchCusIndex][4]+"</td></tr>");
         }
     })
+    clearFieldsInCustomer();
 });
+
+function clearFieldsInCustomer(){
+    cusId.val("");
+    cusName.val("");
+    cusContactNo.val("");
+    cusNic.val("");
+    cusAddress.val("");
+}
 
 // --------------------Orders Section ------------------------
 var cusIdHome = $("#customerIdHome");
