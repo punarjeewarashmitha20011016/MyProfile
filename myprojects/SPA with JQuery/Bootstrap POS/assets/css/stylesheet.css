@@ -171,7 +171,7 @@ body > main > .Items > .container-fluid > .row > div div label > span{
 
 input:focus{
     box-shadow: none !important;
-    border: 2px solid black !important;
+    /* border: 2px solid black !important; */
 }
 
 
@@ -186,10 +186,6 @@ body > main > .Signup > .container-fluid{
 body > main > .Signup > .container-fluid > .row > .row{
     position: relative;
     margin-top: 30px !important;
-}
-input:focus{
-    box-shadow: none !important;
-    border: 2px solid black !important;
 }
 body > main > .Signup a{
     position: absolute !important;

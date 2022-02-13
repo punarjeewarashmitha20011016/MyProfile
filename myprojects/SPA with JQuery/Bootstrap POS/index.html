@@ -407,40 +407,40 @@
                         <div class="row position-relative" style="top: 0;">
                             <div class="col-6 col-sm-6 col-md position-relative">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemCodeInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemCodeInItems"><span>Code</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemCodeInItems" placeholder="code" style="height: 40px;">
+                                    <label for="itemCodeInItems" id="itemCodeLblInItems"><span>Code</span></label>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-6 col-md">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDescriptionInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemDescriptionInItems"><span>Description</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDescriptionInItems" placeholder="Description" style="height: 40px;">
+                                    <label for="itemDescriptionInItems" id="itemDescriptionLblInItems"><span>Description</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemQtyInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemQtyInItems"><span>Qty</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemQtyInItems" placeholder="Qty" style="height: 40px;">
+                                    <label for="itemQtyInItems" id="itemQtyLblInItems"><span>Qty</span></label>
                                 </div>
                             </div>
                         </div>
                         <div class="row position-relative" style="top: 10px;">
                             <div class="col-6 col-sm">
                                 <div class="form-floating position-relative" >
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemBuyingPriceInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemBuyingPriceInItems"><span>Buying Price</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemBuyingPriceInItems" placeholder="Buying Price" style="height: 40px;">
+                                    <label for="itemBuyingPriceInItems" id="itemBuyingPriceLblInItems"><span>Buying Price</span></label>
                                 </div>
                             </div>
                             <div class="col-6 col-sm">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemUnitPriceInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemUnitPriceInItems"><span>Unit Price</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemUnitPriceInItems" placeholder="Unit Price" style="height: 40px;">
+                                    <label for="itemUnitPriceInItems" id="itemUnitPriceLblInItems"><span>Unit Price</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDiscountInItems" placeholder="Name" style="height: 40px;">
-                                    <label for="itemDiscountInItems"><span>Discount</span></label>
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDiscountInItems" placeholder="Discount" style="height: 40px;">
+                                    <label for="itemDiscountInItems" id="itemDiscountLblInItems"><span>Discount</span></label>
                                 </div>
                             </div>
                         </div>
@@ -455,16 +455,12 @@
                     </div>
                     <div class="col-sm col-6 position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
-                            <a href="">
-                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update Item</button>
-                            </a>
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="updateItemBtn">Update Item</button>
                         </div>
                     </div>
                     <div class="col position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
-                            <a href="">
-                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete Item</button>
-                            </a>
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Delete Item</button>
                         </div>
                     </div>
                 </div>
