@@ -202,6 +202,24 @@ mobileNavLogout.click(function(){
     signupSection.css("display","none");
     headerNav.css("display","none");
 });
+
+function validate(pattern,array,index,e,saveBtn){
+    if(pattern.test(array[index].val())){
+        array[index].css("border","3px solid green");
+        if(e.key==='Enter'){
+            array[index+1].focus();
+        }
+        saveBtn.prop("disabled",false);
+        return true;
+    }
+    else{
+         array[index].css("border","3px solid red");
+         saveBtn.prop("disabled",true);
+         return false;
+    }
+    return false;
+}
+
 // --------------------Items Section ------------------------
 var tBodyInItems = $(".Items .container-fluid div:nth-child(3) div table tbody");
 var rowNo =1;
@@ -231,7 +249,7 @@ var itemsList=[];
 itemCodeInItems.keyup(function(e){
     let index =0;
     var itemCodeLbl = $("#itemCodeLblInItems span");
-    if(validate(itemCodePattern,itemsArray,index,e)== true){
+    if(validate(itemCodePattern,itemsArray,index,e,saveItemBtn)== true){
         itemCodeLbl.text("Code");
     }else{
         itemCodeLbl.text("Please use the given format (I-001)");
@@ -241,7 +259,7 @@ itemCodeInItems.keyup(function(e){
 itemDescriptionInItems.keyup(function(e){
     let index =1;
     let itemDescriptionLbl = $("#itemDescriptionLblInItems span");
-    if(validate(itemDescriptionPattern,itemsArray,index,e)== true){
+    if(validate(itemDescriptionPattern,itemsArray,index,e,saveItemBtn)== true){
         itemDescriptionLbl.css('font-size','unset');
         itemDescriptionLbl.text("Description");
     }else{
@@ -253,7 +271,7 @@ itemDescriptionInItems.keyup(function(e){
 itemQtyInItems.keyup(function(e){
     let index =2;
     let itemQtyLbl = $("#itemQtyLblInItems span")
-    if(validate(itemQtyPattern,itemsArray,index,e) == true){
+    if(validate(itemQtyPattern,itemsArray,index,e,saveItemBtn) == true){
         itemQtyLbl.text("Qty");
     }else{
         itemQtyLbl.text("Please use a whole number");
@@ -264,7 +282,7 @@ itemQtyInItems.keyup(function(e){
 itemBuyingPriceInItems.keyup(function(e){
     let index =3;
     let itemBuyingPriceLbl = $("#itemBuyingPriceLblInItems span")
-    if(validate(itemBuyingPattern,itemsArray,index,e) == true){
+    if(validate(itemBuyingPattern,itemsArray,index,e,saveItemBtn) == true){
         itemBuyingPriceLbl.text("Buying Price");
     }else{
         itemBuyingPriceLbl.text("Please use the format (100.0 or 100)");
@@ -274,7 +292,7 @@ itemBuyingPriceInItems.keyup(function(e){
 itemUnitPriceInItems.keyup(function(e){
     let index =4;
     let itemUnitPriceLbl = $("#itemUnitPriceLblInItems span")
-    if(validate(itemUnitPattern,itemsArray,index,e) == true){
+    if(validate(itemUnitPattern,itemsArray,index,e,saveItemBtn) == true){
         itemUnitPriceLbl.text("Unit Price");
     }else{
         itemUnitPriceLbl.text("Please use the format (100.0 or 100)");
@@ -284,29 +302,12 @@ itemUnitPriceInItems.keyup(function(e){
 itemDiscountInItems.keyup(function(e){
     let index =5;
     let itemDiscountLbl = $("#itemDiscountLblInItems span")
-    if(validate(itemDiscountPattern,itemsArray,index,e) == true){
+    if(validate(itemDiscountPattern,itemsArray,index,e,saveItemBtn) == true){
         itemDiscountLbl.text("Discount");
     }else{
         itemDiscountLbl.text("Please use the format (5.0 or 5)");
     }
 })
-
-function validate(pattern,items,index,e){
-    if(pattern.test(items[index].val())){
-        items[index].css("border","3px solid green");
-        if(e.key==='Enter'){
-            items[index+1].focus();
-        }
-        saveItemBtn.prop("disabled",false);
-        return true;
-    }
-    else{
-         items[index].css("border","3px solid red");
-         saveItemBtn.prop("disabled",true);
-         return false;
-    }
-    return false;
-}
 
 saveItemBtn.click(function(){
     let arr = [itemCodeInItems.val(),itemDescriptionInItems.val(),itemQtyInItems.val(),itemBuyingPriceInItems.val(),itemUnitPriceInItems.val(),itemDiscountInItems.val()];
@@ -353,6 +354,7 @@ itemCodeInItems.keydown(function(e){
         }
     }
 })
+
 updateItemBtn.click(function(){
     itemsList[searchItemIndex] = null;
     itemsList[searchItemIndex] = [itemCodeInItems.val(),itemDescriptionInItems.val(),itemQtyInItems.val(),itemBuyingPriceInItems.val(),itemUnitPriceInItems.val(),itemDiscountInItems.val()];
@@ -360,7 +362,6 @@ updateItemBtn.click(function(){
     $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function(){
         rowNoToUpdate = $(this).children("td:nth-child(1)").text();
         if($(this).children("td:nth-child(2)").text() == itemsList[searchItemIndex][0]){
-            $(this).append("<td>"+rowNoToUpdate+"</td><td>"+itemsList[searchItemIndex][0]+"</td><td>"+itemsList[searchItemIndex][1]+"</td><td>"+itemsList[searchItemIndex][2]+"</td><td>"+itemsList[searchItemIndex][3]+"</td><td>"+itemsList[searchItemIndex][4]+"</td><td>"+itemsList[searchItemIndex][5]+"</td>");
             $(this).replaceWith("<tr><td>"+rowNoToUpdate+"</td><td>"+itemsList[searchItemIndex][0]+"</td><td>"+itemsList[searchItemIndex][1]+"</td><td>"+itemsList[searchItemIndex][2]+"</td><td>"+itemsList[searchItemIndex][3]+"</td><td>"+itemsList[searchItemIndex][4]+"</td><td>"+itemsList[searchItemIndex][5]+"</td></tr>");
         }
     })
@@ -394,6 +395,7 @@ function clearFieldsInItems(){
 // --------------------Customer Section ------------------------
 
 var saveCustomer = $("#saveCustomer");
+var cusUpdateBtn = $('#cusUpdateBtn');
 var cusId = $("#cusId");
 var cusName = $("#cusName");
 var cusContactNo = $("#cusContactNo");
@@ -402,48 +404,85 @@ var cusAddress = $("#cusAddress");
 var tblCus = $("#tblCus");
 var tblCusBody = $("#tblCus tbody");
 var cusTblRow=1;
+var cusArray = [];
+var cusArrayIndex = 0;
+var searchCusIndex = 0;
 
-cusId.keydown(function(e){
-    if(e.key==='Enter'){
-        cusName.focus();
-        cusName.keydown(function(e){
-            if(e.key==='Enter'){
-                cusContactNo.focus();
-                cusContactNo.keydown(function(e){
-                    if(e.key==='Enter'){
-                        cusNic.focus();
-                        cusNic.keydown(function(e){
-                            if(e.key==='Enter'){
-                                cusAddress.focus();
-                                cusAddress.keydown(function(e){
-                                    if(e.key==='Enter'){
-                                        saveCustomer.focus();
-                                    }else{
-                                        cusAddress.focus();
-                                    }
-                                })
-                            }else{
-                                cusNic.focus();
-                            }
-                        })
-                    }else{
-                        cusContactNo.focus();
-                    }
-                });
-            }else{
-                cusName.focus();
-            }
-        });
+var cusIdPattern = /^(C-)[0-9]{3}$/;
+var cusNamePattern = /^[A-z ]+$/;
+var cusContactPattern = /^[0-9]{10}$/;
+var cusNicPattern = /^(([0-9]{9}[v]{1})|([0-9]{12}))$/;
+var cusAddressPattern = /^[A-z0-9.,/ ]*$/
+
+var cusInputsArr = [cusId,cusName,cusContactNo,cusNic,cusAddress];
+
+cusId.keyup(function(e){
+    let index =0;
+    var cusIdLbl = $("#cusIdLabelInCustomers span");
+    if(validate(cusIdPattern,cusInputsArr,index,e,saveCustomer)== true){
+        cusIdLbl.text("Id");
     }else{
-        cusId.focus();
+        cusIdLbl.text("Please use the given format (C-001)");
     }
-});
+})
+
+cusName.keyup(function(e){
+    let index =1;
+    var cusNameLbl = $("#cusNameLabelInCustomers span");
+    if(validate(cusNamePattern,cusInputsArr,index,e,saveCustomer)== true){
+        cusNameLbl.css('font-size','unset');
+        cusNameLbl.text("Name");
+    }else{
+        cusNameLbl.css('font-size','12px');
+        cusNameLbl.text("Please use the given format (Kamal Bandara)");
+    }
+})
+
+cusContactNo.keyup(function(e){
+    let index =2;
+    var cusContactLbl = $("#cusContactLabelInCustomers span");
+    if(validate(cusContactPattern,cusInputsArr,index,e,saveCustomer)== true){
+        cusContactLbl.text("Contact No");
+    }else{
+        cusContactLbl.text("Please use only 10 digits");
+    }
+})
+
+cusNic.keyup(function(e){
+    let index =3;
+    var cusNicLbl = $("#cusNicLabelInCustomers span");
+    if(validate(cusNicPattern,cusInputsArr,index,e,saveCustomer)== true){
+        cusNicLbl.text("Nic");
+    }else{
+        cusNicLbl.text("Please use only valid Nic numbers");
+    }
+})
+
+cusAddress.keyup(function(e){
+    let index =4;
+    var cusAddressLbl = $("#cusAddressLabelInCustomers span");
+    if(validate(cusAddressPattern,cusInputsArr,index,e,saveCustomer)== true){
+        cusAddressLbl.text("Address");
+    }else{
+        cusAddressLbl.text("Please use only these special characters (.,/)");
+    }
+})
 
 saveCustomer.click(function(){
-    tblCusBody.append(`<tr><td>${cusTblRow}</td><td>${cusId.val()}</td><td>${cusName.val()}</td><td>${cusContactNo.val()}</td><td>${cusNic.val()}</td><td>${cusAddress.val()}</td></tr>`);
+    let cusArrayList = [cusId.val(),cusName.val(),cusContactNo.val(),cusNic.val(),cusAddress.val()];
+    for(let i =cusArrayIndex;i< cusArrayIndex+1;i++){
+        cusArray[i]=[];
+        for(let j =0;j<cusArrayList.length;j++){
+            cusArray[i][j] = cusArrayList[j];
+        }
+    }
+
+    tblCusBody.append("<tr><td>"+cusTblRow+"</td><td>"+cusArray[cusArrayIndex][0]+"</td><td>"+cusArray[cusArrayIndex][1]+"</td><td>"+cusArray[cusArrayIndex][2]+"</td><td>"+cusArray[cusArrayIndex][3]+"</td><td>"+cusArray[cusArrayIndex][4]+"</td></tr>");
+    cusArrayIndex++;
     cusTblRow++;
+
     var tblCusRow = $("#tblCus tbody tr");
-   tblCusRow.off("click");
+    tblCusRow.off("click");
     tblCusRow.click(function(){
         console.log("a")
         cusId.val($(this).children("td:nth-child(2)").text())
@@ -452,6 +491,35 @@ saveCustomer.click(function(){
         cusNic.val($(this).children("td:nth-child(5)").text())
         cusAddress.val($(this).children("td:nth-child(6)").text())
     });
+});
+
+cusId.keydown(function(e){
+    if(e.key=='Enter'){
+        let cusID = cusId.val();
+        for(let i = 0;i<cusArray.length;i++){
+            for (let j = 0; j < cusArray[i].length; j++) {
+                if(cusArray[i][j]==cusID){
+                    cusName.val(cusArray[i][1])
+                    cusContactNo.val(cusArray[i][2])
+                    cusNic.val(cusArray[i][3])
+                    cusAddress.val(cusArray[i][4])
+                    searchCusIndex = i;
+                }
+            }
+        }
+    }
+})
+
+cusUpdateBtn.click(function(){
+    cusArray[searchCusIndex] = null;
+    cusArray[searchCusIndex] = [cusId.val(),cusName.val(),cusContactNo.val(),cusNic.val(),cusAddress.val()];
+    let rowNoToUpdate = 0;
+    $("#tblCus tbody tr").filter(function(){
+        rowNoToUpdate = $(this).children("td:nth-child(1)").text();
+        if($(this).children("td:nth-child(2)").text() == cusArray[searchCusIndex][0]){
+            $(this).replaceWith("<tr><td>"+rowNoToUpdate+"</td><td>"+cusArray[searchCusIndex][0]+"</td><td>"+cusArray[searchCusIndex][1]+"</td><td>"+cusArray[searchCusIndex][2]+"</td><td>"+cusArray[searchCusIndex][3]+"</td><td>"+cusArray[searchCusIndex][4]+"</td></tr>");
+        }
+    })
 });
 
 // --------------------Orders Section ------------------------
@@ -477,47 +545,7 @@ var orderTotal = $("#orderTotal")
 let rowNoCart = 1;
 
 cusIdHome.keydown(function(e){
-    if(e.key==='Enter'){
-        cusNameHome.focus();
-        cusNameHome.keydown(function(e){
-            if(e.key==='Enter'){
-                cusAddressHome.focus();
-                cusAddressHome.keydown(function(e){
-                    if(e.key==='Enter'){
-                        cusTelHome.focus();
-                        cusTelHome.keydown(function(e){
-                            if(e.key==='Enter'){
-                                itemCodeHome.focus();
-                                itemCodeHome.click(function(e){
-                                    itemDescriptionHome.focus();
-                                    itemDescriptionHome.keydown(function(e){
-                                        if(e.key==='Enter'){
-                                            itemQtyHome.focus();
-                                            itemQtyHome.keydown(function(e){
-                                                if(e.key==='Enter'){
-                                                    itemUnitPriceHome.focus();
-                                                    itemUnitPriceHome.keydown(function(e){
-                                                        if(e.key==='Enter'){
-                                                            itemQtyOnHandHome.focus();
-                                                            itemQtyOnHandHome.keydown(function(e){
-                                                                if(e.key==='Enter'){
-                                                                    itemDiscountHome.focus();
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                });             
-                            }
-                        });
-                    }
-                });
-            }
-        });
-    }
+    
 });
 
 addToCartBtn.click(function(){

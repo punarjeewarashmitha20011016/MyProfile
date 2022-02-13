@@ -495,19 +495,19 @@
                             <div class="col-6 col-sm-6 col-md position-relative">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusId" placeholder="Name" style="height: 40px;">
-                                    <label for="cusId"><span>Id</span></label>
+                                    <label for="cusId" id="cusIdLabelInCustomers"><span>Id</span></label>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-6 col-md">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusName" placeholder="Name" style="height: 40px;">
-                                    <label for="cusName"><span>Name</span></label>
+                                    <label for="cusName" id="cusNameLabelInCustomers"><span>Name</span></label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusContactNo" placeholder="Name" style="height: 40px;">
-                                    <label for="cusContactNo"><span>Contact No</span></label>
+                                    <label for="cusContactNo" id="cusContactLabelInCustomers"><span>Contact No</span></label>
                                 </div>
                             </div>
                         </div>
@@ -515,13 +515,13 @@
                             <div class="col-6 col-sm-6 col-md">
                                 <div class="form-floating position-relative" >
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusNic" placeholder="Name" style="height: 40px;">
-                                    <label for="cusNic"><span>Nic</span></label>
+                                    <label for="cusNic" id="cusNicLabelInCustomers"><span>Nic</span></label>
                                 </div>
                             </div>
                             <div class="col-6 col-sm-6 col-md">
                                 <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusAddress" placeholder="Name" style="height: 40px;">
-                                    <label for="cusAddress"><span>Address</span></label>
+                                    <label for="cusAddress" id="cusAddressLabelInCustomers"><span>Address</span></label>
                                 </div>
                             </div>
                         </div>
@@ -536,16 +536,12 @@
                     </div>
                     <div class="col position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
-                            <a href="">
-                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update</button>
-                            </a>
+                            <button id="cusUpdateBtn" class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update</button>
                         </div>
                     </div>
                     <div class="col position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
-                            <a href="">
                             <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete</button>
-                            </a>
                         </div>
                     </div>
                 </div>
