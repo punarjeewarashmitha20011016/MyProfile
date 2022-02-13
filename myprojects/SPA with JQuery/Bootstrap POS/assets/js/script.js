@@ -364,6 +364,7 @@ updateItemBtn.click(function(){
             $(this).replaceWith("<tr><td>"+rowNoToUpdate+"</td><td>"+itemsList[searchItemIndex][0]+"</td><td>"+itemsList[searchItemIndex][1]+"</td><td>"+itemsList[searchItemIndex][2]+"</td><td>"+itemsList[searchItemIndex][3]+"</td><td>"+itemsList[searchItemIndex][4]+"</td><td>"+itemsList[searchItemIndex][5]+"</td></tr>");
         }
     })
+    clearFieldsInItems();
 });
 
 deleteItemBtn.click(function(){
