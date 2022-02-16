@@ -83,10 +83,10 @@
             <div id="fifthDiv"></div>
         </div>
 
-        <div class="btnContainer">
+        <!-- <div class="btnContainer">
             <button class="btn-success" id="startBtn">Start</button>
             <button class="btn-danger" id="stopBtn">Stop</button>
-        </div>
+        </div> -->
         <audio id="audioElement" src="assets/audio/kitt scanner.mp3"></audio>
     </main>
     <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
@@ -102,18 +102,18 @@
         var timerId;
         var timerIdForKittSound;
 
-        startBtn.click(function(){
+        // startBtn.click(function(){
             clearInterval(timerId);
             timerId = setInterval(setIntervalForStarts,120);
             clearInterval(timerIdForKittSound);
             timerIdForKittSound =  setInterval(kittAudioPlay,120);
-            stopBtn.click(function(){
-                clearInterval(timerId);
-                clearInterval(timerIdForKittSound);
-                var audio = kittAudioPlay();
-                audio.pause();
-            })
-        });
+            // stopBtn.click(function(){
+            //     clearInterval(timerId);
+            //     clearInterval(timerIdForKittSound);
+            //     var audio = kittAudioPlay();
+            //     audio.pause();
+            // })
+        // });
 
         function kittAudioPlay(){
             var audio = document.getElementById('audioElement');
