@@ -21,20 +21,20 @@ var itemDiscountPattern = /^[0-9.]{1,}$/;
 
 var itemsArray = [itemCodeInItems, itemDescriptionInItems, itemQtyInItems, itemBuyingPriceInItems, itemUnitPriceInItems, itemDiscountInItems];
 
-itemCodeInItems.keyup(function (e) {
+itemCodeInItems.keyup(function(e) {
     let index = 0;
     var itemCodeLbl = $("#itemCodeLblInItems span");
-    if (validate(itemCodePattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemCodePattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemCodeLbl.text("Code");
     } else {
         itemCodeLbl.text("Please use the given format (I-001)");
     }
 });
 
-itemDescriptionInItems.keyup(function (e) {
+itemDescriptionInItems.keyup(function(e) {
     let index = 1;
     let itemDescriptionLbl = $("#itemDescriptionLblInItems span");
-    if (validate(itemDescriptionPattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemDescriptionPattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemDescriptionLbl.css('font-size', 'unset');
         itemDescriptionLbl.text("Description");
     } else {
@@ -43,10 +43,10 @@ itemDescriptionInItems.keyup(function (e) {
     }
 })
 
-itemQtyInItems.keyup(function (e) {
+itemQtyInItems.keyup(function(e) {
     let index = 2;
     let itemQtyLbl = $("#itemQtyLblInItems span")
-    if (validate(itemQtyPattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemQtyPattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemQtyLbl.text("Qty");
     } else {
         itemQtyLbl.text("Please use a whole number");
@@ -54,41 +54,42 @@ itemQtyInItems.keyup(function (e) {
 
 })
 
-itemBuyingPriceInItems.keyup(function (e) {
+itemBuyingPriceInItems.keyup(function(e) {
     let index = 3;
     let itemBuyingPriceLbl = $("#itemBuyingPriceLblInItems span")
-    if (validate(itemBuyingPattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemBuyingPattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemBuyingPriceLbl.text("Buying Price");
     } else {
         itemBuyingPriceLbl.text("Please use the format (100.0 or 100)");
     }
 })
 
-itemUnitPriceInItems.keyup(function (e) {
+itemUnitPriceInItems.keyup(function(e) {
     let index = 4;
     let itemUnitPriceLbl = $("#itemUnitPriceLblInItems span")
-    if (validate(itemUnitPattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemUnitPattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemUnitPriceLbl.text("Unit Price");
     } else {
         itemUnitPriceLbl.text("Please use the format (100.0 or 100)");
     }
 })
 
-itemDiscountInItems.keyup(function (e) {
+itemDiscountInItems.keyup(function(e) {
     let index = 5;
     let itemDiscountLbl = $("#itemDiscountLblInItems span")
-    if (validate(itemDiscountPattern, itemsArray, index, e, saveItemBtn,updateItemBtn,deleteItemBtn) == true) {
+    if (validate(itemDiscountPattern, itemsArray, index, e, saveItemBtn, updateItemBtn, deleteItemBtn) == true) {
         itemDiscountLbl.text("Discount");
     } else {
         itemDiscountLbl.text("Please use the format (5.0 or 5)");
     }
 })
 
-saveItemBtn.click(function () {
+saveItemBtn.off('click');
+saveItemBtn.click(function() {
     var discountInItems = 0;
-    if(itemDiscountInItems.length == 0){
+    if (itemDiscountInItems.length == 0) {
         discountInItems = 0;
-    }else{
+    } else {
         discountInItems = itemDiscountInItems.val();
     }
     itemArray.push(new Item(itemCodeInItems.val(), itemDescriptionInItems.val(), itemQtyInItems.val(), itemBuyingPriceInItems.val(), itemUnitPriceInItems.val(), discountInItems));
@@ -99,7 +100,7 @@ saveItemBtn.click(function () {
 function deleteSelectedRowFromTheItemTable() {
     var tableRow = $(".Items .container-fluid div:nth-child(3) div .table tbody tr");
     tableRow.off("click")
-    tableRow.click(function () {
+    tableRow.click(function() {
         itemCodeInItems.val($(this).children("td:nth-child(2)").text());
         itemDescriptionInItems.val($(this).children("td:nth-child(3)").text());
         itemQtyInItems.val($(this).children("td:nth-child(4)")[0].text());
@@ -117,13 +118,13 @@ function setDatToTheItemTble() {
     }
 }
 
-itemCodeInItems.keydown(function (e) {
+itemCodeInItems.keydown(function(e) {
     if (e.key == 'Enter') {
         searchItemDetails();
     }
 })
 
-searchItemBtn.click(function(){
+searchItemBtn.click(function() {
     searchItemDetails();
 })
 
@@ -139,7 +140,8 @@ function searchItemDetails() {
     }
 }
 
-updateItemBtn.click(function () {
+updateItemBtn.off('click');
+updateItemBtn.click(function() {
     for (let i = 0; i < itemArray.length; i++) {
         if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
             itemArray[i].setItemDescription(itemDescriptionInItems.val());
@@ -148,10 +150,10 @@ updateItemBtn.click(function () {
             itemArray[i].setItemUnitPrice(itemUnitPriceInItems.val());
             itemArray[i].setItemDiscount(itemDiscountInItems.val());
 
-            $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function () {
+            $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
                 rowNoToUpdate = $(this).children("td:nth-child(1)").text();
                 if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
-                    $(this).replaceWith("<tr><td>" + (i+1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
+                    $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
                 }
             })
             clearFieldsInItems();
@@ -159,20 +161,15 @@ updateItemBtn.click(function () {
     }
 });
 
-// deleteItemBtn.click(function () {
-//     let itemCode = itemCodeInItems.val();
-//     for (let i = 0; i < itemsList.length; i++) {
-//         let temp = itemsList[i + 1];
-//         for (let j = 0; j < itemsList[i].length; j++) {
-//             if (itemsList[i][j] == itemCode) {
-//                 itemsList[i] = itemsList[i + 1];
-//             }
-//         }
-//         if (temp == i) {
-//             temp--;
-//         }
-//     }
-// })
+deleteItemBtn.off('click');
+deleteItemBtn.click(function() {
+    for (let i = 0; i < itemArray.length; i++) {
+        if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
+            itemArray.splice(i, 1);
+            clearFieldsInItems();
+        }
+    }
+})
 
 function clearFieldsInItems() {
     itemCodeInItems.val("");
