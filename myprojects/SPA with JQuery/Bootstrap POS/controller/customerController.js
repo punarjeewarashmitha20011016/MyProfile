@@ -1,0 +1,145 @@
+var saveCustomer = $("#saveCustomer");
+var cusUpdateBtn = $('#cusUpdateBtn');
+var customerSearchBtn = $('#customerSearchBtn');
+var cusId = $("#cusId");
+var cusName = $("#cusName");
+var cusContactNo = $("#cusContactNo");
+var cusNic = $("#cusNic");
+var cusAddress = $("#cusAddress");
+var tblCus = $("#tblCus");
+var tblCusBody = $("#tblCus tbody");
+var cusTblRow = 1;
+
+var cusIdPattern = /^(C-)[0-9]{3}$/;
+var cusNamePattern = /^[A-z ]+$/;
+var cusContactPattern = /^[0-9]{10}$/;
+var cusNicPattern = /^(([0-9]{9}[v]{1})|([0-9]{12}))$/;
+var cusAddressPattern = /^[A-z0-9.,/ ]*$/
+
+var cusInputsArr = [cusId, cusName, cusContactNo, cusNic, cusAddress];
+
+cusId.keyup(function (e) {
+    let index = 0;
+    var cusIdLbl = $("#cusIdLabelInCustomers span");
+    if (validate(cusIdPattern, cusInputsArr, index, e, saveCustomer) == true) {
+        cusIdLbl.text("Id");
+    } else {
+        cusIdLbl.text("Please use the given format (C-001)");
+    }
+})
+
+cusName.keyup(function (e) {
+    let index = 1;
+    var cusNameLbl = $("#cusNameLabelInCustomers span");
+    if (validate(cusNamePattern, cusInputsArr, index, e, saveCustomer) == true) {
+        cusNameLbl.css('font-size', 'unset');
+        cusNameLbl.text("Name");
+    } else {
+        cusNameLbl.css('font-size', '12px');
+        cusNameLbl.text("Please use the given format (Kamal Bandara)");
+    }
+})
+
+cusContactNo.keyup(function (e) {
+    let index = 2;
+    var cusContactLbl = $("#cusContactLabelInCustomers span");
+    if (validate(cusContactPattern, cusInputsArr, index, e, saveCustomer) == true) {
+        cusContactLbl.text("Contact No");
+    } else {
+        cusContactLbl.text("Please use only 10 digits");
+    }
+})
+
+cusNic.keyup(function (e) {
+    let index = 3;
+    var cusNicLbl = $("#cusNicLabelInCustomers span");
+    if (validate(cusNicPattern, cusInputsArr, index, e, saveCustomer) == true) {
+        cusNicLbl.text("Nic");
+    } else {
+        cusNicLbl.text("Please use only valid Nic numbers");
+    }
+})
+
+cusAddress.keyup(function (e) {
+    let index = 4;
+    var cusAddressLbl = $("#cusAddressLabelInCustomers span");
+    if (validate(cusAddressPattern, cusInputsArr, index, e, saveCustomer) == true) {
+        cusAddressLbl.text("Address");
+    } else {
+        cusAddressLbl.text("Please use only these special characters (.,/)");
+    }
+})
+
+saveCustomer.click(function () {
+    customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
+    setDataToCustomerTable();
+    var tblCusRow = $("#tblCus tbody tr");
+    tblCusRow.off("click");
+    tblCusRow.click(function () {
+        console.log("a")
+        cusId.val($(this).children("td:nth-child(2)").text())
+        cusName.val($(this).children("td:nth-child(3)").text())
+        cusContactNo.val($(this).children("td:nth-child(4)").text())
+        cusNic.val($(this).children("td:nth-child(5)").text())
+        cusAddress.val($(this).children("td:nth-child(6)").text())
+    });
+
+    clearFieldsInCustomer();
+});
+
+function setDataToCustomerTable() {
+    $("#tblCus tbody tr").remove();
+    for (let i = 0; i < customerArray.length; i++) {
+        console.log("Cistomer table row")
+        tblCusBody.append("<tr><td>" + (i + 1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
+    };
+}
+
+cusUpdateBtn.click(function () {
+    for (let i = 0; i < customerArray.length; i++) {
+        if (customerArray[i].getCustomerId() == cusId.val()) {
+            customerArray[i].setCustomerName(cusName.val());
+            customerArray[i].setCustomerContactNo(cusContactNo.val());
+            customerArray[i].setCustomerNic(cusNic.val());
+            customerArray[i].setCustomerAddress(cusAddress.val());
+            let rowNoToUpdate = i + 1;
+            $("#tblCus tbody tr").filter(function () {
+                rowNoToUpdate = $(this).children("td:nth-child(1)").text();
+                if ($(this).children("td:nth-child(2)").text() == customerArray[i].getCustomerId()) {
+                    $(this).replaceWith("<tr><td>" + rowNoToUpdate + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
+                }
+            })
+            clearFieldsInCustomer();
+        }
+    }
+});
+
+cusId.keydown(function (e) {
+    if (e.key == 'Enter') {
+        searchCustomer();
+    }
+})
+
+customerSearchBtn.click(function () {
+    searchCustomer();
+});
+
+function searchCustomer() {
+    let cusID = cusId.val();
+    for (let i = 0; i < customerArray.length; i++) {
+        if (customerArray[i].getCustomerId() == cusID) {
+            cusName.val(customerArray[i].getCustomerName())
+            cusContactNo.val(customerArray[i].getCustomerContactNo())
+            cusNic.val(customerArray[i].getCustomerNic())
+            cusAddress.val(customerArray[i].getCustomerAddress())
+        }
+    }
+}
+
+function clearFieldsInCustomer() {
+    cusId.val("");
+    cusName.val("");
+    cusContactNo.val("");
+    cusNic.val("");
+    cusAddress.val("");
+}
