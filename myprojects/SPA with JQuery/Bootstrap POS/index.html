@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap SPA -Assignment</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="assets/css/fonts/css/all.css">
 </head>
+
 <body>
     <header id="headerNav" style="display: none;">
         <nav class="navbar navbar-expand-lg">
@@ -25,8 +26,8 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#" id="Customer"><span>Customers</span></a></li>
                     </ul>
                 </div>
-                
-                <a href="#" id="signupBtn" class="d-none d-lg-block">   
+
+                <a href="#" id="signupBtn" class="d-none d-lg-block">
                     <div class="logout position-absolute">
                         <i class="fas fa-user-plus text-white fs-3 position-absolute"></i>
                         <h3 class="position-absolute text-white fs-6">Sign Up</h3>
@@ -40,29 +41,29 @@
                     </div>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-white"></i>
                 </button>
 
                 <div class="offcanvas offcanvas-end d-block d-sm-block d-md-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: transparent !important;">
                     <div class="offcanvas-header" style="background-color: #575454 !important;">
-                      <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WebPos</h5>
-                      <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 110px;"></i>
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">WebPos</h5>
+                        <i class="fas fa-shopping-cart position-absolute fs-4 text-white" style="left: 110px;"></i>
                         <div class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none !important;color: white !important;font-size: 30px;">
                             <i class="fas fa-times"></i>
                         </div>
                     </div>
                     <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-center flex-grow-1">
-                        <li class="nav-item" style="top: 100px !important;"><a class="nav-link text-white" href="#" id="mobileNavHome"><span>Home</span></a></li>
-                        <li class="nav-item" style="top: 150px !important;"><a class="nav-link text-white" href="#" id="mobileNavOrders"><span>Orders</span></a></li>
-                        <li class="nav-item" style="top: 200px !important;"><a class="nav-link text-white" href="#" id="mobileNavItems"><span>Items</span></a></li>
-                        <li class="nav-item" style="top: 250px !important;"><a class="nav-link text-white" href="#" id="mobileNavCustomer"><span>Customers</span></a></li>
-                        <li class="nav-item" style="top: 300px !important;"><a class="nav-link text-white" href="#" id="mobileNavSignup"><span>Signup</span></a></li>
-                        <li class="nav-item" style="top: 350px !important;"><a class="nav-link text-white" href="#" id="mobileNavLogout"><span>Logout</span></a></li>
-                      </ul>
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item" style="top: 100px !important;"><a class="nav-link text-white" href="#" id="mobileNavHome"><span>Home</span></a></li>
+                            <li class="nav-item" style="top: 150px !important;"><a class="nav-link text-white" href="#" id="mobileNavOrders"><span>Orders</span></a></li>
+                            <li class="nav-item" style="top: 200px !important;"><a class="nav-link text-white" href="#" id="mobileNavItems"><span>Items</span></a></li>
+                            <li class="nav-item" style="top: 250px !important;"><a class="nav-link text-white" href="#" id="mobileNavCustomer"><span>Customers</span></a></li>
+                            <li class="nav-item" style="top: 300px !important;"><a class="nav-link text-white" href="#" id="mobileNavSignup"><span>Signup</span></a></li>
+                            <li class="nav-item" style="top: 350px !important;"><a class="nav-link text-white" href="#" id="mobileNavLogout"><span>Logout</span></a></li>
+                        </ul>
                     </div>
-                  </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -70,163 +71,163 @@
     <main>
         <!-- -------------------Home section---------------------------- -->
         <section id="homeSection" class="Home container-fluid position-relative" style="display: none;">
-                <div class="container-fluid position-absolute shadow">
-                    <div class="row h-50 position-relative start-0 end-0 m-auto" style="width: 95%;top: 20px;">
-                        <div class="col-md-3 bg-light shadow col-12">
-                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
-                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Customer Details</h3>
-                            </div>
-
-                            <div class="form-floating position-relative" style="top: 20px;">
-                                <input type="text" class="form-control bg-transparent" id="customerIdHome" placeholder="Id" style="height: 40px;">
-                                <label for="customerIdHome"><span>Id</span></label>
-                            </div>
-                            <div class="form-floating position-relative" style="top: 30px;">
-                                <input type="text" class="form-control bg-transparent" id="customerNameHome" placeholder="Name" style="height: 40px;">
-                                <label for="customerNameHome"><span>Name</span></label>
-                            </div>
-                            <div class="form-floating position-relative" style="top: 40px;">
-                                <input type="text" class="form-control bg-transparent" id="customerAddressHome" placeholder="Address" style="height: 40px;">
-                                <label for="customerAddressHome"><span>Address</span></label>
-                            </div>
-                            <div class="form-floating position-relative" style="top: 50px;">
-                                <input type="tel" class="form-control bg-transparent" id="customerTelHome" placeholder="Tel" style="height: 40px;">
-                                <label for="customerTelHome"><span>Tel</span></label>
-                            </div>
-
+            <div class="container-fluid position-absolute shadow">
+                <div class="row h-50 position-relative start-0 end-0 m-auto" style="width: 95%;top: 20px;">
+                    <div class="col-md-3 bg-light shadow col-12">
+                        <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                            <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Customer Details</h3>
                         </div>
-                        <div class="col-sm-12 bg-light mx-4 shadow col-12 col-md-5">
-                            <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
-                                <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Item Details</h3>
-                            </div>
 
-                            <div class="row" style="height: 86%;">
-                                <div class="col border">
-                                    <div class="form-floating position-relative" style="top: 20px;">
-                                        <select class="form-select bg-transparent" id="itemCodeHome" aria-label="Floating label select example" style="height: 40px; width: 100%;">
+                        <div class="form-floating position-relative" style="top: 20px;">
+                            <input type="text" class="form-control bg-transparent" id="customerIdHome" placeholder="Id" style="height: 40px;">
+                            <label for="customerIdHome"><span>Id</span></label>
+                        </div>
+                        <div class="form-floating position-relative" style="top: 30px;">
+                            <input type="text" class="form-control bg-transparent" id="customerNameHome" placeholder="Name" style="height: 40px;">
+                            <label for="customerNameHome"><span>Name</span></label>
+                        </div>
+                        <div class="form-floating position-relative" style="top: 40px;">
+                            <input type="text" class="form-control bg-transparent" id="customerAddressHome" placeholder="Address" style="height: 40px;">
+                            <label for="customerAddressHome"><span>Address</span></label>
+                        </div>
+                        <div class="form-floating position-relative" style="top: 50px;">
+                            <input type="tel" class="form-control bg-transparent" id="customerTelHome" placeholder="Tel" style="height: 40px;">
+                            <label for="customerTelHome"><span>Tel</span></label>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 bg-light mx-4 shadow col-12 col-md-5">
+                        <div class="row position-relative" style="height: 40px; background-color: rgb(133, 135, 138);">
+                            <h3 class="fs-6 text-white top-0 bottom-0 m-auto" style="text-align: center;">Item Details</h3>
+                        </div>
+
+                        <div class="row" style="height: 86%;">
+                            <div class="col border">
+                                <div class="form-floating position-relative" style="top: 20px;">
+                                    <select class="form-select bg-transparent" id="itemCodeHome" aria-label="Floating label select example" style="height: 40px; width: 100%;">
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
-                                        <label for="itemCodeHome">Code</label>
-                                    </div>
-                                    <div class="form-floating position-relative" style="top: 30px;">
-                                        <input type="text" class="form-control bg-transparent" id="itemDescriptionHome" placeholder="Name" style="height: 40px;width: 100%;">
-                                        <label for="itemDescriptionHome"><span>Description</span></label>
-                                    </div>
-                                    <div class="form-floating position-relative" style="top: 40px;">
-                                        <input type="text" class="form-control bg-transparent" id="itemQtyHome" placeholder="Address" style="height: 40px;width: 100%;">
-                                        <label for="itemQtyHome"><span>Qty</span></label>
-                                    </div>
-                                    <div class="form-floating position-relative" style="top: 50px;">
-                                        <input type="tel" class="form-control  bg-transparent" id="itemUnitPriceHome" placeholder="Tel" style="height: 40px;width: 100%;">
-                                        <label for="itemUnitPriceHome"><span>Unit Price</span></label>
-                                    </div>
+                                    <label for="itemCodeHome">Code</label>
                                 </div>
-                                <div class="col border position-relative">
-                                    <div class="form-floating position-relative" style="top: 20px;">
-                                        <input type="tel" class="form-control  bg-transparent" id="itemQtyOnHandHome" placeholder="Tel" style="height: 40px;width: 100%;">
-                                        <label for="itemQtyOnHandHome"><span>Qty On Hand</span></label>
-                                    </div>
-        
-                                    <div class="form-floating position-relative" style="top: 30px;">
-                                        <input type="tel" class="form-control  bg-transparent" id="itemDiscountHome" placeholder="Tel" style="height: 40px;width: 100%;">
-                                        <label for="itemDiscountHome"><span>Discount</span></label>
-                                    </div>
-
-                                    <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 120px;bottom: 110px;">
-                                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;" id="addToCartBtn">Add To Cart</button>
-                                        <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
-                                    </div>
+                                <div class="form-floating position-relative" style="top: 30px;">
+                                    <input type="text" class="form-control bg-transparent" id="itemDescriptionHome" placeholder="Name" style="height: 40px;width: 100%;">
+                                    <label for="itemDescriptionHome"><span>Description</span></label>
+                                </div>
+                                <div class="form-floating position-relative" style="top: 40px;">
+                                    <input type="text" class="form-control bg-transparent" id="itemQtyHome" placeholder="Address" style="height: 40px;width: 100%;">
+                                    <label for="itemQtyHome"><span>Qty</span></label>
+                                </div>
+                                <div class="form-floating position-relative" style="top: 50px;">
+                                    <input type="tel" class="form-control  bg-transparent" id="itemUnitPriceHome" placeholder="Tel" style="height: 40px;width: 100%;">
+                                    <label for="itemUnitPriceHome"><span>Unit Price</span></label>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md bg-light shadow position-relative col-12">
-                            <div class="form position-relative" style="top: 10px;">
-                                <input type="text" class="form-control bg-transparent" id="orderIdHome" placeholder="Order Id">
-                            </div>
-
-                            
-                                <div class="row position-relative" style="top: 10px;">
-                                    <div class="col col-sm-12 mt-sm-2 mt-2">
-                                        <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="orderDiscount" placeholder="Tel" style="height: 40px;">
-                                            <label for="orderDiscount"><span>Discount</span></label>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col col-sm-12 mt-sm-2 mt-2">
-                                        <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="orderCashReceived" placeholder="Tel" style="height: 40px;">
-                                            <label for="orderCashReceived"><span>Cash</span></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row position-relative" style="top: 20px;">
-                                    <div class="col">
-                                        <div class="form-floating position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="orderCashBalance" placeholder="Tel" style="height: 40px;">
-                                            <label for="orderCashBalance"><span>Balance</span></label>
-                                        </div>
-                                    </div>
+                            <div class="col border position-relative">
+                                <div class="form-floating position-relative" style="top: 20px;">
+                                    <input type="tel" class="form-control  bg-transparent" id="itemQtyOnHandHome" placeholder="Tel" style="height: 40px;width: 100%;">
+                                    <label for="itemQtyOnHandHome"><span>Qty On Hand</span></label>
                                 </div>
 
-                                <div class="row position-relative" style="top: 25px;">
-                                    <div class="col-6 position-relative">
-                                        <h6 class="position-relative" style="top: 8px;">Sub Total - </h6>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="orderSubTotal"  style="height: 34px;">
-                                        </div>
-                                    </div>
+                                <div class="form-floating position-relative" style="top: 30px;">
+                                    <input type="tel" class="form-control  bg-transparent" id="itemDiscountHome" placeholder="Tel" style="height: 40px;width: 100%;">
+                                    <label for="itemDiscountHome"><span>Discount</span></label>
                                 </div>
 
-                                <div class="row position-relative" style="top: 30px;">
-                                    <div class="col-6 position-relative">
-                                        <h6 class="position-relative" style="top: 8px;">Total - </h6>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form position-relative">
-                                            <input type="tel" class="form-control  bg-transparent" id="orderTotal" style="height: 34px;">
-                                        </div>
-                                    </div>
+                                <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 120px;bottom: 110px;">
+                                    <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;" id="addToCartBtn">Add To Cart</button>
+                                    <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
                                 </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row position-relative start-0 end-0 m-auto" style="width: 95%;top: 40px; height: 30%;">
-                        <div class="col bg-light position-relative" style="height: 100%;overflow: auto;">
-                            <table class="table table-hover" id="addToCartTable">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Customer Id</th>
-                                        <th scope="col">Item Code</th>
-                                        <th scope="col">Item Description</th>
-                                        <th scope="col">Item Qty</th>
-                                        <th scope="col">Item Price</th>
-                                        <th scope="col">Item Discount</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row position-absolute end-0 w-25 me-5" style="margin-top: 60px;">
-                            <div class="col col-sm">
-                                <button class="btn btn-outline-success w-100">Purchase</button>
-                            </div>
-                            <div class="col col-sm">
-                                <button class="btn btn-outline-danger w-100">Discard</button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-sm-12 col-md bg-light shadow position-relative col-12">
+                        <div class="form position-relative" style="top: 10px;">
+                            <input type="text" class="form-control bg-transparent" id="orderIdHome" placeholder="Order Id">
+                        </div>
+
+
+                        <div class="row position-relative" style="top: 10px;">
+                            <div class="col col-sm-12 mt-sm-2 mt-2">
+                                <div class="form-floating position-relative">
+                                    <input type="tel" class="form-control  bg-transparent" id="orderDiscount" placeholder="Tel" style="height: 40px;">
+                                    <label for="orderDiscount"><span>Discount</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col col-sm-12 mt-sm-2 mt-2">
+                                <div class="form-floating position-relative">
+                                    <input type="tel" class="form-control  bg-transparent" id="orderCashReceived" placeholder="Tel" style="height: 40px;">
+                                    <label for="orderCashReceived"><span>Cash</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative" style="top: 20px;">
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="tel" class="form-control  bg-transparent" id="orderCashBalance" placeholder="Tel" style="height: 40px;">
+                                    <label for="orderCashBalance"><span>Balance</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row position-relative" style="top: 25px;">
+                            <div class="col-6 position-relative">
+                                <h6 class="position-relative" style="top: 8px;">Sub Total - </h6>
+                            </div>
+                            <div class="col">
+                                <div class="form position-relative">
+                                    <input type="tel" class="form-control  bg-transparent" id="orderSubTotal" style="height: 34px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row position-relative" style="top: 30px;">
+                            <div class="col-6 position-relative">
+                                <h6 class="position-relative" style="top: 8px;">Total - </h6>
+                            </div>
+                            <div class="col">
+                                <div class="form position-relative">
+                                    <input type="tel" class="form-control  bg-transparent" id="orderTotal" style="height: 34px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row position-relative start-0 end-0 m-auto" style="width: 95%;top: 40px; height: 30%;">
+                    <div class="col bg-light position-relative" style="height: 100%;overflow: auto;">
+                        <table class="table table-hover" id="addToCartTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Customer Id</th>
+                                    <th scope="col">Item Code</th>
+                                    <th scope="col">Item Description</th>
+                                    <th scope="col">Item Qty</th>
+                                    <th scope="col">Item Price</th>
+                                    <th scope="col">Item Discount</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row position-absolute end-0 w-25 me-5" style="margin-top: 60px;">
+                    <div class="col col-sm">
+                        <button class="btn btn-outline-success w-100">Purchase</button>
+                    </div>
+                    <div class="col col-sm">
+                        <button class="btn btn-outline-danger w-100">Discard</button>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
@@ -242,13 +243,13 @@
                     </div>
                     <div class="col-12 position-absolute col-sm" style="top: 30px; left: 79.5%;">
                         <a href="#" id="viewOrderDetailsBtn">
-                        <button class="btn btn-secondary">View Order Details</button>
+                            <button class="btn btn-secondary">View Order Details</button>
                         </a>
                     </div>
                 </div>
                 <div class="row position-absolute border-5 shadow" style="top: 25%; left: 0;right: 0;margin: auto;height: 400px;width: 93%;">
                     <div class="col-11 position-relative col-sm-12" style="height: 100%;overflow:auto;">
-                        <table class="table table-hover position-absolute start-0 end-0 m-auto" >
+                        <table class="table table-hover position-absolute start-0 end-0 m-auto">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -258,17 +259,17 @@
                                     <th scope="col">Order Time</th>
                                     <th scope="col">Discount</th>
                                     <th scope="col">Totl Amount</th>
-                                  </tr>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                  <th scope="row">1</th>
-                                  <td>O-001</td>
-                                  <td>C-001</td>
-                                  <td>01/20/2022</td>
-                                  <td>10:58 AM</td>
-                                  <td>0</td>
-                                  <td>870.0</td>
+                                    <th scope="row">1</th>
+                                    <td>O-001</td>
+                                    <td>C-001</td>
+                                    <td>01/20/2022</td>
+                                    <td>10:58 AM</td>
+                                    <td>0</td>
+                                    <td>870.0</td>
                                 </tr>
 
                                 <tr>
@@ -279,8 +280,8 @@
                                     <td>11:58 AM</td>
                                     <td>0</td>
                                     <td>1870.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">3</th>
                                     <td>O-003</td>
                                     <td>C-003</td>
@@ -288,8 +289,8 @@
                                     <td>12:58 PM</td>
                                     <td>0</td>
                                     <td>870.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">4</th>
                                     <td>O-004</td>
                                     <td>C-005</td>
@@ -297,8 +298,8 @@
                                     <td>01:20 PM</td>
                                     <td>0</td>
                                     <td>270.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">5</th>
                                     <td>O-005</td>
                                     <td>C-005</td>
@@ -306,8 +307,8 @@
                                     <td>01:58 PM</td>
                                     <td>0</td>
                                     <td>870.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">6</th>
                                     <td>O-006</td>
                                     <td>C-001</td>
@@ -315,8 +316,8 @@
                                     <td>02:58 AM</td>
                                     <td>0</td>
                                     <td>2870.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">7</th>
                                     <td>O-007</td>
                                     <td>C-002</td>
@@ -324,8 +325,8 @@
                                     <td>03:58 PM</td>
                                     <td>0</td>
                                     <td>870.0</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">8</th>
                                     <td>O-008</td>
                                     <td>C-008</td>
@@ -333,8 +334,8 @@
                                     <td>05:58 PM</td>
                                     <td>0</td>
                                     <td>870.0</td>
-                                  </tr>
-                              </tbody>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -357,18 +358,18 @@
                                     <th scope="col">Item Price</th>
                                     <th scope="col">Item Discount</th>
                                     <th scope="col">Total</th>
-                                  </tr>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                  <th scope="row">1</th>
-                                  <td>C-001</td>
-                                  <td>I-001</td>
-                                  <td>Maliban Piti</td>
-                                  <td>1</td>
-                                  <td>370.0</td>
-                                  <td>0</td>
-                                  <td>370.0</td>
+                                    <th scope="row">1</th>
+                                    <td>C-001</td>
+                                    <td>I-001</td>
+                                    <td>Maliban Piti</td>
+                                    <td>1</td>
+                                    <td>370.0</td>
+                                    <td>0</td>
+                                    <td>370.0</td>
                                 </tr>
 
                                 <tr>
@@ -392,7 +393,7 @@
                                     <td>0</td>
                                     <td>100.0</td>
                                 </tr>
-                              </tbody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -426,7 +427,7 @@
                         </div>
                         <div class="row position-relative" style="top: 10px;">
                             <div class="col-6 col-sm">
-                                <div class="form-floating position-relative" >
+                                <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="itemBuyingPriceInItems" placeholder="Buying Price" style="height: 40px;">
                                     <label for="itemBuyingPriceInItems" id="itemBuyingPriceLblInItems"><span>Buying Price</span></label>
                                 </div>
@@ -448,24 +449,24 @@
                 </div>
 
                 <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
-                    <div class="col-6 col-sm position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="saveItems" class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
                         </div>
                     </div>
-                    <div class="col-sm col-6 position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="updateItemBtn">Update Item</button>
                         </div>
                     </div>
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Delete Item</button>
                         </div>
                     </div>
 
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="searchItemBtn" class="btn btn-outline-primary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Search Item</button>
                         </div>
                     </div>
@@ -482,10 +483,10 @@
                                     <th scope="col">Buying Price</th>
                                     <th scope="col">Unit Price</th>
                                     <th scope="col">Discount</th>
-                                  </tr>
+                                </tr>
                             </thead>
                             <tbody>
-                              </tbody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -519,7 +520,7 @@
                         </div>
                         <div class="row position-relative" style="top: 10px;">
                             <div class="col-6 col-sm-6 col-md">
-                                <div class="form-floating position-relative" >
+                                <div class="form-floating position-relative">
                                     <input type="text" class="form-control bg-transparent border-3 w-100" id="cusNic" placeholder="Name" style="height: 40px;">
                                     <label for="cusNic" id="cusNicLabelInCustomers"><span>Nic</span></label>
                                 </div>
@@ -535,24 +536,24 @@
                 </div>
 
                 <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                    <div class="col-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="saveCustomer" class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add</button>
                         </div>
                     </div>
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                    <div class="col-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="cusUpdateBtn" class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Update</button>
                         </div>
                     </div>
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                    <div class="col-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="cusDeleteBtn" class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete</button>
                         </div>
                     </div>
 
-                    <div class="col position-relative">
-                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
+                    <div class="col-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
                             <button id="customerSearchBtn" class="btn btn-outline-primary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Search</button>
                         </div>
                     </div>
@@ -568,10 +569,10 @@
                                     <th scope="col">Nic</th>
                                     <th scope="col">Contact No</th>
                                     <th scope="col">Address</th>
-                                  </tr>
+                                </tr>
                             </thead>
                             <tbody>
-                              </tbody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -604,7 +605,7 @@
                             </div>
                         </div>
                     </div>
-                
+
 
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md">
@@ -735,4 +736,5 @@
     <script src="controller/itemController.js"></script>
     <script src="controller/placeOrderController.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,8 @@
-body{
+body {
     overflow: hidden !important;
 }
-body > header .offcanvas-body ul li{
+
+body>header .offcanvas-body ul li {
     position: absolute;
     left: 0;
     right: 0;
@@ -10,23 +11,27 @@ body > header .offcanvas-body ul li{
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body > header > nav{
+
+body>header>nav {
     background-color: #575454 !important;
     box-shadow: 0px 1px 10px 1px;
 }
-body > header > nav ul > li{
+
+body>header>nav ul>li {
     width: 102px;
     transition: all 0.5s;
     text-align: center;
 }
-body > header > nav ul > li a{
+
+body>header>nav ul>li a {
     position: relative;
     width: 100%;
     height: 35px;
-    border-radius: 30px;   
+    border-radius: 30px;
     transition: all 0.5s;
 }
-body > header > nav ul > li a span{
+
+body>header>nav ul>li a span {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -36,13 +41,14 @@ body > header > nav ul > li a span{
     height: max-content;
     width: max-content;
 }
-body > header > nav ul > li:hover a{
+
+body>header>nav ul>li:hover a {
     background-color: rgb(143, 141, 141);
     border-radius: 30px;
     transition: all 0.5s;
 }
 
-body > header > nav > div > a:nth-child(5){
+body>header>nav>div>a:nth-child(5) {
     position: absolute;
     right: 70px;
     width: 35px;
@@ -53,18 +59,21 @@ body > header > nav > div > a:nth-child(5){
     overflow: hidden;
     transition: all 1s;
 }
-body > header > nav > div > a:nth-child(5) div{
+
+body>header>nav>div>a:nth-child(5) div {
     width: 100%;
     height: 100%;
 }
-body > header > nav > div > a:nth-child(5) div:nth-child(1) i {
+
+body>header>nav>div>a:nth-child(5) div:nth-child(1) i {
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     height: max-content;
 }
-body > header > nav > div > a:nth-child(5)  div:nth-child(1) h3 {
+
+body>header>nav>div>a:nth-child(5) div:nth-child(1) h3 {
     width: 70px;
     left: 45px;
     top: 0;
@@ -72,13 +81,14 @@ body > header > nav > div > a:nth-child(5)  div:nth-child(1) h3 {
     margin: auto;
     height: max-content;
 }
-body > header > nav > div > a:nth-child(5):hover{
+
+body>header>nav>div>a:nth-child(5):hover {
     width: 110px;
     right: 70px;
     transition: all 1s;
 }
 
-body > header > nav > div > a:nth-child(6) {
+body>header>nav>div>a:nth-child(6) {
     position: absolute;
     right: 10px;
     width: 30px;
@@ -90,36 +100,41 @@ body > header > nav > div > a:nth-child(6) {
     transition: all 1s;
     cursor: pointer;
 }
-body > header > nav > div > a:nth-child(6) div{
+
+body>header>nav>div>a:nth-child(6) div {
     width: 100%;
     height: 100%;
 }
-body > header > nav > div > a:nth-child(6) div:nth-child(1) i {
+
+body>header>nav>div>a:nth-child(6) div:nth-child(1) i {
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     height: max-content;
 }
-body > header > nav > div > a:nth-child(6) div:nth-child(1) h3 {
+
+body>header>nav>div>a:nth-child(6) div:nth-child(1) h3 {
     left: 40px;
     top: 0;
     bottom: 0;
     margin: auto;
     height: max-content;
 }
-body > header > nav > div > a:nth-child(6):hover{
+
+body>header>nav>div>a:nth-child(6):hover {
     width: 100px;
     right: 20px;
     transition: all 1s;
 }
 
-body > main > section{
+body>main>section {
     width: 100%;
     height: 92.5vh;
     background-color: rgb(233, 233, 233) !important;
 }
-body > main > section > div:nth-child(1){
+
+body>main>section>div:nth-child(1) {
     top: 0;
     bottom: 0;
     left: 0;
@@ -130,64 +145,72 @@ body > main > section > div:nth-child(1){
     background-color: rgb(241, 240, 240) !important;
     border-radius: 15px;
 }
-body > main > .Home > .container-fluid > .row > div:nth-child(2) > div input{
+
+body>main>.Home>.container-fluid>.row>div:nth-child(2)>div input {
     width: 50%;
 }
 
-body > main > section > .container-fluid > .row > div div label > span{
+body>main>section>.container-fluid>.row>div div label>span {
     position: absolute;
     top: 7px;
 }
-body > main > .Home > .container-fluid > .row > div > div label{
+
+body>main>.Home>.container-fluid>.row>div>div label {
     width: 150px;
     font-size: 15px !important;
 }
-body > main > section > .container-fluid > .row > div:nth-child(3) div input:focus::placeholder{
+
+body>main>section>.container-fluid>.row>div:nth-child(3) div input:focus::placeholder {
     position: absolute;
     top: -5px;
 }
 
-body > main > .Orders > .container-fluid > .row > div div label > span{
+body>main>.Orders>.container-fluid>.row>div div label>span {
     position: absolute;
     top: 8px;
 }
-body > main > .Orders > .container-fluid > .row > div > div label{
+
+body>main>.Orders>.container-fluid>.row>div>div label {
     width: 100%;
     font-size: 15px !important;
 }
-body > main > .Orders > .container-fluid > .row > div div input:focus::placeholder{
+
+body>main>.Orders>.container-fluid>.row>div div input:focus::placeholder {
     position: absolute;
     top: -5px;
 }
 
-body > main > section > .container-fluid > .row > div > div label{
+body>main>section>.container-fluid>.row>div>div label {
     width: 100%;
     font-size: 16px;
 }
-body > main > .Items > .container-fluid > .row > div div label > span{
+
+body>main>.Items>.container-fluid>.row>div div label>span {
     position: absolute;
     top: 7px;
 }
 
-input:focus{
+input:focus {
     box-shadow: none !important;
     /* border: 2px solid black !important; */
 }
 
-
-body > main > .Signup{
+body>main>.Signup {
     position: relative;
     height: 100vh !important;
 }
-body > main > .Signup > .container-fluid{
+
+body>main>.Signup>.container-fluid {
     height: 70% !important;
     width: 70% !important;
 }
-body > main > .Signup > .container-fluid > .row > .row{
+
+body>main>.Signup>.container-fluid>.row>.row {
     position: relative;
     margin-top: 30px !important;
 }
-body > main > .Signup a{
+
+body>main>.Signup a {
     position: absolute !important;
     right: 50px;
     top: 30px;
@@ -196,20 +219,24 @@ body > main > .Signup a{
     overflow: hidden;
     transition: all 1s;
 }
-body > main > .Signup > #logoutBtnInSignup:hover{
+
+body>main>.Signup>#logoutBtnInSignup:hover {
     transition: all 1s;
     width: 100px !important;
 }
-body > main > .Signup > #logoutBtnInSignup:hover h3{
+
+body>main>.Signup>#logoutBtnInSignup:hover h3 {
     right: 2px !important;
     transition: all 1s;
 }
-body > main > .Signup > #logoutBtnInSignup div{
+
+body>main>.Signup>#logoutBtnInSignup div {
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
 }
-body > main > .Signup > #logoutBtnInSignup div h3{
+
+body>main>.Signup>#logoutBtnInSignup div h3 {
     position: absolute;
     top: 0 !important;
     bottom: 7px !important;
@@ -220,19 +247,22 @@ body > main > .Signup > #logoutBtnInSignup div h3{
     color: black !important;
     transition: all 1s;
 }
-body > main > .Signup > #logoutBtnInSignup i{
+
+body>main>.Signup>#logoutBtnInSignup i {
     color: black !important;
     font-size: 35px !important;
 }
-body > main > .Signup label{
+
+body>main>.Signup label {
     position: absolute;
     top: 5px !important;
 }
 
-body > main > .login > div img{
+body>main>.login>div img {
     width: 60%;
 }
-body > main > .login > div:nth-child(1){
+
+body>main>.login>div:nth-child(1) {
     position: absolute;
     top: 0;
     bottom: unset;
@@ -244,1286 +274,1224 @@ body > main > .login > div:nth-child(1){
     background-color: unset !important;
     border-radius: unset;
 }
-body > main > .login > div:nth-child(2){
+
+body>main>.login>div:nth-child(2) {
     position: absolute;
     top: 10%;
     left: 10%;
 }
-body > main > .login > div:nth-child(3){
+
+body>main>.login>div:nth-child(3) {
     position: absolute;
     top: 30%;
     left: 5%;
 }
-body > main > .login > div:nth-child(4){
+
+body>main>.login>div:nth-child(4) {
     position: absolute;
     top: 40%;
     left: 15%;
 }
-body > main > .login > div:nth-child(5){
+
+body>main>.login>div:nth-child(5) {
     position: absolute;
     top: 60%;
     left: 2%;
 }
-body > main > .login > div:nth-child(6){
+
+body>main>.login>div:nth-child(6) {
     position: absolute;
     top: 70%;
     left: 15%;
 }
-body > main > .login > div:nth-child(7){
+
+body>main>.login>div:nth-child(7) {
     position: absolute;
     top: 85%;
     left: 5%;
 }
-body > main > .login > div:nth-child(8){
+
+body>main>.login>div:nth-child(8) {
     position: absolute;
     top: 0%;
     left: 25%;
 }
-body > main > .login > div:nth-child(9){
+
+body>main>.login>div:nth-child(9) {
     position: absolute;
     top: 2%;
     left: 75%;
 }
-body > main > .login > div:nth-child(10){
+
+body>main>.login>div:nth-child(10) {
     position: absolute;
     top: 1%;
     left: 45%;
 }
-body > main > .login > div:nth-child(11){
+
+body>main>.login>div:nth-child(11) {
     position: absolute;
     top: 2%;
     left: 60%;
 }
-body > main > .login > div:nth-child(12){
+
+body>main>.login>div:nth-child(12) {
     position: absolute;
     top: 2%;
     left: 90%;
 }
-body > main > .login > div:nth-child(13){
+
+body>main>.login>div:nth-child(13) {
     position: absolute;
     top: 20%;
     left: 80%;
 }
-body > main > .login > div:nth-child(14){
+
+body>main>.login>div:nth-child(14) {
     position: absolute;
     top: 40%;
     left: 92%;
 }
-body > main > .login > div:nth-child(15){
+
+body>main>.login>div:nth-child(15) {
     position: absolute;
     top: 60%;
     left: 85%;
 }
-body > main > .login > div:nth-child(16){
+
+body>main>.login>div:nth-child(16) {
     position: absolute;
     top: 85%;
     left: 77%;
 }
-body > main > .login > div:nth-child(17){
+
+body>main>.login>div:nth-child(17) {
     position: absolute;
     top: 80%;
     left: 90%;
 }
-body > main > .login > div:nth-child(18){
+
+body>main>.login>div:nth-child(18) {
     position: absolute;
     top: 40%;
     left: 78%;
 }
-body > main > .login > div:nth-child(19){
+
+body>main>.login>div:nth-child(19) {
     position: absolute;
     top: 85%;
     left: 65%;
 }
-body > main > .login > div:nth-child(20){
+
+body>main>.login>div:nth-child(20) {
     position: absolute;
     top: 88%;
     left: 50%;
 }
-body > main > .login > div:nth-child(21){
+
+body>main>.login>div:nth-child(21) {
     position: absolute;
     top: 85%;
     left: 35%;
 }
-body > main > .login > div:nth-child(22){
+
+body>main>.login>div:nth-child(22) {
     position: absolute;
     top: 85%;
     left: 22%;
 }
-body > main > .login > .container-fluid > .row > .col > div > input:focus{
+
+body>main>.login>.container-fluid>.row>.col>div>input:focus {
     border: 2px solid black;
     box-shadow: none;
 }
-body > main > .login > .container-fluid > .row > .col > div > label > span{
+
+body>main>.login>.container-fluid>.row>.col>div>label>span {
     position: absolute;
-    top: 0;bottom: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
     width: 100px;
     height: 30px;
 }
 
+
 /*Home .Home media queris*/
 
+
 /* Small devices (landscape phones, 576px and up)*/
-    @media all and (max-width: 320px) {
-        body{
-            overflow-y: visible !important;
-        }
-        body > main > .Home{
-            height: 190vh;
-        }
-        body > main > .Home > div:nth-child(1) {
-            top: -50px !important;
-            height: 90%;
-        }
-        body > main > .Home > .container-fluid > .row > div > div label{
-            width: 150px;
-            font-size: 14px !important;
-        }
-        
-        .Home .mx-4 {
-            margin-right: 1.5rem!important;
-            margin-left: 0rem!important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
-            width: 110px !important;
-            top: 58%;
-        }
-        
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(1){
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(2){
-            top: 280px !important;
-            height: 20% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
 
-        /*Orders 320px queries*/
-        body > main > .Orders > .container-fluid > div:nth-child(1){
-            width: 100% !important;
-            height: 100px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1){
-            position: absolute;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-            position: absolute;
-            top: 5px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
-            width: 100% !important;
-            position: absolute;
-            left: 0;right: 0;margin: auto;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label span{
-            width: 100% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            width: 70%;
-            height: 40px !important;
-            bottom: 0px !important;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            height: 40px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(2) > div:nth-child(1){
-            position: absolute;
-            left: 0;right: 0;
-            margin: auto;
-        }
-        body > main > .Orders div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) label span{
-            font-size: 12px !important;
-        }
-
-        /*Items 320px queries*/
-        body > main > .Items{
-            height: 105vh !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1){
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 93% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        /* Customer section 320px media queries */
-        body > main > .Customer{
-            height: 105vh !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #cusContactNo{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 80% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
-            font-size: 16px !important;
-        }
+@media all and (max-width: 320px) {
+    body {
+        overflow-y: visible !important;
     }
-    @media all and (min-width: 320px) and (max-width: 375px){
-        
-        
-        body{
-            overflow-y: visible !important;
-        }
-        body > main > .Home{
-            height: 190vh;
-        }
-        body > main > .Home > div:nth-child(1) {
-            top: -50px !important;
-            height: 90%;
-        }
-        .Home .mx-4 {
-            margin-right: 1.5rem!important;
-            margin-left: 0rem!important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
-            width: 110px !important;
-            top: 58%;
-        }
-        
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(1){
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(2){
-            top: 280px !important;
-            height: 20% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 10px !important;
-        }
-        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
-            font-size: 16px !important;
-        }
+    body>main>.Home {
+        height: 190vh;
     }
-
-    @media all and (min-width:320px) and (max-width: 425px){
-        body > main > .Orders > .container-fluid > div:nth-child(1){
-            width: 100% !important;
-            height: 100px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1){
-            position: absolute;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-            position: absolute;
-            top: 5px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
-            width: 105% !important;
-            position: absolute;
-            left: 0;right: 0;margin: auto;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            width: 70%;
-            height: 40px !important;
-            bottom: 0px !important;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            height: 40px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(2) > div:nth-child(1){
-            position: absolute;
-            left: 0;right: 0;
-            margin: auto;
-
-        }
-        body > main > .Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span{
-            font-size: 16px !important;
-        }
+    body>main>.Home>div:nth-child(1) {
+        top: -50px !important;
+        height: 90%;
     }
-
-    @media all and (min-width: 375px) and (max-width: 425px){
-        
-        body > main > .Home > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div > label span{
-            font-size: 15px !important;
-        }
-        body{
-            overflow-y: visible !important;
-        }
-        body > main > .Home{
-            height: 190vh;
-        }
-        body > main > .Home > div:nth-child(1) {
-            top: -50px !important;
-            height: 90%;
-        }
-        .Home .mx-4 {
-            margin-right: 1.5rem!important;
-            margin-left: 0rem!important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
-            width: 110px !important;
-            top: 58%;
-        }
-        
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(1){
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3){
-            margin-top: 20px !important;
-            height: 44%;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(2){
-            top: 280px !important;
-            height: 20% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 10px !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label > span{
-            font-size: 14px !important;
-        }
+    body>main>.Home>.container-fluid>.row>div>div label {
+        width: 150px;
+        font-size: 14px !important;
     }
-
-    @media all and (min-width: 321px) and (max-width:425px){
-        body > main > .Items{
-            height: 105vh !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1){
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 15px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 80% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
+    .Home .mx-4 {
+        margin-right: 1.5rem!important;
+        margin-left: 0rem!important;
     }
-
-    @media all and (min-width:426px) and (max-width: 768px){
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-            position: relative;
-            left: 5% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
-            width: 100% !important;
-            position: absolute;
-            left: 0;right: 0;margin: auto;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            position: absolute;
-            left: unset !important;
-            width: 200px;
-            right:5% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1){
-            position: relative;
-            width: 100% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            height: 40px !important;
-        }
-      
-        body > main > .Orders > .container-fluid > div:nth-child(2) > div:nth-child(1){
-            position: absolute;
-            left: 0;right: 0;
-            margin: auto;
-
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3) {
+        width: 110px !important;
+        top: 58%;
     }
-
-    @media all and (min-width:426px) and (max-width:576px){
-        body{
-            overflow-y: visible !important;
-        }
-        body > main > .Home{
-            height: 200vh !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1){
-            height: 67% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            left: 0 !important;
-            margin: unset !important;
-            margin-top: 20px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3){
-            left: 0 !important;
-            margin: unset !important;
-            margin-top: 20px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(2){
-            height: 300px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            height: 102% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            top: 20px !important;
-            position: relative;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 15px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 15px !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        height: 44%;
     }
-    @media all and (min-width:577px) and (max-width:767px){
-        body{
-            overflow-y: visible !important;
-        }
-        body > main > .Home{
-            height: 200vh !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1){
-            height: 67% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            left: 0 !important;
-            margin: unset !important;
-            margin-top: 20px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3){
-            left: 0 !important;
-            margin: unset !important;
-            margin-top: 20px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(2){
-            height: 300px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            height: 102% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            top: 20px !important;
-            position: relative;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 15px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 15px !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 20px !important;
+        height: 44%;
     }
-
-    @media all and (min-width: 425px) and (max-width:767px){
-        body > main > .Items{
-            height: 105vh !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1){
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 15px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 70% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3) {
+        margin-top: 20px !important;
+        height: 44%;
     }
-    @media all and (min-width: 320px) and (max-width:767px){
-        body > main > .Customer{
-            height: 105vh !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(1) >  div:nth-child(1) #cusContactNo{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > section > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 15px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 80% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 100px !important;
-         height: 40px !important;
-        }
-        body > main > .Customer > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
     }
-
-    @media all and (min-width:575px) and (max-width:767px){
-        body > main > .Items{
-            height: 105vh !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1){
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1){
-            width: 100% !important;
-            --bs-gutter-x: 0 !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemDiscountInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) #itemQtyInItems{
-            position: relative;
-            margin-top: 10px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(1) >  div:nth-child(1) label{
-            font-size: 14px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(3){
-            top: 51% !important;
-            height: 270px !important;
-            width: 90% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2){
-            position: relative !important;
-            width: 60% !important;
-            height: 100px !important;
-            top: 10% !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1){
-         position: absolute !important;
-         left: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2){
-         position: absolute !important;
-         right: 0 !important;
-         top: 0 !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
-
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3){
-         position: absolute !important;
-         left: 0 !important;
-         right: 0 !important;
-         top: unset !important;
-         bottom: 10px !important;
-         margin: auto !important;
-         width: 120px !important;
-         height: 40px !important;
-        }
-        body > main > .Items > .container-fluid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
-            position: absolute !important;
-            width: 100% !important;
-            height: 100% !important;
-            left: 0 !important;
-            right: unset !important;
-            bottom: unset !important;
-            top: 0 !important;
-            margin: unset !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 10px !important;
     }
-
-    @media all and (min-width:769px) and (max-width: 1024px){
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-            position: relative;
-            left: 8% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
-            width: 100% !important;
-            position: absolute;
-            left: 0;right: 0;margin: auto;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            position: absolute;
-            left: unset !important;
-            width: 200px;
-            right:8% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1){
-            position: relative;
-            width: 100% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            height: 40px !important;
-        }
-      
-        body > main > .Orders > .container-fluid > div:nth-child(2) > div:nth-child(1){
-            position: absolute;
-            left: 0;right: 0;
-            margin: auto;
-
-        }
+    body>main>.Home>.container-fluid>div:nth-child(2) {
+        top: 280px !important;
+        height: 20% !important;
     }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    /*Orders 320px queries*/
+    body>main>.Orders>.container-fluid>div:nth-child(1) {
+        width: 100% !important;
+        height: 100px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        position: absolute;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute;
+        top: 5px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>input {
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>label span {
+        width: 100% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 70%;
+        height: 40px !important;
+        bottom: 0px !important;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) button {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        height: 40px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    body>main>.Orders div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 12px !important;
+    }
+    /*Items 320px queries*/
+    body>main>.Items {
+        height: 105vh !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1) {
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 14px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 93% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+        position: absolute !important;
+        top: unset !important;
+        left: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+        position: absolute !important;
+        top: unset !important;
+        right: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    /* Customer section 320px media queries */
+    body>main>.Customer {
+        height: 105vh !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(1)>div:nth-child(1) #cusContactNo {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 14px !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 80% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+    body>main>.Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span {
+        font-size: 16px !important;
+    }
+}
 
-    @media all and (min-width:768px) and (max-width:1024px){
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
+@media all and (min-width: 320px) and (max-width: 375px) {
+    body {
+        overflow-y: visible !important;
+    }
+    body>main>.Home {
+        height: 190vh;
+    }
+    body>main>.Home>div:nth-child(1) {
+        top: -50px !important;
+        height: 90%;
+    }
+    .Home .mx-4 {
+        margin-right: 1.5rem!important;
+        margin-left: 0rem!important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3) {
+        width: 110px !important;
+        top: 58%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 20px !important;
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3) {
+        margin-top: 20px !important;
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(2) {
+        top: 280px !important;
+        height: 20% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 10px !important;
+    }
+    body>main>.Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span {
+        font-size: 16px !important;
+    }
+}
+
+@media all and (min-width:320px) and (max-width: 425px) {
+    body>main>.Orders>.container-fluid>div:nth-child(1) {
+        width: 100% !important;
+        height: 100px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        position: absolute;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute;
+        top: 5px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>input {
+        width: 105% !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 70%;
+        height: 40px !important;
+        bottom: 0px !important;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) button {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        height: 40px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    body>main>.Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span {
+        font-size: 16px !important;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+    body>main>.Home>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div>label span {
+        font-size: 15px !important;
+    }
+    body {
+        overflow-y: visible !important;
+    }
+    body>main>.Home {
+        height: 190vh;
+    }
+    body>main>.Home>div:nth-child(1) {
+        top: -50px !important;
+        height: 90%;
+    }
+    .Home .mx-4 {
+        margin-right: 1.5rem!important;
+        margin-left: 0rem!important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3) {
+        width: 110px !important;
+        top: 58%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 20px !important;
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3) {
+        margin-top: 20px !important;
+        height: 44%;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(2) {
+        top: 280px !important;
+        height: 20% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 10px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>label>span {
+        font-size: 14px !important;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width:425px) {
+    body>main>.Items {
+        height: 105vh !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1) {
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 15px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 80% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+        position: absolute !important;
+        top: unset !important;
+        left: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+        position: absolute !important;
+        top: unset !important;
+        right: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+}
+
+@media all and (min-width:426px) and (max-width: 768px) {
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        position: relative;
+        left: 5% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>input {
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        position: absolute;
+        left: unset !important;
+        width: 200px;
+        right: 5% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1) {
+        position: relative;
+        width: 100% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) button {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        height: 40px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media all and (min-width:426px) and (max-width:576px) {
+    body {
+        overflow-y: visible !important;
+    }
+    body>main>.Home {
+        height: 200vh !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1) {
+        height: 67% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        left: 0 !important;
+        margin: unset !important;
+        margin-top: 20px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3) {
+        left: 0 !important;
+        margin: unset !important;
+        margin-top: 20px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(2) {
+        height: 300px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
         height: 102% !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            top: 20px !important;
-            position: relative;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3){
-            bottom: 20px !important;
-            width: 250px !important;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            position: absolute;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(3) div button{
-            width: 100px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 15px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 10px !important;
-        }
     }
-    @media all and (min-width:1025px) and (max-width:1440px){
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 0px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 2px !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
     }
-    @media all and (min-width:1440px) and (max-width:2560px){
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(4){
-            margin-top: 10px !important;
-        }
-        body > main > .Home > .container-fluid > div:nth-child(1) > div:nth-child(3) > div:nth-child(5){
-            margin-top: 2px !important;
-        }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        top: 20px !important;
+        position: relative;
     }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 15px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 15px !important;
+    }
+}
 
-    @media all and (min-width:1025px) and (max-width: 2560px){
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
-            position: relative;
-            left: 10% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input{
-            width: 100% !important;
-            position: absolute;
-            left: 0;right: 0;margin: auto;
-            top: unset !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2){
-            position: absolute;
-            left: unset !important;
-            width: 200px;
-            right:10% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1){
-            position: relative;
-            width: 100% !important;
-        }
-        body > main > .Orders > .container-fluid > div:nth-child(1) > div:nth-child(2) button{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-            height: 40px !important;
-        }
-      
-        body > main > .Orders > .container-fluid > div:nth-child(2) > div:nth-child(1){
-            position: absolute;
-            left: 0;right: 0;
-            margin: auto;
-
-        }
+@media all and (min-width:577px) and (max-width:767px) {
+    body {
+        overflow-y: visible !important;
     }
+    body>main>.Home {
+        height: 200vh !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1) {
+        height: 67% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        left: 0 !important;
+        margin: unset !important;
+        margin-top: 20px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3) {
+        left: 0 !important;
+        margin: unset !important;
+        margin-top: 20px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(2) {
+        height: 300px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        height: 102% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        top: 20px !important;
+        position: relative;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 15px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 15px !important;
+    }
+}
 
-    @media all and (max-width:768px){
-        body > main > .Signup > .container-fluid{
-            width: 85% !important;
-            height: 90% !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(1){
-            top: 10px !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(1) .row{
-            position: absolute;
-            left: 0 !important;
-            right: 0 !important;
-            margin: auto !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(1) .row:nth-child(2){
-            margin-top: 210px !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(1) .row:nth-child(3){
-            margin-top: 420px !important;
-        }
-        body > main > .Signup > .container-fluid input{
-            margin-top: 20px;
-        }
-        body > main > .Signup > .container-fluid > .row{
-            width: 100% !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(2){
-            margin-top: 50px !important;
-        }
-        body > main > .Signup > .container-fluid > .row:nth-child(2) .col:nth-child(3){
-            margin-top: 10px !important;
-        }
-        @keyframes anim{
-            0%{
-                width: 28px;
-                height: 25px;
-            }
-            100%{
-                width: 95px;
-                height: 25px;
-            }
-        }
-        
-        @keyframes anim2{
-            0%{
-                transform: translateX(0);
-            }
-            100%{
-                transform: translateX(-60px);
-            }
-        }
-        body > main > .Signup > #logoutBtnInSignup{
-            position: absolute;
-            right: 10px !important;
-            top: 6px !important;
+@media all and (min-width: 425px) and (max-width:767px) {
+    body>main>.Items {
+        height: 105vh !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1) {
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 15px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 70% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+        position: absolute !important;
+        top: unset !important;
+        left: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+        position: absolute !important;
+        top: unset !important;
+        right: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 120px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width:767px) {
+    body>main>.Customer {
+        height: 105vh !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(1)>div:nth-child(1) #cusContactNo {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>section>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 15px !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Customer>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 80% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+}
+
+@media all and (min-width:575px) and (max-width:767px) {
+    body>main>.Items {
+        height: 105vh !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1) {
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+        position: relative;
+        margin-top: 10px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+        font-size: 14px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(3) {
+        top: 51% !important;
+        height: 270px !important;
+        width: 90% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2) {
+        position: relative !important;
+        width: 60% !important;
+        height: 100px !important;
+        top: 10% !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+        position: absolute !important;
+        top: unset !important;
+        left: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+        position: absolute !important;
+        top: unset !important;
+        right: 0 !important;
+        bottom: 10px !important;
+        margin: auto !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        right: unset !important;
+        bottom: unset !important;
+        top: 0 !important;
+        margin: unset !important;
+    }
+}
+
+@media all and (min-width:769px) and (max-width: 1024px) {
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        position: relative;
+        left: 8% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>input {
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        position: absolute;
+        left: unset !important;
+        width: 200px;
+        right: 8% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1) {
+        position: relative;
+        width: 100% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) button {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        height: 40px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        height: 102% !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        top: 20px !important;
+        position: relative;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) {
+        bottom: 20px !important;
+        width: 250px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        position: absolute;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(3) div button {
+        width: 100px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 15px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 10px !important;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width:1440px) {
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 0px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 2px !important;
+    }
+}
+
+@media all and (min-width:1440px) and (max-width:2560px) {
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(4) {
+        margin-top: 10px !important;
+    }
+    body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
+        margin-top: 2px !important;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width: 2560px) {
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        position: relative;
+        left: 10% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>input {
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: unset !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) {
+        position: absolute;
+        left: unset !important;
+        width: 200px;
+        right: 10% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1) {
+        position: relative;
+        width: 100% !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(1)>div:nth-child(2) button {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        height: 40px !important;
+    }
+    body>main>.Orders>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media all and (max-width:768px) {
+    body>main>.Signup>.container-fluid {
+        width: 85% !important;
+        height: 90% !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(1) {
+        top: 10px !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(1) .row {
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(1) .row:nth-child(2) {
+        margin-top: 210px !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(1) .row:nth-child(3) {
+        margin-top: 420px !important;
+    }
+    body>main>.Signup>.container-fluid input {
+        margin-top: 20px;
+    }
+    body>main>.Signup>.container-fluid>.row {
+        width: 100% !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(2) {
+        margin-top: 50px !important;
+    }
+    body>main>.Signup>.container-fluid>.row:nth-child(2) .col:nth-child(3) {
+        margin-top: 10px !important;
+    }
+    @keyframes anim {
+        0% {
             width: 28px;
-            height: 25px !important;
-            animation-name: anim;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 5s;
+            height: 25px;
         }
-        body > main > .Signup > #logoutBtnInSignup div{
-            position: absolute !important;
-            left: 0 !important;
-            display: block !important;
-            
-        }
-        body > main > .Signup > #logoutBtnInSignup div i{
-            position: absolute !important;
-            left: 0 !important;
-            font-size: 25px !important;
-        }
-        body > main > .Signup > #logoutBtnInSignup div h3{
-            top: 5px !important;
-            animation-name: anim2;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-duration: 5s;
+        100% {
+            width: 95px;
+            height: 25px;
         }
     }
-
-    @media all and (min-width:768px) and (max-width:1024px){
-        body > main > .Signup > .container-fluid > .row{
-            width: 90% !important;
+    @keyframes anim2 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-60px);
         }
     }
+    body>main>.Signup>#logoutBtnInSignup {
+        position: absolute;
+        right: 10px !important;
+        top: 6px !important;
+        width: 28px;
+        height: 25px !important;
+        animation-name: anim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+    }
+    body>main>.Signup>#logoutBtnInSignup div {
+        position: absolute !important;
+        left: 0 !important;
+        display: block !important;
+    }
+    body>main>.Signup>#logoutBtnInSignup div i {
+        position: absolute !important;
+        left: 0 !important;
+        font-size: 25px !important;
+    }
+    body>main>.Signup>#logoutBtnInSignup div h3 {
+        top: 5px !important;
+        animation-name: anim2;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+    }
+}
 
-    @media all and (max-width:375px){
-        body > main > .login > div img{
-            width: 60%;
-        }
-        body > main > .login > div:nth-child(1){
+@media all and (min-width:768px) and (max-width:1024px) {
+    body>main>.Signup>.container-fluid>.row {
+        width: 90% !important;
+    }
+}
+
+@media all and (max-width:375px) {
+    body>main>.login>div img {
+        width: 60%;
+    }
+    body>main>.login>div:nth-child(1) {
         position: absolute;
         top: 0;
         bottom: unset;
@@ -1534,143 +1502,150 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         height: unset;
         background-color: unset !important;
         border-radius: unset;
-        }
-        body > main > .login > div:nth-child(2){
-            position: absolute;
-            top: 65%;
-            left: -2%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(3){
-            position: absolute;
-            top: 40%;
-            left: -2%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(4){
-            position: absolute;
-            top: 20%;
-            left: -2.5%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(5){
-            position: absolute;
-            top: 5%;
-            left: 30%;
-        }
-        body > main > .login > div:nth-child(6){
-            position: absolute;
-            top: 1%;
-            left: 60%;
-        }
-        body > main > .login > div:nth-child(7){
-            position: absolute;
-            top: 88%;
-            left: 2%;
-        }
-        body > main > .login > div:nth-child(8){
-            position: absolute;
-            top: 8%;
-            left: 85%;
-            width: 100px;
-        }
-        body > main > .login > div:nth-child(9){
-            position: absolute;
-            top: 2%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(10){
-            position: absolute;
-            top: 1%;
-            left: 45%;display: none;
-        }
-        body > main > .login > div:nth-child(11){
-            position: absolute;
-            top: 2%;
-            left: 60%;
-            display: none;
-        }
-        body > main > .login > div:nth-child(12){
-            position: absolute;
-            top: 50%;
-            left: 90%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(13){
-            position: absolute;
-            top: 20%;
-            left: 80%;display: none;
-        }
-        body > main > .login > div:nth-child(14){
-            position: absolute;
-            top: 30%;
-            left: 88%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(15){
-            position: absolute;
-            top: 70%;
-            left: 90%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(16){
-            position: absolute;
-            top: 85%;
-            left: 77%;display: none;
-        }
-        body > main > .login > div:nth-child(17){
-            position: absolute;
-            top: 80%;
-            left: 90%;display: none;
-        }
-        body > main > .login > div:nth-child(18){
-            position: absolute;
-            top: 40%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(19){
-            position: absolute;
-            top: 90%;
-            left: 75%;
-        }
-        body > main > .login > div:nth-child(20){
-            position: absolute;
-            top: 87%;
-            left: 38%;
-        }
-        body > main > .login > div:nth-child(21){
-            position: absolute;
-            top: 85%;
-            left: 35%;display: none;
-        }
-        body > main > .login > div:nth-child(22){
-            position: absolute;
-            top: 85%;
-            left: 22%;display: none;
-        }
-
-        body > main > .login > .container-fluid{
-            width: 80% !important;
-        }
-        body > main > .login > .container-fluid .row{
-            width: 88% !important;
-        }
-        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
-            width: 180px !important;
-        }
-        body > main > .login > .container-fluid .row .col div label{
-            top: 5px;
-        }
     }
+    body>main>.login>div:nth-child(2) {
+        position: absolute;
+        top: 65%;
+        left: -2%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(3) {
+        position: absolute;
+        top: 40%;
+        left: -2%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(4) {
+        position: absolute;
+        top: 20%;
+        left: -2.5%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(5) {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+    body>main>.login>div:nth-child(6) {
+        position: absolute;
+        top: 1%;
+        left: 60%;
+    }
+    body>main>.login>div:nth-child(7) {
+        position: absolute;
+        top: 88%;
+        left: 2%;
+    }
+    body>main>.login>div:nth-child(8) {
+        position: absolute;
+        top: 8%;
+        left: 85%;
+        width: 100px;
+    }
+    body>main>.login>div:nth-child(9) {
+        position: absolute;
+        top: 2%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(10) {
+        position: absolute;
+        top: 1%;
+        left: 45%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(11) {
+        position: absolute;
+        top: 2%;
+        left: 60%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(12) {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(13) {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(14) {
+        position: absolute;
+        top: 30%;
+        left: 88%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(15) {
+        position: absolute;
+        top: 70%;
+        left: 90%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(16) {
+        position: absolute;
+        top: 85%;
+        left: 77%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(17) {
+        position: absolute;
+        top: 80%;
+        left: 90%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(18) {
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(19) {
+        position: absolute;
+        top: 90%;
+        left: 75%;
+    }
+    body>main>.login>div:nth-child(20) {
+        position: absolute;
+        top: 87%;
+        left: 38%;
+    }
+    body>main>.login>div:nth-child(21) {
+        position: absolute;
+        top: 85%;
+        left: 35%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(22) {
+        position: absolute;
+        top: 85%;
+        left: 22%;
+        display: none;
+    }
+    body>main>.login>.container-fluid {
+        width: 80% !important;
+    }
+    body>main>.login>.container-fluid .row {
+        width: 88% !important;
+    }
+    body>main>.login>.container-fluid .row:nth-child(3)~.row {
+        width: 180px !important;
+    }
+    body>main>.login>.container-fluid .row .col div label {
+        top: 5px;
+    }
+}
 
-    @media all and (min-width:375px) and (max-width:571px){
-        body > main > .login > .container-fluid .row .col div label{
-            top: 5px;
-        }
-        body > main > .login > div img{
-            width: 60%;
-        }
-        body > main > .login > div:nth-child(1){
+@media all and (min-width:375px) and (max-width:571px) {
+    body>main>.login>.container-fluid .row .col div label {
+        top: 5px;
+    }
+    body>main>.login>div img {
+        width: 60%;
+    }
+    body>main>.login>div:nth-child(1) {
         position: absolute;
         top: 0;
         bottom: unset;
@@ -1681,139 +1656,147 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         height: unset;
         background-color: unset !important;
         border-radius: unset;
-        }
-        body > main > .login > div:nth-child(2){
-            position: absolute;
-            top: 65%;
-            left: -1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(3){
-            position: absolute;
-            top: 40%;
-            left: -1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(4){
-            position: absolute;
-            top: 20%;
-            left: -1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(5){
-            position: absolute;
-            top: 5%;
-            left: 30%;
-        }
-        body > main > .login > div:nth-child(6){
-            position: absolute;
-            top: 1%;
-            left: 60%;
-        }
-        body > main > .login > div:nth-child(7){
-            position: absolute;
-            top: 88%;
-            left: 2%;
-        }
-        body > main > .login > div:nth-child(8){
-            position: absolute;
-            top: 8%;
-            left: 85%;
-            width: 100px;
-        }
-        body > main > .login > div:nth-child(9){
-            position: absolute;
-            top: 2%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(10){
-            position: absolute;
-            top: 1%;
-            left: 45%;display: none;
-        }
-        body > main > .login > div:nth-child(11){
-            position: absolute;
-            top: 2%;
-            left: 60%;
-            display: none;
-        }
-        body > main > .login > div:nth-child(12){
-            position: absolute;
-            top: 50%;
-            left: 91%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(13){
-            position: absolute;
-            top: 20%;
-            left: 80%;display: none;
-        }
-        body > main > .login > div:nth-child(14){
-            position: absolute;
-            top: 30%;
-            left: 90%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(15){
-            position: absolute;
-            top: 70%;
-            left: 90%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(16){
-            position: absolute;
-            top: 85%;
-            left: 77%;display: none;
-        }
-        body > main > .login > div:nth-child(17){
-            position: absolute;
-            top: 80%;
-            left: 90%;display: none;
-        }
-        body > main > .login > div:nth-child(18){
-            position: absolute;
-            top: 40%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(19){
-            position: absolute;
-            top: 90%;
-            left: 75%;
-        }
-        body > main > .login > div:nth-child(20){
-            position: absolute;
-            top: 87%;
-            left: 38%;
-        }
-        body > main > .login > div:nth-child(21){
-            position: absolute;
-            top: 85%;
-            left: 35%;display: none;
-        }
-        body > main > .login > div:nth-child(22){
-            position: absolute;
-            top: 85%;
-            left: 22%;display: none;
-        }
-
-        body > main > .login > .container-fluid{
-            width: 80% !important;
-        }
-        body > main > .login > .container-fluid .row{
-            width: 88% !important;
-        }
-        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
-            width: 180px !important;
-        }
     }
-    @media all and (min-width:571px) and (max-width:1024px){
-        body > main > .login > .container-fluid .row .col div label{
-            top: 5px;
-        }
-        body > main > .login > div img{
-            width: 60%;
-        }
-        body > main > .login > div:nth-child(1){
+    body>main>.login>div:nth-child(2) {
+        position: absolute;
+        top: 65%;
+        left: -1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(3) {
+        position: absolute;
+        top: 40%;
+        left: -1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(4) {
+        position: absolute;
+        top: 20%;
+        left: -1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(5) {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+    body>main>.login>div:nth-child(6) {
+        position: absolute;
+        top: 1%;
+        left: 60%;
+    }
+    body>main>.login>div:nth-child(7) {
+        position: absolute;
+        top: 88%;
+        left: 2%;
+    }
+    body>main>.login>div:nth-child(8) {
+        position: absolute;
+        top: 8%;
+        left: 85%;
+        width: 100px;
+    }
+    body>main>.login>div:nth-child(9) {
+        position: absolute;
+        top: 2%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(10) {
+        position: absolute;
+        top: 1%;
+        left: 45%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(11) {
+        position: absolute;
+        top: 2%;
+        left: 60%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(12) {
+        position: absolute;
+        top: 50%;
+        left: 91%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(13) {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(14) {
+        position: absolute;
+        top: 30%;
+        left: 90%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(15) {
+        position: absolute;
+        top: 70%;
+        left: 90%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(16) {
+        position: absolute;
+        top: 85%;
+        left: 77%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(17) {
+        position: absolute;
+        top: 80%;
+        left: 90%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(18) {
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(19) {
+        position: absolute;
+        top: 90%;
+        left: 75%;
+    }
+    body>main>.login>div:nth-child(20) {
+        position: absolute;
+        top: 87%;
+        left: 38%;
+    }
+    body>main>.login>div:nth-child(21) {
+        position: absolute;
+        top: 85%;
+        left: 35%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(22) {
+        position: absolute;
+        top: 85%;
+        left: 22%;
+        display: none;
+    }
+    body>main>.login>.container-fluid {
+        width: 80% !important;
+    }
+    body>main>.login>.container-fluid .row {
+        width: 88% !important;
+    }
+    body>main>.login>.container-fluid .row:nth-child(3)~.row {
+        width: 180px !important;
+    }
+}
+
+@media all and (min-width:571px) and (max-width:1024px) {
+    body>main>.login>.container-fluid .row .col div label {
+        top: 5px;
+    }
+    body>main>.login>div img {
+        width: 60%;
+    }
+    body>main>.login>div:nth-child(1) {
         position: absolute;
         top: 0;
         bottom: unset;
@@ -1824,133 +1807,141 @@ body > main > .login > .container-fluid > .row > .col > div > label > span{
         height: unset;
         background-color: unset !important;
         border-radius: unset;
-        }
-        body > main > .login > div:nth-child(2){
-            position: absolute;
-            top: 65%;
-            left: 1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(3){
-            position: absolute;
-            top: 40%;
-            left: 1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(4){
-            position: absolute;
-            top: 20%;
-            left: 1%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(5){
-            position: absolute;
-            top: 5%;
-            left: 30%;
-        }
-        body > main > .login > div:nth-child(6){
-            position: absolute;
-            top: 1%;
-            left: 60%;
-        }
-        body > main > .login > div:nth-child(7){
-            position: absolute;
-            top: 88%;
-            left: 2%;
-        }
-        body > main > .login > div:nth-child(8){
-            position: absolute;
-            top: 6%;
-            left: 85%;
-            width: 100px;
-        }
-        body > main > .login > div:nth-child(9){
-            position: absolute;
-            top: 2%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(10){
-            position: absolute;
-            top: 1%;
-            left: 45%;display: none;
-        }
-        body > main > .login > div:nth-child(11){
-            position: absolute;
-            top: 2%;
-            left: 60%;
-            display: none;
-        }
-        body > main > .login > div:nth-child(12){
-            position: absolute;
-            top: 50%;
-            left: 92%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(13){
-            position: absolute;
-            top: 20%;
-            left: 80%;display: none;
-        }
-        body > main > .login > div:nth-child(14){
-            position: absolute;
-            top: 30%;
-            left: 92%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(15){
-            position: absolute;
-            top: 70%;
-            left: 92%;
-            width: 70px;
-        }
-        body > main > .login > div:nth-child(16){
-            position: absolute;
-            top: 85%;
-            left: 77%;display: none;
-        }
-        body > main > .login > div:nth-child(17){
-            position: absolute;
-            top: 80%;
-            left: 90%;display: none;
-        }
-        body > main > .login > div:nth-child(18){
-            position: absolute;
-            top: 40%;
-            left: 75%;display: none;
-        }
-        body > main > .login > div:nth-child(19){
-            position: absolute;
-            top: 90%;
-            left: 75%;
-        }
-        body > main > .login > div:nth-child(20){
-            position: absolute;
-            top: 87%;
-            left: 38%;
-        }
-        body > main > .login > div:nth-child(21){
-            position: absolute;
-            top: 85%;
-            left: 35%;display: none;
-        }
-        body > main > .login > div:nth-child(22){
-            position: absolute;
-            top: 85%;
-            left: 22%;display: none;
-        }
+    }
+    body>main>.login>div:nth-child(2) {
+        position: absolute;
+        top: 65%;
+        left: 1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(3) {
+        position: absolute;
+        top: 40%;
+        left: 1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(4) {
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(5) {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+    body>main>.login>div:nth-child(6) {
+        position: absolute;
+        top: 1%;
+        left: 60%;
+    }
+    body>main>.login>div:nth-child(7) {
+        position: absolute;
+        top: 88%;
+        left: 2%;
+    }
+    body>main>.login>div:nth-child(8) {
+        position: absolute;
+        top: 6%;
+        left: 85%;
+        width: 100px;
+    }
+    body>main>.login>div:nth-child(9) {
+        position: absolute;
+        top: 2%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(10) {
+        position: absolute;
+        top: 1%;
+        left: 45%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(11) {
+        position: absolute;
+        top: 2%;
+        left: 60%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(12) {
+        position: absolute;
+        top: 50%;
+        left: 92%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(13) {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(14) {
+        position: absolute;
+        top: 30%;
+        left: 92%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(15) {
+        position: absolute;
+        top: 70%;
+        left: 92%;
+        width: 70px;
+    }
+    body>main>.login>div:nth-child(16) {
+        position: absolute;
+        top: 85%;
+        left: 77%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(17) {
+        position: absolute;
+        top: 80%;
+        left: 90%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(18) {
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(19) {
+        position: absolute;
+        top: 90%;
+        left: 75%;
+    }
+    body>main>.login>div:nth-child(20) {
+        position: absolute;
+        top: 87%;
+        left: 38%;
+    }
+    body>main>.login>div:nth-child(21) {
+        position: absolute;
+        top: 85%;
+        left: 35%;
+        display: none;
+    }
+    body>main>.login>div:nth-child(22) {
+        position: absolute;
+        top: 85%;
+        left: 22%;
+        display: none;
+    }
+    body>main>.login>.container-fluid {
+        width: 80% !important;
+    }
+    body>main>.login>.container-fluid .row {
+        width: 88% !important;
+    }
+    body>main>.login>.container-fluid .row:nth-child(3)~.row {
+        width: 180px !important;
+    }
+}
 
-        body > main > .login > .container-fluid{
-            width: 80% !important;
-        }
-        body > main > .login > .container-fluid .row{
-            width: 88% !important;
-        }
-        body > main > .login > .container-fluid .row:nth-child(3) ~ .row{
-            width: 180px !important;
-        }
+@media all and (min-width:1024px) and (max-width:2560px) {
+    body>main>.login>.container-fluid .row .col div label {
+        top: 5px;
     }
-    @media all and (min-width:1024px) and (max-width:2560px){
-        body > main > .login > .container-fluid .row .col div label{
-            top: 5px;
-        }
-    }
+}
