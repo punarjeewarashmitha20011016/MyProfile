@@ -1,5 +1,7 @@
 var saveCustomer = $("#saveCustomer");
-var cusUpdateBtn = $('#cusUpdateBtn');
+var updateCustomer = $('#cusUpdateBtn');
+var deleteCustomer = $('#cusDeleteBtn');
+
 var customerSearchBtn = $('#customerSearchBtn');
 var cusId = $("#cusId");
 var cusName = $("#cusName");
@@ -21,7 +23,7 @@ var cusInputsArr = [cusId, cusName, cusContactNo, cusNic, cusAddress];
 cusId.keyup(function (e) {
     let index = 0;
     var cusIdLbl = $("#cusIdLabelInCustomers span");
-    if (validate(cusIdPattern, cusInputsArr, index, e, saveCustomer) == true) {
+    if (validate(cusIdPattern, cusInputsArr, index, e, saveCustomer,updateCustomer,deleteCustomer) == true) {
         cusIdLbl.text("Id");
     } else {
         cusIdLbl.text("Please use the given format (C-001)");
@@ -31,7 +33,7 @@ cusId.keyup(function (e) {
 cusName.keyup(function (e) {
     let index = 1;
     var cusNameLbl = $("#cusNameLabelInCustomers span");
-    if (validate(cusNamePattern, cusInputsArr, index, e, saveCustomer) == true) {
+    if (validate(cusNamePattern, cusInputsArr, index, e, saveCustomer,updateCustomer,deleteCustomer) == true) {
         cusNameLbl.css('font-size', 'unset');
         cusNameLbl.text("Name");
     } else {
@@ -43,7 +45,7 @@ cusName.keyup(function (e) {
 cusContactNo.keyup(function (e) {
     let index = 2;
     var cusContactLbl = $("#cusContactLabelInCustomers span");
-    if (validate(cusContactPattern, cusInputsArr, index, e, saveCustomer) == true) {
+    if (validate(cusContactPattern, cusInputsArr, index, e, saveCustomer,updateCustomer,deleteCustomer) == true) {
         cusContactLbl.text("Contact No");
     } else {
         cusContactLbl.text("Please use only 10 digits");
@@ -53,7 +55,7 @@ cusContactNo.keyup(function (e) {
 cusNic.keyup(function (e) {
     let index = 3;
     var cusNicLbl = $("#cusNicLabelInCustomers span");
-    if (validate(cusNicPattern, cusInputsArr, index, e, saveCustomer) == true) {
+    if (validate(cusNicPattern, cusInputsArr, index, e, saveCustomer,updateCustomer,deleteCustomer) == true) {
         cusNicLbl.text("Nic");
     } else {
         cusNicLbl.text("Please use only valid Nic numbers");
@@ -63,7 +65,7 @@ cusNic.keyup(function (e) {
 cusAddress.keyup(function (e) {
     let index = 4;
     var cusAddressLbl = $("#cusAddressLabelInCustomers span");
-    if (validate(cusAddressPattern, cusInputsArr, index, e, saveCustomer) == true) {
+    if (validate(cusAddressPattern, cusInputsArr, index, e, saveCustomer,updateCustomer,deleteCustomer) == true) {
         cusAddressLbl.text("Address");
     } else {
         cusAddressLbl.text("Please use only these special characters (.,/)");
@@ -91,22 +93,21 @@ function setDataToCustomerTable() {
     $("#tblCus tbody tr").remove();
     for (let i = 0; i < customerArray.length; i++) {
         console.log("Cistomer table row")
-        tblCusBody.append("<tr><td>" + (i + 1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
+        tblCusBody.append("<tr><td>" + (i + 1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
     };
 }
 
-cusUpdateBtn.click(function () {
+updateCustomer.click(function () {
     for (let i = 0; i < customerArray.length; i++) {
         if (customerArray[i].getCustomerId() == cusId.val()) {
             customerArray[i].setCustomerName(cusName.val());
             customerArray[i].setCustomerContactNo(cusContactNo.val());
             customerArray[i].setCustomerNic(cusNic.val());
             customerArray[i].setCustomerAddress(cusAddress.val());
-            let rowNoToUpdate = i + 1;
             $("#tblCus tbody tr").filter(function () {
                 rowNoToUpdate = $(this).children("td:nth-child(1)").text();
                 if ($(this).children("td:nth-child(2)").text() == customerArray[i].getCustomerId()) {
-                    $(this).replaceWith("<tr><td>" + rowNoToUpdate + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
+                    $(this).replaceWith("<tr><td>" + (i+1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
                 }
             })
             clearFieldsInCustomer();

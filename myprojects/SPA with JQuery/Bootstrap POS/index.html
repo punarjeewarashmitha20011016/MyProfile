@@ -463,6 +463,12 @@
                             <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Delete Item</button>
                         </div>
                     </div>
+
+                    <div class="col position-relative">
+                        <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 150px;">
+                            <button id="searchItemBtn" class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Search Item</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
                     <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
@@ -541,7 +547,7 @@
                     </div>
                     <div class="col position-relative">
                         <div class="col position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;width: 170px;">
-                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete</button>
+                            <button id="cusDeleteBtn" class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;">Delete</button>
                         </div>
                     </div>
 
@@ -722,6 +728,7 @@
     <script src="assets/js/script.js"></script>
     <script src="model/Customer.js"></script>
     <script src="db/CustomerDb.js"></script>
+    <script src="model/Item.js"></script>
     <script src="db/ItemDb.js"></script>
     <script src="util/Validator.js"></script>
     <script src="controller/customerController.js"></script>
