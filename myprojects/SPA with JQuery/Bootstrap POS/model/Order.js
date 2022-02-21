@@ -47,7 +47,7 @@ function Order(orderId, customerId, orderDate, orderTime, discount, totalAmount)
         return __orderDate;
     }
 
-    this.getOrdeTime = function() {
+    this.getOrderTime = function() {
         return __orderTime;
     }
 

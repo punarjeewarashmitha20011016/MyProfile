@@ -233,6 +233,7 @@ addToCartBtn.click(function() {
     }
 
     clearSelectedRowFromTheCart();
+    discardOrder();
 });
 
 function clearSelectedRowFromTheCart() {
@@ -363,4 +364,20 @@ function deducatQuantityOfItemsOfPurchased(addToCartList) {
     }
 }
 
-//save order Details an add data to tables
+function disableAllBtns() {
+    addToCartBtn.prop('disabled', true);
+    clearCartBtn.prop('disabled', true);
+    purchaseBtn.prop('disabled', true);
+    discardBtn.prop('disabled', true);
+}
+
+function discardOrder() {
+    discardBtn.off('click');
+    discardBtn.click(function() {
+        clearCart();
+        let addToCartTbody = $('#addToCartTable > tbody');
+        for (let i = 0; i < addToCartList.length; i++) {
+            addToCartTbody.children('tr').eq(i).remove();
+        }
+    })
+}
