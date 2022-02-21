@@ -5,7 +5,7 @@ function Order(orderId, customerId, orderDate, orderTime, discount, totalAmount)
     var __orderTime = orderTime;
     var __discount = discount;
     var __totalAmount = totalAmount;
-    var __orderDetails = [];
+    var __orderDetails = new Array();
 
     this.setOrderId = function(orderId) {
         __orderId = orderId;

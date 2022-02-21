@@ -213,9 +213,11 @@ addToCartBtn.click(function() {
         purchaseBtn.off('click');
         purchaseBtn.click(function() {
             orderArray.push(order);
-
             for (let i = 0; i < addToCartList.length; i++) {
-                orderDetailsArray.push(new OrderDetails(orderId, addToCartList[i].getItemCode(), addToCartList[i].getItemDescription(), addToCartList[i].getItemQty(), addToCartList[i].getItemPrice(), addToCartList[i].getItemDiscount(), addToCartList[i].getTotalAmount()));
+                for (let j = 0; j < orderArray.length; j++)
+                    if (orderId == orderArray[j].getOrderId()) {
+                        orderArray[j].getOrderDetails().push(new OrderDetails(orderId, addToCartList[i].getItemCode(), addToCartList[i].getItemDescription(), addToCartList[i].getItemQty(), addToCartList[i].getItemPrice(), addToCartList[i].getItemDiscount(), addToCartList[i].getTotalAmount()));
+                    }
             }
 
             deducatQuantityOfItemsOfPurchased(addToCartList)
@@ -224,6 +226,7 @@ addToCartBtn.click(function() {
             orderIdHome.val(orderId);
             setDatToTheItemTable();
             clearCart()
+            setDataToOrderTable();
         });
     } else {
         return;

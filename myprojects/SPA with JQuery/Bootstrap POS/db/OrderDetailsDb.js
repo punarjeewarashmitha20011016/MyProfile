@@ -1,1 +1,0 @@
-var orderDetailsArray = new Array();
