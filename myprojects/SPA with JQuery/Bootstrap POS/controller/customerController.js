@@ -84,23 +84,12 @@ saveCustomer.click(function() {
 
     if (confirm('Do you want to add this customer details.. If yes please enter Ok button.') == true) {
         customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
+        setDataToCustomerTable();
+        clearFieldsInCustomer();
     } else {
         alert('Adding customer details is unsuccessful');
+        clearFieldsInCustomer();
     }
-
-    setDataToCustomerTable();
-    var tblCusRow = $("#tblCus tbody tr");
-    tblCusRow.off("click");
-    tblCusRow.click(function() {
-        console.log("a")
-        cusId.val($(this).children("td:nth-child(2)").text())
-        cusName.val($(this).children("td:nth-child(3)").text())
-        cusContactNo.val($(this).children("td:nth-child(4)").text())
-        cusNic.val($(this).children("td:nth-child(5)").text())
-        cusAddress.val($(this).children("td:nth-child(6)").text())
-    });
-
-    clearFieldsInCustomer();
 });
 
 function setDataToCustomerTable() {
@@ -111,30 +100,40 @@ function setDataToCustomerTable() {
 }
 updateCustomer.off('click');
 updateCustomer.click(function() {
-    for (let i = 0; i < customerArray.length; i++) {
-        if (customerArray[i].getCustomerId() == cusId.val()) {
-            customerArray[i].setCustomerName(cusName.val());
-            customerArray[i].setCustomerContactNo(cusContactNo.val());
-            customerArray[i].setCustomerNic(cusNic.val());
-            customerArray[i].setCustomerAddress(cusAddress.val());
-            $("#tblCus tbody tr").filter(function() {
-                rowNoToUpdate = $(this).children("td:nth-child(1)").text();
-                if ($(this).children("td:nth-child(2)").text() == customerArray[i].getCustomerId()) {
-                    $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
-                }
-            })
-            clearFieldsInCustomer();
+    if (confirm('Do you want to update ' + cusId.val() + ' details....If yes please enter Ok button...') == true) {
+        for (let i = 0; i < customerArray.length; i++) {
+            if (customerArray[i].getCustomerId() == cusId.val()) {
+                customerArray[i].setCustomerName(cusName.val());
+                customerArray[i].setCustomerContactNo(cusContactNo.val());
+                customerArray[i].setCustomerNic(cusNic.val());
+                customerArray[i].setCustomerAddress(cusAddress.val());
+                $("#tblCus tbody tr").filter(function() {
+                    rowNoToUpdate = $(this).children("td:nth-child(1)").text();
+                    if ($(this).children("td:nth-child(2)").text() == customerArray[i].getCustomerId()) {
+                        $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + customerArray[i].getCustomerId() + "</td><td>" + customerArray[i].getCustomerName() + "</td><td>" + customerArray[i].getCustomerNic() + "</td><td>" + customerArray[i].getCustomerContactNo() + "</td><td>" + customerArray[i].getCustomerAddress() + "</td></tr>");
+                    }
+                })
+                clearFieldsInCustomer();
+            }
         }
+    } else {
+        alert('Updating ' + cusId.val() + ' Customer details is unsuccessful');
+        clearFieldsInCustomer();
     }
 });
 
 deleteCustomer.off('click');
 deleteCustomer.click(function() {
-    for (let i = 0; i < customerArray.length; i++) {
-        if (customerArray[i].getCustomerId() == cusId.val()) {
-            customerArray.splice(i, 1);
-            clearFieldsInCustomer();
+    if (confirm('Do you want to delete ' + cusId.val() + ' details...If yes please enter Ok button..') == true) {
+        for (let i = 0; i < customerArray.length; i++) {
+            if (customerArray[i].getCustomerId() == cusId.val()) {
+                customerArray.splice(i, 1);
+                clearFieldsInCustomer();
+            }
         }
+    } else {
+        alert('Deleting ' + cusId.val() + ' details is unsuccessful');
+        clearFieldsInCustomer();
     }
 });
 

@@ -220,7 +220,7 @@ addToCartBtn.click(function() {
                 }
             }
 
-            if (confirm('Do you want to place this order.. If yes please enter Ok button...') == true) {
+            if (confirm('Do you want to place this order = ' + orderIdHome.val() + ' .. If yes please enter Ok button...') == true) {
                 orderArray.push(order);
                 for (let i = 0; i < addToCartList.length; i++) {
                     for (let j = 0; j < orderArray.length; j++)
@@ -237,7 +237,7 @@ addToCartBtn.click(function() {
                 clearCart()
                 setDataToOrderTable();
             } else {
-                alert('Placing order is unsuccessful');
+                alert('Placing order = ' + orderIdHome.val() + ' is unsuccessful');
                 clearFieldsInHomeAfterPurchase();
             }
         });

@@ -95,7 +95,7 @@ saveItemBtn.click(function() {
 
     for (let i = 0; i < itemArray.length; i++) {
         if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
-            alert("This item already exists. Please try again with a different id");
+            alert("This item id " + itemCodeInItems.val() + " already exists. Please try again with a different id");
             clearFieldsInItems();
             return;
         }
@@ -103,13 +103,13 @@ saveItemBtn.click(function() {
 
     if (confirm("Do you want to add this Item.. If yes please enter Ok button") == true) {
         itemArray.push(new Item(itemCodeInItems.val(), itemDescriptionInItems.val(), itemQtyInItems.val(), itemBuyingPriceInItems.val(), itemUnitPriceInItems.val(), discountInItems));
+        setDatToTheItemTable();
+        deleteSelectedRowFromTheItemTable();
+        setDataToItemComboBox();
     } else {
-        alert('Item adding is unsuccessful');
+        alert('Item ' + itemCodeInItems.val() + ' adding is unsuccessful');
+        clearFieldsInItems();
     }
-
-    setDatToTheItemTable();
-    deleteSelectedRowFromTheItemTable();
-    setDataToItemComboBox();
 });
 
 function deleteSelectedRowFromTheItemTable() {
@@ -157,31 +157,42 @@ function searchItemDetails() {
 
 updateItemBtn.off('click');
 updateItemBtn.click(function() {
-    for (let i = 0; i < itemArray.length; i++) {
-        if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
-            itemArray[i].setItemDescription(itemDescriptionInItems.val());
-            itemArray[i].setItemQty(itemQtyInItems.val());
-            itemArray[i].setItemBuyingPrice(itemBuyingPriceInItems.val());
-            itemArray[i].setItemUnitPrice(itemUnitPriceInItems.val());
-            itemArray[i].setItemDiscount(itemDiscountInItems.val());
 
-            $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
-                if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
-                    $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
-                }
-            })
-            clearFieldsInItems();
+    if (confirm('Do you want to update ' + itemCodeInItems.val() + ' item...If yes please enter Ok button..') == true) {
+        for (let i = 0; i < itemArray.length; i++) {
+            if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
+                itemArray[i].setItemDescription(itemDescriptionInItems.val());
+                itemArray[i].setItemQty(itemQtyInItems.val());
+                itemArray[i].setItemBuyingPrice(itemBuyingPriceInItems.val());
+                itemArray[i].setItemUnitPrice(itemUnitPriceInItems.val());
+                itemArray[i].setItemDiscount(itemDiscountInItems.val());
+
+                $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
+                    if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
+                        $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
+                    }
+                })
+                clearFieldsInItems();
+            }
         }
+    } else {
+        alert('Updating ' + itemCodeInItems.val() + ' is unsuccessful');
+        clearFieldsInItems();
     }
 });
 
 deleteItemBtn.off('click');
 deleteItemBtn.click(function() {
-    for (let i = 0; i < itemArray.length; i++) {
-        if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
-            itemArray.splice(i, 1);
-            clearFieldsInItems();
+    if (confirm('Do you want to delete ' + itemCodeInItems.val() + ' details... If yes please enter Ok button..') == true) {
+        for (let i = 0; i < itemArray.length; i++) {
+            if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
+                itemArray.splice(i, 1);
+                clearFieldsInItems();
+            }
         }
+    } else {
+        alert('Deleting ' + itemCodeInItems.val() + ' item is unsuccessful');
+        clearFieldsInItems();
     }
 })
 
