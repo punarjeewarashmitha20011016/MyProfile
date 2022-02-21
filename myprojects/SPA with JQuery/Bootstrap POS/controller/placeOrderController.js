@@ -212,21 +212,34 @@ addToCartBtn.click(function() {
         console.log("Not null")
         purchaseBtn.off('click');
         purchaseBtn.click(function() {
-            orderArray.push(order);
-            for (let i = 0; i < addToCartList.length; i++) {
-                for (let j = 0; j < orderArray.length; j++)
-                    if (orderId == orderArray[j].getOrderId()) {
-                        orderArray[j].getOrderDetails().push(new OrderDetails(orderId, addToCartList[i].getItemCode(), addToCartList[i].getItemDescription(), addToCartList[i].getItemQty(), addToCartList[i].getItemPrice(), addToCartList[i].getItemDiscount(), addToCartList[i].getTotalAmount()));
-                    }
+
+            for (let check = 0; check < orderArray.length; check++) {
+                if (orderArray[check].getOrderId() == orderIdHome.val()) {
+                    alert('This order Id already exists.. Please try again with a different Id');
+                    return;
+                }
             }
 
-            deducatQuantityOfItemsOfPurchased(addToCartList)
-            clearFieldsInHomeAfterPurchase();
-            orderId = getOrderId();
-            orderIdHome.val(orderId);
-            setDatToTheItemTable();
-            clearCart()
-            setDataToOrderTable();
+            if (confirm('Do you want to place this order.. If yes please enter Ok button...') == true) {
+                orderArray.push(order);
+                for (let i = 0; i < addToCartList.length; i++) {
+                    for (let j = 0; j < orderArray.length; j++)
+                        if (orderId == orderArray[j].getOrderId()) {
+                            orderArray[j].getOrderDetails().push(new OrderDetails(orderId, addToCartList[i].getItemCode(), addToCartList[i].getItemDescription(), addToCartList[i].getItemQty(), addToCartList[i].getItemPrice(), addToCartList[i].getItemDiscount(), addToCartList[i].getTotalAmount()));
+                        }
+                }
+
+                deducatQuantityOfItemsOfPurchased(addToCartList)
+                clearFieldsInHomeAfterPurchase();
+                orderId = getOrderId();
+                orderIdHome.val(orderId);
+                setDatToTheItemTable();
+                clearCart()
+                setDataToOrderTable();
+            } else {
+                alert('Placing order is unsuccessful');
+                clearFieldsInHomeAfterPurchase();
+            }
         });
     } else {
         return;

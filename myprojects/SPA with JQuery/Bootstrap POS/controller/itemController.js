@@ -92,7 +92,21 @@ saveItemBtn.click(function() {
     } else {
         discountInItems = itemDiscountInItems.val();
     }
-    itemArray.push(new Item(itemCodeInItems.val(), itemDescriptionInItems.val(), itemQtyInItems.val(), itemBuyingPriceInItems.val(), itemUnitPriceInItems.val(), discountInItems));
+
+    for (let i = 0; i < itemArray.length; i++) {
+        if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
+            alert("This item already exists. Please try again with a different id");
+            clearFieldsInItems();
+            return;
+        }
+    }
+
+    if (confirm("Do you want to add this Item.. If yes please enter Ok button") == true) {
+        itemArray.push(new Item(itemCodeInItems.val(), itemDescriptionInItems.val(), itemQtyInItems.val(), itemBuyingPriceInItems.val(), itemUnitPriceInItems.val(), discountInItems));
+    } else {
+        alert('Item adding is unsuccessful');
+    }
+
     setDatToTheItemTable();
     deleteSelectedRowFromTheItemTable();
     setDataToItemComboBox();

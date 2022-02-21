@@ -74,7 +74,20 @@ cusAddress.keyup(function(e) {
 
 saveCustomer.off('click');
 saveCustomer.click(function() {
-    customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
+    for (let i = 0; i < customerArray.length; i++) {
+        if (customerArray[i].getCustomerId() == cusId.val()) {
+            alert('This customer Id exists. Please enter a different Id');
+            clearFieldsInItems();
+            return;
+        }
+    }
+
+    if (confirm('Do you want to add this customer details.. If yes please enter Ok button.') == true) {
+        customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
+    } else {
+        alert('Adding customer details is unsuccessful');
+    }
+
     setDataToCustomerTable();
     var tblCusRow = $("#tblCus tbody tr");
     tblCusRow.off("click");
