@@ -235,14 +235,12 @@
                 <div class="row container-fluid position-absolute" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;height: 25%;">
                     <div class="col-12 position-relative col-sm-8">
                         <div class="form-floating position-relative" style="top: 30px;">
-                            <input type="text" class="form-control bg-transparent border-3" id="floatingPasswordOrders1" placeholder="Name" style="height: 40px;width: 760px  ">
-                            <label for="floatingPasswordOrders1"><span>Search Order by Order Id, Customer Id</span></label>
+                            <input type="text" class="form-control bg-transparent border-3" id="searchOrderId" placeholder="Name" style="height: 40px;width: 760px  ">
+                            <label for="searchOrderId"><span>Search Order by Order Id, Customer Id</span></label>
                         </div>
                     </div>
                     <div class="col-12 position-absolute col-sm" style="top: 30px; left: 79.5%;">
-                        <a href="#" id="viewOrderDetailsBtn">
-                            <button class="btn btn-secondary">View Order Details</button>
-                        </a>
+                        <button id="viewOrderDetailsBtn" class="btn btn-secondary">View Order Details</button>
                     </div>
                 </div>
                 <div class="row position-absolute border-5 shadow" style="top: 25%; left: 0;right: 0;margin: auto;height: 400px;width: 93%;">
@@ -251,8 +249,8 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Customer Id</th>
                                     <th scope="col">Order Id</th>
+                                    <th scope="col">Customer Id</th>
                                     <th scope="col">Order Date</th>
                                     <th scope="col">Order Time</th>
                                     <th scope="col">Discount</th>
@@ -272,7 +270,7 @@
             <div class="container-fluid position-absolute shadow">
                 <div class="row position-absolute" style="top: 5%; left: 0;right: 0;margin: auto;height: 90%;width: 90%;">
                     <div class="col shadow position-relative" style="height: 100%;overflow: auto">
-                        <table class="table table-hover">
+                        <table id="orderDetailsTable" class="table table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -633,6 +631,7 @@
     <script src="controller/ItemController.js"></script>
     <script src="controller/PlaceOrderController.js"></script>
     <script src="controller/OrderController.js"></script>
+    <script src="controller/OrderDetailsController.js"></script>
 </body>
 
 </html>

@@ -114,7 +114,7 @@ customerNav.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "block");
 });
-orderDetailsBtn.click(function() {
+orderDetailsBtn.dblclick(function() {
     customerSection.css("display", "none");
     itemsSection.css("display", "none");
     ordersSection.css("display", "none");
