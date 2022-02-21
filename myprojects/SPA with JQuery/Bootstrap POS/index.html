@@ -80,7 +80,7 @@
 
                         <div class="form-floating position-relative" style="top: 20px;">
                             <input type="text" class="form-control bg-transparent" id="customerIdHome" placeholder="Id" style="height: 40px;">
-                            <label for="customerIdHome"><span>Id</span></label>
+                            <label for="customerIdHome" style="width: 100%;"><span id="customerIdHomeLbl">Id</span></label>
                         </div>
                         <div class="form-floating position-relative" style="top: 30px;">
                             <input type="text" class="form-control bg-transparent" id="customerNameHome" placeholder="Name" style="height: 40px;">
@@ -105,9 +105,7 @@
                             <div class="col border">
                                 <div class="form-floating position-relative" style="top: 20px;">
                                     <select class="form-select bg-transparent" id="itemCodeHome" aria-label="Floating label select example" style="height: 40px; width: 100%;">
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            
                                         </select>
                                     <label for="itemCodeHome">Code</label>
                                 </div>
@@ -127,7 +125,7 @@
                             <div class="col border position-relative">
                                 <div class="form-floating position-relative" style="top: 20px;">
                                     <input type="tel" class="form-control  bg-transparent" id="itemQtyOnHandHome" placeholder="Tel" style="height: 40px;width: 100%;">
-                                    <label for="itemQtyOnHandHome"><span>Qty On Hand</span></label>
+                                    <label for="itemQtyOnHandHome" style="width: 100%;"><span id="qtyOnHandLbl">Qty On Hand</span></label>
                                 </div>
 
                                 <div class="form-floating position-relative" style="top: 30px;">
@@ -137,7 +135,7 @@
 
                                 <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;width: 120px;bottom: 110px;">
                                     <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;" id="addToCartBtn">Add To Cart</button>
-                                    <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
+                                    <button id="clearCartBtn" class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;top: 50px;">Clear Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -221,10 +219,10 @@
 
                 <div class="row position-absolute end-0 w-25 me-5" style="margin-top: 60px;">
                     <div class="col col-sm">
-                        <button class="btn btn-outline-success w-100">Purchase</button>
+                        <button id="purchaseBtn" class="btn btn-outline-success w-100">Purchase</button>
                     </div>
                     <div class="col col-sm">
-                        <button class="btn btn-outline-danger w-100">Discard</button>
+                        <button id="discardBtn" class="btn btn-outline-danger w-100">Discard</button>
                     </div>
                 </div>
             </div>
@@ -262,79 +260,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>O-001</td>
-                                    <td>C-001</td>
-                                    <td>01/20/2022</td>
-                                    <td>10:58 AM</td>
-                                    <td>0</td>
-                                    <td>870.0</td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>O-002</td>
-                                    <td>C-002</td>
-                                    <td>01/20/2022</td>
-                                    <td>11:58 AM</td>
-                                    <td>0</td>
-                                    <td>1870.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>O-003</td>
-                                    <td>C-003</td>
-                                    <td>01/20/2022</td>
-                                    <td>12:58 PM</td>
-                                    <td>0</td>
-                                    <td>870.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>O-004</td>
-                                    <td>C-005</td>
-                                    <td>01/20/2022</td>
-                                    <td>01:20 PM</td>
-                                    <td>0</td>
-                                    <td>270.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>O-005</td>
-                                    <td>C-005</td>
-                                    <td>01/20/2022</td>
-                                    <td>01:58 PM</td>
-                                    <td>0</td>
-                                    <td>870.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>O-006</td>
-                                    <td>C-001</td>
-                                    <td>01/20/2022</td>
-                                    <td>02:58 AM</td>
-                                    <td>0</td>
-                                    <td>2870.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>O-007</td>
-                                    <td>C-002</td>
-                                    <td>01/20/2022</td>
-                                    <td>03:58 PM</td>
-                                    <td>0</td>
-                                    <td>870.0</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>O-008</td>
-                                    <td>C-008</td>
-                                    <td>01/20/2022</td>
-                                    <td>05:58 PM</td>
-                                    <td>0</td>
-                                    <td>870.0</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -351,7 +276,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Customer Id</th>
+                                    <th scope="col">Order Id</th>
                                     <th scope="col">Item Code</th>
                                     <th scope="col">Item Description</th>
                                     <th scope="col">Item Qty</th>
@@ -361,38 +286,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>C-001</td>
-                                    <td>I-001</td>
-                                    <td>Maliban Piti</td>
-                                    <td>1</td>
-                                    <td>370.0</td>
-                                    <td>0</td>
-                                    <td>370.0</td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>C-001</td>
-                                    <td>I-002</td>
-                                    <td>Kiri samba kg</td>
-                                    <td>1</td>
-                                    <td>400.0</td>
-                                    <td>0</td>
-                                    <td>400.0</td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>C-001</td>
-                                    <td>I-003</td>
-                                    <td>Maliban Chocalate Biscuit</td>
-                                    <td>1</td>
-                                    <td>100.0</td>
-                                    <td>0</td>
-                                    <td>100.0</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -731,7 +624,12 @@
     <script src="db/CustomerDb.js"></script>
     <script src="model/Item.js"></script>
     <script src="db/ItemDb.js"></script>
+    <script src="db/OrderDb.js"></script>
+    <script src="model/Order.js"></script>
+    <script src="db/OrderDetailsDb.js"></script>
+    <script src="model/OrderDetails.js"></script>
     <script src="util/Validator.js"></script>
+    <script src="model/tm/AddToCartTm.js"></script>
     <script src="controller/customerController.js"></script>
     <script src="controller/itemController.js"></script>
     <script src="controller/placeOrderController.js"></script>

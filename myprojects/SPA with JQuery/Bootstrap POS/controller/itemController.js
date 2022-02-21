@@ -93,8 +93,9 @@ saveItemBtn.click(function() {
         discountInItems = itemDiscountInItems.val();
     }
     itemArray.push(new Item(itemCodeInItems.val(), itemDescriptionInItems.val(), itemQtyInItems.val(), itemBuyingPriceInItems.val(), itemUnitPriceInItems.val(), discountInItems));
-    setDatToTheItemTble();
+    setDatToTheItemTable();
     deleteSelectedRowFromTheItemTable();
+    setDataToItemComboBox();
 });
 
 function deleteSelectedRowFromTheItemTable() {
@@ -103,7 +104,7 @@ function deleteSelectedRowFromTheItemTable() {
     tableRow.click(function() {
         itemCodeInItems.val($(this).children("td:nth-child(2)").text());
         itemDescriptionInItems.val($(this).children("td:nth-child(3)").text());
-        itemQtyInItems.val($(this).children("td:nth-child(4)")[0].text());
+        itemQtyInItems.val($(this).children("td:nth-child(4)").text());
         itemBuyingPriceInItems.val($(this).children("td:nth-child(5)").text());
         itemUnitPriceInItems.val($(this).children("td:nth-child(6)").text());
         itemDiscountInItems.val($(this).children("td:nth-child(7)").text());
@@ -111,7 +112,7 @@ function deleteSelectedRowFromTheItemTable() {
     clearFieldsInItems();
 }
 
-function setDatToTheItemTble() {
+function setDatToTheItemTable() {
     $(".Items .container-fluid div:nth-child(3) div table tbody tr").remove();
     for (let i = 0; i < itemArray.length; i++) {
         tBodyInItems.append("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
@@ -151,7 +152,6 @@ updateItemBtn.click(function() {
             itemArray[i].setItemDiscount(itemDiscountInItems.val());
 
             $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
-                rowNoToUpdate = $(this).children("td:nth-child(1)").text();
                 if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
                     $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
                 }
