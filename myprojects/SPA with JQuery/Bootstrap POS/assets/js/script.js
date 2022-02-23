@@ -18,6 +18,9 @@ var customerSection = $("#customerSection");
 var loginSection = $("#loginSection");
 var signupSection = $("#signupSection");
 var headerNav = $("#headerNav");
+var signUpAdmin = $('.adminSignup');
+var signupForAdminBtn = $('#signupForAdminBtn');
+var logoutBtnInAdminSignup = $('#logoutBtnInAdminSignup');
 
 
 
@@ -30,6 +33,7 @@ loginBtn.click(function() {
     loginSection.css("display", "none")
     signupSection.css("display", "none")
     headerNav.css("display", "block")
+    signUpAdmin.css("display", "none")
 });
 signupBtnInLogin.click(function() {
     homeSection.css("display", "none");
@@ -40,7 +44,31 @@ signupBtnInLogin.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "block");
     headerNav.css("display", "none");
+    signUpAdmin.css("display", "none")
 });
+signupForAdminBtn.click(function() {
+    homeSection.css("display", "none");
+    ordersSection.css("display", "none");
+    orderDetailsSection.css("display", "none");
+    itemsSection.css("display", "none");
+    customerSection.css("display", "none");
+    loginSection.css("display", "none");
+    signupSection.css("display", "none");
+    headerNav.css("display", "none");
+    signUpAdmin.css("display", "block")
+});
+
+logoutBtnInAdminSignup.click(function() {
+    homeSection.css("display", "none");
+    ordersSection.css("display", "none");
+    orderDetailsSection.css("display", "none");
+    itemsSection.css("display", "none");
+    customerSection.css("display", "none");
+    loginSection.css("display", "block");
+    signupSection.css("display", "none");
+    headerNav.css("display", "none");
+    signUpAdmin.css("display", "none")
+})
 
 logoutBtnInSignup.click(function() {
     homeSection.css("display", "none");
@@ -51,6 +79,7 @@ logoutBtnInSignup.click(function() {
     loginSection.css("display", "block");
     signupSection.css("display", "none");
     headerNav.css("display", "none");
+    signUpAdmin.css("display", "none")
 });
 logoutBtn.click(function() {
     homeSection.css("display", "none");
@@ -61,6 +90,7 @@ logoutBtn.click(function() {
     loginSection.css("display", "block");
     signupSection.css("display", "none");
     headerNav.css("display", "none");
+    signUpAdmin.css("display", "none")
 });
 signupBtn.click(function() {
     homeSection.css("display", "none");
@@ -71,6 +101,7 @@ signupBtn.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "block");
     headerNav.css("display", "none");
+    signUpAdmin.css("display", "none")
 });
 
 homeNav.click(function() {
@@ -82,6 +113,7 @@ homeNav.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "none");
     headerNav.css("display", "block");
+    signUpAdmin.css("display", "none")
 });
 
 ordersNav.click(function() {
@@ -93,6 +125,7 @@ ordersNav.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "none");
     headerNav.css("display", "block");
+    signUpAdmin.css("display", "none")
 });
 itemsNav.click(function() {
     itemsSection.css("display", "block");
@@ -103,6 +136,7 @@ itemsNav.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "none");
     headerNav.css("display", "block");
+    signUpAdmin.css("display", "none")
 });
 customerNav.click(function() {
     customerSection.css("display", "block");
@@ -113,6 +147,7 @@ customerNav.click(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "none");
     headerNav.css("display", "block");
+    signUpAdmin.css("display", "none")
 });
 orderDetailsBtn.dblclick(function() {
     customerSection.css("display", "none");
@@ -123,6 +158,7 @@ orderDetailsBtn.dblclick(function() {
     loginSection.css("display", "none");
     signupSection.css("display", "none");
     headerNav.css("display", "block");
+    signUpAdmin.css("display", "none")
 });
 
 

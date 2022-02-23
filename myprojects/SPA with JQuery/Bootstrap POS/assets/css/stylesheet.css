@@ -210,9 +210,19 @@ body>main>.Signup>.container-fluid>.row>.row {
     margin-top: 30px !important;
 }
 
-body>main>.Signup a {
+body>main>.Signup a:nth-child(2) {
     position: absolute !important;
-    right: 50px;
+    right: 10%;
+    top: 30px;
+    width: 3.2% !important;
+    height: 40px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+body>main>.Signup a:nth-child(3) {
+    position: absolute !important;
+    right: 5%;
     top: 30px;
     width: 38px;
     height: 40px;
@@ -220,35 +230,54 @@ body>main>.Signup a {
     transition: all 1s;
 }
 
-body>main>.Signup>#logoutBtnInSignup:hover {
+body>main>.Signup>a:hover {
     transition: all 1s;
-    width: 100px !important;
+    width: 8% !important;
 }
 
-body>main>.Signup>#logoutBtnInSignup:hover h3 {
-    right: 2px !important;
+body>main>.Signup>a:nth-child(3):hover h3 {
     transition: all 1s;
+    right: 15% !important;
 }
 
-body>main>.Signup>#logoutBtnInSignup div {
+body>main>.Signup>a:nth-child(2):hover {
+    transition: all 1s;
+    width: 12.5% !important;
+}
+
+body>main>.Signup>a:nth-child(2):hover h3 {
+    transition: all 1s;
+    right: 7% !important;
+}
+
+body>main>.Signup>a:hover h3 {
+    transition: all 1s;
+    right: 5% !important;
+}
+
+body>main>.Signup>a div {
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
 }
 
-body>main>.Signup>#logoutBtnInSignup div h3 {
-    position: absolute;
+body>main>.Signup>a div h3 {
+    position: absolute !important;
     top: 0 !important;
     bottom: 7px !important;
     margin: auto !important;
     height: max-content;
     position: absolute !important;
-    right: -52px !important;
+    right: -135% !important;
     color: black !important;
-    transition: all 1s;
+    transition: all 1s !important;
 }
 
-body>main>.Signup>#logoutBtnInSignup i {
+body>main>.Signup>a:nth-child(2) div h3 {
+    right: -240% !important;
+}
+
+body>main>.Signup>a i {
     color: black !important;
     font-size: 35px !important;
 }
@@ -257,6 +286,79 @@ body>main>.Signup label {
     position: absolute;
     top: 5px !important;
 }
+
+body>main>.login>div img {
+    width: 60%;
+}
+
+
+/* Signup Admin */
+
+body>main>.adminSignup {
+    position: relative;
+    height: 100vh !important;
+}
+
+body>main>.adminSignup>.container-fluid {
+    height: 70% !important;
+    width: 70% !important;
+}
+
+body>main>.adminSignup>.container-fluid>.row>.row {
+    position: relative;
+    margin-top: 30px !important;
+}
+
+body>main>.adminSignup a {
+    position: absolute !important;
+    right: 5%;
+    top: 30px;
+    width: 38px;
+    height: 40px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+body>main>.adminSignup>a:hover {
+    transition: all 1s;
+    width: 8% !important;
+}
+
+body>main>.adminSignup>a:hover h3 {
+    transition: all 1s;
+    right: 5% !important;
+}
+
+body>main>.adminSignup>a div {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+body>main>.adminSignup>a div h3 {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 7px !important;
+    margin: auto !important;
+    height: max-content;
+    position: absolute !important;
+    right: -135% !important;
+    color: black !important;
+    transition: all 1s !important;
+}
+
+body>main>.adminSignup>a i {
+    color: black !important;
+    font-size: 35px !important;
+}
+
+body>main>.adminSignup label {
+    position: absolute;
+    top: 5px !important;
+}
+
+
+/* Signup Admin End */
 
 body>main>.login>div img {
     width: 60%;

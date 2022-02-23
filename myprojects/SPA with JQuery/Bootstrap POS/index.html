@@ -477,22 +477,22 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingId" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingId" class="position-absolute"><span>Id</span></label>
+                                <input type="text" class="form-control bg-transparent" id="signUpId" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpIdLbl" for="signUpId" class="position-absolute"><span style="width: 100%;">Id</span></label>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingName" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingName" class="position-absolute"><span>Name</span></label>
+                                <input type="text" class="form-control bg-transparent" id="signUpName" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpNameLbl" for="signUpName" class="position-absolute"><span style="width: 100%;">Name</span></label>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingNic" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingNic" class="position-absolute"><span>NIC</span></label>
+                                <input type="text" class="form-control bg-transparent" id="signUpNic" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpNicLbl" for="signUpNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
                             </div>
                         </div>
                     </div>
@@ -501,22 +501,22 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="tel" class="form-control bg-transparent" id="floatingContactNo" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingContactNo" class="position-absolute"><span>Contact No</span></label>
+                                <input type="tel" class="form-control bg-transparent" id="signUpContactNo" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpContactNoLbl" for="signUpContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingUserName" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingUserName" class="position-absolute"><span>User Name</span></label>
+                                <input type="text" class="form-control bg-transparent" id="signUpUserName" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpUserNameLbl" for="signUpUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-12 col-md">
                             <div class="form-floating position-relative shadow">
-                                <input type="password" class="form-control bg-transparent" id="floatingPasswordLogin" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingPasswordLogin" class="position-absolute"><span>Password</span></label>
+                                <input type="password" class="form-control bg-transparent" id="signUpPassword" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpPasswordLbl" for="signUpPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
                             </div>
                         </div>
                     </div>
@@ -524,8 +524,8 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="floatingAddress" placeholder="Tel" style="height: 50px;">
-                                <label for="floatingAddress" class="position-absolute"><span>Address</span></label>
+                                <input type="text" class="form-control bg-transparent" id="signUpAddress" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAddressLbl" for="signUpAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
                             </div>
                         </div>
                     </div>
@@ -533,18 +533,107 @@
 
                 <div class="row position-absolute border" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
                     <div class="col-6 col-sm-6 col-md">
-                        <button class="btn btn-outline-success" style="width: 100%;">Add</button>
+                        <button id="addSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
                     </div>
                     <div class="col-6 col-sm-6 col-md">
-                        <button class="btn btn-outline-secondary" style="width: 100%;">Update</button>
+                        <button id="updateSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
                     </div>
                     <div class="col">
-                        <button class="btn btn-outline-danger" style="width: 100%;">Delete</button>
+                        <button id="deleteSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
                     </div>
                 </div>
             </div>
 
+            <a href="#" id="signupForAdminBtn">
+                <div class="logout position-absolute d-none d-lg-block">
+                    <i class="fas fa-user-plus text-white fs-3 position-absolute"></i>
+                    <h3 class="position-absolute text-white fs-6">Admin Sign Up</h3>
+                </div>
+            </a>
+
             <a href="#" id="logoutBtnInSignup">
+                <div class="logout position-absolute d-none d-lg-block">
+                    <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
+                    <h3 class="position-absolute text-white fs-6">Logout</h3>
+                </div>
+            </a>
+        </section>
+
+        <!--  Signup for Admin section -->
+        <section class="adminSignup container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="signUpAdminId" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminIdLbl" for="signUpAdminId" class="position-absolute"><span style="width: 100%;">Id</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="signUpAdminName" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminNameLbl" for="signUpAdminName" class="position-absolute"><span style="width: 100%;">Name</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="signUpAdminNic" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminNicLbl" for="signUpAdminNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="tel" class="form-control bg-transparent" id="signUpAdminContactNo" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminContactNoLbl" for="signUpAdminContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="signUpAdminUserName" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminUserNameLbl" for="signUpAdminUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md">
+                            <div class="form-floating position-relative shadow">
+                                <input type="password" class="form-control bg-transparent" id="signUpAdminPassword" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminPasswordLbl" for="signUpAdminPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating position-relative shadow">
+                                <input type="text" class="form-control bg-transparent" id="signUpAdminAddress" placeholder="Tel" style="height: 50px;">
+                                <label id="signUpAdminAddressLbl" for="signUpAdminAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row position-absolute border" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                    <div class="col-6 col-sm-6 col-md">
+                        <button id="addAdminSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md">
+                        <button id="updateAdminSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
+                    </div>
+                    <div class="col">
+                        <button id="deleteAdminSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" id="logoutBtnInAdminSignup">
                 <div class="logout position-absolute d-none d-lg-block">
                     <i class="fas fa-sign-out-alt text-white fs-3 position-absolute"></i>
                     <h3 class="position-absolute text-white fs-6">Logout</h3>
@@ -615,9 +704,10 @@
 
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/loginLogout.js"></script>
     <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/loginLogout.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="util/Validator.js"></script>
     <script src="model/Customer.js"></script>
     <script src="db/CustomerDb.js"></script>
     <script src="model/Item.js"></script>
@@ -625,13 +715,18 @@
     <script src="db/OrderDb.js"></script>
     <script src="model/Order.js"></script>
     <script src="model/OrderDetails.js"></script>
-    <script src="util/Validator.js"></script>
     <script src="model/tm/AddToCartTm.js"></script>
+    <script src="model/Signup.js"></script>
+    <script src="db/SignupDetailsDb.js"></script>
+    <script src="db/AdminSignupDb.js"></script>
+    <script src="model/AdminSignup.js"></script>
     <script src="controller/CustomerController.js"></script>
     <script src="controller/ItemController.js"></script>
     <script src="controller/PlaceOrderController.js"></script>
     <script src="controller/OrderController.js"></script>
     <script src="controller/OrderDetailsController.js"></script>
+    <script src="controller/SignupFormController.js"></script>
+    <script src="controller/AdminFormSignupController.js"></script>
 </body>
 
 </html>
