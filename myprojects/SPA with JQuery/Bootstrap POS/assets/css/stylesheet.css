@@ -185,7 +185,7 @@ body>main>section>.container-fluid>.row>div>div label {
     font-size: 16px;
 }
 
-body>main>.Items>.container-fluid>.row>div div label>span {
+body>main>.ManageManageItems>.container-fluid>.row>div div label>span {
     position: absolute;
     top: 7px;
 }
@@ -247,7 +247,7 @@ body>main>.Signup>a:nth-child(2):hover {
 
 body>main>.Signup>a:nth-child(2):hover h3 {
     transition: all 1s;
-    right: 7% !important;
+    right: 2% !important;
 }
 
 body>main>.Signup>a:hover h3 {
@@ -274,7 +274,7 @@ body>main>.Signup>a div h3 {
 }
 
 body>main>.Signup>a:nth-child(2) div h3 {
-    right: -240% !important;
+    right: -251% !important;
 }
 
 body>main>.Signup>a i {
@@ -627,47 +627,47 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     body>main>.Orders div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
         font-size: 12px !important;
     }
-    /*Items 320px queries*/
-    body>main>.Items {
+    /*ManageItems 320px queries*/
+    body>main>.ManageItems {
         height: 105vh !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1) {
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) {
         width: 100% !important;
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
         font-size: 14px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(3) {
         top: 51% !important;
         height: 270px !important;
         width: 90% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2) {
         position: relative !important;
         width: 93% !important;
         height: 100px !important;
         top: 10% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -677,14 +677,14 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2) {
         position: absolute !important;
         right: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -694,7 +694,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3) {
         position: absolute !important;
         top: unset !important;
         left: 0 !important;
@@ -703,7 +703,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(4) {
         position: absolute !important;
         top: unset !important;
         right: 0 !important;
@@ -712,7 +712,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -751,6 +751,77 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     body>main>.Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span {
         font-size: 16px !important;
     }
+    /* Signup Details 320px */
+    body>main>#signupDetailsSection #firstAdminRow {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    /* Signup Details end */
 }
 
 @media all and (min-width: 320px) and (max-width: 375px) {
@@ -855,6 +926,77 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     body>main>.Signup div:nth-child(1) div:nth-child(1) div:nth-child(1) div div label span {
         font-size: 16px !important;
     }
+    /* Signup Details 320px - 425px */
+    body>main>#signupDetailsSection #firstAdminRow {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    /* Signup Details end */
 }
 
 @media all and (min-width: 375px) and (max-width: 425px) {
@@ -917,46 +1059,46 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
 }
 
 @media all and (min-width: 321px) and (max-width:425px) {
-    body>main>.Items {
+    body>main>.ManageItems {
         height: 105vh !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1) {
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) {
         width: 100% !important;
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
         font-size: 15px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(3) {
         top: 51% !important;
         height: 270px !important;
         width: 90% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2) {
         position: relative !important;
         width: 80% !important;
         height: 100px !important;
         top: 10% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -966,14 +1108,14 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2) {
         position: absolute !important;
         right: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -983,7 +1125,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3) {
         position: absolute !important;
         top: unset !important;
         left: 0 !important;
@@ -992,7 +1134,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(4) {
         position: absolute !important;
         top: unset !important;
         right: 0 !important;
@@ -1001,7 +1143,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1048,6 +1190,30 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         left: 0;
         right: 0;
         margin: auto;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
     }
 }
 
@@ -1101,6 +1267,77 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
         margin-top: 15px !important;
     }
+    /* Signup Details 320px */
+    body>main>#signupDetailsSection #firstAdminRow {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    /* Signup Details end */
 }
 
 @media all and (min-width:577px) and (max-width:767px) {
@@ -1153,49 +1390,120 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     body>main>.Home>.container-fluid>div:nth-child(1)>div:nth-child(3)>div:nth-child(5) {
         margin-top: 15px !important;
     }
+    /* Signup Details 320px */
+    body>main>#signupDetailsSection #firstAdminRow {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 3%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 3%;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label {
+        overflow-x: hidden;
+        width: 100% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) label span {
+        font-size: 80% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 8%;
+    }
+    /* Signup Details end */
 }
 
 @media all and (min-width: 425px) and (max-width:767px) {
-    body>main>.Items {
+    body>main>.ManageItems {
         height: 105vh !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1) {
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) {
         width: 100% !important;
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
         font-size: 15px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(3) {
         top: 51% !important;
         height: 270px !important;
         width: 90% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2) {
         position: relative !important;
         width: 70% !important;
         height: 100px !important;
         top: 10% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1205,14 +1513,14 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2) {
         position: absolute !important;
         right: 0 !important;
         top: 0 !important;
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1222,7 +1530,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3) {
         position: absolute !important;
         top: unset !important;
         left: 0 !important;
@@ -1231,7 +1539,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(4) {
         position: absolute !important;
         top: unset !important;
         right: 0 !important;
@@ -1240,7 +1548,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 120px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1281,46 +1589,46 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
 }
 
 @media all and (min-width:575px) and (max-width:767px) {
-    body>main>.Items {
+    body>main>.ManageItems {
         height: 105vh !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1) {
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) {
         width: 100% !important;
         --bs-gutter-x: 0 !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemDiscountInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) #itemQtyInItems {
         position: relative;
         margin-top: 10px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
+    body>main>.ManageItems>.container-fluid>div:nth-child(1)>div:nth-child(1) label {
         font-size: 14px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(3) {
         top: 51% !important;
         height: 270px !important;
         width: 90% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2) {
         position: relative !important;
         width: 60% !important;
         height: 100px !important;
         top: 10% !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
         width: 150px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1330,14 +1638,14 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2) {
         position: absolute !important;
         right: 0 !important;
         top: 0 !important;
         width: 150px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1347,7 +1655,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         top: 0 !important;
         margin: unset !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3) {
         position: absolute !important;
         top: unset !important;
         left: 0 !important;
@@ -1356,7 +1664,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 150px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(4) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(4) {
         position: absolute !important;
         top: unset !important;
         right: 0 !important;
@@ -1365,7 +1673,7 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         width: 150px !important;
         height: 40px !important;
     }
-    body>main>.Items>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+    body>main>.ManageItems>.container-fluid>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
         position: absolute !important;
         width: 100% !important;
         height: 100% !important;
@@ -1412,6 +1720,39 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         left: 0;
         right: 0;
         margin: auto;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 20%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(2) {
+        position: absolute !important;
+        bottom: 20%;
+        height: 50% !important;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(2)>div:nth-child(1) {
+        overflow: scroll!important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    body>main>#signupDetailsSection #firstAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 2%;
+    }
+    body>main>#signupDetailsSection #secondAdminRow>div:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0 0 0 unset;
+        margin: auto;
+        margin-top: 2%;
     }
 }
 
@@ -1501,91 +1842,286 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
     }
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:767px) {
     body>main>.Signup>.container-fluid {
         width: 85% !important;
         height: 90% !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(1) {
+    body>main>.Signup>.container-fluid .row:nth-child(1) {
         top: 10px !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(1) .row {
+    body>main>.Signup>.container-fluid .row:nth-child(1) .row {
         position: absolute;
         left: 0 !important;
         right: 0 !important;
         margin: auto !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(1) .row:nth-child(2) {
+    body>main>.Signup>.container-fluid .row:nth-child(1) .row:nth-child(2) {
         margin-top: 210px !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(1) .row:nth-child(3) {
+    body>main>.Signup>.container-fluid .row:nth-child(1) .row:nth-child(3) {
         margin-top: 420px !important;
     }
     body>main>.Signup>.container-fluid input {
         margin-top: 20px;
     }
-    body>main>.Signup>.container-fluid>.row {
+    body>main>.Signup>.container-fluid .row {
         width: 100% !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(2) {
+    body>main>.Signup>.container-fluid .row:nth-child(2) {
         margin-top: 50px !important;
     }
-    body>main>.Signup>.container-fluid>.row:nth-child(2) .col:nth-child(3) {
+    body>main>.Signup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
         margin-top: 10px !important;
     }
-    @keyframes anim {
-        0% {
-            width: 28px;
-            height: 25px;
-        }
-        100% {
-            width: 95px;
-            height: 25px;
-        }
-    }
-    @keyframes anim2 {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-60px);
-        }
-    }
-    body>main>.Signup>#logoutBtnInSignup {
-        position: absolute;
-        right: 10px !important;
-        top: 6px !important;
-        width: 28px;
-        height: 25px !important;
-        animation-name: anim;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-    }
-    body>main>.Signup>#logoutBtnInSignup div {
+    body>main>.Signup a:nth-child(2) {
         position: absolute !important;
-        left: 0 !important;
+        right: 17% !important;
+        top: 0.5%;
+        width: 10% !important;
+        height: 40px;
+        overflow: hidden;
+    }
+    body>main>.Signup a:nth-child(3) {
+        position: absolute !important;
+        right: 5%;
+        top: 0.5%;
+        width: 10%;
+        height: 40px;
+        overflow: hidden;
+    }
+    body>main>.Signup>a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
         display: block !important;
     }
-    body>main>.Signup>#logoutBtnInSignup div i {
-        position: absolute !important;
+    body>main>.Signup>a div h3 {
+        display: none;
+    }
+    body>main>.Signup>a i {
+        color: black !important;
+        font-size: 22px !important;
+    }
+    body>main>.Signup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    /* admin signup */
+    body>main>.adminSignup>.container-fluid {
+        width: 85% !important;
+        height: 90% !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(1) {
+        top: 10px !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(1) .row {
+        position: absolute;
         left: 0 !important;
-        font-size: 25px !important;
+        right: 0 !important;
+        margin: auto !important;
     }
-    body>main>.Signup>#logoutBtnInSignup div h3 {
-        top: 5px !important;
-        animation-name: anim2;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-duration: 5s;
+    body>main>.adminSignup>.container-fluid .row:nth-child(1) .row:nth-child(2) {
+        margin-top: 210px !important;
     }
+    body>main>.adminSignup>.container-fluid .row:nth-child(1) .row:nth-child(3) {
+        margin-top: 420px !important;
+    }
+    body>main>.adminSignup>.container-fluid input {
+        margin-top: 20px;
+    }
+    body>main>.adminSignup>.container-fluid .row {
+        width: 100% !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(2) {
+        margin-top: 50px !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
+        margin-top: 10px !important;
+    }
+    body>main>.adminSignup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    body>main>.adminSignup a {
+        position: absolute !important;
+        right: 7%;
+        top: 0.5%;
+        width: 5%;
+        height: 4%;
+        overflow: hidden;
+    }
+    body>main>.adminSignup a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+    body>main>.adminSignup a div h3 {
+        display: none;
+    }
+    body>main>.adminSignup a i {
+        color: black !important;
+        font-size: 22px !important;
+    }
+    body>main>.adminSignup a:hover {
+        width: 5% !important;
+    }
+    /* admin signup end */
 }
 
-@media all and (min-width:768px) and (max-width:1024px) {
-    body>main>.Signup>.container-fluid>.row {
+@media all and (min-width:768px) and (max-width:1023px) {
+    body>main>.Signup>.container-fluid .row {
         width: 90% !important;
+    }
+    body>main>.Signup .container-fluid .container {
+        position: absolute;
+        width: 90%;
+        height: 65%;
+        inset: 0 0 0 0;
+        margin: auto;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1).row:nth-child(1) {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1) .row:nth-child(2) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1) .row:nth-child(3) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(2) {
+        position: absolute !important;
+        width: 100% !important;
+        bottom: 0 !important;
+    }
+    body>main>.Signup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
+        margin-top: 0 !important;
+    }
+    body>main>.Signup a:nth-child(2) {
+        position: absolute !important;
+        right: 7% !important;
+        top: 5%;
+        width: 10% !important;
+        height: 40px;
+        overflow: hidden;
+    }
+    body>main>.Signup a:nth-child(3) {
+        position: absolute !important;
+        right: 0%;
+        top: 5%;
+        width: 10%;
+        height: 40px;
+        overflow: hidden;
+    }
+    body>main>.Signup>a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+    body>main>.Signup>a div h3 {
+        display: none;
+    }
+    body>main>.Signup>a i {
+        color: black !important;
+        font-size: 22px !important;
+    }
+    body>main>.Signup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    /* admin signup */
+    body>main>.adminSignup>.container-fluid .row {
+        width: 90% !important;
+    }
+    body>main>.adminSignup .container-fluid .container {
+        position: absolute;
+        width: 90%;
+        height: 65%;
+        inset: 0 0 0 0;
+        margin: auto;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1).row:nth-child(1) {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1) .row:nth-child(2) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1) .row:nth-child(3) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(2) {
+        position: absolute !important;
+        width: 90% !important;
+        bottom: 0 !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
+        margin-top: 0 !important;
+    }
+    body>main>.adminSignup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    body>main>.adminSignup a {
+        position: absolute !important;
+        right: 5%;
+        top: 5%;
+        width: 3.2%;
+        height: 4%;
+        overflow: hidden;
+    }
+    body>main>.adminSignup a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+    body>main>.adminSignup a div h3 {
+        display: none;
+    }
+    body>main>.adminSignup a i {
+        color: black !important;
+        font-size: 22px !important;
+    }
+    body>main>.adminSignup a:hover {
+        width: 5% !important;
+    }
+    /* admin signup end */
+}
+
+@media all and(min-width:1200px) and(max-width:2560px) {
+    body>main>.Signup>a:nth-child(2):hover {
+        transition: all 1s;
+        width: 10% !important;
     }
 }
 
@@ -2043,7 +2579,187 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
 }
 
 @media all and (min-width:1024px) and (max-width:2560px) {
+    body>main>.Signup .container-fluid .container {
+        position: absolute;
+        width: 90%;
+        height: 75%;
+        inset: 0 0 0 0;
+        margin: auto;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1).row:nth-child(1) {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1) .row:nth-child(2) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(1) .row:nth-child(3) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.Signup>.container-fluid .container .row:nth-child(2) {
+        position: absolute !important;
+        width: 100% !important;
+        bottom: 0 !important;
+    }
+    body>main>.Signup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
+        margin-top: 0 !important;
+    }
     body>main>.login>.container-fluid .row .col div label {
         top: 5px;
     }
+    body>main>.Signup a:nth-child(2) {
+        position: absolute !important;
+        right: 10%;
+        top: 30px;
+        width: 5% !important;
+        height: 40px;
+        overflow: hidden;
+        transition: all 1s;
+    }
+    body>main>.Signup a:nth-child(3) {
+        position: absolute !important;
+        right: 5%;
+        top: 30px;
+        width: 38px;
+        height: 40px;
+        overflow: hidden;
+        transition: all 1s;
+    }
+    body>main>.Signup>a:hover {
+        transition: all 1s;
+        width: 8% !important;
+    }
+    body>main>.Signup>a:nth-child(3):hover h3 {
+        transition: all 1s;
+        right: 10% !important;
+    }
+    body>main>.Signup>a:nth-child(2):hover {
+        transition: all 1s;
+        width: 13.2% !important;
+    }
+    body>main>.Signup>a:nth-child(2):hover h3 {
+        transition: all 1s;
+        right: 10% !important;
+    }
+    body>main>.Signup>a:hover h3 {
+        transition: all 1s;
+        right: 5% !important;
+    }
+    body>main>.Signup>a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    body>main>.Signup>a div h3 {
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 13px !important;
+        margin: auto !important;
+        height: max-content;
+        position: absolute !important;
+        right: -135% !important;
+        color: black !important;
+        transition: all 1s !important;
+        font-size: 80% !important;
+    }
+    body>main>.Signup>a i {
+        color: black !important;
+        font-size: 30px !important;
+    }
+    body>main>.Signup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    /* admin signup */
+    body>main>.adminSignup .container-fluid .container {
+        position: absolute;
+        width: 90%;
+        height: 75%;
+        inset: 0 0 0 0;
+        margin: auto;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1).row:nth-child(1) {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1) .row:nth-child(2) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(1) .row:nth-child(3) {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: 4% !important;
+    }
+    body>main>.adminSignup>.container-fluid .container .row:nth-child(2) {
+        position: absolute !important;
+        width: 100% !important;
+        bottom: 0 !important;
+    }
+    body>main>.adminSignup>.container-fluid .row:nth-child(2) .col:nth-child(3) {
+        margin-top: 0 !important;
+    }
+    body>main>.adminSignup label {
+        position: absolute;
+        top: -4px !important;
+    }
+    body>main>.adminSignup a {
+        position: absolute !important;
+        right: 5%;
+        top: 5%;
+        width: 3.2% !important;
+        height: 4%;
+        overflow: hidden;
+    }
+    body>main>.adminSignup a div {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+    body>main>.adminSignup a div h3 {
+        position: absolute !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        margin: auto !important;
+        height: max-content;
+        position: absolute !important;
+        right: -165% !important;
+        color: black !important;
+        transition: all 1s !important;
+    }
+    body>main>.adminSignup a i {
+        color: black !important;
+        font-size: 30px !important;
+    }
+    body>main>.adminSignup a:hover {
+        width: 10% !important;
+    }
+    body>main>.adminSignup a:hover h3 {
+        right: 10% !important;
+    }
+    /* admin signup end */
 }

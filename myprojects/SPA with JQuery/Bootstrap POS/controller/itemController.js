@@ -1,4 +1,4 @@
-var tBodyInItems = $(".Items .container-fluid div:nth-child(3) div table tbody");
+var tBodyInItems = $(".ManageItems .container-fluid div:nth-child(3) div table tbody");
 var rowNo = 1;
 
 var itemCodeInItems = $("#itemCodeInItems");
@@ -113,7 +113,7 @@ saveItemBtn.click(function() {
 });
 
 function deleteSelectedRowFromTheItemTable() {
-    var tableRow = $(".Items .container-fluid div:nth-child(3) div .table tbody tr");
+    var tableRow = $(".ManageItems .container-fluid div:nth-child(3) div .table tbody tr");
     tableRow.off("click")
     tableRow.click(function() {
         itemCodeInItems.val($(this).children("td:nth-child(2)").text());
@@ -127,9 +127,11 @@ function deleteSelectedRowFromTheItemTable() {
 }
 
 function setDatToTheItemTable() {
-    $(".Items .container-fluid div:nth-child(3) div table tbody tr").remove();
+    $(".ManageItems .container-fluid div:nth-child(3) div table tbody tr").remove();
+    itemDetailsTable.children('tbody').children('tr').remove();
     for (let i = 0; i < itemArray.length; i++) {
         tBodyInItems.append("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
+        itemDetailsTable.children('tbody').append("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
     }
 }
 
@@ -167,7 +169,13 @@ updateItemBtn.click(function() {
                 itemArray[i].setItemUnitPrice(itemUnitPriceInItems.val());
                 itemArray[i].setItemDiscount(itemDiscountInItems.val());
 
-                $(".Items .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
+                $(".ManageItems .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
+                    if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
+                        $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
+                    }
+                })
+
+                itemDetailsTable.children('tbody').children('tr').filter(function() {
                     if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
                         $(this).replaceWith("<tr><td>" + (i + 1) + "</td><td>" + itemArray[i].getItemCode() + "</td><td>" + itemArray[i].getItemDescription() + "</td><td>" + itemArray[i].getItemQty() + "</td><td>" + itemArray[i].getItemBuyingPrice() + "</td><td>" + itemArray[i].getItemUnitPrice() + "</td><td>" + itemArray[i].getItemDiscount() + "</td></tr>");
                     }
@@ -187,6 +195,17 @@ deleteItemBtn.click(function() {
         for (let i = 0; i < itemArray.length; i++) {
             if (itemArray[i].getItemCode() == itemCodeInItems.val()) {
                 itemArray.splice(i, 1);
+                $(".ManageItems .container-fluid div:nth-child(3) div table tbody tr").filter(function() {
+                    if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
+                        $(this).remove();
+                    }
+                })
+
+                itemDetailsTable.children('tbody').children('tr').filter(function() {
+                    if ($(this).children("td:nth-child(2)").text() == itemArray[i].getItemCode()) {
+                        $(this).remove();
+                    }
+                })
                 clearFieldsInItems();
             }
         }

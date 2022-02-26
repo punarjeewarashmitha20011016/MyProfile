@@ -126,6 +126,7 @@ addAdminSignUpDetailsBtn.click(function() {
     let signupDetails = new AdminSignup(signUpAdminId.val(), signUpAdminName.val(), signUpAdminNic.val(), signUpAdminContactNo.val(), signUpAdminUserName.val(), signUpAdminPassword.val(), signUpAdminAddress.val());
     if (confirm("Do you want to add this details. If yes please enter Ok button") == true) {
         adminSignUpArray.push(signupDetails);
+        setDataToTheAdminTable();
         clearFieldsInAdminSignup();
         let id = generateAdminId();
         signUpAdminId.val(id);
@@ -150,6 +151,11 @@ updateAdminSignUpDetailsBtn.click(function() {
                     adminSignUpArray[i].setPassword(signUpAdminPassword.val());
                     adminSignUpArray[i].setAddress(signUpAdminAddress.val());
 
+                    adminDetailsTable.children('tbody > tr').filter(function() {
+                        if ($(this).eq(1).text() == adminSignUpArray[i].getId()) {
+                            $(this).replaceWith('<tr><td>' + (i + 1) + '</td><td>' + adminSignUpArray[i].getId() + '</td><td>' + adminSignUpArray[i].getName() + '</td><td>' + adminSignUpArray[i].getNic() + '</td><td>' + adminSignUpArray[i].getContactNo() + '</td><td>' + adminSignUpArray[i].getUserName() + '</td><td>' + adminSignUpArray[i].getPassword() + '</td><td>' + adminSignUpArray[i].getAddress() + '</td></tr>');
+                        }
+                    })
                     clearFieldsInAdminSignup();
                     let id = generateAdminId();
                     signUpAdminId.val(id);
@@ -179,6 +185,11 @@ deleteAdminSignUpDetailsBtn.click(function() {
             for (let i = 0; i < adminSignUpArray.length; i++) {
                 if (adminSignUpArray[i].getId() == signUpAdminId.val()) {
                     adminSignUpArray.splice(i, 1);
+
+                    adminDetailsTable.children('tbody > tr').filter(function() {
+                        $(this).remove();
+                    })
+
                     clearFieldsInAdminSignup();
                     let id = generateAdminId();
                     signUpAdminId.val(id);
@@ -244,5 +255,12 @@ function generateAdminId() {
                 }
             }
         }
+    }
+}
+
+function setDataToTheAdminTable() {
+    adminDetailsTable.children('tbody').children('tr').remove();
+    for (let i = 0; i < adminSignUpArray.length; i++) {
+        adminDetailsTable.children('tbody').append('<tr><td>' + (i + 1) + '</td><td>' + adminSignUpArray[i].getId() + '</td><td>' + adminSignUpArray[i].getName() + '</td><td>' + adminSignUpArray[i].getNic() + '</td><td>' + adminSignUpArray[i].getContactNo() + '</td><td>' + adminSignUpArray[i].getUserName() + '</td><td>' + adminSignUpArray[i].getPassword() + '</td><td>' + adminSignUpArray[i].getAddress() + '</td></tr>');
     }
 }

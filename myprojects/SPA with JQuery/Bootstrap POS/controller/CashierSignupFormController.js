@@ -124,6 +124,7 @@ addSignUpDetailsBtn.click(function() {
     var signupDetails = new Signup(signUpId.val(), signUpName.val(), signUpNic.val(), signUpContactNo.val(), signUpUserName.val(), signUpPassword.val(), signUpAddress.val());
     if (confirm("Do you want to add this details. If yes please enter Ok button") == true) {
         signupArray.push(signupDetails);
+        setDataToTheCashierTable
         clearFieldsInSignup();
         let id = generateId();
         signUpId.val(id);
@@ -179,6 +180,12 @@ updateSignUpDetailsBtn.click(function() {
                     signupArray[i].setPassword(signUpPassword.val());
                     signupArray[i].setAddress(signUpAddress.val());
 
+                    cashierDetailsTable.children('tbody > tr').filter(function() {
+                        if ($(this).children('td:nth-child(2)').text() == signupArray[i].getId()) {
+                            $(this).replaceWith('<tr><td>' + (i + 1) + '</td><td>' + signupArray[i].getId() + '</td><td>' + signupArray[i].getName() + '</td><td>' + signupArray[i].getNic() + '</td><td>' + signupArray[i].getContactNo() + '</td><td>' + signupArray[i].getUserName() + '</td><td>' + signupArray[i].getPassword() + '</td><td>' + signupArray[i].getAddress() + '</td></tr>');
+                        }
+                    })
+
                     clearFieldsInSignup();
                     let id = generateId();
                     signUpId.val(id);
@@ -208,6 +215,13 @@ deleteSignUpDetailsBtn.click(function() {
             for (let i = 0; i < signupArray.length; i++) {
                 if (signupArray[i].getId() == signUpId.val()) {
                     signupArray.splice(i, 1);
+
+                    cashierDetailsTable.children('tbody > tr').filter(function() {
+                        if ($(this).children('td:nth-child(2)').text() == signupArray[i].getId()) {
+                            $(this).remove();
+                        }
+                    })
+
                     clearFieldsInSignup();
                     let id = generateId();
                     signUpId.val(id);
@@ -249,5 +263,12 @@ function generateId() {
                 }
             }
         }
+    }
+}
+
+function setDataToTheCashierTable() {
+    cashierDetailsTable.children('tbody > tr').remove();
+    for (let i = 0; i < signupArray.length; i++) {
+        cashierDetailsTable.children('tbody').append('<tr><td>' + (i + 1) + '</td><td>' + signupArray[i].getId() + '</td><td>' + signupArray[i].getName() + '</td><td>' + signupArray[i].getNic() + '</td><td>' + signupArray[i].getContactNo() + '</td><td>' + signupArray[i].getUserName() + '</td><td>' + signupArray[i].getPassword() + '</td><td>' + signupArray[i].getAddress() + '</td></tr>');
     }
 }

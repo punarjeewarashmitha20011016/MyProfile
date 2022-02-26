@@ -20,10 +20,10 @@
                 <hr class="position-absolute opacity-100" style="transform: rotate(90deg);width: 35px;height: 4px;left: 180px;background-color: white;">
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="position-absolute navbar-nav flex-row w-100 justify-content-start fs-6 px-4" style="left:200px;">
-                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Home"><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Orders"><span>Orders</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Items"><span>Items</span></a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#" id="Customer"><span>Customers</span></a></li>
+                        <li class="nav-item position-relative"><a class="nav-link text-white" href="#" id="Home"><span style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: max-content;height: max-content;">Home</span></a></li>
+                        <li class="nav-item position-relative"><a class="nav-link text-white" href="#" id="Orders"><span style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: max-content;height: max-content;">Orders</span></a></li>
+                        <li class="nav-item position-relative"><a class="nav-link text-white" href="#" id="Items"><span style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: max-content;height: max-content;">Items</span></a></li>
+                        <li class="nav-item position-relative"><a class="nav-link text-white" href="#" id="Customer"><span style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: max-content;height: max-content;">Customers</span></a></li>
                     </ul>
                 </div>
 
@@ -291,80 +291,21 @@
             </div>
         </section>
 
-        <!-- -------------------Items section----------------------------- -->
-        <section id="itemsSection" class="Items container-fluid position-relative" style="display: none;">
+        <!-- -------------------Item Deltails section----------------------------- -->
+        <section id="itemDetailsSection" class="Items container-fluid position-relative" style="display: none;">
             <div class="container-fluid position-absolute shadow">
-                <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
-                    <div class="col position-relative">
-                        <div class="row position-relative" style="top: 0;">
-                            <div class="col-6 col-sm-6 col-md position-relative">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemCodeInItems" placeholder="code" style="height: 40px;">
-                                    <label for="itemCodeInItems" id="itemCodeLblInItems"><span>Code</span></label>
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDescriptionInItems" placeholder="Description" style="height: 40px;">
-                                    <label for="itemDescriptionInItems" id="itemDescriptionLblInItems"><span>Description</span></label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemQtyInItems" placeholder="Qty" style="height: 40px;">
-                                    <label for="itemQtyInItems" id="itemQtyLblInItems"><span>Qty</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row position-relative" style="top: 10px;">
-                            <div class="col-6 col-sm">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemBuyingPriceInItems" placeholder="Buying Price" style="height: 40px;">
-                                    <label for="itemBuyingPriceInItems" id="itemBuyingPriceLblInItems"><span>Buying Price</span></label>
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemUnitPriceInItems" placeholder="Unit Price" style="height: 40px;">
-                                    <label for="itemUnitPriceInItems" id="itemUnitPriceLblInItems"><span>Unit Price</span></label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating position-relative">
-                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDiscountInItems" placeholder="Discount" style="height: 40px;">
-                                    <label for="itemDiscountInItems" id="itemDiscountLblInItems"><span>Discount</span></label>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row position-absolute" style="left: 10%;width: 80%;">
+                    <div class="col-11 form-floating position-relative" style="top: 30px;left: 0;right: 0;margin: auto;">
+                        <input type="text" class="form-control bg-transparent border-3" id="itemDetailsSearchId" placeholder="Name" style="height: 40px;width: 760px  ">
+                        <label for="itemDetailsSearchId" style="position: absolute;width: 80%;height: 100%;top: 0;bottom: 0;margin: auto;height: 100%;left: 2%;"><span class="position-absolute" style="top: 0;bottom: 0;margin: auto;height: max-content;width: max-content;">Search Item Details by Item Id</span></label>
+                    </div>
+                    <div class="col position-absolute col-sm" style="top: 30px;right: 0;left: unset;margin: unset;width: max-content;">
+                        <button id="searchItemDetailsBtn" class="btn btn-secondary">Search Item Details</button>
                     </div>
                 </div>
-
-                <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
-                    <div class="col-sm-6 col-md-3 position-relative">
-                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
-                            <button id="saveItems" class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 position-relative">
-                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
-                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="updateItemBtn">Update Item</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 position-relative">
-                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
-                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Delete Item</button>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 position-relative">
-                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
-                            <button id="searchItemBtn" class="btn btn-outline-primary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Search Item</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
+                <div class="row position-absolute border-5 shadow" style="top: 10%;bottom:0; left: 0;right: 0;margin: auto;height:80%;width: 93%;">
                     <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
-                        <table class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto">
+                        <table id="itemDetailsTable" class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -473,73 +414,75 @@
         <!-- -------------------Signup section-------------------------- -->
         <section id="signupSection" class="Signup container-fluid position-relative" style="display: none;">
             <div class="container-fluid position-absolute shadow">
-                <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpId" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpIdLbl" for="signUpId" class="position-absolute"><span style="width: 100%;">Id</span></label>
+                <div class="container">
+                    <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpId" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpIdLbl" for="signUpId" class="position-absolute"><span style="width: 100%;">Id</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpName" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpNameLbl" for="signUpName" class="position-absolute"><span style="width: 100%;">Name</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpNic" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpNicLbl" for="signUpNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpName" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpNameLbl" for="signUpName" class="position-absolute"><span style="width: 100%;">Name</span></label>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="tel" class="form-control bg-transparent" id="signUpContactNo" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpContactNoLbl" for="signUpContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpUserName" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpUserNameLbl" for="signUpUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="password" class="form-control bg-transparent" id="signUpPassword" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpPasswordLbl" for="signUpPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpNic" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpNicLbl" for="signUpNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAddress" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAddressLbl" for="signUpAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="tel" class="form-control bg-transparent" id="signUpContactNo" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpContactNoLbl" for="signUpContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
-                            </div>
+                    <div class="row position-absolute" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                        <div class="col-6 col-sm-6 col-md">
+                            <button id="addSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
                         </div>
-
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpUserName" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpUserNameLbl" for="signUpUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
-                            </div>
+                        <div class="col-6 col-sm-6 col-md">
+                            <button id="updateSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
                         </div>
-
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="password" class="form-control bg-transparent" id="signUpPassword" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpPasswordLbl" for="signUpPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAddress" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAddressLbl" for="signUpAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
-                            </div>
+                            <button id="deleteSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row position-absolute border" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
-                    <div class="col-6 col-sm-6 col-md">
-                        <button id="addSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md">
-                        <button id="updateSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
-                    </div>
-                    <div class="col">
-                        <button id="deleteSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
                     </div>
                 </div>
             </div>
@@ -562,73 +505,74 @@
         <!--  Signup for Admin section -->
         <section class="adminSignup container-fluid position-relative" style="display: none;">
             <div class="container-fluid position-absolute shadow">
-                <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAdminId" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminIdLbl" for="signUpAdminId" class="position-absolute"><span style="width: 100%;">Id</span></label>
+                <div class="container">
+                    <div class="row position-absolute" style="top: 10%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAdminId" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminIdLbl" for="signUpAdminId" class="position-absolute"><span style="width: 100%;">Id</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAdminName" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminNameLbl" for="signUpAdminName" class="position-absolute"><span style="width: 100%;">Name</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAdminNic" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminNicLbl" for="signUpAdminNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAdminName" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminNameLbl" for="signUpAdminName" class="position-absolute"><span style="width: 100%;">Name</span></label>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="tel" class="form-control bg-transparent" id="signUpAdminContactNo" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminContactNoLbl" for="signUpAdminContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAdminUserName" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminUserNameLbl" for="signUpAdminUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="password" class="form-control bg-transparent" id="signUpAdminPassword" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminPasswordLbl" for="signUpAdminPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAdminNic" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminNicLbl" for="signUpAdminNic" class="position-absolute"><span style="width: 100%;">NIC</span></label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating position-relative shadow">
+                                    <input type="text" class="form-control bg-transparent" id="signUpAdminAddress" placeholder="Tel" style="height: 50px;">
+                                    <label id="signUpAdminAddressLbl" for="signUpAdminAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="tel" class="form-control bg-transparent" id="signUpAdminContactNo" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminContactNoLbl" for="signUpAdminContactNo" class="position-absolute"><span style="width: 100%;">Contact No</span></label>
-                            </div>
+                    <div class="row position-absolute" style="top: 75%;left: 0;right: 0;margin: auto;height: max-content;">
+                        <div class="col-6 col-sm-6 col-md">
+                            <button id="addAdminSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
                         </div>
-
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAdminUserName" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminUserNameLbl" for="signUpAdminUserName" class="position-absolute"><span style="width: 100%;">User Name</span></label>
-                            </div>
+                        <div class="col-6 col-sm-6 col-md">
+                            <button id="updateAdminSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
                         </div>
-
-                        <div class="col-12 col-sm-12 col-md">
-                            <div class="form-floating position-relative shadow">
-                                <input type="password" class="form-control bg-transparent" id="signUpAdminPassword" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminPasswordLbl" for="signUpAdminPassword" class="position-absolute"><span style="width: 100%;">Password</span></label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col">
-                            <div class="form-floating position-relative shadow">
-                                <input type="text" class="form-control bg-transparent" id="signUpAdminAddress" placeholder="Tel" style="height: 50px;">
-                                <label id="signUpAdminAddressLbl" for="signUpAdminAddress" class="position-absolute"><span style="width: 100%;">Address</span></label>
-                            </div>
+                            <button id="deleteAdminSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row position-absolute border" style="top: 75%;left: 0;right: 0;margin: auto;width: 800px;height: max-content;">
-                    <div class="col-6 col-sm-6 col-md">
-                        <button id="addAdminSignupDetailsBtn" class="btn btn-outline-success" style="width: 100%;">Add</button>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md">
-                        <button id="updateAdminSignupDetailsBtn" class="btn btn-outline-secondary" style="width: 100%;">Update</button>
-                    </div>
-                    <div class="col">
-                        <button id="deleteAdminSignupDetailsBtn" class="btn btn-outline-danger" style="width: 100%;">Delete</button>
                     </div>
                 </div>
             </div>
@@ -640,6 +584,185 @@
                 </div>
             </a>
         </section>
+
+        <!-- -------------------Manage Items section----------------------------- -->
+        <section id="manageItemsSection" class="ManageItems container-fluid position-relative" style="display: none;">
+            <div class="container-fluid position-absolute shadow">
+                <div class="row container position-relative" style="top: 30px;left: 0;right:0;margin: auto; width: 80%;">
+                    <div class="col position-relative">
+                        <div class="row position-relative" style="top: 0;">
+                            <div class="col-6 col-sm-6 col-md position-relative">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemCodeInItems" placeholder="code" style="height: 40px;">
+                                    <label for="itemCodeInItems" id="itemCodeLblInItems"><span>Code</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDescriptionInItems" placeholder="Description" style="height: 40px;">
+                                    <label for="itemDescriptionInItems" id="itemDescriptionLblInItems"><span>Description</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemQtyInItems" placeholder="Qty" style="height: 40px;">
+                                    <label for="itemQtyInItems" id="itemQtyLblInItems"><span>Qty</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative" style="top: 10px;">
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemBuyingPriceInItems" placeholder="Buying Price" style="height: 40px;">
+                                    <label for="itemBuyingPriceInItems" id="itemBuyingPriceLblInItems"><span>Buying Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemUnitPriceInItems" placeholder="Unit Price" style="height: 40px;">
+                                    <label for="itemUnitPriceInItems" id="itemUnitPriceLblInItems"><span>Unit Price</span></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating position-relative">
+                                    <input type="text" class="form-control bg-transparent border-3 w-100" id="itemDiscountInItems" placeholder="Discount" style="height: 40px;">
+                                    <label for="itemDiscountInItems" id="itemDiscountLblInItems"><span>Discount</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container position-relative" style="top: 50px;left: 0;right:0;margin: auto; width: 80%;height: 10%;">
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
+                            <button id="saveItems" class="btn btn-outline-success position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px; width: 100%;">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
+                            <button class="btn btn-outline-secondary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="updateItemBtn">Update Item</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
+                            <button class="btn btn-outline-danger position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Delete Item</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 position-relative">
+                        <div class="col-11 position-absolute" style="top: 0;bottom: 0;left:0;right:0;margin: auto;">
+                            <button id="searchItemBtn" class="btn btn-outline-primary position-absolute" style="top: 0;bottom: 0;margin: auto;height: 40px;width: 100%;" id="deleteItemBtn">Search Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-absolute border-5 shadow" style="top: 35%; left: 0;right: 0;margin: auto;height: 330px;width: 93%;">
+                    <div class="col position-relative h-100" style="height: 100%;overflow:auto;">
+                        <table class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Buying Price</th>
+                                    <th scope="col">Unit Price</th>
+                                    <th scope="col">Discount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Detials section -->
+
+        <section id="signupDetailsSection" class="position-relative container-fluid" style="display: none;">
+            <div class="row container shadow position-absolute" style="top: 0;bottom: 0;left: 0;right: 0;margin: auto;">
+                <div class="col position-relative">
+                    <div id="firstAdminRow" class="row position-relative" style="margin-top: 2%;height: 50%;width: 100%;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+                        <div class="row position-absolute" style="top: 0;height: 15%;left: 0;right: 0;margin-left: auto;margin-right: auto;width: 100%;">
+                            <div class="col h-100">
+                                <div class="row container-fluid position-absolute" style="top: 0;left: 0;right:0;margin: auto; width: 80%;height: 100%;">
+                                    <div class="col-12 position-relative col-sm-8 col-md-8" style="height: 80%;">
+                                        <div class="form-floating position-relative" style="top: 0;height: 100%;">
+                                            <input type="text" class="form-control bg-transparent border-3" id="searchAdminDetails" placeholder="Name" style="height: 100%;">
+                                            <label for="searchAdminDetails" class="position-absolute" style="top: 0;bottom: 0;margin: auto;height: max-content;width: max-content;"><span class="position-absolute" style="top: 0;bottom: 0;margin: auto;height: max-content;width: max-content;">Search Admin Details by Admin Id</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col position-relative col-sm col-md" style="top: 0; right: 0;height: 80%;">
+                                        <button id="searchAdminDetailsBtn" class="btn btn-secondary h-100" style="position: absolute;left: 0;right: 0;margin: auto;top: 0;bottom: 0;width: 60%;">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-absolute" style="margin-top: 6%;height: 60%;width: 100%;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+                            <div class="col">
+                                <table id="adminDetailsTable" class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto h-100">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Nic</th>
+                                            <th scope="col">Tel</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Password</th>
+                                            <th scope="col">Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="secondAdminRow" class="row position-relative" style="margin-top: -1%;height: 50%;width: 100%;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+                        <div class="row position-absolute" style="top: 0;height: 15%;left: 0;right: 0;margin-left: auto;margin-right: auto;width: 100%;">
+                            <div class="col h-100">
+                                <div class="row container-fluid position-absolute" style="top: 0;left: 0;right:0;margin: auto; width: 80%;height: 100%;">
+                                    <div class="col-12 position-relative col-sm-8 col-md-8" style="height: 80%;">
+                                        <div class="form-floating position-relative" style="top: 0;height: 100%;">
+                                            <input type="text" class="form-control bg-transparent border-3" id="searchCashierDetails" placeholder="Name" style="height: 100%;">
+                                            <label for="searchCashierDetails" class="position-absolute" style="top: 0;bottom: 0;margin: auto;height: max-content;width: max-content;"><span class="position-absolute" style="top: 0;bottom: 0;margin: auto;height: max-content;width: max-content;">Search Cashier Details by Cashier Id</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col position-relative col-sm col-md" style="top: 0; right: 0;height: 80%;">
+                                        <button id="searchCashierDetailsBtn" class="btn btn-secondary h-100" style="position: absolute;left: 0;right: 0;margin: auto;top: 0;bottom: 0;width: 60%;">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-absolute" style="margin-top: 6%;height: 60%;width: 100%;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+                            <div class="col">
+                                <table id="cashierDetailsTable" class="table table-striped table-responsive table-hover shadow position-absolute start-0 end-0 m-auto h-100">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Nic</th>
+                                            <th scope="col">Tel</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Password</th>
+                                            <th scope="col">Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- ------------------Login Section----------------------------- -->
         <section class="login container-fluid position-relative" style="height: 100vh;width: 100%;background-color: rgb(231, 231, 231) !important;display: block;" id="loginSection">
@@ -670,16 +793,16 @@
                 <div class="row position-absolute" style="top: 25%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
                     <div class="col">
                         <div class="form-floating position-relative shadow">
-                            <input type="text" class="form-control bg-transparent" id="floatingUsernameLogin" placeholder="Tel" style="height: 50px;">
-                            <label for="floatingUsernameLogin" class="position-absolute"><span>User Name</span></label>
+                            <input type="text" class="form-control bg-transparent" id="userNameLoginId" placeholder="Tel" style="height: 50px;">
+                            <label for="userNameLoginId" class="position-absolute"><span>User Name</span></label>
                         </div>
                     </div>
                 </div>
                 <div class="row position-absolute" style="top: 40%;left: 0;right: 0;margin: auto;width: 400px;height: max-content;">
                     <div class="col">
                         <div class="form-floating position-relative shadow">
-                            <input type="password" class="form-control  bg-transparent" id="floatingPassword" placeholder="Tel" style="height: 50px;">
-                            <label for="floatingPassword" class="position-absolute"><span>Password</span></label>
+                            <input type="password" class="form-control  bg-transparent" id="passwordLoginId" placeholder="Tel" style="height: 50px;">
+                            <label for="passwordLoginId" class="position-absolute"><span>Password</span></label>
                         </div>
                     </div>
                 </div>
@@ -727,6 +850,8 @@
     <script src="controller/OrderDetailsController.js"></script>
     <script src="controller/CashierSignupFormController.js"></script>
     <script src="controller/AdminFormSignupController.js"></script>
+    <script src="controller/ItemDetailFormController.js"></script>
+    <script src="controller/SignupDetailsFormController.js"></script>
 </body>
 
 </html>
