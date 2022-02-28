@@ -77,6 +77,124 @@
         .totalCashiersRegistered {
             box-shadow: 20px 15px 40px 0px rgb(87, 85, 85) !important;
         }
+        
+        @media all and (min-width:1024px) and (max-width:2560px) {
+            .dashboardAdmin .firstRow {
+                height: 7% !important;
+            }
+        }
+        
+        @media all and (max-width:991px) {
+            body {
+                overflow-y: visible !important;
+            }
+            .dashboardAdmin {
+                height: 200vh !important;
+            }
+            .dashboardAdmin .adminDashboardNav {
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .adminDashboardNav div {
+                width: calc(100%/4) !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 70% !important;
+                height: 70% !important;
+            }
+            .dashboardAdmin .adminDashboardNav div>div i {
+                font-size: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) {
+                height: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) h3 span {
+                position: absolute;
+                width: max-content;
+                height: max-content;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        
+        @media all and (min-width:425px) and (max-width:500px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 70% !important;
+                height: 100% !important;
+            }
+        }
+        
+        @media all and (min-width:500px) and (max-width:600px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 60% !important;
+                height: 100% !important;
+            }
+        }
+        
+        @media all and (min-width:600px) and (max-width:700px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 50% !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) i {
+                width: max-content !important;
+                left: 130% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) h3 {
+                left: 45% !important;
+            }
+        }
+        
+        @media all and (min-width:700px) and (max-width:768px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 40% !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) i {
+                width: max-content !important;
+                left: 130% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) h3 {
+                left: 45% !important;
+            }
+        }
+        
+        @media all and (min-width:768px) and (max-width:868px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 40% !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) i {
+                width: max-content !important;
+                left: 130% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) h3 {
+                left: 45% !important;
+            }
+        }
+        
+        @media all and (min-width:868px) and (max-width:991px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 40% !important;
+                height: 100% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) i {
+                width: max-content !important;
+                left: 130% !important;
+            }
+            .dashboardAdmin .firstRow div:nth-child(2) h3 {
+                left: 45% !important;
+            }
+        }
+        
+        @media all and (min-width:1024px) and (max-width:1400px) {
+            .dashboardAdmin .adminDashboardNav div>div {
+                width: 130% !important;
+                height: 60% !important;
+            }
+        }
     </style>
 </head>
 
@@ -893,19 +1011,19 @@
         </section>
         <!-- Admin Home Dashboard -->
         <section class="dashboardAdmin container-fluid position-relative" style="width: 100%;height: 100vh;background-color: rgb(226, 226, 226);">
-            <div class="firstRow row position-absolute start-0 end-0 m-auto" style="width: 100%;height: 7%;top: 2.5%;bottom: unset;">
-                <div class="col-9 position-relative">
+            <div class="firstRow row position-absolute start-0 end-0 m-auto" style="width: 100%;height: 6%;top: 2.5%;bottom: unset;">
+                <div class="col-lg-8 position-relative">
                 </div>
-                <div class="col position-relative">
+                <div class="col-md col-sm position-relative">
                     <div class="position-absolute" style="width: 10%;height: 100%;"><i class="fas fa-user-cog position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 100%;height: max-content;"></i></div>
                     <h3><span>Hi Admin - Welcome</span></h3>
                 </div>
             </div>
             <div class="row position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 90%;height: 85%;">
-                <div class="col-11 position-relative start-0 end-0 top-0 bottom-0 m-auto shadow" style="border-radius: 20px; background-color: rgb(255, 255, 255);width: 90%;height: 90%;">
+                <div class="col-lg-11 col-sm-12 col-md-12 position-relative start-0 end-0 top-0 bottom-0 m-auto shadow" style="border-radius: 20px; background-color: rgb(255, 255, 255);width: 90%;height: 90%;">
                     <div class="container position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 90%;height: 90%;">
-                        <div class="row position-relative" style="height: 50%;">
-                            <div class="col position-relative">
+                        <div class="cardsRow row position-relative" style="height: 50%;">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="dailySales position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -916,7 +1034,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col position-relative">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="monthlySales position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -927,7 +1045,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col position-relative">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="annualSales position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -941,7 +1059,7 @@
                         </div>
 
                         <div class="row position-relative" style="height: 50%;">
-                            <div class="col position-relative">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="mostSellingItem position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -952,7 +1070,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col position-relative">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="leastSellingItem position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -963,7 +1081,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col position-relative">
+                            <div class="col-md col-sm-12 position-relative">
                                 <div class="totalCashiersRegistered position-absolute start-0 end-0 top-0 bottom-0 m-auto shadow-lg" style="border-radius: 20px;height: 80%;width: 80%;background-color: rgb(131, 150, 201);">
                                     <div class="row position-relative" style="height: 50%;">
                                         <div class="col-12"><i class="fas fa-user-cog start-0 end-0 top-0 bottom-0 m-auto position-absolute fs-1 text-white" style="width: max-content;"></i></div>
@@ -977,19 +1095,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col position-relative">
-                    <div class="row position-absolute end-0 top-0 bottom-0 m-auto" style="width: 50%;height: 65%;">
-                        <div class="col-12 position-relative">
-                            <div id="homeAdminDashboardNavBtn" class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 60%;height: 50%;"><i class="fas fa-home"></i></div>
+                <div class="col-sm-12 col-md-12 col-lg-1 position-relative">
+                    <div class="adminDashboardNav row position-absolute end-0 top-0 bottom-0 m-auto" style="width: 50%;height: 65%;">
+                        <div class="col-md-12 col-sm-12 position-relative">
+                            <div class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 110% !important;height: 60% !important;"><i class="fas fa-home"></i></div>
                         </div>
-                        <div class="col-12 position-relative">
-                            <div id="userDetailsAdminDashboardNavBtn" class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 60%;height: 50%;"><i class="fas fa-users"></i></div>
+                        <div class="col-md-12 col-sm-3 position-relative">
+                            <div class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 110% !important;height: 60% !important;"><i class="fas fa-users"></i></div>
                         </div>
-                        <div class="col-12 position-relative">
-                            <div id="itemsAdminDashboardNavBtn" class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 60%;height: 50%;"><i class="fas fa-warehouse"></i></div>
+                        <div class="col-md-12 col-sm-3 position-relative">
+                            <div class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 110% !important;height: 60% !important;"><i class="fas fa-warehouse"></i></div>
                         </div>
-                        <div class="col-12 position-relative">
-                            <div id="logoutAdminDashboardNavBtn" class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 60%;height: 50%;"><i class="fas fa-sign-out-alt text-white fs-3"></i></div>
+                        <div class="col-md-12 col-sm-3 position-relative">
+                            <div class="iContainer position-absolute start-0 end-0 top-0 bottom-0 m-auto" style="width: 110% !important;height: 60% !important;"><i class="fas fa-sign-out-alt text-white fs-3"></i></div>
                         </div>
                     </div>
                 </div>
