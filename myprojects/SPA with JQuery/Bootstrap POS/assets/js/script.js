@@ -433,6 +433,7 @@ mobileNavHome.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "block");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
 mobileNavOrders.click(function() {
     homeSection.css("display", "none");
@@ -444,6 +445,7 @@ mobileNavOrders.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "block");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
 
 mobileNavItems.click(function() {
@@ -456,6 +458,7 @@ mobileNavItems.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "block");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
 
 mobileNavCustomer.click(function() {
@@ -468,6 +471,7 @@ mobileNavCustomer.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "block");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
 mobileNavSignup.click(function() {
     homeSection.css("display", "none");
@@ -479,6 +483,7 @@ mobileNavSignup.click(function() {
     signupSection.css("display", "block");
     headerNav.css("display", "none");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
 mobileNavLogout.click(function() {
     homeSection.css("display", "none");
@@ -490,4 +495,5 @@ mobileNavLogout.click(function() {
     signupSection.css("display", "none");
     headerNav.css("display", "none");
     signUpAdmin.css("display", "none")
+    dashboardAdmin.css("display", "none")
 });
