@@ -20,6 +20,13 @@ var cusAddressPattern = /^[A-z0-9.,/ ]*$/
 
 var cusInputsArr = [cusId, cusName, cusContactNo, cusNic, cusAddress];
 
+$('#cusId,#cusName,#cusContactNo,#cusNic,#cusAddress').off('keydown');
+$('#cusId,#cusName,#cusContactNo,#cusNic,#cusAddress').keydown(function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+    }
+});
+
 cusId.keyup(function(e) {
     let index = 0;
     var cusIdLbl = $("#cusIdLabelInCustomers span");

@@ -29,6 +29,13 @@ var signUpAdminAddressLbl = $('#signUpAdminAddressLbl span');
 
 var fieldsArrayInAdmin = [signUpAdminId, signUpAdminName, signUpAdminNic, signUpAdminContactNo, signUpAdminUserName, signUpAdminPassword, signUpAdminAddress];
 
+$('#signUpAdminId,#signUpAdminName,#signUpAdminNic,#signUpAdminContactNo,#signUpAdminUserName,#signUpAdminPassword,#signUpAdminAddress').off('keydown');
+$('#signUpAdminId,#signUpAdminName,#signUpAdminNic,#signUpAdminContactNo,#signUpAdminUserName,#signUpAdminPassword,#signUpAdminAddress').keydown(function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+    }
+});
+
 var adminId = generateAdminId();
 signUpAdminId.val(adminId);
 

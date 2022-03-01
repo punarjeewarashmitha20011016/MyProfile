@@ -29,6 +29,13 @@ var signUpAddressLbl = $('#signUpAddressLbl span');
 
 var fieldsArray = [signUpId, signUpName, signUpNic, signUpContactNo, signUpUserName, signUpPassword, signUpAddress];
 
+$('#signUpId,#signUpName,#signUpNic,#signUpContactNo,#signUpUserName,#signUpPassword,#signUpAddress').off('keydown');
+$('#signUpId,#signUpName,#signUpNic,#signUpContactNo,#signUpUserName,#signUpPassword,#signUpAddress').keydown(function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+    }
+});
+
 let id = generateId();
 signUpId.val(id);
 

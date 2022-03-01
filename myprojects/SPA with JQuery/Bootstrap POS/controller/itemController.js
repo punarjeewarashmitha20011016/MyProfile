@@ -21,6 +21,13 @@ var itemDiscountPattern = /^[0-9.]{1,}$/;
 
 var itemsArray = [itemCodeInItems, itemDescriptionInItems, itemQtyInItems, itemBuyingPriceInItems, itemUnitPriceInItems, itemDiscountInItems];
 
+$('#itemCodeInItems,#itemDescriptionInItems,#itemQtyInItems,#itemBuyingPriceInItems,#itemUnitPriceInItems,#itemDiscountInItems').off('keydown');
+$('#itemCodeInItems,#itemDescriptionInItems,#itemQtyInItems,#itemBuyingPriceInItems,#itemUnitPriceInItems,#itemDiscountInItems').keydown(function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+    }
+});
+
 itemCodeInItems.keyup(function(e) {
     let index = 0;
     var itemCodeLbl = $("#itemCodeLblInItems span");

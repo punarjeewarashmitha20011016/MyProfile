@@ -38,6 +38,13 @@ var placeOrderTextFieldsToValidate = [cusIdHome, itemQtyOnHandHome, itemDiscount
 
 var orderId = undefined;
 
+$('#customerIdHome,#customerNameHome,#customerAddressHome,#customerTelHome,#itemCodeHome,#itemDescriptionHome,#itemQtyHome,#itemUnitPriceHome,#itemQtyOnHandHome,#itemDiscountHome').off('keydown');
+$('#customerIdHome,#customerNameHome,#customerAddressHome,#customerTelHome,#itemCodeHome,#itemDescriptionHome,#itemQtyHome,#itemUnitPriceHome,#itemQtyOnHandHome,#itemDiscountHome').keydown(function(e) {
+    if (e.key == 'Tab') {
+        e.preventDefault();
+    }
+});
+
 cusNameHome.prop("disabled", true);
 cusTelHome.prop("disabled", true);
 cusAddressHome.prop("disabled", true);
