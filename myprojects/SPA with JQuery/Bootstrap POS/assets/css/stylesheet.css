@@ -822,6 +822,14 @@ body>main>.login>.container-fluid>.row>.col>div>label>span {
         margin-top: 8%;
     }
     /* Signup Details end */
+    body>main>.adminSignup a {
+        position: absolute !important;
+        right: 7%;
+        top: 0.5%;
+        width: 6% !important;
+        height: 4%;
+        overflow: hidden;
+    }
 }
 
 @media all and (min-width: 320px) and (max-width: 375px) {

@@ -29,7 +29,14 @@ var signupDetailsSection = $('#signupDetailsSection');
 var userNameLoginId = $('#userNameLoginId');
 var passwordLoginId = $('#passwordLoginId');
 
+// -----------------mobilenav-----------",--------
 
+var mobileNavHome = $("#mobileNavHome");
+var mobileNavOrders = $("#mobileNavOrders");
+var mobileNavItems = $("#mobileNavItems");
+var mobileNavCustomer = $("#mobileNavCustomer");
+var mobileNavSignup = $("#mobileNavSignup");
+var mobileNavLogout = $("#mobileNavLogout");
 
 // loginBtn.click(function() {
 //     homeSection.css("display", "block")
@@ -252,6 +259,81 @@ loginBtn.click(function() {
                 signupDetailsSection.css("display", "none")
                 dashboardAdmin.css("display", "none")
             });
+
+            mobileNavHome.click(function() {
+                homeSection.css("display", "block");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavOrders.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "block");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+
+            mobileNavItems.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "block");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+
+            mobileNavCustomer.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "block");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavSignup.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "block");
+                headerNav.css("display", "none");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavLogout.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "block");
+                signupSection.css("display", "none");
+                headerNav.css("display", "none");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
         }
     }
 
@@ -407,93 +489,82 @@ loginBtn.click(function() {
                 signupDetailsSection.css("display", "none")
                 dashboardAdmin.css("display", "block")
             })
+
+            mobileNavHome.click(function() {
+                homeSection.css("display", "block");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavOrders.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "block");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+
+            mobileNavItems.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "block");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+
+            mobileNavCustomer.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "block");
+                loginSection.css("display", "none");
+                signupSection.css("display", "none");
+                headerNav.css("display", "block");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavSignup.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "none");
+                signupSection.css("display", "block");
+                headerNav.css("display", "none");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
+            mobileNavLogout.click(function() {
+                homeSection.css("display", "none");
+                ordersSection.css("display", "none");
+                orderDetailsSection.css("display", "none");
+                itemsSection.css("display", "none");
+                customerSection.css("display", "none");
+                loginSection.css("display", "block");
+                signupSection.css("display", "none");
+                headerNav.css("display", "none");
+                signUpAdmin.css("display", "none")
+                dashboardAdmin.css("display", "none")
+            });
         }
     }
 
 })
-
-
-
-// -----------------mobilenav-----------",--------
-
-var mobileNavHome = $("#mobileNavHome");
-var mobileNavOrders = $("#mobileNavOrders");
-var mobileNavItems = $("#mobileNavItems");
-var mobileNavCustomer = $("#mobileNavCustomer");
-var mobileNavSignup = $("#mobileNavSignup");
-var mobileNavLogout = $("#mobileNavLogout");
-
-mobileNavHome.click(function() {
-    homeSection.css("display", "block");
-    ordersSection.css("display", "none");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "none");
-    customerSection.css("display", "none");
-    loginSection.css("display", "none");
-    signupSection.css("display", "none");
-    headerNav.css("display", "block");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
-mobileNavOrders.click(function() {
-    homeSection.css("display", "none");
-    ordersSection.css("display", "block");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "none");
-    customerSection.css("display", "none");
-    loginSection.css("display", "none");
-    signupSection.css("display", "none");
-    headerNav.css("display", "block");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
-
-mobileNavItems.click(function() {
-    homeSection.css("display", "none");
-    ordersSection.css("display", "none");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "block");
-    customerSection.css("display", "none");
-    loginSection.css("display", "none");
-    signupSection.css("display", "none");
-    headerNav.css("display", "block");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
-
-mobileNavCustomer.click(function() {
-    homeSection.css("display", "none");
-    ordersSection.css("display", "none");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "none");
-    customerSection.css("display", "block");
-    loginSection.css("display", "none");
-    signupSection.css("display", "none");
-    headerNav.css("display", "block");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
-mobileNavSignup.click(function() {
-    homeSection.css("display", "none");
-    ordersSection.css("display", "none");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "none");
-    customerSection.css("display", "none");
-    loginSection.css("display", "none");
-    signupSection.css("display", "block");
-    headerNav.css("display", "none");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
-mobileNavLogout.click(function() {
-    homeSection.css("display", "none");
-    ordersSection.css("display", "none");
-    orderDetailsSection.css("display", "none");
-    itemsSection.css("display", "none");
-    customerSection.css("display", "none");
-    loginSection.css("display", "block");
-    signupSection.css("display", "none");
-    headerNav.css("display", "none");
-    signUpAdmin.css("display", "none")
-    dashboardAdmin.css("display", "none")
-});
