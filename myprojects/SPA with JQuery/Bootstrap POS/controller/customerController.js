@@ -20,6 +20,9 @@ var cusAddressPattern = /^[A-z0-9.,/ ]*$/
 
 var cusInputsArr = [cusId, cusName, cusContactNo, cusNic, cusAddress];
 
+cusId.val(generateCustomerId());
+
+
 $('#cusId,#cusName,#cusContactNo,#cusNic,#cusAddress').off('keydown');
 $('#cusId,#cusName,#cusContactNo,#cusNic,#cusAddress').keydown(function(e) {
     if (e.key == 'Tab') {
@@ -93,9 +96,11 @@ saveCustomer.click(function() {
         customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
         setDataToCustomerTable();
         clearFieldsInCustomer();
+        generateCustomerId();
     } else {
         alert('Adding customer details is unsuccessful');
         clearFieldsInCustomer();
+        generateCustomerId();
     }
 });
 
@@ -121,11 +126,13 @@ updateCustomer.click(function() {
                     }
                 })
                 clearFieldsInCustomer();
+                generateCustomerId();
             }
         }
     } else {
         alert('Updating ' + cusId.val() + ' Customer details is unsuccessful');
         clearFieldsInCustomer();
+        generateCustomerId();
     }
 });
 
@@ -136,11 +143,13 @@ deleteCustomer.click(function() {
             if (customerArray[i].getCustomerId() == cusId.val()) {
                 customerArray.splice(i, 1);
                 clearFieldsInCustomer();
+                generateCustomerId();
             }
         }
     } else {
         alert('Deleting ' + cusId.val() + ' details is unsuccessful');
         clearFieldsInCustomer();
+        generateCustomerId();
     }
 });
 
@@ -172,4 +181,23 @@ function clearFieldsInCustomer() {
     cusContactNo.val("");
     cusNic.val("");
     cusAddress.val("");
+}
+
+function generateCustomerId() {
+    if (customerArray[0] != undefined) {
+        for (let i = 0; i < customerArray.length; i++) {
+            if (i == (customerArray.length - 1)) {
+                let temp = parseInt(customerArray[i].getCustomerId().split('-')[1]);
+                if (temp <= 9) {
+                    return 'C-00' + temp;
+                } else if (temp <= 99) {
+                    return 'C-0' + temp;
+                } else {
+                    return "C-" + temp;
+                }
+            }
+        }
+    } else {
+        return 'C-001';
+    }
 }
