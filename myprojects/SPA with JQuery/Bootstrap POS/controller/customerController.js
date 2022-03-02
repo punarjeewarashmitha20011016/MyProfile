@@ -198,6 +198,6 @@ function generateCustomerId() {
             }
         }
     } else {
-        return 'C-001';
+        return "C-001";
     }
 }
