@@ -189,9 +189,9 @@ function generateCustomerId() {
             if (i == (customerArray.length - 1)) {
                 let temp = parseInt(customerArray[i].getCustomerId().split('-')[1]);
                 if (temp <= 9) {
-                    return 'C-00' + temp;
+                    return "C-00" + temp;
                 } else if (temp <= 99) {
-                    return 'C-0' + temp;
+                    return "C-0" + temp;
                 } else {
                     return "C-" + temp;
                 }
