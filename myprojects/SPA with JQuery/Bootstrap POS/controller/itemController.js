@@ -115,11 +115,13 @@ saveItemBtn.click(function() {
         setDatToTheItemTable();
         deleteSelectedRowFromTheItemTable();
         setDataToItemComboBox();
-        generateItemCode();
+        let code = generateItemCode();
+        itemCodeInItems.val(code);
     } else {
         alert('Item ' + itemCodeInItems.val() + ' adding is unsuccessful');
         clearFieldsInItems();
-        generateItemCode();
+        let code = generateItemCode();
+        itemCodeInItems.val(code);
     }
 });
 
@@ -192,13 +194,15 @@ updateItemBtn.click(function() {
                     }
                 })
                 clearFieldsInItems();
-                generateItemCode();
+                let code = generateItemCode();
+                itemCodeInItems.val(code);
             }
         }
     } else {
         alert('Updating ' + itemCodeInItems.val() + ' is unsuccessful');
         clearFieldsInItems();
-        generateItemCode();
+        let code = generateItemCode();
+        itemCodeInItems.val(code);
     }
 });
 
@@ -220,13 +224,15 @@ deleteItemBtn.click(function() {
                     }
                 })
                 clearFieldsInItems();
-                generateItemCode();
+                let code = generateItemCode();
+                itemCodeInItems.val(code);
             }
         }
     } else {
         alert('Deleting ' + itemCodeInItems.val() + ' item is unsuccessful');
         clearFieldsInItems();
-        generateItemCode();
+        let code = generateItemCode();
+        itemCodeInItems.val(code);
     }
 })
 
@@ -244,6 +250,7 @@ function generateItemCode() {
         for (let i = 0; i < itemArray.length; i++) {
             if (i == (itemArray.length - 1)) {
                 let temp = parseInt(itemArray[i].getItemCode().split('-')[1]);
+                temp = temp + 1;
                 if (temp <= 9) {
                     return "I-00" + temp;
                 } else if (temp <= 99) {

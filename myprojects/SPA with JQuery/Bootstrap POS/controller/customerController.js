@@ -96,11 +96,13 @@ saveCustomer.click(function() {
         customerArray.push(new Customer(cusId.val(), cusName.val(), cusContactNo.val(), cusNic.val(), cusAddress.val()));
         setDataToCustomerTable();
         clearFieldsInCustomer();
-        generateCustomerId();
+        let code = generateCustomerId();
+        cusId.val(code);
     } else {
         alert('Adding customer details is unsuccessful');
         clearFieldsInCustomer();
-        generateCustomerId();
+        let code = generateCustomerId();
+        cusId.val(code);
     }
 });
 
@@ -126,13 +128,15 @@ updateCustomer.click(function() {
                     }
                 })
                 clearFieldsInCustomer();
-                generateCustomerId();
+                let code = generateCustomerId();
+                cusId.val(code);
             }
         }
     } else {
         alert('Updating ' + cusId.val() + ' Customer details is unsuccessful');
         clearFieldsInCustomer();
-        generateCustomerId();
+        let code = generateCustomerId();
+        cusId.val(code);
     }
 });
 
@@ -143,13 +147,15 @@ deleteCustomer.click(function() {
             if (customerArray[i].getCustomerId() == cusId.val()) {
                 customerArray.splice(i, 1);
                 clearFieldsInCustomer();
-                generateCustomerId();
+                let code = generateCustomerId();
+                cusId.val(code);
             }
         }
     } else {
         alert('Deleting ' + cusId.val() + ' details is unsuccessful');
         clearFieldsInCustomer();
-        generateCustomerId();
+        let code = generateCustomerId();
+        cusId.val(code);
     }
 });
 
@@ -188,6 +194,7 @@ function generateCustomerId() {
         for (let i = 0; i < customerArray.length; i++) {
             if (i == (customerArray.length - 1)) {
                 let temp = parseInt(customerArray[i].getCustomerId().split('-')[1]);
+                temp = temp + 1;
                 if (temp <= 9) {
                     return "C-00" + temp;
                 } else if (temp <= 99) {

@@ -26,6 +26,8 @@ var signUpUserNameLbl = $('#signUpUserNameLbl span');
 var signUpPasswordLbl = $('#signUpPasswordLbl span');
 var signUpAddressLbl = $('#signUpAddressLbl span');
 
+var cashierDetailsTable = $('#cashierDetailsTable');
+
 
 var fieldsArray = [signUpId, signUpName, signUpNic, signUpContactNo, signUpUserName, signUpPassword, signUpAddress];
 
@@ -121,7 +123,6 @@ signUpAddress.keyup(function(e) {
 
 addSignUpDetailsBtn.off('click');
 addSignUpDetailsBtn.click(function() {
-
     if (searchSignupDetails() == true) {
         alert('This ' + signUpId.val() + ' already exists');
         clearFieldsInSignup();
@@ -131,7 +132,7 @@ addSignUpDetailsBtn.click(function() {
     var signupDetails = new Signup(signUpId.val(), signUpName.val(), signUpNic.val(), signUpContactNo.val(), signUpUserName.val(), signUpPassword.val(), signUpAddress.val());
     if (confirm("Do you want to add this details. If yes please enter Ok button") == true) {
         signupArray.push(signupDetails);
-        setDataToTheCashierTable
+        setDataToTheCashierTable();
         clearFieldsInSignup();
         let id = generateId();
         signUpId.val(id);
@@ -142,10 +143,6 @@ addSignUpDetailsBtn.click(function() {
         let id = generateId();
         signUpId.val(id);
     }
-})
-updateSignUpDetailsBtn.off('click');
-updateSignUpDetailsBtn.click(function() {
-
 })
 
 function searchSignupDetails() {
@@ -274,7 +271,7 @@ function generateId() {
 }
 
 function setDataToTheCashierTable() {
-    cashierDetailsTable.children('tbody > tr').remove();
+    cashierDetailsTable.children('tbody').children('tr').remove();
     for (let i = 0; i < signupArray.length; i++) {
         cashierDetailsTable.children('tbody').append('<tr><td>' + (i + 1) + '</td><td>' + signupArray[i].getId() + '</td><td>' + signupArray[i].getName() + '</td><td>' + signupArray[i].getNic() + '</td><td>' + signupArray[i].getContactNo() + '</td><td>' + signupArray[i].getUserName() + '</td><td>' + signupArray[i].getPassword() + '</td><td>' + signupArray[i].getAddress() + '</td></tr>');
     }

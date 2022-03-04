@@ -38,6 +38,8 @@ var placeOrderTextFieldsToValidate = [cusIdHome, itemQtyOnHandHome, itemDiscount
 
 var orderId = undefined;
 
+orderId = getOrderId();
+
 $('#customerIdHome,#customerNameHome,#customerAddressHome,#customerTelHome,#itemCodeHome,#itemDescriptionHome,#itemQtyHome,#itemUnitPriceHome,#itemQtyOnHandHome,#itemDiscountHome').off('keydown');
 $('#customerIdHome,#customerNameHome,#customerAddressHome,#customerTelHome,#itemCodeHome,#itemDescriptionHome,#itemQtyHome,#itemUnitPriceHome,#itemQtyOnHandHome,#itemDiscountHome').keydown(function(e) {
     if (e.key == 'Tab') {
@@ -109,7 +111,6 @@ function setDataToItemComboBox() {
         itemCodeHome.append(newOption);
     }
 }
-orderId = getOrderId();
 
 function getOrderId() {
     if (orderId != undefined) {
@@ -119,21 +120,24 @@ function getOrderId() {
                 temp = temp + 1;
                 if (temp <= 9) {
                     orderId = 'O-00' + temp;
+                    orderIdHome.val(orderId);
                     return orderId;
                 } else if (temp <= 99) {
                     orderId = 'O-0' + temp;
+                    orderIdHome.val(orderId);
                     return orderId;
                 } else {
                     orderId = 'O-' + temp;
+                    orderIdHome.val(orderId);
                     return orderId;
                 }
             }
         }
     } else {
         orderId = "O-001";
+        orderIdHome.val(orderId);
         return orderId;
     }
-    orderIdHome.val(orderId);
 }
 
 var addToCartList = new Array();
