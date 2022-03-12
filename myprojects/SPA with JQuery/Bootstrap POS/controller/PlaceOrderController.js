@@ -247,9 +247,11 @@ addToCartBtn.click(function() {
                 setDatToTheItemTable();
                 clearCart()
                 setDataToOrderTable();
+                setPlaceOrderFormBordersReset();
             } else {
                 alert('Placing order = ' + orderIdHome.val() + ' is unsuccessful');
                 clearFieldsInHomeAfterPurchase();
+                setPlaceOrderFormBordersReset();
             }
         });
     } else {
@@ -404,4 +406,8 @@ function discardOrder() {
             addToCartTbody.children('tr').eq(i).remove();
         }
     })
+}
+
+function setPlaceOrderFormBordersReset() {
+    setBorderToDefault(placeOrderTextFieldsToValidate);
 }

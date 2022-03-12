@@ -127,6 +127,7 @@ addAdminSignUpDetailsBtn.click(function() {
         clearFieldsInAdminSignup();
         let id = generateAdminId();
         signUpAdminId.val(id);
+        setAdminInputBordersReset();
         return;
     }
 
@@ -137,10 +138,12 @@ addAdminSignUpDetailsBtn.click(function() {
         clearFieldsInAdminSignup();
         let id = generateAdminId();
         signUpAdminId.val(id);
+        setAdminInputBordersReset();
 
     } else {
         alert('Adding signup details for signup Id ' + signUpAdminId.val() + ' is unsuccessful.');
         clearFieldsInAdminSignup();
+        setAdminInputBordersReset();
         return;
     }
 })
@@ -166,6 +169,7 @@ updateAdminSignUpDetailsBtn.click(function() {
                     clearFieldsInAdminSignup();
                     let id = generateAdminId();
                     signUpAdminId.val(id);
+                    setAdminInputBordersReset();
                 }
             }
         } else {
@@ -173,6 +177,7 @@ updateAdminSignUpDetailsBtn.click(function() {
             clearFieldsInAdminSignup();
             let id = generateAdminId();
             signUpAdminId.val(id);
+            setAdminInputBordersReset();
             return;
         }
     } else {
@@ -180,6 +185,7 @@ updateAdminSignUpDetailsBtn.click(function() {
         clearFieldsInAdminSignup();
         let id = generateAdminId();
         signUpAdminId.val(id);
+        setAdminInputBordersReset();
         return;
     }
 })
@@ -200,6 +206,7 @@ deleteAdminSignUpDetailsBtn.click(function() {
                     clearFieldsInAdminSignup();
                     let id = generateAdminId();
                     signUpAdminId.val(id);
+                    setAdminInputBordersReset();
                 }
             }
         } else {
@@ -207,6 +214,7 @@ deleteAdminSignUpDetailsBtn.click(function() {
             clearFieldsInAdminSignup();
             let id = generateAdminId();
             signUpAdminId.val(id);
+            setAdminInputBordersReset();
             return;
         }
     }
@@ -270,4 +278,8 @@ function setDataToTheAdminTable() {
     for (let i = 0; i < adminSignUpArray.length; i++) {
         adminDetailsTable.children('tbody').append('<tr><td>' + (i + 1) + '</td><td>' + adminSignUpArray[i].getId() + '</td><td>' + adminSignUpArray[i].getName() + '</td><td>' + adminSignUpArray[i].getNic() + '</td><td>' + adminSignUpArray[i].getContactNo() + '</td><td>' + adminSignUpArray[i].getUserName() + '</td><td>' + adminSignUpArray[i].getPassword() + '</td><td>' + adminSignUpArray[i].getAddress() + '</td></tr>');
     }
+}
+
+function setAdminInputBordersReset() {
+    setBorderToDefault(fieldsArrayInAdmin);
 }

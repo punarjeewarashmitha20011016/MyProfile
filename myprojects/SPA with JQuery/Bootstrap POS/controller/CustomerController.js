@@ -88,6 +88,7 @@ saveCustomer.click(function() {
         if (customerArray[i].getCustomerId() == cusId.val()) {
             alert('This customer Id exists. Please enter a different Id');
             clearFieldsInItems();
+            setCustomerBordersReset();
             return;
         }
     }
@@ -98,11 +99,13 @@ saveCustomer.click(function() {
         clearFieldsInCustomer();
         let code = generateCustomerId();
         cusId.val(code);
+        setCustomerBordersReset();
     } else {
         alert('Adding customer details is unsuccessful');
         clearFieldsInCustomer();
         let code = generateCustomerId();
         cusId.val(code);
+        setCustomerBordersReset();
     }
 });
 
@@ -130,6 +133,7 @@ updateCustomer.click(function() {
                 clearFieldsInCustomer();
                 let code = generateCustomerId();
                 cusId.val(code);
+                setCustomerBordersReset();
             }
         }
     } else {
@@ -137,6 +141,7 @@ updateCustomer.click(function() {
         clearFieldsInCustomer();
         let code = generateCustomerId();
         cusId.val(code);
+        setCustomerBordersReset();
     }
 });
 
@@ -149,6 +154,7 @@ deleteCustomer.click(function() {
                 clearFieldsInCustomer();
                 let code = generateCustomerId();
                 cusId.val(code);
+                setCustomerBordersReset();
             }
         }
     } else {
@@ -156,6 +162,7 @@ deleteCustomer.click(function() {
         clearFieldsInCustomer();
         let code = generateCustomerId();
         cusId.val(code);
+        setCustomerBordersReset();
     }
 });
 
@@ -164,7 +171,7 @@ cusId.keydown(function(e) {
         searchCustomer();
     }
 })
-
+customerSearchBtn.off('click')
 customerSearchBtn.click(function() {
     searchCustomer();
 });
@@ -207,4 +214,8 @@ function generateCustomerId() {
     } else {
         return "C-001";
     }
+}
+
+function setCustomerBordersReset() {
+    setBorderToDefault(cusInputsArr);
 }

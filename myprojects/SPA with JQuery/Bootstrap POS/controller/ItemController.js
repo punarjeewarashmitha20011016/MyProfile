@@ -117,11 +117,13 @@ saveItemBtn.click(function() {
         setDataToItemComboBox();
         let code = generateItemCode();
         itemCodeInItems.val(code);
+        setBorderToResetInItem();
     } else {
         alert('Item ' + itemCodeInItems.val() + ' adding is unsuccessful');
         clearFieldsInItems();
         let code = generateItemCode();
         itemCodeInItems.val(code);
+        setBorderToResetInItem();
     }
 });
 
@@ -153,7 +155,7 @@ itemCodeInItems.keydown(function(e) {
         searchItemDetails();
     }
 })
-
+searchItemBtn.off('click')
 searchItemBtn.click(function() {
     searchItemDetails();
 })
@@ -196,6 +198,7 @@ updateItemBtn.click(function() {
                 clearFieldsInItems();
                 let code = generateItemCode();
                 itemCodeInItems.val(code);
+                setBorderToResetInItem();
             }
         }
     } else {
@@ -203,6 +206,7 @@ updateItemBtn.click(function() {
         clearFieldsInItems();
         let code = generateItemCode();
         itemCodeInItems.val(code);
+        setBorderToResetInItem();
     }
 });
 
@@ -226,6 +230,7 @@ deleteItemBtn.click(function() {
                 clearFieldsInItems();
                 let code = generateItemCode();
                 itemCodeInItems.val(code);
+                setBorderToResetInItem();
             }
         }
     } else {
@@ -233,6 +238,7 @@ deleteItemBtn.click(function() {
         clearFieldsInItems();
         let code = generateItemCode();
         itemCodeInItems.val(code);
+        setBorderToResetInItem();
     }
 })
 
@@ -263,4 +269,8 @@ function generateItemCode() {
     } else {
         return 'I-001';
     }
+}
+
+function setBorderToResetInItem() {
+    setBorderToDefault(itemsArray);
 }

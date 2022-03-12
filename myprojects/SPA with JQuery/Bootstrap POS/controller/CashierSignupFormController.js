@@ -126,6 +126,7 @@ addSignUpDetailsBtn.click(function() {
     if (searchSignupDetails() == true) {
         alert('This ' + signUpId.val() + ' already exists');
         clearFieldsInSignup();
+        setCashierInputBordersReset();
         return;
     }
 
@@ -136,12 +137,14 @@ addSignUpDetailsBtn.click(function() {
         clearFieldsInSignup();
         let id = generateId();
         signUpId.val(id);
+        setCashierInputBordersReset();
 
     } else {
         alert('Adding signup details for signup Id ' + signUpId.val() + ' is unsuccessful.');
         clearFieldsInSignup()
         let id = generateId();
         signUpId.val(id);
+        setCashierInputBordersReset();
     }
 })
 
@@ -193,6 +196,7 @@ updateSignUpDetailsBtn.click(function() {
                     clearFieldsInSignup();
                     let id = generateId();
                     signUpId.val(id);
+                    setCashierInputBordersReset();
                 }
             }
         } else {
@@ -200,6 +204,7 @@ updateSignUpDetailsBtn.click(function() {
             clearFieldsInSignup();
             let id = generateId();
             signUpId.val(id);
+            setCashierInputBordersReset();
             return;
         }
     } else {
@@ -207,6 +212,7 @@ updateSignUpDetailsBtn.click(function() {
         clearFieldsInSignup();
         let id = generateId();
         signUpId.val(id);
+        setCashierInputBordersReset();
         return;
     }
 })
@@ -229,6 +235,7 @@ deleteSignUpDetailsBtn.click(function() {
                     clearFieldsInSignup();
                     let id = generateId();
                     signUpId.val(id);
+                    setCashierInputBordersReset();
                 }
             }
         } else {
@@ -236,6 +243,7 @@ deleteSignUpDetailsBtn.click(function() {
             clearFieldsInSignup();
             let id = generateId();
             signUpId.val(id);
+            setCashierInputBordersReset();
             return;
         }
     }
@@ -275,4 +283,18 @@ function setDataToTheCashierTable() {
     for (let i = 0; i < signupArray.length; i++) {
         cashierDetailsTable.children('tbody').append('<tr><td>' + (i + 1) + '</td><td>' + signupArray[i].getId() + '</td><td>' + signupArray[i].getName() + '</td><td>' + signupArray[i].getNic() + '</td><td>' + signupArray[i].getContactNo() + '</td><td>' + signupArray[i].getUserName() + '</td><td>' + signupArray[i].getPassword() + '</td><td>' + signupArray[i].getAddress() + '</td></tr>');
     }
+}
+
+function setBorderToDefault() {
+    signUpId.css("border", "1px solid #ced4da");
+    signUpName.css("border", "1px solid #ced4da");
+    signUpNic.css("border", "1px solid #ced4da");
+    signUpContactNo.css("border", "1px solid #ced4da");
+    signUpUserName.css("border", "1px solid #ced4da");
+    signUpPassword.css("border", "1px solid #ced4da");
+    signUpAddress.css("border", "1px solid #ced4da");
+}
+
+function setCashierInputBordersReset() {
+    setBorderToDefault(fieldsArray);
 }
